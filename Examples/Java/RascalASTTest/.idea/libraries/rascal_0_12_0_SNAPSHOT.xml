@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rascal-0.12.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RascalImporter/solutions/external/libs/rascal-0.12.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
