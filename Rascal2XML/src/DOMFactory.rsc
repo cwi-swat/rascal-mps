@@ -1,11 +1,15 @@
-module DOMfactory
+module DOMFactory
 
 import lang::xml::DOM;
 import lang::xml::IO;
 import Node;
 import IO;
 
+Namespace createNamespace(str pre, str uri) = namespace(pre, uri);
+Namespace createNamespace(str pre) = namespace(pre, "dummy");
+
 Node createEmptyDocument(str name) = document(element(none(), name, []));
+Node createEmptyDocument(str name, str namespace) = document(element(createNamespace(namespace,""), name, []));
 
 Node appendToElement(Node dom, str elementName, list[Node] newChildren){
 	return visit(dom){
@@ -19,6 +23,7 @@ Node appendToElement(Node dom, str elementName, Node newChild){
 	}
 }
 
+Node createNewElement(str name, str namespace) = element(createNamespace(namespace), name, []);
 Node createNewElement(str name) = element(none(), name, []);
 Node createNewElement(str name, list[Node] l) = element(none(), name, l);
 

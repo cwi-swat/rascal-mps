@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <program:program xmlns:program="dummy">
+    <Symbol>Program</Symbol>
+    <decls>Declarations</decls>
+    <body />
+  </program:program>
+  <not:not xmlns:not="dummy">
+    <Symbol>Expression</Symbol>
+  </not:not>
+  <strCon:strCon xmlns:strCon="dummy">
+    <Symbol>Expression</Symbol>
+    <string />
+  </strCon:strCon>
+  <id:id xmlns:id="dummy">
+    <Symbol>Expression</Symbol>
+    <name />
+  </id:id>
+  <natCon:natCon xmlns:natCon="dummy">
+    <Symbol>Expression</Symbol>
+    <natcon />
+  </natCon:natCon>
+  <conc:conc xmlns:conc="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </conc:conc>
+  <and:and xmlns:and="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </and:and>
+  <or:or xmlns:or="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </or:or>
+  <add:add xmlns:add="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </add:add>
+  <sub:sub xmlns:sub="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </sub:sub>
+  <eq:eq xmlns:eq="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </eq:eq>
+  <ineq:ineq xmlns:ineq="dummy">
+    <Symbol>Expression</Symbol>
+    <lhs>Expression</lhs>
+    <rhs>Expression</rhs>
+  </ineq:ineq>
+  <natural:natural xmlns:natural="dummy">
+    <Symbol>Type</Symbol>
+  </natural:natural>
+  <string:string xmlns:string="dummy">
+    <Symbol>Type</Symbol>
+  </string:string>
+  <decl:decl xmlns:decl="dummy">
+    <Symbol>Declaration</Symbol>
+    <id />
+    <tp>Type</tp>
+  </decl:decl>
+  <forStat:forStat xmlns:forStat="dummy">
+    <Symbol>Statement</Symbol>
+  </forStat:forStat>
+  <ifElseStat:ifElseStat xmlns:ifElseStat="dummy">
+    <Symbol>Statement</Symbol>
+    <cond>Expression</cond>
+    <thenPart />
+    <elsePart />
+  </ifElseStat:ifElseStat>
+  <asgStat:asgStat xmlns:asgStat="dummy">
+    <Symbol>Statement</Symbol>
+    <var />
+    <val>Expression</val>
+  </asgStat:asgStat>
+  <whileStat:whileStat xmlns:whileStat="dummy">
+    <Symbol>Statement</Symbol>
+    <cond>Expression</cond>
+    <body />
+  </whileStat:whileStat>
+</root>
