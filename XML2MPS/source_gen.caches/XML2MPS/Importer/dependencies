@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="XML2MPS.Importer.XMLImporter" />
+  <dependency className="XML2MPS.Importer.XMLImporter">
+    <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="javax.xml.parsers.DocumentBuilder" />
+    <classNode dependClassName="javax.xml.parsers.DocumentBuilderFactory" />
+    <classNode dependClassName="org.w3c.dom.Document" />
+    <classNode dependClassName="org.w3c.dom.Element" />
+  </dependency>
 </dependenciesRoot>
 
