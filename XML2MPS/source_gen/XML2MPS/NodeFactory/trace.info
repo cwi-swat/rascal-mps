@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeFactory)/2068514840477857048">
+    <file name="NodeFactoryClass.java">
+      <node id="2068514840477328012" at="15,0,16,0" concept="1" trace="structureModel" />
+      <node id="2068514840477332491" at="16,0,17,0" concept="1" trace="modelBase" />
+      <node id="2068514840477399755" at="19,50,20,196" concept="2" />
+      <node id="2068514840477427199" at="20,196,21,154" concept="0" />
+      <node id="2068514840477805290" at="21,154,22,156" concept="0" />
+      <node id="2068514840477434487" at="22,156,23,13" concept="3" />
+      <node id="2068514840477922665" at="26,59,27,206" concept="2" />
+      <node id="2068514840477923123" at="27,206,28,154" concept="0" />
+      <node id="2068514840477931848" at="28,154,29,13" concept="3" />
+      <node id="2068514840477909617" at="32,59,33,193" concept="2" />
+      <node id="2068514840477910428" at="33,193,34,154" concept="0" />
+      <node id="2068514840477936433" at="34,154,35,159" concept="0" />
+      <node id="2068514840477943347" at="35,159,36,0" concept="5" />
+      <node id="2068514840477945300" at="36,0,37,39" concept="4" />
+      <node id="6616081088522778156" at="37,39,38,166" concept="0" />
+      <node id="2068514840477943432" at="38,166,39,0" concept="5" />
+      <node id="2068514840477990474" at="39,0,40,208" concept="0" />
+      <node id="2068514840477989774" at="40,208,41,0" concept="5" />
+      <node id="2068514840477918070" at="41,0,42,13" concept="3" />
+      <node id="2068514840477921470" at="26,0,31,0" concept="6" trace="createInterfaceConcept#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2068514840477316918" at="19,0,25,0" concept="6" trace="createConcept#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2068514840477907425" at="32,0,44,0" concept="6" trace="addChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2068514840477921473" at="26,59,29,13">
+        <var name="n" id="2068514840477922668" />
+      </scope>
+      <scope id="2068514840477316921" at="19,50,23,13">
+        <var name="n" id="2068514840477399758" />
+      </scope>
+      <scope id="2068514840477921470" at="26,0,31,0">
+        <var name="name" id="2068514840477922353" />
+      </scope>
+      <scope id="2068514840477316918" at="19,0,25,0">
+        <var name="name" id="2068514840477317498" />
+      </scope>
+      <scope id="2068514840477907428" at="32,59,42,13">
+        <var name="l" id="2068514840477909620" />
+      </scope>
+      <scope id="2068514840477907425" at="32,0,44,0">
+        <var name="child" id="2068514840477908716" />
+        <var name="parent" id="2068514840477908203" />
+      </scope>
+      <unit id="2068514840477857048" at="13,0,46,0" name="XML2MPS.NodeFactory.NodeFactoryClass" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/2068514840477297754">
+    <file name="XMLImporter.java">
+      <node id="2068514840477662537" at="9,0,11,0" concept="0" trace="testRun#()V" />
+      <scope id="2068514840477662540" at="9,33,9,33" />
+      <scope id="2068514840477662537" at="9,0,11,0" />
+      <unit id="2068514840477297754" at="6,0,13,0" name="XML2MPS.Importer.XMLImporter" />
+    </file>
+  </root>
+</debug-info>
+
