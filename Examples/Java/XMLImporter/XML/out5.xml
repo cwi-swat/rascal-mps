@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <program:program xmlns:program="dummy">
+    <Symbol>Program</Symbol>
+    <Production>
+      <argName0>decls</argName0>
+      <argSymbol0>Declarations</argSymbol0>
+      <argName1>body</argName1>
+      <argSymbol1 />
+    </Production>
+  </program:program>
+  <not:not xmlns:not="dummy">
+    <Symbol>Expression</Symbol>
+    <Production />
+  </not:not>
+  <strCon:strCon xmlns:strCon="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>string</argName0>
+      <argSymbol0 />
+    </Production>
+  </strCon:strCon>
+  <id:id xmlns:id="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>name</argName0>
+      <argSymbol0 />
+    </Production>
+  </id:id>
+  <natCon:natCon xmlns:natCon="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>natcon</argName0>
+      <argSymbol0 />
+    </Production>
+  </natCon:natCon>
+  <conc:conc xmlns:conc="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </conc:conc>
+  <and:and xmlns:and="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </and:and>
+  <or:or xmlns:or="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </or:or>
+  <add:add xmlns:add="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </add:add>
+  <sub:sub xmlns:sub="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </sub:sub>
+  <eq:eq xmlns:eq="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </eq:eq>
+  <ineq:ineq xmlns:ineq="dummy">
+    <Symbol>Expression</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </ineq:ineq>
+  <natural:natural xmlns:natural="dummy">
+    <Symbol>Type</Symbol>
+    <Production />
+  </natural:natural>
+  <string:string xmlns:string="dummy">
+    <Symbol>Type</Symbol>
+    <Production />
+  </string:string>
+  <decl:decl xmlns:decl="dummy">
+    <Symbol>Declaration</Symbol>
+    <Production>
+      <argName0>id</argName0>
+      <argSymbol0 />
+      <argName1>tp</argName1>
+      <argSymbol1>Type</argSymbol1>
+    </Production>
+  </decl:decl>
+  <forStat:forStat xmlns:forStat="dummy">
+    <Symbol>Statement</Symbol>
+    <Production />
+  </forStat:forStat>
+  <ifElseStat:ifElseStat xmlns:ifElseStat="dummy">
+    <Symbol>Statement</Symbol>
+    <Production>
+      <argName0>cond</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>thenPart</argName1>
+      <argSymbol1 />
+      <argName2>elsePart</argName2>
+      <argSymbol2 />
+    </Production>
+  </ifElseStat:ifElseStat>
+  <asgStat:asgStat xmlns:asgStat="dummy">
+    <Symbol>Statement</Symbol>
+    <Production>
+      <argName0>var</argName0>
+      <argSymbol0 />
+      <argName1>val</argName1>
+      <argSymbol1>Expression</argSymbol1>
+    </Production>
+  </asgStat:asgStat>
+  <whileStat:whileStat xmlns:whileStat="dummy">
+    <Symbol>Statement</Symbol>
+    <Production>
+      <argName0>cond</argName0>
+      <argSymbol0>Expression</argSymbol0>
+      <argName1>body</argName1>
+      <argSymbol1 />
+    </Production>
+  </whileStat:whileStat>
+</root>

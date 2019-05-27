@@ -7,35 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61b7113f-e5e1-494e-b105-cda2df713b55" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/.mps/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/Rascal_External/Rascal_External.msd" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/Rascal_External/Rascal_External.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/TestAction_Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/TestAction_Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/source_gen.caches/pluginBuildSolution/plugin/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/source_gen.caches/pluginBuildSolution/plugin/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/TestAction_Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/TestAction_Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/Language.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/actions/ActionAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/actions/ActionAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/behavior/BehaviorAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/behavior/BehaviorAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/behavior/RascalImporter__BehaviorDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/behavior/RascalImporter__BehaviorDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/constraints/ConstraintsAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/constraints/ConstraintsAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/NonTerminalNode_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/NonTerminalNode_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/NonTerminalNode_EditorBuilder_a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/NonTerminalNode_EditorBuilder_a$childrenListHandler_so8gfk_a0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/NonTerminalNode_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a$rootSingleRoleHandler_9tkl08_c0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/RascalImporter_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_Editor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/intentions/IntentionsDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/intentions/IntentionsDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/structure/LanguageConceptSwitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/structure/StructureAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/textGen/TextGenAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/typesystem/TypesystemDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/classes_gen/NewLanguage/typesystem/TypesystemDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage/generator/classes_gen/NewLanguage/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage/generator/classes_gen/NewLanguage/Generator.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +39,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="30034910-e014-46c0-ac2c-9540e092fe3e/r:49435543-6135-4242-9e7c-7700aefa6d60(TempModule30034910-e014-46c0-ac2c-9540e092fe3e/TempModel_637429133075630)">
+            <model ref="d38be296-8666-463b-9d6b-5dacbd7d232e/r:a5d003df-ebb0-4080-86f7-673e3fa69ecf(TempModuled38be296-8666-463b-9d6b-5dacbd7d232e/TempModel_1037233824468690)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -77,11 +59,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="2ybGD_UPRl_">
-                <node concept="3balQm" id="2ybGD_UPRlA" role="aymYE" />
-                <node concept="2Clz$F" id="2ybGD_UPRlB" role="aymYO" />
-                <node concept="2_V_lH" id="2ybGD_UPRlC" role="1PhJh3">
-                  <ref role="2_V_lI" node="2ybGD_UPRlB" resolve="CommandHolder" />
+              <node concept="aymSD" id="5sKLqkGipxy">
+                <node concept="3balQm" id="5sKLqkGipxz" role="aymYE" />
+                <node concept="2Clz$F" id="5sKLqkGipx$" role="aymYO" />
+                <node concept="2_V_lH" id="5sKLqkGipx_" role="1PhJh3">
+                  <ref role="2_V_lI" node="5sKLqkGipx$" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -151,7 +133,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -187,7 +169,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -223,7 +205,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -260,7 +242,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -284,41 +266,20 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="263" />
-                    <property name="caretXRelative" value="112" />
+                    <property name="caretX" value="71" />
+                    <property name="caretXRelative" value="56" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers />
                 <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/126089375059159515" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487175939" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145732" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_6lfqqa_b0">
-                      <node node_reference="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145722" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
+                <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -329,7 +290,7 @@
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
                 </enabledHints>
               </inspectorMemento>
-              <node node_ref="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" />
+              <node node_ref="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" />
             </state>
           </provider>
         </entry>
@@ -355,7 +316,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -374,7 +335,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="MPSBookmarkManager">
     <option name="myBookmarkInfos">
@@ -393,10 +354,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
@@ -489,28 +450,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="52d47d98-60e6-4f34-a3ee-4fe50b575602" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="52d47d98-60e6-4f34-a3ee-4fe50b575602" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Modules Pool" />
@@ -523,78 +489,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7694383c-c172-4f9b-ba3e-2e4103639d0d(NewLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52d47d98-60e6-4f34-a3ee-4fe50b575602" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewLanguage" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fead39da-8e0b-47f2-9404-bc5111d6ce51" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stubs" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7694383c-c172-4f9b-ba3e-2e4103639d0d(NewLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior) in IdeaFile[file://C:/Dev/RascalImporter/languages/NewLanguage/models/behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7694383c-c172-4f9b-ba3e-2e4103639d0d(NewLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure) in IdeaFile[file://C:/Dev/RascalImporter/languages/NewLanguage/models/structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="fead39da-8e0b-47f2-9404-bc5111d6ce51" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -602,18 +496,6 @@
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="52d47d98-60e6-4f34-a3ee-4fe50b575602" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewLanguage" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6c571311-4cde-413a-bd4d-6d854e4fc8f3(NewLanguage.sandbox) in IdeaFile[file://C:/Dev/RascalImporter/languages/NewLanguage/sandbox/models/NewLanguage.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,6 +526,28 @@
               <option name="myItemId" value="52d47d98-60e6-4f34-a3ee-4fe50b575602" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewLanguage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:6c571311-4cde-413a-bd4d-6d854e4fc8f3(NewLanguage.sandbox) in IdeaFile[file://D:/dev/Rascal2MPS/Examples/MPS/RascalImporter_/languages/NewLanguage/sandbox/models/NewLanguage.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fead39da-8e0b-47f2-9404-bc5111d6ce51" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -654,31 +558,32 @@
               <option name="myItemId" value="7694383c-c172-4f9b-ba3e-2e4103639d0d(NewLanguage)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d7fec0b3-b73b-4d3f-a5a7-d58bd4ba13ba(NewLanguage.actions) in IdeaFile[file://C:/Dev/RascalImporter/languages/NewLanguage/models/actions.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7694383c-c172-4f9b-ba3e-2e4103639d0d(NewLanguage)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior) in IdeaFile[file://C:/Dev/RascalImporter/languages/NewLanguage/models/behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
+        </subPane>
+      </pane>
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MPS_plugin_test_" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -740,11 +645,10 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61314553" visible="true" weight="0.18017058" />
-      <window_info id="Structure" order="1" sideWeight="0.38685447" side_tool="true" visible="true" weight="0.18017058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6116402" visible="true" weight="0.18176973" />
+      <window_info id="Structure" order="1" sideWeight="0.38835979" side_tool="true" visible="true" weight="0.18176973" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -1079,11 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://NewLanguage/NewLanguage.structure/NonTerminalNode" />
-    <entry file="mps://node://NewLanguage/NewLanguage.structure/AstNode" />
-    <entry file="mps://node://NewLanguage/NewLanguage.structure/TerminalNode" />
-    <entry file="mps://node://NewLanguage/NewLanguage.structure/RascalImporter" />
-    <entry file="mps://node://NewLanguage.sandbox/NewLanguage.sandbox/RascalImporter (concept is not found)" />
     <entry file="mps://node://external/org.rascalmpl.library@java_stub/Rascal2MPS">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1129,7 +1028,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:2002eee8-63a4-4e64-b2df-978ae89b1fff(NewLanguage.behavior)/4128452876487145721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1140,6 +1039,180 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage.sandbox/NewLanguage.sandbox/RascalImporter (concept is not found)">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="constant_0">
+                  <node node_reference="r:6c571311-4cde-413a-bd4d-6d854e4fc8f3(NewLanguage.sandbox)/7133254554747797359" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage/NewLanguage.structure/AstNode">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="207" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012500" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage/NewLanguage.structure/NonTerminalNode">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012126" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage/NewLanguage.structure/TerminalNode">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012065" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012065" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage/NewLanguage.structure/RascalImporter">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:c1b74b72-975a-42f3-b7fb-5fbd742cc995(NewLanguage.structure)/1078366219464012054" />
         </state>
       </provider>
     </entry>

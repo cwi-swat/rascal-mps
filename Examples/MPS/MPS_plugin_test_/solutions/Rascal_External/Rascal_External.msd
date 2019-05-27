@@ -7,14 +7,7 @@
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="rascal-0.12.0-SNAPSHOT.jar" />
     </modelRoot>
-    <modelRoot contentPath="C:/Dev/RascalASTTest/out/artifacts/RascalASTTest_jar" type="java_classes">
-      <sourceRoot location="RascalASTTest.jar" />
-    </modelRoot>
   </models>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/lib/rascal-0.12.0-SNAPSHOT.jar" />
-    <stubModelEntry path="C:/Dev/RascalASTTest/out/artifacts/RascalASTTest_jar/RascalASTTest.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>

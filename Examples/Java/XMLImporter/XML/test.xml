@@ -1,0 +1,37 @@
+<?xml version = "1.0"?>
+<root>
+    <nonterminal>
+        <name>"EXP"</name>
+        <production>
+            <name>"or"</name>
+            <arg>
+                <name>"lhs"</name>
+                <type>"EXP"</type>
+            </arg>
+            <arg>
+                <name>"rhs"</name>
+                <type>"EXP"</type>
+            </arg>
+        </production>
+
+        <production >
+            <name>"and"</name>
+            <arg>
+                <name>"lhs"</name>
+                <type>"EXP"</type>
+            </arg>
+            <arg>
+                <name>"rhs"</name>
+                <type>"EXP"</type>
+            </arg>
+        </production>
+
+        <production>
+            <name>"not"</name>
+            <arg>
+                <name>"not"</name>
+                <type>"EXP"</type>
+            </arg>
+        </production>
+    </nonterminal>
+</root>

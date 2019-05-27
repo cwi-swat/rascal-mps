@@ -9,6 +9,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root nodeRef="r:2faf4c3c-8b56-4974-8907-7243bdb16b1e(pluginBuildSolution.plugin)/6838830516685038558">
@@ -38,8 +39,8 @@
       <node id="6838830516685038595" at="22,37,23,127" concept="2" />
     </file>
     <file name="TestPluginActionGroup_ActionGroup.java">
-      <node id="6838830516685038565" at="8,0,9,0" concept="9" trace="ID" />
-      <node id="6838830516685038565" at="9,46,10,39" concept="10" />
+      <node id="6838830516685038565" at="8,0,9,0" concept="10" trace="ID" />
+      <node id="6838830516685038565" at="9,46,10,39" concept="11" />
       <node id="6838830516685038565" at="10,39,11,30" concept="2" />
       <node id="6838830516685038565" at="11,30,12,25" concept="2" />
       <node id="6838830516685038592" at="12,25,13,101" concept="2" />
@@ -54,8 +55,8 @@
       <node id="6838830516685038571" at="17,30,18,39" concept="2" />
     </file>
     <file name="TestAction_Action.java">
-      <node id="6838830516685038571" at="28,0,29,0" concept="9" trace="ICON" />
-      <node id="6838830516685038571" at="30,30,31,50" concept="10" />
+      <node id="6838830516685038571" at="28,0,29,0" concept="10" trace="ICON" />
+      <node id="6838830516685038571" at="30,30,31,50" concept="11" />
       <node id="6838830516685038571" at="31,50,32,34" concept="2" />
       <node id="6838830516685038571" at="32,34,33,41" concept="2" />
       <node id="6838830516685038571" at="36,32,37,16" concept="7" />
@@ -80,7 +81,8 @@
       <node id="2921625155541593531" at="73,54,74,36" concept="6" />
       <node id="2921625155541644779" at="74,36,75,96" concept="2" />
       <node id="2921625155541595931" at="75,96,76,73" concept="6" />
-      <node id="2921625155541669396" at="78,0,80,0" concept="5" trace="createNewLang#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)V" />
+      <node id="2921625155543470169" at="76,73,77,0" concept="9" />
+      <node id="2921625155541669396" at="79,0,81,0" concept="5" trace="createNewLang#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)V" />
       <node id="6838830516685038571" at="40,95,43,5" concept="4" />
       <node id="6838830516685147545" at="45,55,48,7" concept="4" />
       <node id="8461274178612571542" at="51,66,54,7" concept="4" />
@@ -88,15 +90,15 @@
       <node id="6838830516685038571" at="30,0,35,0" concept="1" trace="TestAction_Action#()V" />
       <node id="6838830516685147544" at="43,5,49,5" concept="0" />
       <node id="8461274178612571541" at="49,5,55,5" concept="0" />
-      <node id="2921625155541590905" at="72,0,78,0" concept="5" trace="testExternal#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)V" />
+      <node id="2921625155541590905" at="72,0,79,0" concept="5" trace="testExternal#(Lcom/intellij/openapi/actionSystem/AnActionEvent;)V" />
       <node id="6838830516685038571" at="58,0,72,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
       <node id="6838830516685038571" at="39,0,58,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-      <scope id="2921625155541669398" at="78,61,78,61" />
+      <scope id="2921625155541669398" at="79,61,79,61" />
       <scope id="6838830516685038571" at="36,32,37,16" />
       <scope id="6838830516685038571" at="41,53,42,19" />
       <scope id="6838830516685147545" at="46,22,47,21" />
       <scope id="8461274178612571542" at="52,22,53,21" />
-      <scope id="2921625155541669396" at="78,0,80,0">
+      <scope id="2921625155541669396" at="79,0,81,0">
         <var name="event" id="2921625155541669396" />
       </scope>
       <scope id="6838830516685038571" at="30,30,33,41" />
@@ -107,13 +109,13 @@
       <scope id="8461274178612571541" at="50,5,54,7">
         <var name="p" id="8461274178612571541" />
       </scope>
-      <scope id="2921625155541590907" at="72,60,76,73">
+      <scope id="6838830516685038571" at="30,0,35,0" />
+      <scope id="2921625155541590907" at="72,60,77,0">
         <var name="m" id="2921625155541593532" />
         <var name="p" id="2921625155541592513" />
         <var name="rascalAST" id="2921625155541595932" />
       </scope>
-      <scope id="6838830516685038571" at="30,0,35,0" />
-      <scope id="2921625155541590905" at="72,0,78,0">
+      <scope id="2921625155541590905" at="72,0,79,0">
         <var name="event" id="2921625155541590905" />
       </scope>
       <scope id="6838830516685038571" at="59,96,70,78">
@@ -131,7 +133,7 @@
         <var name="_params" id="6838830516685038571" />
         <var name="event" id="6838830516685038571" />
       </scope>
-      <unit id="6838830516685038571" at="27,0,81,0" name="pluginBuildSolution.plugin.TestAction_Action" />
+      <unit id="6838830516685038571" at="27,0,82,0" name="pluginBuildSolution.plugin.TestAction_Action" />
     </file>
   </root>
 </debug-info>
