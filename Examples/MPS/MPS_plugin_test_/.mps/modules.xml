@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="newLang" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage/sandbox/NewLanguage.sandbox.msd" folder="newLang" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage4/NewLanguage4.mpl" folder="newLang" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage4/sandbox/NewLanguage4.sandbox.msd" folder="newLang" />
+      <modulePath path="$PROJECT_DIR$/solutions/RascalAST_External/RascalAST_External.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Rascal_External/Rascal_External.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/pluginBuildSolution/pluginBuildSolution.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
