@@ -1,0 +1,16 @@
+begin
+	declare
+		a : natural;
+		a := 1 == 1 == 0 == 1 == 1;
+		a := 1 == 2 or 1 == 1 and 1 == 0;
+		
+		if 1 == 1 then
+		else
+		fi;
+		
+		if ("a" == "c") and 1 == 1 then
+		else
+		fi;
+		
+		a := (1 == 0) == (0 == 1) and not (1 == 1)
+end

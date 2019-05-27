@@ -1,0 +1,18 @@
+begin
+	declare
+		a: natural,
+		b: natural;
+		
+		% Basic for loop %
+		for a := 1; not(a == 10); a := a + 1 do
+			
+		od;
+		
+		% Nested for loop %
+		for a := 1; a == 10; a := a + 1 do
+			for b := 10; not(b == 0); b:= b - 1 do
+			od 
+		od
+		
+		
+end

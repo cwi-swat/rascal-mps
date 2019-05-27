@@ -1,0 +1,12 @@
+begin
+	declare 
+		a : natural, 
+		b : natural,
+		c : natural;
+		
+		% logical operators require natural numbers %
+		a := 1 and 1;
+		a := b and c;
+		a := b or c;
+		b := not c
+end

@@ -1,0 +1,6 @@
+begin
+	declare
+	a : natural;
+	% missing rhs Expression %
+	a := not
+end
