@@ -1,3 +1,5 @@
+package JavaXMLImporter;
+
 import java.util.ArrayList;
 
 public class NonTerminal {

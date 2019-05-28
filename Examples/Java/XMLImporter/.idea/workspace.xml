@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="XMLImporter:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Importer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/Rascal_External/Rascal_External.msd" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/Rascal_External/Rascal_External.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/TestAction_Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/TestAction_Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen.caches/pluginBuildSolution/plugin/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen.caches/pluginBuildSolution/plugin/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/TestAction_Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/TestAction_Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/RascalImporter_/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/RascalImporter_/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XML/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NonTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/NonTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Production.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Production.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/XMLImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/XMLImporter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/models/Importer.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,87 +31,44 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Importer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1292">
-                  <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Production.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-                  <folding>
-                    <element signature="e#153#154#0" expanded="true" />
-                    <element signature="e#180#181#0" expanded="true" />
-                    <element signature="e#233#234#0" expanded="true" />
-                    <element signature="e#265#266#0" expanded="true" />
-                    <element signature="e#457#458#0" expanded="true" />
-                    <element signature="e#476#477#0" expanded="true" />
-                    <element signature="e#527#528#0" expanded="true" />
-                    <element signature="e#585#586#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/NonTerminal.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#157#158#0" expanded="true" />
-                    <element signature="e#184#185#0" expanded="true" />
-                    <element signature="e#237#238#0" expanded="true" />
-                    <element signature="e#271#272#0" expanded="true" />
-                    <element signature="e#449#450#0" expanded="true" />
-                    <element signature="e#468#469#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/XML/out5.xml">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/XML/out4.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/XML/test.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-527">
+              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2917#2918#0" expanded="true" />
+                <element signature="e#2945#2946#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/NonTerminal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Production.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,6 +87,7 @@
         <option value="$PROJECT_DIR$/src/Production.java" />
         <option value="$PROJECT_DIR$/src/NonTerminal.java" />
         <option value="$PROJECT_DIR$/src/Importer.java" />
+        <option value="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" />
       </list>
     </option>
   </component>
@@ -143,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,19 +121,23 @@
             <path>
               <item name="XMLImporterJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="XMLImporter" type="462c0819:PsiDirectoryNode" />
-              <item name="XML" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaXMLImporter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,7 +153,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Importer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Importer" />
+      <option name="MAIN_CLASS_NAME" value="JavaXMLImporter.Importer" />
       <module name="XMLImporter" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,8 +180,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -222,7 +190,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -260,47 +228,108 @@
     <entry file="file://$PROJECT_DIR$/XML/out5.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Production.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/NonTerminal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NonTerminal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
             <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Importer.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Production.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="31" selection-start-line="76" selection-start-column="31" selection-end-line="76" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2917#2918#0" expanded="true" />
+            <element signature="e#2945#2946#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>XMLImporter:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

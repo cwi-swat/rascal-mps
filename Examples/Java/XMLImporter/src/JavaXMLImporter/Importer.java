@@ -1,3 +1,5 @@
+package JavaXMLImporter;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -9,11 +11,10 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 
 public class Importer {
 
-    private File XMLFile;
+    public File XMLFile;
 
     public Importer(String path){
         Path p = Paths.get(path);
@@ -21,7 +22,7 @@ public class Importer {
         this.XMLFile = new File(p.toUri());
     }
 
-    private Document loadXMLDOM(){
+    public Document loadXMLDOM(){
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
@@ -59,6 +60,30 @@ public class Importer {
             return new Production("NA");
         }
 
+    }
+
+    public ArrayList<NonTerminal> getAllNonTerminals(Document dom) throws EmptyDomException{
+        if(dom == null){
+            throw new EmptyDomException();
+        }
+        ArrayList<NonTerminal> ntList = new ArrayList<>();
+        dom.getDocumentElement().normalize();
+        System.out.println(dom.getDocumentElement().getNodeName());
+        NodeList nl = dom.getDocumentElement().getElementsByTagName("nonterminal");
+        for(int i = 0; i < nl.getLength(); i++){
+            Element e = (Element)nl.item(i);
+            String ntName = e.getElementsByTagName("name").item(0).getTextContent();
+            NonTerminal nt = this.processNonTerminal(ntName,e.getElementsByTagName("production"));
+            ntList.add(nt);
+        }
+        return ntList;
+
+    }
+
+    public class EmptyDomException extends Exception{
+        public EmptyDomException(){
+            super("Cannot process empty DOM");
+        }
     }
 
 

@@ -1,36 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164879751025:jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root nodeRef="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/2068514840477297754">
     <file name="XMLImporter.java">
-      <node id="2068514840478231909" at="14,53,15,74" concept="1" />
-      <node id="2068514840478234670" at="16,9,17,61" concept="1" />
-      <node id="2068514840478235791" at="17,61,18,30" concept="1" />
-      <node id="2068514840478236454" at="18,30,19,38" concept="1" />
-      <node id="2068514840478242347" at="19,38,20,46" concept="1" />
-      <node id="2068514840478255069" at="20,46,21,47" concept="0" />
-      <node id="2068514840478234349" at="15,74,23,5" concept="3" />
-      <node id="2068514840477662537" at="14,0,25,0" concept="2" trace="importXMLDocument#(Ljava/lang/String;)V" />
-      <scope id="2068514840478234352" at="22,0,22,27">
-        <var name="e" id="2068514840478234354" />
-      </scope>
-      <scope id="2068514840478234358" at="22,27,22,27" />
-      <scope id="2068514840478234351" at="16,9,21,47">
-        <var name="builder" id="2068514840478234671" />
-        <var name="doc" id="2068514840478236455" />
-        <var name="f" id="2068514840478235792" />
-        <var name="root" id="2068514840478242348" />
-      </scope>
-      <scope id="2068514840477662540" at="14,53,23,5">
-        <var name="factory" id="2068514840478231910" />
-      </scope>
-      <scope id="2068514840477662537" at="14,0,25,0">
+      <node id="2068514840477662537" at="9,0,11,0" concept="0" trace="importXMLDocument#(Ljava/lang/String;)V" />
+      <scope id="2068514840477662540" at="9,53,9,53" />
+      <scope id="2068514840477662537" at="9,0,11,0">
         <var name="path" id="2068514840478229767" />
       </scope>
-      <unit id="2068514840477297754" at="11,0,27,0" name="XML2MPS.Importer.XMLImporter" />
+      <unit id="2068514840477297754" at="6,0,13,0" name="XML2MPS.Importer.XMLImporter" />
     </file>
   </root>
 </debug-info>

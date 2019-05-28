@@ -1,3 +1,5 @@
+package JavaXMLImporter;
+
 import java.util.HashMap;
 
 public class Production {
@@ -23,6 +25,6 @@ public class Production {
 
     @Override
     public String toString() {
-        return "Production("+name+", "+arguments.toString()+")";
+        return "JavaXMLImporter.Production("+name+", "+arguments.toString()+")";
     }
 }
