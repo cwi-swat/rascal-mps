@@ -406,7 +406,22 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1MOPOARjWoN" role="3cqZAp" />
+        <node concept="3clFbF" id="34lRHckvJJ4" role="3cqZAp">
+          <node concept="37vLTI" id="34lRHckvL6x" role="3clFbG">
+            <node concept="37vLTw" id="34lRHckvLfg" role="37vLTx">
+              <ref role="3cqZAo" node="34lRHckvJBa" resolve="cardinality" />
+            </node>
+            <node concept="2OqwBi" id="34lRHckvJRh" role="37vLTJ">
+              <node concept="37vLTw" id="34lRHckvJJ2" role="2Oq$k0">
+                <ref role="3cqZAo" node="1MOPOARjO9O" resolve="l" />
+              </node>
+              <node concept="3TrcHB" id="34lRHckvK7Y" role="2OqNvi">
+                <ref role="3TsBF5" to="tpce:fA0lbG4" resolve="sourceCardinality" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="34lRHckvJGg" role="3cqZAp" />
         <node concept="3SKdUt" id="1MOPOARjWRk" role="3cqZAp">
           <node concept="3SKdUq" id="1MOPOARjWRm" role="3SKWNk">
             <property role="3SKdUp" value="No idea what this actually does" />
@@ -472,6 +487,10 @@
       <node concept="37vLTG" id="o7uzVbiKwH" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="17QB3L" id="o7uzVbiKxD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="34lRHckvJBa" role="3clF46">
+        <property role="TrG5h" value="cardinality" />
+        <node concept="17QB3L" id="34lRHckvJCs" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="o7uzVbssIA" role="jymVt" />

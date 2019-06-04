@@ -38,10 +38,11 @@ public class NodeCreatorClass {
     return n;
   }
 
-  public static SNode addChild(SNode parent, SNode child, String name) {
+  public static SNode addChild(SNode parent, SNode child, String name, String cardinality) {
     SNode l = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, "jetbrains.mps.lang.structure.structure.LinkDeclaration"));
     SPropertyOperations.assign(l, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98052f333L, "role"), name);
     SLinkOperations.setTarget(l, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98055fef0L, "target"), child);
+    SPropertyOperations.assign(l, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98054bb04L, "sourceCardinality"), cardinality);
 
     // No idea what this actually does 
     SPropertyOperations.assign(l, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf980556927L, "metaClass"), "aggregation");

@@ -7,18 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../RascalASTDebug/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RascalASTDebug/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RascalASTDebug/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RascalASTDebug/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XML/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/XML/test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NonTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/NonTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Production.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Production.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/XMLImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/XMLImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/models/Importer.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/NodeCreator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/NodeCreator/generated" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,16 +24,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="162">
+              <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2917#2918#0" expanded="true" />
-                <element signature="e#2945#2946#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/XML/test.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -92,10 +91,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -105,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,10 +122,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JavaXMLImporter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="XMLImporterJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMLImporter" type="462c0819:PsiDirectoryNode" />
+              <item name="XML" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -182,7 +186,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -211,13 +215,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/XML/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XML/out4.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -227,6 +224,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/XML/out5.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="66" column="42" lean-forward="true" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/NonTerminal.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -246,15 +253,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+    <entry file="file://$PROJECT_DIR$/XML/test.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2945#2946#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
         </state>
       </provider>
     </entry>

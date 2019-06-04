@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47eb70d3-14fb-4a2b-93d4-c60f59777d90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../XMLImporter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLImporter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../XMLImporter/src/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLImporter/src/Importer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/Rascal_External/Rascal_External.msd" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/Rascal_External/Rascal_External.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/TestAction_Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/TestAction_Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/classes_gen/pluginBuildSolution/plugin/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen.caches/pluginBuildSolution/plugin/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen.caches/pluginBuildSolution/plugin/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/TestAction_Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/TestAction_Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/MPS_plugin_test_/solutions/pluginBuildSolution/source_gen/pluginBuildSolution/plugin/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/RascalImporter_/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MPS/RascalImporter_/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MPS/RascalImporter_/languages/NewLanguage/classes_gen/NewLanguage/editor/TerminalNode_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/classes_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/models/NodeCreator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/models/NodeCreator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/NodeCreator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen.caches/XML2MPS/NodeCreator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/NodeCreator/NodeCreatorClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/NodeCreator/NodeCreatorClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/source_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/library/Rascal2MPS.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
+            <state relative-caret-position="365">
               <caret line="73" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
@@ -58,26 +55,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/interpreter/Evaluator.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15113">
-              <caret line="1035" selection-start-line="1035" selection-end-line="1035" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/semantics/dynamic/Import.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="365">
+              <caret line="347" selection-start-line="347" selection-end-line="347" />
+              <folding>
+                <element signature="e#12581#12582#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/semantics/dynamic/Import.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="128" column="68" selection-start-line="128" selection-start-column="68" selection-end-line="128" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/interpreter/load/RascalSearchPath.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            <state relative-caret-position="459">
+              <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -127,11 +127,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -160,10 +160,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../XMLImporter" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -205,10 +206,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -218,7 +219,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.061755147" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -240,10 +241,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/library/Rascal2MPS.class</url>
-          <line>73</line>
+          <url>jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/semantics/dynamic/Import.class</url>
+          <line>128</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -259,29 +260,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/library/Rascal2MPS.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Abstract.rsc">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/interpreter/Evaluator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15113">
-          <caret line="1035" selection-start-line="1035" selection-end-line="1035" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/interpreter/load/RascalSearchPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/io/usethesource/vallang/ISourceLocation.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -297,10 +277,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/library/Rascal2MPS.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/interpreter/Evaluator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+          <folding>
+            <element signature="e#12581#12582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/semantics/dynamic/Import.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="272">
+          <caret line="128" column="68" selection-start-line="128" selection-start-column="68" selection-end-line="128" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rascal-0.12.0-SNAPSHOT.jar!/org/rascalmpl/interpreter/load/RascalSearchPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="115" column="2" selection-start-line="115" selection-start-column="2" selection-end-line="115" selection-end-column="2" />
         </state>
       </provider>
     </entry>
