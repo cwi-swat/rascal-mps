@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/XML2MPS.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/plugin/plugin.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
