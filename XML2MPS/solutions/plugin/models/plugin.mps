@@ -28,8 +28,8 @@
     <import index="nhk7" ref="83f3da73-c67d-4c00-9709-60ece06179d1/java:JavaXMLImporter(XMLImporterJAR/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="lhjl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.w3c.dom(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -109,6 +109,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -221,26 +222,100 @@
     <property role="2uzpH1" value="Import XML" />
     <node concept="tnohg" id="1MOPOARi1RC" role="tncku">
       <node concept="3clFbS" id="1MOPOARi1RD" role="2VODD2">
-        <node concept="3clFbF" id="6kI_gSgT3jD" role="3cqZAp">
-          <node concept="2OqwBi" id="6kI_gSgT3jA" role="3clFbG">
-            <node concept="10M0yZ" id="6kI_gSgT3jB" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+        <node concept="3cpWs8" id="3oyjbz0s1cq" role="3cqZAp">
+          <node concept="3cpWsn" id="3oyjbz0s1ct" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="17QB3L" id="3oyjbz0s1co" role="1tU5fm" />
+            <node concept="Xl_RD" id="3oyjbz0s1PE" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3oyjbz0rBOQ" role="3cqZAp">
+          <node concept="3cpWsn" id="3oyjbz0rBOR" role="3cpWs9">
+            <property role="TrG5h" value="jfc" />
+            <node concept="3uibUv" id="3oyjbz0rBOS" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JFileChooser" resolve="JFileChooser" />
             </node>
-            <node concept="liA8E" id="6kI_gSgT3jC" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="6kI_gSgT3wM" role="37wK5m">
-                <property role="Xl_RC" value="starting" />
+            <node concept="2ShNRf" id="3oyjbz0rCg_" role="33vP2m">
+              <node concept="1pGfFk" id="3oyjbz0rRd3" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JFileChooser.&lt;init&gt;()" resolve="JFileChooser" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6kI_gSgSfNI" role="3cqZAp">
-          <node concept="3cpWsn" id="6kI_gSgSfNJ" role="3cpWs9">
-            <property role="TrG5h" value="path" />
-            <node concept="17QB3L" id="6kI_gSgSfNK" role="1tU5fm" />
-            <node concept="Xl_RD" id="6kI_gSgSfNL" role="33vP2m">
-              <property role="Xl_RC" value="C:\\Dev\\Rascal2MPS\\Examples\\Java\\XMLImporter\\XML\\test.xml" />
+        <node concept="3cpWs8" id="3oyjbz0rRB2" role="3cqZAp">
+          <node concept="3cpWsn" id="3oyjbz0rRB5" role="3cpWs9">
+            <property role="TrG5h" value="val" />
+            <node concept="10Oyi0" id="3oyjbz0rRB0" role="1tU5fm" />
+            <node concept="2OqwBi" id="3oyjbz0rSqg" role="33vP2m">
+              <node concept="37vLTw" id="3oyjbz0rRXR" role="2Oq$k0">
+                <ref role="3cqZAo" node="3oyjbz0rBOR" resolve="jfc" />
+              </node>
+              <node concept="liA8E" id="3oyjbz0rT4e" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JFileChooser.showOpenDialog(java.awt.Component):int" resolve="showOpenDialog" />
+                <node concept="2OqwBi" id="3oyjbz0rTq6" role="37wK5m">
+                  <node concept="2WthIp" id="3oyjbz0rTaY" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3oyjbz0rTJY" role="2OqNvi">
+                    <ref role="2WH_rO" node="1MOPOARiRlJ" resolve="frame" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3oyjbz0rWzr" role="3cqZAp">
+          <node concept="3clFbS" id="3oyjbz0rWzt" role="3clFbx">
+            <node concept="3cpWs8" id="3oyjbz0rYWz" role="3cqZAp">
+              <node concept="3cpWsn" id="3oyjbz0rYW$" role="3cpWs9">
+                <property role="TrG5h" value="file" />
+                <node concept="3uibUv" id="3oyjbz0rYW_" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2OqwBi" id="3oyjbz0rZwZ" role="33vP2m">
+                  <node concept="37vLTw" id="3oyjbz0rZbm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3oyjbz0rBOR" resolve="jfc" />
+                  </node>
+                  <node concept="liA8E" id="3oyjbz0s0aX" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JFileChooser.getSelectedFile():java.io.File" resolve="getSelectedFile" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3oyjbz0s280" role="3cqZAp">
+              <node concept="37vLTI" id="3oyjbz0s2zi" role="3clFbG">
+                <node concept="37vLTw" id="3oyjbz0s27Y" role="37vLTJ">
+                  <ref role="3cqZAo" node="3oyjbz0s1ct" resolve="path" />
+                </node>
+                <node concept="2OqwBi" id="3oyjbz0s39G" role="37vLTx">
+                  <node concept="37vLTw" id="3oyjbz0s2UK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3oyjbz0rYW$" resolve="file" />
+                  </node>
+                  <node concept="liA8E" id="3oyjbz0s3DI" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.getAbsolutePath():java.lang.String" resolve="getAbsolutePath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="3oyjbz0rXCr" role="3clFbw">
+            <node concept="10M0yZ" id="3oyjbz0rYrR" role="3uHU7w">
+              <ref role="3cqZAo" to="dxuu:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
+              <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+            </node>
+            <node concept="37vLTw" id="3oyjbz0rWH1" role="3uHU7B">
+              <ref role="3cqZAo" node="3oyjbz0rRB5" resolve="val" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="3oyjbz0s0jz" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="6kI_gSgSfNI" role="8Wnug">
+            <node concept="3cpWsn" id="6kI_gSgSfNJ" role="3cpWs9">
+              <property role="TrG5h" value="path" />
+              <node concept="17QB3L" id="6kI_gSgSfNK" role="1tU5fm" />
+              <node concept="Xl_RD" id="6kI_gSgSfNL" role="33vP2m">
+                <property role="Xl_RC" value="C:\\Dev\\Rascal2MPS\\Examples\\Java\\XMLImporter\\XML\\test.xml" />
+              </node>
             </node>
           </node>
         </node>
@@ -284,10 +359,10 @@
             </node>
             <node concept="liA8E" id="6kI_gSgSyLC" role="2OqNvi">
               <ref role="37wK5l" to="1m2q:6kI_gSgOstB" resolve="importXMLDocument" />
-              <node concept="37vLTw" id="6kI_gSgSyR4" role="37wK5m">
-                <ref role="3cqZAo" node="6kI_gSgSfNJ" resolve="path" />
+              <node concept="37vLTw" id="3oyjbz0s3T8" role="37wK5m">
+                <ref role="3cqZAo" node="3oyjbz0s1ct" resolve="path" />
               </node>
-              <node concept="37vLTw" id="6kI_gSgSyYM" role="37wK5m">
+              <node concept="37vLTw" id="3oyjbz0s7wS" role="37wK5m">
                 <ref role="3cqZAo" node="o7uzVb8FBW" resolve="struct" />
               </node>
             </node>

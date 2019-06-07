@@ -10,6 +10,8 @@ import jetbrains.mps.project.MPSProject;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;
+import javax.swing.JFileChooser;
+import java.io.File;
 import org.jetbrains.mps.openapi.model.SModel;
 import XML2MPS.Importer.XMLImporter;
 import javax.swing.JOptionPane;
@@ -65,8 +67,13 @@ public class importXMLAction_Action extends BaseAction {
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
-    System.out.println("starting");
-    String path = "C:\\Dev\\Rascal2MPS\\Examples\\Java\\XMLImporter\\XML\\test.xml";
+    String path = "";
+    JFileChooser jfc = new JFileChooser();
+    int val = jfc.showOpenDialog(event.getData(MPSCommonDataKeys.FRAME));
+    if (val == JFileChooser.APPROVE_OPTION) {
+      File file = jfc.getSelectedFile();
+      path = file.getAbsolutePath();
+    }
     SModel struct = importXMLAction_Action.this.initLang(event);
     XMLImporter xmlImporter = new XMLImporter(event.getData(MPSCommonDataKeys.FRAME));
     xmlImporter.importXMLDocument(path, struct);

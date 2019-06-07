@@ -71,7 +71,7 @@ public class XMLImporter {
         }
       }
       // Execute the queue with remaining to-be-created links 
-      executeQueue(struct);
+      executeQueue();
     } catch (Importer.EmptyDomException e) {
       System.out.println(e.getMessage());
     }
@@ -114,12 +114,11 @@ public class XMLImporter {
     return null;
   }
 
-  private void executeQueue(SModel struct) {
+  private void executeQueue() {
     // Revisit all not-yet created parent-child links 
     // Assume child exists now 
     // TODO add checks to verify 
     for (IMapping<SNode, Pair<String, String>> e : MapSequence.fromMap(this.linkQueue)) {
-      display("In Queue: " + SPropertyOperations.getString(e.key(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       String childRole = e.value().o1;
       String childSymbol = e.value().o2;
       if (interfaceListContainsNodeByName(childSymbol)) {

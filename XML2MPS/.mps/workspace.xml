@@ -7,27 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c441398e-6a17-4284-bde6-772674437435" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/XML/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/XML/test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rascal2XML/src/Rascal2MPS.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../Rascal2XML/src/Rascal2MPS.rsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rascal2XML/src/XML/out5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rascal2XML/src/XML/out5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/XMLImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/XMLImporter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/NodeCreator/NodeCreatorClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/classes_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/Importer.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/NodeCreator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/NodeCreator.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/NodeCreatorClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/NodeCreatorClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/importXMLAction_Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/importXMLAction_Action.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/plugin/models/plugin.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/plugin/models/plugin.mps" afterDir="false" />
@@ -104,11 +91,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="143" />
-                    <property name="caretXRelative" value="72" />
+                    <property name="caretX" value="265" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_text">
-                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" />
+                    <cellInfo cellId="Constant_fao2ea_a0">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -159,12 +146,12 @@
                 <restoreAlways>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583627955367" />
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
                     </cellIdElement>
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -172,40 +159,6 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://NewLanguage22/NewLanguage22.structure/test">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a">
-                      <node node_reference="r:a7297fa1-c4c9-4293-942a-bddb5f5edd50(NewLanguage22.structure)/3900764583639730064" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:a7297fa1-c4c9-4293-942a-bddb5f5edd50(NewLanguage22.structure)/3900764583639730064" />
             </state>
           </provider>
         </entry>
@@ -223,15 +176,15 @@
         <entry file="mps://node://plugin/plugin.plugin/importXMLAction">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="120">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="240">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="207" />
+                    <property name="caretX" value="399" />
                     <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_trik0f_a1a">
-                      <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477441512" />
+                    <cellInfo cellId="Constant_zedcwq_b0">
+                      <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/7290928734404748227" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -272,7 +225,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -338,7 +291,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -402,7 +355,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -418,7 +371,7 @@
         <entry file="file://$PROJECT_DIR$/solutions/plugin/source_gen/plugin/plugin/importXMLAction_Action.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1785">
-              <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+              <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -456,7 +409,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -576,15 +529,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newLanguageName" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="81ed63c6-7d41-4a9a-985e-457c41024612(NewLanguage22)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:a7297fa1-c4c9-4293-942a-bddb5f5edd50(NewLanguage22.structure) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/languages/NewLanguage22/models/structure.mps]" />
+              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,11 +539,31 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stubs" />
+              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,58 +578,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="XML2MPS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/Importer.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newLanguageName" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="81ed63c6-7d41-4a9a-985e-457c41024612(NewLanguage22)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="XML2MPS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newLanguageName" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -692,11 +605,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemId" value="newLanguageName" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
+              <option name="myItemId" value="c0e0d82e-e042-4d3b-b502-5724e1840b3b(NewLanguage1)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -707,6 +620,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XML2MPS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLanguageName" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -742,7 +673,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps]" />
+              <option name="myItemId" value="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/Importer.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -752,13 +689,29 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemId" value="newLanguageName" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="c0e0d82e-e042-4d3b-b502-5724e1840b3b(NewLanguage1)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:9d72db56-a026-45d3-a3b9-a29f699fc8f1(NewLanguage1.structure) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/languages/NewLanguage1/models/structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -772,15 +725,21 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="81ed63c6-7d41-4a9a-985e-457c41024612(NewLanguage22)" />
+              <option name="myItemId" value="5f8e4a62-4ef9-444c-a635-4a3879c74c16" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:a7297fa1-c4c9-4293-942a-bddb5f5edd50(NewLanguage22.structure) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/languages/NewLanguage22/models/structure.mps]" />
+              <option name="myItemId" value="newLanguageName" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3900764583639730064" />
+              <option name="myItemId" value="c0e0d82e-e042-4d3b-b502-5724e1840b3b(NewLanguage1)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -810,7 +769,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1001,7 +959,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1015,7 +973,7 @@
     <entry file="file://$PROJECT_DIR$/solutions/plugin/source_gen/plugin/plugin/importXMLAction_Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
-          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+          <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1051,7 +1009,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1240,69 +1198,6 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:ce2dff65-718a-4137-b2b4-c4eb943d6491(NewLanguage1233.structure)/3900764583627844226" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://plugin/plugin.plugin/importXMLAction">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="120">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="207" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_trik0f_a1a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477441512" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/434450299184980800" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840478362201" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840478292985" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477613156" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477441512" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477441512" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -1609,7 +1504,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1690,17 +1585,7 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a">
-                  <node node_reference="r:a7297fa1-c4c9-4293-942a-bddb5f5edd50(NewLanguage22.structure)/3900764583639730064" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
+            <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable />
@@ -1718,6 +1603,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://plugin/plugin.plugin/importXMLAction">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="240">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="399" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_zedcwq_b0">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/7290928734404748227" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/434450299184980800" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840478362201" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840478292985" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477613156" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477441512" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/2068514840477441512" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://XML2MPS/XML2MPS.Importer/XMLImporter">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1725,11 +1673,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="143" />
-                <property name="caretXRelative" value="72" />
+                <property name="caretX" value="265" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_text">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" />
+                <cellInfo cellId="Constant_fao2ea_a0">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1780,12 +1728,12 @@
             <restoreAlways>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583627955367" />
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583642158859" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
