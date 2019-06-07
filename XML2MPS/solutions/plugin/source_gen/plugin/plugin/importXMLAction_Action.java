@@ -11,6 +11,7 @@ import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SModel;
+import XML2MPS.Importer.XMLImporter;
 import javax.swing.JOptionPane;
 import jetbrains.mps.ide.newModuleDialogs.NewLanguageDialog;
 import jetbrains.mps.smodel.Language;
@@ -64,8 +65,11 @@ public class importXMLAction_Action extends BaseAction {
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
+    System.out.println("starting");
+    String path = "C:\\Dev\\Rascal2MPS\\Examples\\Java\\XMLImporter\\XML\\test.xml";
     SModel struct = importXMLAction_Action.this.initLang(event);
-    importXMLAction_Action.this.importXML(struct, event);
+    XMLImporter xmlImporter = new XMLImporter(event.getData(MPSCommonDataKeys.FRAME));
+    xmlImporter.importXMLDocument(path, struct);
     JOptionPane.showMessageDialog(event.getData(MPSCommonDataKeys.FRAME), "Done");
   }
   /*package*/ SModel initLang(final AnActionEvent event) {
@@ -99,7 +103,7 @@ public class importXMLAction_Action extends BaseAction {
           NodeCreatorClass.linkInterfaceToConcept(productionConcept, nonTerminalInterface);
           struct.addRootNode(productionConcept);
           for (IMapping<String, String> arg : MapSequence.fromMap(p.getArguments())) {
-            NodeCreatorClass.addChild(productionConcept, nonTerminalInterface, arg.key(), "1");
+            NodeCreatorClass.addInterfaceChild(productionConcept, nonTerminalInterface, arg.key(), "1");
           }
         }
       }

@@ -33,5 +33,18 @@
                 <type>EXP</type>
             </arg>
         </production>
+        <production>
+            <name>test</name>
+            <arg>
+                <name>testArg</name>
+                <type>STAT</type>
+            </arg>
+        </production>
+    </nonterminal>
+    <nonterminal>
+        <name>STAT</name>
+        <production>
+            <name>ass</name>
+        </production>
     </nonterminal>
 </root>

@@ -8,6 +8,9 @@ import lang::xml::DOM;
 import DOMFactory;
 import TestSyntax;
 import Pico::Syntax;
+import vis::Figure;
+import vis::Render;
+import vis::ParseTree;
 
 void testRun(){
 	visitTree(#Expression);
@@ -15,6 +18,7 @@ void testRun(){
 
 void visitTree(type[&T<:Tree] reifiedTree){
  	dom = createEmptyDocument("root");
+ 	render(visParsetree(reifiedTree));
 	visit(reifiedTree){
 		case prod(label(str name, Symbol sym), list[Symbol] syms, set[Attr] attr): {
 				//printProductions(name, sym, syms);

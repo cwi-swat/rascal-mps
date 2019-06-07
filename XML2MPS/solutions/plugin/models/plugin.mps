@@ -29,6 +29,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="lhjl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.w3c.dom(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -103,6 +104,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -217,6 +221,29 @@
     <property role="2uzpH1" value="Import XML" />
     <node concept="tnohg" id="1MOPOARi1RC" role="tncku">
       <node concept="3clFbS" id="1MOPOARi1RD" role="2VODD2">
+        <node concept="3clFbF" id="6kI_gSgT3jD" role="3cqZAp">
+          <node concept="2OqwBi" id="6kI_gSgT3jA" role="3clFbG">
+            <node concept="10M0yZ" id="6kI_gSgT3jB" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+            </node>
+            <node concept="liA8E" id="6kI_gSgT3jC" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+              <node concept="Xl_RD" id="6kI_gSgT3wM" role="37wK5m">
+                <property role="Xl_RC" value="starting" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6kI_gSgSfNI" role="3cqZAp">
+          <node concept="3cpWsn" id="6kI_gSgSfNJ" role="3cpWs9">
+            <property role="TrG5h" value="path" />
+            <node concept="17QB3L" id="6kI_gSgSfNK" role="1tU5fm" />
+            <node concept="Xl_RD" id="6kI_gSgSfNL" role="33vP2m">
+              <property role="Xl_RC" value="C:\\Dev\\Rascal2MPS\\Examples\\Java\\XMLImporter\\XML\\test.xml" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="o7uzVb8FBV" role="3cqZAp">
           <node concept="3cpWsn" id="o7uzVb8FBW" role="3cpWs9">
             <property role="TrG5h" value="struct" />
@@ -231,13 +258,52 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="34lRHckv7XM" role="3cqZAp">
-          <node concept="2OqwBi" id="34lRHckv8f0" role="3clFbG">
-            <node concept="2WthIp" id="34lRHckv7XK" role="2Oq$k0" />
-            <node concept="2XshWL" id="34lRHckv8_b" role="2OqNvi">
-              <ref role="2WH_rO" node="1MOPOARlhJT" resolve="importXML" />
-              <node concept="37vLTw" id="34lRHckv8FD" role="2XxRq1">
+        <node concept="3cpWs8" id="6kI_gSgSgEn" role="3cqZAp">
+          <node concept="3cpWsn" id="6kI_gSgSgEo" role="3cpWs9">
+            <property role="TrG5h" value="xmlImporter" />
+            <node concept="3uibUv" id="6kI_gSgSgEp" role="1tU5fm">
+              <ref role="3uigEE" to="1m2q:1MOPOARhuLq" resolve="XMLImporter" />
+            </node>
+            <node concept="2ShNRf" id="6kI_gSgShn6" role="33vP2m">
+              <node concept="1pGfFk" id="6kI_gSgSuAY" role="2ShVmc">
+                <ref role="37wK5l" to="1m2q:6kI_gSgE_M5" resolve="XMLImporter" />
+                <node concept="2OqwBi" id="3oyjbyZ$j5A" role="37wK5m">
+                  <node concept="2WthIp" id="3oyjbyZ$j5D" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="3oyjbyZ$j5F" role="2OqNvi">
+                    <ref role="2WH_rO" node="1MOPOARiRlJ" resolve="frame" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6kI_gSgSyf3" role="3cqZAp">
+          <node concept="2OqwBi" id="6kI_gSgSyqT" role="3clFbG">
+            <node concept="37vLTw" id="6kI_gSgSyf1" role="2Oq$k0">
+              <ref role="3cqZAo" node="6kI_gSgSgEo" resolve="xmlImporter" />
+            </node>
+            <node concept="liA8E" id="6kI_gSgSyLC" role="2OqNvi">
+              <ref role="37wK5l" to="1m2q:6kI_gSgOstB" resolve="importXMLDocument" />
+              <node concept="37vLTw" id="6kI_gSgSyR4" role="37wK5m">
+                <ref role="3cqZAo" node="6kI_gSgSfNJ" resolve="path" />
+              </node>
+              <node concept="37vLTw" id="6kI_gSgSyYM" role="37wK5m">
                 <ref role="3cqZAo" node="o7uzVb8FBW" resolve="struct" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="6kI_gSgSfrV" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="34lRHckv7XM" role="8Wnug">
+            <node concept="2OqwBi" id="34lRHckv8f0" role="3clFbG">
+              <node concept="2WthIp" id="34lRHckv7XK" role="2Oq$k0" />
+              <node concept="2XshWL" id="34lRHckv8_b" role="2OqNvi">
+                <ref role="2WH_rO" node="1MOPOARlhJT" resolve="importXML" />
+                <node concept="37vLTw" id="34lRHckv8FD" role="2XxRq1">
+                  <ref role="3cqZAo" node="o7uzVb8FBW" resolve="struct" />
+                </node>
               </node>
             </node>
           </node>
@@ -639,7 +705,7 @@
                       <node concept="3clFbS" id="o7uzVbwwLa" role="2LFqv$">
                         <node concept="3clFbF" id="o7uzVbwwLc" role="3cqZAp">
                           <node concept="2YIFZM" id="o7uzVbwwLd" role="3clFbG">
-                            <ref role="37wK5l" to="wz82:1MOPOARjNBx" resolve="addChild" />
+                            <ref role="37wK5l" to="wz82:1MOPOARjNBx" resolve="addInterfaceChild" />
                             <ref role="1Pybhc" to="wz82:1MOPOARjBko" resolve="NodeCreatorClass" />
                             <node concept="37vLTw" id="o7uzVbwwLe" role="37wK5m">
                               <ref role="3cqZAo" node="o7uzVbwwKP" resolve="productionConcept" />

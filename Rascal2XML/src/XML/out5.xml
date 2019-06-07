@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+  <leafNode:leafNode xmlns:leafNode="dummy">
+    <Symbol>EXP</Symbol>
+    <Production>
+      <argName0>nat</argName0>
+      <argSymbol0 />
+    </Production>
+  </leafNode:leafNode>
+  <EXPNode:EXPNode xmlns:EXPNode="dummy">
+    <Symbol>EXP</Symbol>
+    <Production>
+      <argName0>lhs</argName0>
+      <argSymbol0>EXP</argSymbol0>
+      <argName1>rhs</argName1>
+      <argSymbol1>EXP</argSymbol1>
+    </Production>
+  </EXPNode:EXPNode>
   <program:program xmlns:program="dummy">
     <Symbol>Program</Symbol>
     <Production>
