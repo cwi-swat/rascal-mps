@@ -53,7 +53,9 @@ public class Importer {
                 Element arg = (Element) args.item(i);
                 String argName = arg.getElementsByTagName("name").item(0).getTextContent();
                 String argSymbol = arg.getElementsByTagName("type").item(0).getTextContent();
+                String cardinality = arg.getElementsByTagName("card").item(0).getTextContent();
                 p.addArgument(argName,argSymbol);
+                p.addArgToList(argName, argSymbol, cardinality);
             }
             return p;
         }else{
@@ -88,7 +90,7 @@ public class Importer {
 
 
     public static void main(String[] args) {
-        Importer im = new Importer("XML\\test.xml");
+        Importer im = new Importer("XML\\out6.xml");
         Document d = im.loadXMLDOM();
         ArrayList<NonTerminal> ntList = new ArrayList<>();
         if(d != null) {

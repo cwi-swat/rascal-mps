@@ -4,7 +4,7 @@ public class ProductionArgument {
 
     private String name;
     private String type;
-    private String cardinality;
+    private Cardinality cardinality;
 
     public String getName() {
         return name;
@@ -14,16 +14,18 @@ public class ProductionArgument {
         return type;
     }
 
-    public String getCardinality() {
+    public Cardinality getCardinality() {
         return cardinality;
     }
 
-    public ProductionArgument(String name, String type, String cardinality){
+    public ProductionArgument(String name, String type, Cardinality cardinality){
        this.name = name;
        this.type = type;
        this.cardinality = cardinality;
     }
 
-
-
+    @Override
+    public String toString() {
+        return String.format("Production(%s, %s, %s)", this.name, this.type, this.cardinality);
+    }
 }

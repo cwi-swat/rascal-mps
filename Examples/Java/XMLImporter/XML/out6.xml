@@ -17,7 +17,7 @@
     </production>
   </nonterminal>
   <nonterminal>
-    <name>KMachine</name>
+    <name>IMachine</name>
     <production>
       <name>machine</name>
       <arg>
@@ -27,13 +27,13 @@
       </arg>
       <arg>
         <name>State</name>
-        <type>defaultType</type>
+        <type>IState</type>
         <card>*</card>
       </arg>
     </production>
   </nonterminal>
   <nonterminal>
-    <name>KState</name>
+    <name>IState</name>
     <production>
       <name>state</name>
       <arg>
@@ -43,12 +43,12 @@
       </arg>
       <arg>
         <name>Trans</name>
-        <type>defaultType</type>
+        <type>Trans</type>
         <card>*</card>
       </arg>
     </production>
   </nonterminal>
-  <nonterminal> 
+  <nonterminal>
 	<name>Id</name>
   </nonterminal>
 </root>

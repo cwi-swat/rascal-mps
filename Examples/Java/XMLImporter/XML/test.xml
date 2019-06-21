@@ -7,10 +7,12 @@
             <arg>
                 <name>lhs</name>
                 <type>EXP</type>
+				<card>*</card>
             </arg>
             <arg>
                 <name>rhs</name>
                 <type>EXP</type>
+				<card>1</card>
             </arg>
         </production>
 
@@ -19,10 +21,12 @@
             <arg>
                 <name>lhs</name>
                 <type>EXP</type>
+				<card>1</card>
             </arg>
             <arg>
                 <name>rhs</name>
                 <type>EXP</type>
+				<card>1</card>
             </arg>
         </production>
 
@@ -31,6 +35,7 @@
             <arg>
                 <name>not</name>
                 <type>EXP</type>
+				<card>1</card>
             </arg>
         </production>
         <production>
@@ -38,6 +43,12 @@
             <arg>
                 <name>testArg</name>
                 <type>STAT</type>
+				<card>1</card>
+            </arg>
+			 <arg>
+                <name>testArg2</name>
+                <type>STAT</type>
+				<card>1</card>
             </arg>
         </production>
     </nonterminal>

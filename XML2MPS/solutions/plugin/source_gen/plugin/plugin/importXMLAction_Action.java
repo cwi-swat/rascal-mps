@@ -68,7 +68,7 @@ public class importXMLAction_Action extends BaseAction {
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     String path = "";
-    JFileChooser jfc = new JFileChooser();
+    JFileChooser jfc = new JFileChooser(System.getProperty("user.home"));
     int val = jfc.showOpenDialog(event.getData(MPSCommonDataKeys.FRAME));
     if (val == JFileChooser.APPROVE_OPTION) {
       File file = jfc.getSelectedFile();
