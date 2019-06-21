@@ -7,21 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/DOMFactory.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/DOMFactory.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Rascal2MPS.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Rascal2MPS.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/TestSyntax.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/TestSyntax.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/XMLImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/XMLImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/classes_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/Importer.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/classes_gen/plugin/plugin/importXMLAction_Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/classes_gen/plugin/plugin/importXMLAction_Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/classes_gen/plugin/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/classes_gen/plugin/plugin/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/models/plugin.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/models/plugin.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen.caches/plugin/plugin/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen.caches/plugin/plugin/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen.caches/plugin/plugin/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen.caches/plugin/plugin/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen/plugin/plugin/importXMLAction_Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen/plugin/plugin/importXMLAction_Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen/plugin/plugin/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/source_gen/plugin/plugin/trace.info" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
+            <state relative-caret-position="536">
               <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,8 +67,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Production.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+              <folding>
+                <element signature="e#487#488#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/ProductionArgument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#257#258#0" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,14 +114,16 @@
         <option value="$PROJECT_DIR$/src/Importer.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" />
         <option value="$PROJECT_DIR$/XML/test.xml" />
+        <option value="$PROJECT_DIR$/src/JavaXMLImporter/Production.java" />
+        <option value="$PROJECT_DIR$/src/JavaXMLImporter/ProductionArgument.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1935" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1178" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -120,6 +133,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,8 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,10 +212,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -241,6 +254,34 @@
     <entry file="file://$PROJECT_DIR$/XML/out5.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/XML/test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Production.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/NonTerminal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -252,26 +293,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Production.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/ProductionArgument.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XML/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="90" column="46" selection-start-line="90" selection-start-column="46" selection-end-line="90" selection-end-column="46" />
+        <state relative-caret-position="306">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,8 +6,9 @@ import Grammar;
 import List;
 import lang::xml::DOM;
 import DOMFactory;
-import TestSyntax;
+
 import Pico::Syntax;
+
 import vis::Figure;
 import vis::Render;
 import vis::ParseTree;
@@ -18,12 +19,23 @@ void testRun(){
 
 void visitTree(type[&T<:Tree] reifiedTree){
  	dom = createEmptyDocument("root");
- 	render(visParsetree(reifiedTree));
 	visit(reifiedTree){
-		case prod(label(str name, Symbol sym), list[Symbol] syms, set[Attr] attr): {
-				//printProductions(name, sym, syms);
-				dom = appendToElement(dom,"root",visitNonTerminal2(name,sym,syms));
-			}
+		case choice(sort(str name),set[Production] b) : {
+			
+			// Non terminal top layer node
+			Node currentNonTerminalNode = createNewElement("nonterminal");
+			
+			// Non terminal name node
+			Node nonTerminalName = createNewElement("name",[charData(name)]);
+			currentNonTerminalNode = appendToElementByNode(currentNonTerminalNode, nonTerminalName);
+			
+			//println(name + ": " + b);
+			// Handle all productions for this nonterminal
+			currentNonTerminalNode = visitProductionSet(currentNonTerminalNode,b);
+			
+			// Append complete nonterminal node to the document root
+			dom = appendToRootElement(dom, currentNonTerminalNode);
+		}
 			
 	}
 	//a = reifiedTree;
@@ -32,8 +44,70 @@ void visitTree(type[&T<:Tree] reifiedTree){
 	//}
 	//println(prod);
 	//println(typeOf(grammar));
-	writeXMLToFile(|project://Rascal2XML/src/XML/out5.xml|,dom);
+	writeXMLToFile(|project://Rascal2XML/src/XML/out6.xml|,dom);
 }
+
+Node visitProductionSet(Node nonTerminal, set[Production] prods){
+	//Node currentProductionNode = createNewElement("production");
+	for(p <- prods){
+		// Symbol def
+		// list[Symbol] symbols
+		// set[Attr] attributes
+		//println(" ");
+		//println(p);
+		//Node currentProductionNode = createNewElement("production");
+		//Node name = createNewElement("name", [charData(p.def.name)]);
+		//currentProductionNode = appendToElementByNode(currentProductionNode, name);
+		
+		// start definitions
+		if(prod(sort(str name),[sort(str name2)],_) := p){
+			println(name + " " + name2);
+		}
+		
+		switch(p){
+			case prod(Symbol def, list[Symbol] symbols, _): {
+				Node currentProductionNode = createNewElement("production");
+				Node name = createNewElement("name", [charData(p.def.name)]);
+				currentProductionNode = appendToElementByNode(currentProductionNode, name);
+				//println(symbols);
+				for(s <- symbols){
+					//println(s);
+					switch(s){
+						case label(str name, Symbol symbol): {
+							str argName = name;
+							str argType = "defaultType";
+							str argCard = "1";
+							switch(symbol){
+								case sort(str name2):{argType=name2; println(name + ": " + name2);}
+								case lex(str name2): {argType=name2; println(name + ": " + name2);}
+								case \iter-star-seps(Symbol sym,_): {argName = sym.name; argCard ="*"; println(name+"*");}
+								case \iter-seps(symbol sym, _): {argName = sym.name; argCard ="+"; println(name+"+");}
+							}
+							
+							Node arg = createNewElement("arg");
+							Node argNameNode = createNewElement("name", [charData(argName)]);
+							Node argTypeNode = createNewElement("type", [charData(argType)]);
+							Node argCardNode = createNewElement("card", [charData(argCard)]);
+							
+							arg = appendToElementByNode(arg, argNameNode);
+							arg = appendToElementByNode(arg, argTypeNode);
+							arg = appendToElementByNode(arg, argCardNode);
+							
+							currentProductionNode = appendToElementByNode(currentProductionNode, arg);
+							
+						}
+					}
+				}
+				nonTerminal = appendToElementByNode(nonTerminal, currentProductionNode);
+				println(" ");
+			}
+		}
+		
+
+	}
+	return nonTerminal;
+}
+
 
 void printProductions(str name, Symbol prodType, list[Symbol] prod){
 	s = "<name>:<prodType> -\>";

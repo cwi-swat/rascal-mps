@@ -23,6 +23,16 @@ Node appendToElement(Node dom, str elementName, Node newChild){
 	}
 }
 
+Node appendToElementByNode(element(Namespace ns, elementName, list[Node] children), Node toAppend){
+	return element(ns, elementName, children + toAppend);
+}
+
+Node appendToRootElement(Node dom, Node toAppend){
+	return visit(dom){
+		case element(Namespace ns, "root", list[Node] children) => element(ns, "root", children + toAppend)
+	}
+}
+
 Node createNewElement(str name, str namespace) = element(createNamespace(namespace), name, []);
 Node createNewElement(str name) = element(none(), name, []);
 Node createNewElement(str name, list[Node] l) = element(none(), name, l);
@@ -45,3 +55,4 @@ void writeXMLToFile(loc l, str xml){
 void writeXMLToFile(loc l, Node dom){
 	writeFile(l, printXML(dom));
 }
+
