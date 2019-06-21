@@ -424,6 +424,9 @@
         </node>
         <node concept="3clFbH" id="34lRHckvJGg" role="3cqZAp" />
         <node concept="3SKdUt" id="1MOPOARjWRk" role="3cqZAp">
+          <node concept="3SKdUq" id="7_YMP9z$KKQ" role="3SKWNk">
+            <property role="3SKdUp" value="set metaclass type to aggregation, otherwise it will only create a reference relation" />
+          </node>
           <node concept="3SKdUq" id="1MOPOARjWRm" role="3SKWNk">
             <property role="3SKdUp" value="No idea what this actually does" />
           </node>
@@ -559,9 +562,9 @@
           </node>
         </node>
         <node concept="3clFbH" id="6kI_gSgQwZR" role="3cqZAp" />
-        <node concept="3SKdUt" id="6kI_gSgQwZS" role="3cqZAp">
-          <node concept="3SKdUq" id="6kI_gSgQwZT" role="3SKWNk">
-            <property role="3SKdUp" value="No idea what this actually does" />
+        <node concept="3SKdUt" id="7_YMP9z$KIy" role="3cqZAp">
+          <node concept="3SKdUq" id="7_YMP9z$KI$" role="3SKWNk">
+            <property role="3SKdUp" value="set metaclass type to aggregation, otherwise it will only create a reference relation" />
           </node>
         </node>
         <node concept="3clFbF" id="6kI_gSgQwZU" role="3cqZAp">

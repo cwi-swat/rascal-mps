@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-  <lexical>
-    <name>Id</name>
-  </lexical>
-  <lexical>
-    <name>Whitespace</name>
-  </lexical>
   <nonterminal>
     <name>Trans</name>
     <production>
@@ -23,7 +17,7 @@
     </production>
   </nonterminal>
   <nonterminal>
-    <name>Machine</name>
+    <name>IMachine</name>
     <production>
       <name>machine</name>
       <arg>
@@ -33,13 +27,13 @@
       </arg>
       <arg>
         <name>State</name>
-        <type>defaultType</type>
+        <type>IState</type>
         <card>*</card>
       </arg>
     </production>
   </nonterminal>
   <nonterminal>
-    <name>State</name>
+    <name>IState</name>
     <production>
       <name>state</name>
       <arg>
@@ -49,15 +43,12 @@
       </arg>
       <arg>
         <name>Trans</name>
-        <type>defaultType</type>
+        <type>Trans</type>
         <card>*</card>
       </arg>
     </production>
   </nonterminal>
-  <lexical>
-    <name>WhitespaceOrComment</name>
-  </lexical>
-  <lexical>
-    <name>Comment</name>
-  </lexical>
+  <nonterminal>
+	<name>Id</name>
+  </nonterminal>
 </root>

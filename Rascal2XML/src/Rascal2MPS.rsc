@@ -36,6 +36,14 @@ void visitTree(type[&T<:Tree] reifiedTree){
 			// Append complete nonterminal node to the document root
 			dom = appendToRootElement(dom, currentNonTerminalNode);
 		}
+		case choice(lex(str name),_): {
+			println("lexical: "  + name);
+			Node currentLexicalNode = createNewElement("lexical");
+			Node lexicalName = createNewElement("name",[charData(name)]);
+			currentLexicalNode = appendToElementByNode(currentLexicalNode, lexicalName);
+			dom = appendToRootElement(dom, currentLexicalNode);
+			
+		}
 			
 	}
 	//a = reifiedTree;
@@ -69,7 +77,7 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 				Node currentProductionNode = createNewElement("production");
 				Node name = createNewElement("name", [charData(p.def.name)]);
 				currentProductionNode = appendToElementByNode(currentProductionNode, name);
-				//println(symbols);
+				println(symbols);
 				for(s <- symbols){
 					//println(s);
 					switch(s){
