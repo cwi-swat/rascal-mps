@@ -82,6 +82,30 @@ public class Importer {
 
     }
 
+    public ArrayList<Lexical> getAllLexicals(Document dom){
+        if (dom == null) {
+            return null;
+        }
+        ArrayList<Lexical> lList =  new ArrayList<>();
+        dom.getDocumentElement().normalize();
+        NodeList nl = dom.getDocumentElement().getElementsByTagName("lexical");
+        for(int i = 0; i < nl.getLength(); i++){
+            Element e = (Element)nl.item(i);
+            String lexName = e.getElementsByTagName("name").item(0).getTextContent();
+            Element argNode = (Element)e.getElementsByTagName("arg").item(0);
+            // Only add if the arg node is non empty
+            if(argNode != null){
+                String argName = argNode.getElementsByTagName("name").item(0).getTextContent();
+                String argtype = argNode.getElementsByTagName("type").item(0).getTextContent();
+                System.out.println(String.format("%s, %s, %s", lexName, argName, argtype));
+                Lexical lex = new Lexical(lexName, argName, argtype);
+                lList.add(lex);
+            }
+        }
+        return lList;
+
+    }
+
     public class EmptyDomException extends Exception{
         public EmptyDomException(){
             super("Cannot process empty DOM");
@@ -90,24 +114,9 @@ public class Importer {
 
 
     public static void main(String[] args) {
-        Importer im = new Importer("XML\\out6.xml");
+        Importer im = new Importer("XML\\out7.xml");
         Document d = im.loadXMLDOM();
-        ArrayList<NonTerminal> ntList = new ArrayList<>();
-        if(d != null) {
-            d.getDocumentElement().normalize();
-            System.out.println(d.getDocumentElement().getNodeName());
-            NodeList nl = d.getDocumentElement().getElementsByTagName("nonterminal");
-            for(int i = 0; i < nl.getLength(); i++){
-                Element e = (Element)nl.item(i);
-                String ntName = e.getElementsByTagName("name").item(0).getTextContent();
-                NonTerminal nt = im.processNonTerminal(ntName,e.getElementsByTagName("production"));
-                ntList.add(nt);
-            }
-
-            for(NonTerminal nt : ntList){
-                System.out.println(nt);
-            }
-
-        }
+        ArrayList<Lexical> l = im.getAllLexicals(d);
+        System.out.println(l);
     }
 }

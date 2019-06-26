@@ -7,17 +7,9 @@ import List;
 import lang::xml::DOM;
 import DOMFactory;
 
-import Pico::Syntax;
 
-import vis::Figure;
-import vis::Render;
-import vis::ParseTree;
 
-void testRun(){
-	visitTree(#Expression);
-}
-
-void visitTree(type[&T<:Tree] reifiedTree){
+void treeToXML(type[&T<:Tree] reifiedTree){
  	dom = createEmptyDocument("root");
 	visit(reifiedTree){
 		case choice(sort(str name),set[Production] b) : {
@@ -36,12 +28,27 @@ void visitTree(type[&T<:Tree] reifiedTree){
 			// Append complete nonterminal node to the document root
 			dom = appendToRootElement(dom, currentNonTerminalNode);
 		}
-		case choice(lex(str name),_): {
-			println("lexical: "  + name);
-			Node currentLexicalNode = createNewElement("lexical");
-			Node lexicalName = createNewElement("name",[charData(name)]);
-			currentLexicalNode = appendToElementByNode(currentLexicalNode, lexicalName);
-			dom = appendToRootElement(dom, currentLexicalNode);
+		case choice(lex(str name),set[Production] prod): {
+			// Lexicals
+			//println(prod);
+			//println("lexical: "  + name);
+			// Currently only matches production lexicals aka "defined" lexicals
+			for(p <- prod){
+				Node currentLexicalNode = createNewElement("lexical");
+				Node lexicalName = createNewElement("name",[charData(name)]);
+				currentLexicalNode = appendToElementByNode(currentLexicalNode, lexicalName);
+				if(prod(label(str n1,_), [sort(str n2)], _) := p){
+					println("Lexical: " + n1 + " -\> " + n2);
+					Node lexArgNode = createNewElement("arg");
+					Node lexArgName = createNewElement("name",[charData(n1)]);
+					Node lexArgType = createNewElement("type",[charData(n2)]);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgName);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgType);
+					currentLexicalNode = appendToElementByNode(currentLexicalNode, lexArgNode);
+				}
+				dom = appendToRootElement(dom, currentLexicalNode);
+			}
+			
 			
 		}
 			

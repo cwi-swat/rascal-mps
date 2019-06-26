@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="NewLanguage123" uuid="b55ba070-c0dc-44c2-918d-e29999c2f0af" languageVersion="0" moduleVersion="0">
+<language namespace="NewLanguage8" uuid="7d0f8b67-a886-496e-9269-456847905444" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="NewLanguage123#01" uuid="d3fb9e6a-0c27-44ff-a4f4-7cb47408ae5d">
+    <generator alias="main" namespace="NewLanguage8#01" uuid="e3407e57-3872-4295-a4f7-97f6fc1c99e7">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -37,8 +37,8 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="b55ba070-c0dc-44c2-918d-e29999c2f0af(NewLanguage123)" version="0" />
-        <module reference="d3fb9e6a-0c27-44ff-a4f4-7cb47408ae5d(NewLanguage123#01)" version="0" />
+        <module reference="7d0f8b67-a886-496e-9269-456847905444(NewLanguage8)" version="0" />
+        <module reference="e3407e57-3872-4295-a4f7-97f6fc1c99e7(NewLanguage8#01)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
@@ -74,7 +74,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="b55ba070-c0dc-44c2-918d-e29999c2f0af(NewLanguage123)" version="0" />
+    <module reference="7d0f8b67-a886-496e-9269-456847905444(NewLanguage8)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>

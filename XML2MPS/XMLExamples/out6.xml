@@ -48,7 +48,4 @@
       </arg>
     </production>
   </nonterminal>
-  <nonterminal>
-	<name>Id</name>
-  </nonterminal>
 </root>

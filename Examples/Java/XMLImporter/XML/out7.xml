@@ -37,7 +37,7 @@
       </arg>
       <arg>
         <name>States</name>
-        <type>defaultType</type>
+        <type>States</type>
         <card>*</card>
       </arg>
     </production>
@@ -62,7 +62,7 @@
       </arg>
       <arg>
         <name>Trans</name>
-        <type>defaultType</type>
+        <type>Trans</type>
         <card>*</card>
       </arg>
     </production>
