@@ -899,6 +899,37 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="5ARYsrZNoGK" role="3cqZAp">
+              <node concept="3cpWsn" id="5ARYsrZNoGN" role="3cpWs9">
+                <property role="TrG5h" value="idNode" />
+                <node concept="3Tqbb2" id="5ARYsrZNoGI" role="1tU5fm">
+                  <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+                </node>
+                <node concept="1rXfSq" id="5ARYsrZNr4S" role="33vP2m">
+                  <ref role="37wK5l" node="3oyjbz0dLTF" resolve="getConceptNodeByName" />
+                  <node concept="Xl_RD" id="5ARYsrZNrlk" role="37wK5m">
+                    <property role="Xl_RC" value="id" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ARYsrZNtzB" role="3cqZAp">
+              <node concept="2OqwBi" id="5ARYsrZNvBZ" role="3clFbG">
+                <node concept="37vLTw" id="5ARYsrZNtz_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ARYsrZL3rj" resolve="editorModel" />
+                </node>
+                <node concept="liA8E" id="5ARYsrZNw7k" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
+                  <node concept="2YIFZM" id="5ARYsrZOtub" role="37wK5m">
+                    <ref role="37wK5l" to="wz82:5ARYsrZKhLf" resolve="createDefaultEditor" />
+                    <ref role="1Pybhc" to="wz82:5ARYsrZJWJq" resolve="EditorFactory" />
+                    <node concept="37vLTw" id="5ARYsrZOtH0" role="37wK5m">
+                      <ref role="3cqZAo" node="5ARYsrZNoGN" resolve="idNode" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="7WSK5s1Ts3i" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="6kI_gSgOsvk" role="TEbGg">
@@ -940,6 +971,12 @@
       <node concept="37vLTG" id="6kI_gSgOsvz" role="3clF46">
         <property role="TrG5h" value="struct" />
         <node concept="3uibUv" id="6kI_gSgOsv$" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ARYsrZL3rj" role="3clF46">
+        <property role="TrG5h" value="editorModel" />
+        <node concept="3uibUv" id="5ARYsrZL6UI" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>

@@ -114,6 +114,81 @@
       <unit id="2068514840477857048" at="15,0,87,0" name="XML2MPS.NodeCreator.NodeCreatorClass" />
     </file>
   </root>
+  <root nodeRef="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/6464910423203236826">
+    <file name="EditorFactory.java">
+      <node id="6464910423203322962" at="15,62,16,67" concept="5" />
+      <node id="6464910423203497593" at="16,67,17,188" concept="5" />
+      <node id="6464910423204029421" at="17,188,18,67" concept="5" />
+      <node id="6464910423204030037" at="18,67,19,212" concept="1" />
+      <node id="6464910423203322971" at="19,212,20,18" concept="6" />
+      <node id="6464910423204313638" at="23,58,24,61" concept="5" />
+      <node id="6464910423204314997" at="24,61,25,16" concept="6" />
+      <node id="6464910423203322965" at="29,79,30,63" concept="5" />
+      <node id="6464910423203322965" at="30,63,31,30" concept="5" />
+      <node id="6464910423203322965" at="31,30,32,30" concept="5" />
+      <node id="6464910423203322965" at="32,30,33,30" concept="5" />
+      <node id="6464910423203322965" at="33,30,34,260" concept="1" />
+      <node id="6464910423203322965" at="34,260,35,207" concept="1" />
+      <node id="6464910423203322965" at="35,207,36,256" concept="1" />
+      <node id="6464910423203322965" at="36,256,37,254" concept="1" />
+      <node id="6464910423203322965" at="37,254,38,166" concept="1" />
+      <node id="6464910423203322965" at="38,166,39,164" concept="1" />
+      <node id="6464910423203322965" at="39,164,40,24" concept="6" />
+      <node id="6464910423204029580" at="42,79,43,63" concept="5" />
+      <node id="6464910423204029580" at="43,63,44,30" concept="5" />
+      <node id="6464910423204029580" at="44,30,45,254" concept="1" />
+      <node id="6464910423204029580" at="45,254,46,180" concept="1" />
+      <node id="6464910423204029580" at="46,180,47,24" concept="6" />
+      <node id="6464910423204313769" at="49,79,50,63" concept="5" />
+      <node id="6464910423204313769" at="50,63,51,30" concept="5" />
+      <node id="6464910423204313769" at="51,30,52,254" concept="1" />
+      <node id="6464910423204313769" at="52,254,53,180" concept="1" />
+      <node id="6464910423204313769" at="53,180,54,24" concept="6" />
+      <node id="6464910423204313013" at="23,0,27,0" concept="10" trace="createLiteralCell#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6464910423203322959" at="15,0,22,0" concept="10" trace="createDefaultEditor#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6464910423204029580" at="42,0,49,0" concept="10" trace="_quotation_createNode_q2b8f2_a0c0b#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6464910423204313769" at="49,0,56,0" concept="10" trace="_quotation_createNode_q2b8f2_a0a0d#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6464910423203322965" at="29,0,42,0" concept="10" trace="_quotation_createNode_q2b8f2_a0a0b#(Ljava/lang/Object;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="6464910423204313016" at="23,58,25,16">
+        <var name="cell" id="6464910423204313641" />
+      </scope>
+      <scope id="6464910423204313013" at="23,0,27,0">
+        <var name="literal" id="6464910423204313139" />
+      </scope>
+      <scope id="6464910423203322961" at="15,62,20,18">
+        <var name="cell" id="6464910423204029424" />
+        <var name="cellModel" id="6464910423203497596" />
+        <var name="editor" id="6464910423203322963" />
+      </scope>
+      <scope id="6464910423204029580" at="42,79,47,24">
+        <var name="facade" id="6464910423204029580" />
+        <var name="quotedNode_2" id="6464910423204029580" />
+      </scope>
+      <scope id="6464910423204313769" at="49,79,54,24">
+        <var name="facade" id="6464910423204313769" />
+        <var name="quotedNode_2" id="6464910423204313769" />
+      </scope>
+      <scope id="6464910423203322959" at="15,0,22,0">
+        <var name="conceptNode" id="6464910423203322975" />
+      </scope>
+      <scope id="6464910423204029580" at="42,0,49,0">
+        <var name="parameter_1" id="6464910423204029580" />
+      </scope>
+      <scope id="6464910423204313769" at="49,0,56,0">
+        <var name="parameter_1" id="6464910423204313769" />
+      </scope>
+      <scope id="6464910423203322965" at="29,79,40,24">
+        <var name="facade" id="6464910423203322965" />
+        <var name="quotedNode_2" id="6464910423203322965" />
+        <var name="quotedNode_3" id="6464910423203322965" />
+        <var name="quotedNode_4" id="6464910423203322965" />
+      </scope>
+      <scope id="6464910423203322965" at="29,0,42,0">
+        <var name="parameter_1" id="6464910423203322965" />
+      </scope>
+      <unit id="6464910423203236826" at="13,0,57,0" name="XML2MPS.NodeCreator.EditorFactory" />
+    </file>
+  </root>
   <root nodeRef="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/9167288521438838072">
     <file name="LexicalResolver.java">
       <node id="9167288521440111582" at="17,5,18,36" concept="1" />

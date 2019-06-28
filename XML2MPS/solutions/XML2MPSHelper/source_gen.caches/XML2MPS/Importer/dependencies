@@ -6,6 +6,7 @@
     <classNode dependClassName="JavaXMLImporter.NonTerminal" />
     <classNode dependClassName="JavaXMLImporter.Production" />
     <classNode dependClassName="JavaXMLImporter.ProductionArgument" />
+    <classNode dependClassName="XML2MPS.NodeCreator.EditorFactory" />
     <classNode dependClassName="XML2MPS.NodeCreator.LexicalResolver" />
     <classNode dependClassName="XML2MPS.NodeCreator.NodeCreatorClass" />
     <classNode dependClassName="java.awt.Frame" />

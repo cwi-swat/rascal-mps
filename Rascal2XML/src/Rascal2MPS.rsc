@@ -95,8 +95,8 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 							switch(symbol){
 								case sort(str name2):{argType=name2; println(name + ": " + name2);}
 								case lex(str name2): {argType=name2; println(name + ": " + name2);}
-								case \iter-star-seps(Symbol sym,_): {argName = sym.name; argCard ="*"; println(name+"*");}
-								case \iter-seps(symbol sym, _): {argName = sym.name; argCard ="+"; println(name+"+");}
+								case \iter-star-seps(Symbol sym,_): {argType = getSymbolName(sym); argCard ="*"; println(name+"*");}
+								case \iter-seps(symbol sym, _): {argType = getSymbolName(sym); argCard ="+"; println(name+"+");}
 							}
 							
 							Node arg = createNewElement("arg");
@@ -123,6 +123,31 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 	return nonTerminal;
 }
 
+str getSymbolName(Symbol sym){
+	switch(sym){
+		case \sort(str name): return name;
+		case \lex(str name): return name;
+		case \layouts(str name): return name;
+		case \keywords(str name): return name;
+		case \parameterized-sort(str name, list[Symbol] parameters): return name;
+		case \parameterized-lex(str name, list[Symbol] parameters): return name;
+		
+		case \lit(str string): return name;
+		case \cilit(str string): return name;
+		
+		case \opt(Symbol symbol): return getSymbolName(symbol);
+		case \iter(Symbol symbol): return getSymbolName(symbol);
+		case \iter-star(Symbol symbol): return getSymbolName(symbol);
+		case \iter-seps(Symbol symbol, list[Symbol] separators): return getSymbolName(symbol);
+		case \iter-star-seps(Symbol symbol, list[Symbol] separators): return getSymbolName(symbol);
+		//\alt(set[Symbol] alternatives)
+		//\seq(list[Symbol] symbols)
+		
+		case \conditional(Symbol symbol, set[Condition] conditions): return getSymbolName(symbol);
+		
+		default: return "NoNameFound";
+	}
+}
 
 void printProductions(str name, Symbol prodType, list[Symbol] prod){
 	s = "<name>:<prodType> -\>";

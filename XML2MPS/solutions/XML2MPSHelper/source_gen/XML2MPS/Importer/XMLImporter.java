@@ -15,6 +15,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import JavaXMLImporter.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Production;
+import XML2MPS.NodeCreator.EditorFactory;
 import XML2MPS.NodeCreator.LexicalResolver;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -34,7 +35,7 @@ public class XMLImporter {
     this.frame = f;
   }
 
-  public void importXMLDocument(String path, SModel struct) {
+  public void importXMLDocument(String path, SModel struct, SModel editorModel) {
     Importer javaImporter = new Importer(path);
     Document dom = javaImporter.loadXMLDOM();
     if (dom == null) {
@@ -85,6 +86,8 @@ public class XMLImporter {
       executeQueue();
 
       // Play area 
+      SNode idNode = getConceptNodeByName("id");
+      editorModel.addRootNode(EditorFactory.createDefaultEditor(idNode));
 
     } catch (Importer.EmptyDomException e) {
       System.out.println(e.getMessage());
