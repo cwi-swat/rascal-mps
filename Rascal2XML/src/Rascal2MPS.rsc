@@ -7,17 +7,9 @@ import List;
 import lang::xml::DOM;
 import DOMFactory;
 
-import Pico::Syntax;
 
-import vis::Figure;
-import vis::Render;
-import vis::ParseTree;
 
-void testRun(){
-	visitTree(#Expression);
-}
-
-void visitTree(type[&T<:Tree] reifiedTree){
+void treeToXML(type[&T<:Tree] reifiedTree){
  	dom = createEmptyDocument("root");
 	visit(reifiedTree){
 		case choice(sort(str name),set[Production] b) : {
@@ -35,6 +27,29 @@ void visitTree(type[&T<:Tree] reifiedTree){
 			
 			// Append complete nonterminal node to the document root
 			dom = appendToRootElement(dom, currentNonTerminalNode);
+		}
+		case choice(lex(str name),set[Production] prod): {
+			// Lexicals
+			//println(prod);
+			//println("lexical: "  + name);
+			// Currently only matches production lexicals aka "defined" lexicals
+			for(p <- prod){
+				Node currentLexicalNode = createNewElement("lexical");
+				Node lexicalName = createNewElement("name",[charData(name)]);
+				currentLexicalNode = appendToElementByNode(currentLexicalNode, lexicalName);
+				if(prod(label(str n1,_), [sort(str n2)], _) := p){
+					println("Lexical: " + n1 + " -\> " + n2);
+					Node lexArgNode = createNewElement("arg");
+					Node lexArgName = createNewElement("name",[charData(n1)]);
+					Node lexArgType = createNewElement("type",[charData(n2)]);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgName);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgType);
+					currentLexicalNode = appendToElementByNode(currentLexicalNode, lexArgNode);
+				}
+				dom = appendToRootElement(dom, currentLexicalNode);
+			}
+			
+			
 		}
 			
 	}
@@ -69,7 +84,7 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 				Node currentProductionNode = createNewElement("production");
 				Node name = createNewElement("name", [charData(p.def.name)]);
 				currentProductionNode = appendToElementByNode(currentProductionNode, name);
-				//println(symbols);
+				println(symbols);
 				for(s <- symbols){
 					//println(s);
 					switch(s){
@@ -80,8 +95,8 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 							switch(symbol){
 								case sort(str name2):{argType=name2; println(name + ": " + name2);}
 								case lex(str name2): {argType=name2; println(name + ": " + name2);}
-								case \iter-star-seps(Symbol sym,_): {argName = sym.name; argCard ="*"; println(name+"*");}
-								case \iter-seps(symbol sym, _): {argName = sym.name; argCard ="+"; println(name+"+");}
+								case \iter-star-seps(Symbol sym,_): {argType = getSymbolName(sym); argCard ="*"; println(name+"*");}
+								case \iter-seps(symbol sym, _): {argType = getSymbolName(sym); argCard ="+"; println(name+"+");}
 							}
 							
 							Node arg = createNewElement("arg");
@@ -108,6 +123,31 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 	return nonTerminal;
 }
 
+str getSymbolName(Symbol sym){
+	switch(sym){
+		case \sort(str name): return name;
+		case \lex(str name): return name;
+		case \layouts(str name): return name;
+		case \keywords(str name): return name;
+		case \parameterized-sort(str name, list[Symbol] parameters): return name;
+		case \parameterized-lex(str name, list[Symbol] parameters): return name;
+		
+		case \lit(str string): return name;
+		case \cilit(str string): return name;
+		
+		case \opt(Symbol symbol): return getSymbolName(symbol);
+		case \iter(Symbol symbol): return getSymbolName(symbol);
+		case \iter-star(Symbol symbol): return getSymbolName(symbol);
+		case \iter-seps(Symbol symbol, list[Symbol] separators): return getSymbolName(symbol);
+		case \iter-star-seps(Symbol symbol, list[Symbol] separators): return getSymbolName(symbol);
+		//\alt(set[Symbol] alternatives)
+		//\seq(list[Symbol] symbols)
+		
+		case \conditional(Symbol symbol, set[Condition] conditions): return getSymbolName(symbol);
+		
+		default: return "NoNameFound";
+	}
+}
 
 void printProductions(str name, Symbol prodType, list[Symbol] prod){
 	s = "<name>:<prodType> -\>";

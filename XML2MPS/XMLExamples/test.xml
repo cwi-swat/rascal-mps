@@ -1,0 +1,61 @@
+<?xml version = "1.0"?>
+<root>
+    <nonterminal>
+        <name>EXP</name>
+        <production>
+            <name>or</name>
+            <arg>
+                <name>lhs</name>
+                <type>EXP</type>
+				<card>*</card>
+            </arg>
+            <arg>
+                <name>rhs</name>
+                <type>EXP</type>
+				<card>1</card>
+            </arg>
+        </production>
+
+        <production >
+            <name>and</name>
+            <arg>
+                <name>lhs</name>
+                <type>EXP</type>
+				<card>1</card>
+            </arg>
+            <arg>
+                <name>rhs</name>
+                <type>EXP</type>
+				<card>1</card>
+            </arg>
+        </production>
+
+        <production>
+            <name>not</name>
+            <arg>
+                <name>not</name>
+                <type>EXP</type>
+				<card>1</card>
+            </arg>
+        </production>
+        <production>
+            <name>test</name>
+            <arg>
+                <name>testArg</name>
+                <type>STAT</type>
+				<card>1</card>
+            </arg>
+			 <arg>
+                <name>testArg2</name>
+                <type>STAT</type>
+				<card>1</card>
+            </arg>
+        </production>
+    </nonterminal>
+    <nonterminal>
+        <name>STAT</name>
+        <production>
+            <name>ass</name>
+        </production>
+    </nonterminal>
+</root>

@@ -1,15 +1,17 @@
 module StateMachine
 
+import lexlib::Lexical;
+
 extend lang::std::Layout;
 
-start syntax Machine 
-	= machine: "machine" Id id State* states;
+start syntax Machines
+	= machine: "machine" Ids id States* states;
 
-syntax State
-  	= state: "state" Id id "{" Trans* transitions "}";
+syntax States
+  	= state: "state" Ids id "{" Trans* transitions "}";
 
 syntax Trans 
-	= transition: "on" Id on "to" Id to;
+	= transition: "on" Ids on "to" Ids to;
 
-lexical Id 
-	= id: [a-zA-Z]+;
+lexical Ids
+	= id: String;

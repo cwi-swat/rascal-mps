@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/XML2MPS.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguag3/NewLanguag3.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguag3/sandbox/NewLanguag3.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage2/NewLanguage2.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage2/sandbox/NewLanguage2.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />

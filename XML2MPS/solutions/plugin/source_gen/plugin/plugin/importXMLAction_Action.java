@@ -10,14 +10,14 @@ import jetbrains.mps.project.MPSProject;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;
-import javax.swing.JFileChooser;
-import java.io.File;
-import org.jetbrains.mps.openapi.model.SModel;
-import XML2MPS.Importer.XMLImporter;
-import javax.swing.JOptionPane;
 import jetbrains.mps.ide.newModuleDialogs.NewLanguageDialog;
 import jetbrains.mps.smodel.Language;
+import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.smodel.LanguageAspect;
+import javax.swing.JFileChooser;
+import java.io.File;
+import XML2MPS.Importer.XMLImporter;
+import javax.swing.JOptionPane;
 import JavaXMLImporter.Importer;
 import org.w3c.dom.Document;
 import java.util.ArrayList;
@@ -67,6 +67,15 @@ public class importXMLAction_Action extends BaseAction {
   }
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
+
+    NewLanguageDialog d = new NewLanguageDialog(event.getData(MPSCommonDataKeys.MPS_PROJECT), "newLanguageName");
+    d.setModal(true);
+    d.show();
+    Language l = d.getModule();
+    event.getData(MPSCommonDataKeys.MPS_PROJECT).addModule(l);
+    SModel struct = LanguageAspect.STRUCTURE.get(l);
+    SModel editor = LanguageAspect.EDITOR.get(l);
+
     String path = "";
     JFileChooser jfc = new JFileChooser(System.getProperty("user.home"));
     int val = jfc.showOpenDialog(event.getData(MPSCommonDataKeys.FRAME));
@@ -74,9 +83,8 @@ public class importXMLAction_Action extends BaseAction {
       File file = jfc.getSelectedFile();
       path = file.getAbsolutePath();
     }
-    SModel struct = importXMLAction_Action.this.initLang(event);
     XMLImporter xmlImporter = new XMLImporter(event.getData(MPSCommonDataKeys.FRAME));
-    xmlImporter.importXMLDocument(path, struct);
+    xmlImporter.importXMLDocument(path, struct, editor);
     JOptionPane.showMessageDialog(event.getData(MPSCommonDataKeys.FRAME), "Done");
   }
   /*package*/ SModel initLang(final AnActionEvent event) {

@@ -10,10 +10,13 @@ import java.awt.Frame;
 import org.jetbrains.mps.openapi.model.SModel;
 import JavaXMLImporter.Importer;
 import org.w3c.dom.Document;
-import JavaXMLImporter.NonTerminal;
+import JavaXMLImporter.Lexical;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import JavaXMLImporter.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Production;
+import XML2MPS.NodeCreator.EditorFactory;
+import XML2MPS.NodeCreator.LexicalResolver;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import javax.swing.JOptionPane;
@@ -32,13 +35,21 @@ public class XMLImporter {
     this.frame = f;
   }
 
-  public void importXMLDocument(String path, SModel struct) {
+  public void importXMLDocument(String path, SModel struct, SModel editorModel) {
     Importer javaImporter = new Importer(path);
     Document dom = javaImporter.loadXMLDOM();
     if (dom == null) {
       System.out.println("Empty dom");
     }
     try {
+
+
+      // Add lexicals first 
+      ArrayList<Lexical> lexicalList = javaImporter.getAllLexicals(dom);
+      for (Lexical l : ListSequence.fromList(lexicalList)) {
+        this.addLexicalLocal(l.getName(), l.getArgName(), l.getArgType(), struct);
+      }
+
       ArrayList<NonTerminal> nonTerminalList = javaImporter.getAllNonTerminals(dom);
       for (NonTerminal n : ListSequence.fromList(nonTerminalList)) {
         SNode nonTerminalInterface = NodeCreatorClass.createInterfaceConcept(n.getName());
@@ -70,12 +81,36 @@ public class XMLImporter {
           }
         }
       }
+
       // Execute the queue with remaining to-be-created links 
       executeQueue();
+
+      // Play area 
+      SNode idNode = getConceptNodeByName("id");
+      editorModel.addRootNode(EditorFactory.createDefaultEditor(idNode));
+
     } catch (Importer.EmptyDomException e) {
       System.out.println(e.getMessage());
     }
   }
+
+  private void addLexicalLocal(String name, String argName, String argType, SModel struct) {
+    SNode lexicalInterface = NodeCreatorClass.createInterfaceConcept(name);
+    struct.addRootNode(lexicalInterface);
+    this.interfaceNodeList.add(lexicalInterface);
+
+    SNode lexicalType = LexicalResolver.constraintDataTypeFactory(argType);
+    struct.addRootNode(lexicalType);
+
+    SNode prop = LexicalResolver.propertyFactory(argName, lexicalType);
+
+    SNode lexicalNode = LexicalResolver.LexicalNodeFactory(argName, prop);
+    NodeCreatorClass.linkInterfaceToConcept(lexicalNode, lexicalInterface);
+    struct.addRootNode(lexicalNode);
+    this.conceptNodeList.add(lexicalNode);
+
+  }
+
 
   private boolean interfaceListContainsNodeByName(String name) {
     for (SNode node : ListSequence.fromList(this.interfaceNodeList)) {
