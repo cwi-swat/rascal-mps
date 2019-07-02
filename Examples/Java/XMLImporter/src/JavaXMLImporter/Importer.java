@@ -1,5 +1,11 @@
 package JavaXMLImporter;
 
+import JavaXMLImporter.Layout.LayoutElement;
+import JavaXMLImporter.Layout.LiteralLayoutElement;
+import JavaXMLImporter.Layout.ReferenceLayoutElement;
+import JavaXMLImporter.Nodes.Lexical;
+import JavaXMLImporter.Nodes.NonTerminal;
+import JavaXMLImporter.Nodes.Production;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -57,6 +63,27 @@ public class Importer {
                 p.addArgument(argName,argSymbol);
                 p.addArgToList(argName, argSymbol, cardinality);
             }
+            Element layoutNode = (Element) e.getElementsByTagName("layout").item(0);
+            NodeList layoutElements = layoutNode.getChildNodes();
+            for(int i = 0; i< layoutElements.getLength(); i++){
+                Node layoutElement = layoutElements.item(i);
+                switch (layoutElement.getNodeName()){
+                    case "lit": {
+                        //System.out.println("lit: " + layoutElement.getTextContent());
+                        p.addLayoutElement(new LiteralLayoutElement(layoutElement.getTextContent()));
+                        break;
+                    }
+                    case "ref":{
+                        Element element = (Element) layoutElement;
+                        String refName = element.getElementsByTagName("name").item(0).getTextContent();
+                        String refType = element.getElementsByTagName("type").item(0).getTextContent();
+                        //System.out.println("ref: " + refName + "->" + refType);
+                        p.addLayoutElement(new ReferenceLayoutElement(refName, refType));
+                        break;
+                    }
+                }
+            }
+
             return p;
         }else{
             return new Production("NA");
@@ -114,9 +141,25 @@ public class Importer {
 
 
     public static void main(String[] args) {
-        Importer im = new Importer("XML\\out7.xml");
+        Importer im = new Importer("XML\\out8.xml");
         Document d = im.loadXMLDOM();
-        ArrayList<Lexical> l = im.getAllLexicals(d);
-        System.out.println(l);
+        //ArrayList<Lexical> l = im.getAllLexicals(d);
+        try{
+            ArrayList<NonTerminal> nt = im.getAllNonTerminals(d);
+            for (NonTerminal n:nt) {
+                for (Production p : n.getProductions()) {
+                    for (LayoutElement e: p.getLayoutElements()) {
+                        if(e.getClass()==LiteralLayoutElement.class){
+                            System.out.println(((LiteralLayoutElement)e).getName());
+                        }else if(e.getClass()==ReferenceLayoutElement.class){
+                            System.out.println(((ReferenceLayoutElement)e).getName() + " " + ((ReferenceLayoutElement)e).getType());
+                        }
+                    }
+                }
+            }
+        }catch (EmptyDomException e){
+            System.out.println(e);
+        }
+        //System.out.println(l);
     }
 }

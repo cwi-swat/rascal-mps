@@ -59,7 +59,7 @@ void treeToXML(type[&T<:Tree] reifiedTree){
 	//}
 	//println(prod);
 	//println(typeOf(grammar));
-	writeXMLToFile(|project://Rascal2XML/src/XML/out6.xml|,dom);
+	writeXMLToFile(|project://Rascal2XML/src/XML/out8.xml|,dom);
 }
 
 Node visitProductionSet(Node nonTerminal, set[Production] prods){
@@ -113,6 +113,8 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 						}
 					}
 				}
+				Node lo = createLayoutNode(p);
+				currentProductionNode = appendToElementByNode(currentProductionNode, lo);
 				nonTerminal = appendToElementByNode(nonTerminal, currentProductionNode);
 				println(" ");
 			}
@@ -146,6 +148,46 @@ str getSymbolName(Symbol sym){
 		case \conditional(Symbol symbol, set[Condition] conditions): return getSymbolName(symbol);
 		
 		default: return "NoNameFound";
+	}
+}
+
+str printLayout(Production prod){
+	str result = "";
+	for(Symbol sym <- prod.symbols){
+		switch(sym){
+			case \lit(str name): result = addToLayout(result,name);
+			case \label(str name, Symbol s): result = addToLayout(result, getSymbolName(s));
+		}
+	}
+	return result;
+}
+
+Node createLayoutNode(Production prod){
+	Node lo = createNewElement("layout");
+	for(Symbol s <- prod.symbols){
+		switch(s){
+			case \lit(str name): {
+				Node litNode = createNewElement("lit", [charData(name)]);
+				lo = appendToElementByNode(lo, litNode);
+			}
+			case \label(str name, Symbol sym): {
+				Node refNode = createNewElement("ref");
+				Node refNameNode = createNewElement("name", [charData(name)]);
+				Node refTypeNode = createNewElement("type", [charData(getSymbolName(sym))]);
+				refNode = appendToElementByNode(refNode, refNameNode);
+				refNode = appendToElementByNode(refNode, refTypeNode);
+				lo = appendToElementByNode(lo, refNode);
+			}
+		}
+	}
+	return lo;
+}
+
+str addToLayout(str init, str toAdd){
+	if(init == ""){
+		return toAdd;
+	}else{
+		return init + " " + toAdd;
 	}
 }
 

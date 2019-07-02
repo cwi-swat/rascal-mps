@@ -2,10 +2,13 @@
 <dependenciesRoot>
   <dependency className="XML2MPS.Importer.XMLImporter">
     <classNode dependClassName="JavaXMLImporter.Importer" />
-    <classNode dependClassName="JavaXMLImporter.Lexical" />
-    <classNode dependClassName="JavaXMLImporter.NonTerminal" />
-    <classNode dependClassName="JavaXMLImporter.Production" />
-    <classNode dependClassName="JavaXMLImporter.ProductionArgument" />
+    <classNode dependClassName="JavaXMLImporter.Layout.LayoutElement" />
+    <classNode dependClassName="JavaXMLImporter.Layout.LiteralLayoutElement" />
+    <classNode dependClassName="JavaXMLImporter.Layout.ReferenceLayoutElement" />
+    <classNode dependClassName="JavaXMLImporter.Nodes.Lexical" />
+    <classNode dependClassName="JavaXMLImporter.Nodes.NonTerminal" />
+    <classNode dependClassName="JavaXMLImporter.Nodes.Production" />
+    <classNode dependClassName="JavaXMLImporter.Nodes.ProductionArgument" />
     <classNode dependClassName="XML2MPS.NodeCreator.EditorFactory" />
     <classNode dependClassName="XML2MPS.NodeCreator.LexicalResolver" />
     <classNode dependClassName="XML2MPS.NodeCreator.NodeCreatorClass" />
@@ -16,6 +19,7 @@
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.util.Pair" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
