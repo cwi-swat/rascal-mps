@@ -7,6 +7,8 @@
       <modulePath path="$PROJECT_DIR$/languages/NewLanguag3/sandbox/NewLanguag3.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage10/NewLanguage10.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage10/sandbox/NewLanguage10.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage13/NewLanguage13.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage13/sandbox/NewLanguage13.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage2/NewLanguage2.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage2/sandbox/NewLanguage2.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />
