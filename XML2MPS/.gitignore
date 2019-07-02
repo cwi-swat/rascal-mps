@@ -1,6 +1,7 @@
 classes
 classes_gen
-testclasses
-teamcity-info.xml
+source_gen
+source_gen.caches
+result_gen
 
 *.class
