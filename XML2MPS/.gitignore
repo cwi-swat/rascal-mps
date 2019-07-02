@@ -1,0 +1,6 @@
+classes
+classes_gen
+testclasses
+teamcity-info.xml
+
+*.class
