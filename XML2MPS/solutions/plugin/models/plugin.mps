@@ -29,6 +29,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="lhjl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.w3c.dom(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="cgi2" ref="83f3da73-c67d-4c00-9709-60ece06179d1/java:JavaXMLImporter.Nodes(XMLImporterJAR/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -651,16 +652,16 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7_YMP9zkfIG" role="3cqZAp">
-          <node concept="3cpWsn" id="7_YMP9zkfIH" role="3cpWs9">
+        <node concept="3cpWs8" id="3OmficGG5rs" role="3cqZAp">
+          <node concept="3cpWsn" id="3OmficGG5rt" role="3cpWs9">
             <property role="TrG5h" value="i" />
-            <node concept="3uibUv" id="7_YMP9zkfII" role="1tU5fm">
+            <node concept="3uibUv" id="3OmficGG5ru" role="1tU5fm">
               <ref role="3uigEE" to="nhk7:~Importer" resolve="Importer" />
             </node>
-            <node concept="2ShNRf" id="7_YMP9zkgOB" role="33vP2m">
-              <node concept="1pGfFk" id="7_YMP9zkkJl" role="2ShVmc">
+            <node concept="2ShNRf" id="3OmficGG6fq" role="33vP2m">
+              <node concept="1pGfFk" id="3OmficGGiml" role="2ShVmc">
                 <ref role="37wK5l" to="nhk7:~Importer.&lt;init&gt;(java.lang.String)" resolve="Importer" />
-                <node concept="37vLTw" id="7_YMP9zkkNa" role="37wK5m">
+                <node concept="37vLTw" id="3OmficGGiqa" role="37wK5m">
                   <ref role="3cqZAo" node="o7uzVbwwJ$" resolve="path" />
                 </node>
               </node>
@@ -674,8 +675,8 @@
               <ref role="3uigEE" to="lhjl:~Document" resolve="Document" />
             </node>
             <node concept="2OqwBi" id="7_YMP9zkl9L" role="33vP2m">
-              <node concept="37vLTw" id="7_YMP9zkl5$" role="2Oq$k0">
-                <ref role="3cqZAo" node="7_YMP9zkfIH" resolve="i" />
+              <node concept="37vLTw" id="3OmficGGiu3" role="2Oq$k0">
+                <ref role="3cqZAo" node="3OmficGG5rt" resolve="i" />
               </node>
               <node concept="liA8E" id="7_YMP9zklk1" role="2OqNvi">
                 <ref role="37wK5l" to="nhk7:~Importer.loadXMLDOM():org.w3c.dom.Document" resolve="loadXMLDOM" />
@@ -711,13 +712,13 @@
                 <property role="TrG5h" value="nonterminalList" />
                 <node concept="3uibUv" id="o7uzVbwwK1" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
-                  <node concept="3uibUv" id="o7uzVbwwK2" role="11_B2D">
-                    <ref role="3uigEE" to="nhk7:~NonTerminal" resolve="NonTerminal" />
+                  <node concept="3uibUv" id="3OmficGGoSp" role="11_B2D">
+                    <ref role="3uigEE" to="cgi2:~NonTerminal" resolve="NonTerminal" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7_YMP9zkpHy" role="33vP2m">
-                  <node concept="37vLTw" id="7_YMP9zkoQS" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7_YMP9zkfIH" resolve="i" />
+                  <node concept="37vLTw" id="3OmficGGrxD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3OmficGG5rt" resolve="i" />
                   </node>
                   <node concept="liA8E" id="7_YMP9zkqES" role="2OqNvi">
                     <ref role="37wK5l" to="nhk7:~Importer.getAllNonTerminals(org.w3c.dom.Document):java.util.ArrayList" resolve="getAllNonTerminals" />
@@ -751,7 +752,7 @@
                           <ref role="2Gs0qQ" node="o7uzVbwwKc" resolve="n" />
                         </node>
                         <node concept="liA8E" id="o7uzVbwwKk" role="2OqNvi">
-                          <ref role="37wK5l" to="nhk7:~NonTerminal.toString():java.lang.String" resolve="toString" />
+                          <ref role="37wK5l" to="cgi2:~NonTerminal.toString():java.lang.String" resolve="toString" />
                         </node>
                       </node>
                       <node concept="3cpWs3" id="o7uzVbwwKl" role="3uHU7B">
@@ -800,7 +801,7 @@
                           <ref role="2Gs0qQ" node="o7uzVbwwKv" resolve="n" />
                         </node>
                         <node concept="liA8E" id="o7uzVbwwKC" role="2OqNvi">
-                          <ref role="37wK5l" to="nhk7:~NonTerminal.getName():java.lang.String" resolve="getName" />
+                          <ref role="37wK5l" to="cgi2:~NonTerminal.getName():java.lang.String" resolve="getName" />
                         </node>
                       </node>
                     </node>
@@ -838,7 +839,7 @@
                               <ref role="2Gs0qQ" node="o7uzVbwwKJ" resolve="p" />
                             </node>
                             <node concept="liA8E" id="7_YMP9zl7aE" role="2OqNvi">
-                              <ref role="37wK5l" to="nhk7:~Production.getName():java.lang.String" resolve="getName" />
+                              <ref role="37wK5l" to="cgi2:~Production.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
                         </node>
@@ -901,7 +902,7 @@
                           <ref role="2Gs0qQ" node="o7uzVbwwKJ" resolve="p" />
                         </node>
                         <node concept="liA8E" id="7_YMP9zlaGz" role="2OqNvi">
-                          <ref role="37wK5l" to="nhk7:~Production.getArguments():java.util.HashMap" resolve="getArguments" />
+                          <ref role="37wK5l" to="cgi2:~Production.getArguments():java.util.HashMap" resolve="getArguments" />
                         </node>
                       </node>
                     </node>
@@ -911,7 +912,7 @@
                       <ref role="2Gs0qQ" node="o7uzVbwwKv" resolve="n" />
                     </node>
                     <node concept="liA8E" id="7_YMP9zl5XP" role="2OqNvi">
-                      <ref role="37wK5l" to="nhk7:~NonTerminal.getProductions():java.util.ArrayList" resolve="getProductions" />
+                      <ref role="37wK5l" to="cgi2:~NonTerminal.getProductions():java.util.ArrayList" resolve="getProductions" />
                     </node>
                   </node>
                 </node>

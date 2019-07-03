@@ -4,12 +4,12 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}" type="java_classes">
+    <modelRoot contentPath="C:/Dev/Rascal2MPS/Examples/Java/XMLImporter/out/artifacts/XMLImporter_jar" type="java_classes">
       <sourceRoot location="XMLImporter.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${module}/XMLImporter.jar" />
+    <stubModelEntry path="C:/Dev/Rascal2MPS/Examples/Java/XMLImporter/out/artifacts/XMLImporter_jar/XMLImporter.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

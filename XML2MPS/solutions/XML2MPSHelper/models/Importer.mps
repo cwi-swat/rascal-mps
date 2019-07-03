@@ -340,16 +340,16 @@
     <node concept="3clFb_" id="6kI_gSgOstB" role="jymVt">
       <property role="TrG5h" value="importXMLDocument" />
       <node concept="3clFbS" id="6kI_gSgOstD" role="3clF47">
-        <node concept="3cpWs8" id="3OmficGfsSc" role="3cqZAp">
-          <node concept="3cpWsn" id="3OmficGfsSd" role="3cpWs9">
+        <node concept="3cpWs8" id="3OmficGFCu7" role="3cqZAp">
+          <node concept="3cpWsn" id="3OmficGFCu8" role="3cpWs9">
             <property role="TrG5h" value="javaImporter" />
-            <node concept="3uibUv" id="3OmficGfzgS" role="1tU5fm">
+            <node concept="3uibUv" id="3OmficGFCu9" role="1tU5fm">
               <ref role="3uigEE" to="nhk7:~Importer" resolve="Importer" />
             </node>
-            <node concept="2ShNRf" id="3OmficGf$qb" role="33vP2m">
-              <node concept="1pGfFk" id="3OmficGf_fu" role="2ShVmc">
+            <node concept="2ShNRf" id="3OmficGFHjt" role="33vP2m">
+              <node concept="1pGfFk" id="3OmficGFI9j" role="2ShVmc">
                 <ref role="37wK5l" to="nhk7:~Importer.&lt;init&gt;(java.lang.String)" resolve="Importer" />
-                <node concept="37vLTw" id="3OmficGf_tb" role="37wK5m">
+                <node concept="37vLTw" id="3OmficGFInG" role="37wK5m">
                   <ref role="3cqZAo" node="6kI_gSgOsvx" resolve="path" />
                 </node>
               </node>
@@ -363,8 +363,8 @@
               <ref role="3uigEE" to="lhjl:~Document" resolve="Document" />
             </node>
             <node concept="2OqwBi" id="3OmficGfJ$L" role="33vP2m">
-              <node concept="37vLTw" id="3OmficGfI53" role="2Oq$k0">
-                <ref role="3cqZAo" node="3OmficGfsSd" resolve="javaImporter" />
+              <node concept="37vLTw" id="3OmficGFIHv" role="2Oq$k0">
+                <ref role="3cqZAo" node="3OmficGFCu8" resolve="javaImporter" />
               </node>
               <node concept="liA8E" id="3OmficGfL1Y" role="2OqNvi">
                 <ref role="37wK5l" to="nhk7:~Importer.loadXMLDOM():org.w3c.dom.Document" resolve="loadXMLDOM" />
@@ -439,8 +439,8 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3OmficGfQPP" role="33vP2m">
-                  <node concept="37vLTw" id="3OmficGfQjy" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3OmficGfsSd" resolve="javaImporter" />
+                  <node concept="37vLTw" id="3OmficGFOwz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3OmficGFCu8" resolve="javaImporter" />
                   </node>
                   <node concept="liA8E" id="3OmficGfS1O" role="2OqNvi">
                     <ref role="37wK5l" to="nhk7:~Importer.getAllLexicals(org.w3c.dom.Document):java.util.ArrayList" resolve="getAllLexicals" />
@@ -511,8 +511,8 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="6kI_gSgOsu6" role="33vP2m">
-                  <node concept="37vLTw" id="3OmficGfVaj" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3OmficGfsSd" resolve="javaImporter" />
+                  <node concept="37vLTw" id="3OmficGFPry" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3OmficGFCu8" resolve="javaImporter" />
                   </node>
                   <node concept="liA8E" id="6kI_gSgOsu8" role="2OqNvi">
                     <ref role="37wK5l" to="nhk7:~Importer.getAllNonTerminals(org.w3c.dom.Document):java.util.ArrayList" resolve="getAllNonTerminals" />
@@ -1297,16 +1297,16 @@
                   </node>
                   <node concept="3cpWsn" id="3OmficGtNud" role="1Duv9x">
                     <property role="TrG5h" value="p" />
-                    <node concept="3uibUv" id="3OmficGtNKt" role="1tU5fm">
+                    <node concept="3uibUv" id="3OmficGGHpP" role="1tU5fm">
                       <ref role="3uigEE" to="cgi2:~Production" resolve="Production" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="3OmficGtOU6" role="1DdaDG">
-                    <node concept="37vLTw" id="3OmficGtOtD" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3OmficGtJyL" resolve="nt" />
-                    </node>
-                    <node concept="liA8E" id="3OmficGtPpw" role="2OqNvi">
+                    <node concept="liA8E" id="3OmficGGGax" role="2OqNvi">
                       <ref role="37wK5l" to="cgi2:~NonTerminal.getProductions():java.util.ArrayList" resolve="getProductions" />
+                    </node>
+                    <node concept="37vLTw" id="3OmficGGF65" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3OmficGtJyL" resolve="nt" />
                     </node>
                   </node>
                 </node>
@@ -1317,7 +1317,7 @@
                   <ref role="3uigEE" to="cgi2:~NonTerminal" resolve="NonTerminal" />
                 </node>
               </node>
-              <node concept="37vLTw" id="3OmficGtM8H" role="1DdaDG">
+              <node concept="37vLTw" id="3OmficGGBVG" role="1DdaDG">
                 <ref role="3cqZAo" node="6kI_gSgOsu3" resolve="nonTerminalList" />
               </node>
             </node>
@@ -1387,11 +1387,11 @@
                 <ref role="3uigEE" to="k2gh:~LayoutElement" resolve="LayoutElement" />
               </node>
             </node>
-            <node concept="2OqwBi" id="3OmficGqN8e" role="33vP2m">
-              <node concept="37vLTw" id="3OmficGqMRP" role="2Oq$k0">
+            <node concept="2OqwBi" id="3OmficGGM2v" role="33vP2m">
+              <node concept="37vLTw" id="3OmficGGLaZ" role="2Oq$k0">
                 <ref role="3cqZAo" node="3OmficGqHZn" resolve="prod" />
               </node>
-              <node concept="liA8E" id="3OmficGqNlX" role="2OqNvi">
+              <node concept="liA8E" id="3OmficGGMRf" role="2OqNvi">
                 <ref role="37wK5l" to="cgi2:~Production.getLayoutElements():java.util.ArrayList" resolve="getLayoutElements" />
               </node>
             </node>
@@ -1739,7 +1739,7 @@
       </node>
       <node concept="37vLTG" id="3OmficGqHZn" role="3clF46">
         <property role="TrG5h" value="prod" />
-        <node concept="3uibUv" id="3OmficGqLRo" role="1tU5fm">
+        <node concept="3uibUv" id="3OmficGGPD3" role="1tU5fm">
           <ref role="3uigEE" to="cgi2:~Production" resolve="Production" />
         </node>
       </node>
@@ -1896,7 +1896,7 @@
             </node>
             <node concept="2YIFZM" id="7WSK5s20bmn" role="33vP2m">
               <ref role="1Pybhc" to="wz82:7WSK5s1SbOS" resolve="LexicalResolver" />
-              <ref role="37wK5l" to="wz82:7WSK5s1Xxr7" resolve="propertyFactory" />
+              <ref role="37wK5l" to="wz82:7WSK5s1Xxr7" resolve="constrainedPropertyFactory" />
               <node concept="37vLTw" id="7WSK5s20bmo" role="37wK5m">
                 <ref role="3cqZAo" node="7WSK5s20bmJ" resolve="argName" />
               </node>

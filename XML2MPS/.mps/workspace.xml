@@ -7,199 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d052aae-9c23-4535-b33a-997963053d90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/Language.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/behavior/BehaviorAspectDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/behavior/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/constraints/ConstraintsAspectDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/constraints/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/constraints/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/editor/EditorAspectDescriptorImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/editor/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/structure/ConceptPresentationAspectImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/structure/LanguageConceptSwitch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/structure/StructureAspectDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/structure/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/structure/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/structure/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/typesystem/TypesystemDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/typesystem/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/classes_gen/NewLanguag3/typesystem/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/classes_gen/NewLanguag3/Generator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/classes_gen/NewLanguag3/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/classes_gen/main/QueriesGenerated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/classes_gen/main/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen.caches/NewLanguag3/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen.caches/NewLanguag3/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen.caches/main/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen.caches/main/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen/NewLanguag3/Generator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen/NewLanguag3/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/generator/source_gen/main/trace.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/N3.mpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/generator/template/main@generator.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/models/behavior.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/models/constraints.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/models/editor.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/models/structure.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/models/typesystem.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/sandbox/N3.sandbox.msd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N3/sandbox/models/N3.sandbox.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/N5.mpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/generator/template/main@generator.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/models/behavior.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/models/constraints.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/models/editor.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/models/structure.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/models/typesystem.mps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/sandbox/N5.sandbox.msd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/N5/sandbox/models/N5.sandbox.mps" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/sandbox/classes_gen/NewLanguag3/sandbox/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/sandbox/source_gen.caches/NewLanguag3/sandbox/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/sandbox/source_gen.caches/NewLanguag3/sandbox/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/sandbox/source_gen/NewLanguag3/sandbox/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/behavior/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/behavior/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/constraints/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/constraints/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/editor/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/editor/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/structure/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/structure/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/typesystem/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen.caches/NewLanguag3/typesystem/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/Language.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/behavior/BehaviorAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/behavior/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/constraints/ConstraintsAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/constraints/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/constraints/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/editor/EditorAspectDescriptorImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/editor/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/structure/ConceptPresentationAspectImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/structure/LanguageConceptSwitch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/structure/StructureAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/structure/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/structure/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/structure/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/typesystem/TypesystemDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/typesystem/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguag3/source_gen/NewLanguag3/typesystem/trace.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/NewLanguage13/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/NewLanguage13/models/structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/Language.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/behavior/BehaviorAspectDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/behavior/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/constraints/ConstraintsAspectDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/constraints/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/constraints/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/EditorAspectDescriptorImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/Id_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/Id_EditorBuilder_a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/Id_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/machine_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/machine_EditorBuilder_a$StateListHandler_9nghu_c0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/machine_EditorBuilder_a$idSingleRoleHandler_9nghu_b0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/machine_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/state_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/state_EditorBuilder_a$TransListHandler_r6tj7h_d0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/state_EditorBuilder_a$idSingleRoleHandler_r6tj7h_b0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/state_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/transition_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/transition_EditorBuilder_a$onSingleRoleHandler_3hktzv_b0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/transition_EditorBuilder_a$toSingleRoleHandler_3hktzv_d0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/editor/transition_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/structure/ConceptPresentationAspectImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/structure/LanguageConceptSwitch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/structure/StructureAspectDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/structure/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/structure/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/structure/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/typesystem/TypesystemDescriptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/typesystem/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/classes_gen/NewLanguage2/typesystem/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/classes_gen/NewLanguage2/Generator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/classes_gen/NewLanguage2/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/classes_gen/main/QueriesGenerated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/classes_gen/main/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen.caches/NewLanguage2/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen.caches/NewLanguage2/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen.caches/main/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen.caches/main/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen/NewLanguage2/Generator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen/NewLanguage2/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/generator/source_gen/main/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/sandbox/classes_gen/NewLanguage2/sandbox/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/sandbox/source_gen.caches/NewLanguage2/sandbox/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/sandbox/source_gen.caches/NewLanguage2/sandbox/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/sandbox/source_gen/NewLanguage2/sandbox/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/behavior/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/behavior/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/constraints/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/constraints/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/editor/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/editor/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/structure/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/structure/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/typesystem/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen.caches/NewLanguage2/typesystem/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/Language.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/behavior/BehaviorAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/behavior/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/constraints/ConstraintsAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/constraints/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/constraints/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/EditorAspectDescriptorImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/Id_Editor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/Id_EditorBuilder_a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/machine_Editor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/machine_EditorBuilder_a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/state_Editor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/state_EditorBuilder_a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/transition_Editor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/editor/transition_EditorBuilder_a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/structure/ConceptPresentationAspectImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/structure/LanguageConceptSwitch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/structure/StructureAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/structure/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/structure/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/structure/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/typesystem/TypesystemDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/typesystem/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/NewLanguage2/source_gen/NewLanguage2/typesystem/trace.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/Importer.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/EditorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/EditorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/LexicalResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/LexicalResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/NodeCreatorClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XMLImporterJAR/classes_gen/XMLImporterJAR/Dummy/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XMLImporterJAR/source_gen.caches/XMLImporterJAR/Dummy/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XMLImporterJAR/source_gen.caches/XMLImporterJAR/Dummy/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/XMLImporterJAR/source_gen/XMLImporterJAR/Dummy/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/ImportXMLActionGroup_ActionGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/Plugin_ApplicationPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/importXMLAction_Action.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/classes_gen/plugin/plugin/trace.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/plugin/models/plugin.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/plugin/models/plugin.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/plugin/plugin.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/plugin/plugin.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/source_gen.caches/plugin/plugin/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/source_gen.caches/plugin/plugin/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/source_gen/plugin/plugin/ImportXMLActionGroup_ActionGroup.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/source_gen/plugin/plugin/Plugin_ApplicationPlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/source_gen/plugin/plugin/importXMLAction_Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/source_gen/plugin/plugin/trace.info" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/solutions/XMLImporterJAR/classes_gen/" />
     <ignored path="$PROJECT_DIR$/solutions/plugin/classes_gen/" />
@@ -350,7 +184,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -383,7 +217,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -417,7 +251,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -451,7 +285,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -484,7 +318,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -517,7 +351,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -529,7 +363,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="mps://node://NewLanguage13/NewLanguage13.structure/transition">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -550,7 +384,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -559,6 +393,107 @@
                 <enabledHints />
               </inspectorMemento>
               <node node_ref="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://NewLanguage16/NewLanguage16.structure/Ids">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="183" />
+                    <property name="caretXRelative" value="24" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name">
+                      <node node_reference="r:fbea9e4a-acb8-40a5-becb-756cb4f9db87(NewLanguage16.structure)/1969934483978694539" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:fbea9e4a-acb8-40a5-becb-756cb4f9db87(NewLanguage16.structure)/1969934483978694539" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://NewLanguage16/NewLanguage16.structure/String">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="247" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:fbea9e4a-acb8-40a5-becb-756cb4f9db87(NewLanguage16.structure)/1969934483978694540" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="mps://node://NewLanguage16/NewLanguage16.structure/transition">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="327" />
+                    <property name="caretXRelative" value="80" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" />
             </state>
           </provider>
         </entry>
@@ -659,6 +594,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XML2MPS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -672,6 +625,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="JavaClassStubModelDescriptor JavaXMLImporter.Layout@java_stub" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLanguageName" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stubs" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaClassStubModelDescriptor JavaXMLImporter@java_stub" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaClassStubModelDescriptor JavaXMLImporter.Nodes@java_stub" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/plugin/models/plugin.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -731,6 +734,26 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -738,68 +761,10 @@
               <option name="myItemId" value="plugin" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/plugin/models/plugin.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stubs" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaClassStubModelDescriptor JavaXMLImporter@java_stub" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaClassStubModelDescriptor JavaXMLImporter.Nodes@java_stub" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="XML2MPS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -823,37 +788,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="83f3da73-c67d-4c00-9709-60ece06179d1" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newLanguageName" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -863,13 +798,43 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemId" value="newLanguageName" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdad149b-0d60-4deb-a866-07c578fbeae3(NewLanguage16)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLanguageName" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dc37ca41-30d8-4851-86d1-ffad3ac5f2ed" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1004,7 +969,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1035,7 +1000,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1067,7 +1032,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1099,7 +1064,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1130,7 +1095,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1161,7 +1126,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1192,7 +1157,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1201,6 +1166,101 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:edd4ef12-2ace-4402-805a-a1f4ea0a52a2(NewLanguage13.editor)/4401772907083894809" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage16/NewLanguage16.structure/Ids">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="24" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:fbea9e4a-acb8-40a5-becb-756cb4f9db87(NewLanguage16.structure)/1969934483978694539" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:fbea9e4a-acb8-40a5-becb-756cb4f9db87(NewLanguage16.structure)/1969934483978694539" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage16/NewLanguage16.structure/String">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:fbea9e4a-acb8-40a5-becb-756cb4f9db87(NewLanguage16.structure)/1969934483978694540" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://NewLanguage16/NewLanguage16.structure/transition">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="327" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:85fe2dbe-9a40-4453-b51e-2bb1ff73473b(NewLanguage16.editor)/1969934483978694563" />
         </state>
       </provider>
     </entry>
