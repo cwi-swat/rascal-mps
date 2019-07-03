@@ -152,7 +152,7 @@ public class XMLImporter {
     SNode lexicalType = LexicalResolver.constraintDataTypeFactory(argType);
     struct.addRootNode(lexicalType);
 
-    SNode prop = LexicalResolver.propertyFactory(argName, lexicalType);
+    SNode prop = LexicalResolver.constrainedPropertyFactory(argName, lexicalType);
 
     SNode lexicalNode = LexicalResolver.LexicalNodeFactory(argName, prop);
     NodeCreatorClass.linkInterfaceToConcept(lexicalNode, lexicalInterface);
