@@ -9,7 +9,7 @@ import DOMFactory;
 
 
 
-void treeToXML(type[&T<:Tree] reifiedTree){
+void treeToXML(type[&T<:Tree] reifiedTree, str filename){
  	dom = createEmptyDocument("root");
 	visit(reifiedTree){
 		case choice(sort(str name),set[Production] b) : {
@@ -46,10 +46,37 @@ void treeToXML(type[&T<:Tree] reifiedTree){
 					lexArgNode = appendToElementByNode(lexArgNode, lexArgType);
 					currentLexicalNode = appendToElementByNode(currentLexicalNode, lexArgNode);
 				}
+				else if(prod(_,[sort(str n2)],_) := p){
+					
+					// No attribute name, so we must add a dummy value
+					
+					str n1 = "dummy";
+					
+					println("Lexical: " + "n1" + " -\> " + n2);
+					Node lexArgNode = createNewElement("arg");
+					Node lexArgName = createNewElement("name",[charData(n1)]);
+					Node lexArgType = createNewElement("type",[charData(n2)]);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgName);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgType);
+					currentLexicalNode = appendToElementByNode(currentLexicalNode, lexArgNode);
+				}
 				dom = appendToRootElement(dom, currentLexicalNode);
 			}
-			
-			
+		}
+		// Keywords for highlighting in MPS
+		case choice(keywords(str name), set[Production] keywords):{
+			Node keywordsListNode = createNewElement("keywords");
+			for(prod <- keywords){
+				if(prod(_,list[Symbol] kwSymbol,_) := prod){
+					// Should be only one element
+					str kwLiteral = getSymbolName(kwSymbol[0]);
+					println("Keyword: " + kwLiteral);
+					Node keywordElement = createNewElement("keyword",[charData(kwLiteral)]);
+					keywordsListNode = appendToElementByNode(keywordsListNode, keywordElement);
+					
+				}
+			}
+			dom = appendToRootElement(dom, keywordsListNode);
 		}
 			
 	}
@@ -59,7 +86,9 @@ void treeToXML(type[&T<:Tree] reifiedTree){
 	//}
 	//println(prod);
 	//println(typeOf(grammar));
-	writeXMLToFile(|project://Rascal2XML/src/XML/out8.xml|,dom);
+	filename = filename + ".xml";
+	loc filepath = |project://Rascal2XML/src/XML|+filename;
+	writeXMLToFile(filepath,dom);
 }
 
 Node visitProductionSet(Node nonTerminal, set[Production] prods){
@@ -89,27 +118,29 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 					//println(s);
 					switch(s){
 						case label(str name, Symbol symbol): {
-							str argName = name;
-							str argType = "defaultType";
-							str argCard = "1";
-							switch(symbol){
-								case sort(str name2):{argType=name2; println(name + ": " + name2);}
-								case lex(str name2): {argType=name2; println(name + ": " + name2);}
-								case \iter-star-seps(Symbol sym,_): {argType = getSymbolName(sym); argCard ="*"; println(name+"*");}
-								case \iter-seps(symbol sym, _): {argType = getSymbolName(sym); argCard ="+"; println(name+"+");}
-							}
+							currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"1");
 							
-							Node arg = createNewElement("arg");
-							Node argNameNode = createNewElement("name", [charData(argName)]);
-							Node argTypeNode = createNewElement("type", [charData(argType)]);
-							Node argCardNode = createNewElement("card", [charData(argCard)]);
-							
-							arg = appendToElementByNode(arg, argNameNode);
-							arg = appendToElementByNode(arg, argTypeNode);
-							arg = appendToElementByNode(arg, argCardNode);
-							
-							currentProductionNode = appendToElementByNode(currentProductionNode, arg);
-							
+						}
+						case \iter-seps(Symbol symbol, list[Symbol] separators):{
+							// No named argument, so give dummy name
+							str name = "dummy";
+							currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"+");
+						}
+						case \iter-star-seps(Symbol symbol, list[Symbol] separators):{
+							// No named argument, so give dummy name
+							str name = "dummy";
+							currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"*");
+						}
+						case sort(str symbolName):{
+							// No named argument, so give dummy name
+							println(symbolName);
+							str name = "dummy";
+							Symbol s = sort(symbolName);
+							println(s);
+							currentProductionNode = makeProductionNode(name, s, currentProductionNode,"1");
+						}
+						case \parameterized-sort(str name, list[Symbol] parameters):{
+							;
 						}
 					}
 				}
@@ -118,12 +149,45 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 				nonTerminal = appendToElementByNode(nonTerminal, currentProductionNode);
 				println(" ");
 			}
+			case associativity(_,_,set[Production] p): {
+				println("assoc");
+				// Recursively find productions of all alternatives
+				nonTerminal = visitProductionSet(nonTerminal, p);
+			}
 		}
 		
 
 	}
 	return nonTerminal;
 }
+
+Node makeProductionNode(str name, Symbol symbol, Node root, str defaultCard){
+	str argName = name;
+	str argType = "defaultType";
+	str argCard = defaultCard;
+	switch(symbol){
+		case sort(str name2):{argType=name2; println(name + ": " + name2);}
+		case lex(str name2): {argType=name2; println(name + ": " + name2);}
+		case conditional(Symbol sym, _):{argType= getSymbolName(sym);}
+		case \iter-star-seps(Symbol sym,list[Symbol] sep): {argType = getSymbolName(sym); argCard ="*"; println(name+"*");}
+		case \iter-seps(Symbol sym, list[Symbol] sep): {argType = getSymbolName(sym); argCard ="+"; println(name+"+");}
+	}
+							
+	Node arg = createNewElement("arg");
+	Node argNameNode = createNewElement("name", [charData(argName)]);
+	Node argTypeNode = createNewElement("type", [charData(argType)]);
+	Node argCardNode = createNewElement("card", [charData(argCard)]);
+							
+	arg = appendToElementByNode(arg, argNameNode);
+	arg = appendToElementByNode(arg, argTypeNode);
+	arg = appendToElementByNode(arg, argCardNode);
+							
+	root = appendToElementByNode(root, arg);
+	return root;
+}
+
+
+
 
 str getSymbolName(Symbol sym){
 	switch(sym){
@@ -134,8 +198,8 @@ str getSymbolName(Symbol sym){
 		case \parameterized-sort(str name, list[Symbol] parameters): return name;
 		case \parameterized-lex(str name, list[Symbol] parameters): return name;
 		
-		case \lit(str string): return name;
-		case \cilit(str string): return name;
+		case \lit(str name): return name;
+		case \cilit(str name): return name;
 		
 		case \opt(Symbol symbol): return getSymbolName(symbol);
 		case \iter(Symbol symbol): return getSymbolName(symbol);
@@ -165,10 +229,16 @@ str printLayout(Production prod){
 Node createLayoutNode(Production prod){
 	Node lo = createNewElement("layout");
 	for(Symbol s <- prod.symbols){
-		switch(s){
+		lo = createSymbolLayout(s, lo);
+	}
+	return lo;
+}
+
+Node createSymbolLayout(Symbol sym, Node root){
+	switch(sym){
 			case \lit(str name): {
 				Node litNode = createNewElement("lit", [charData(name)]);
-				lo = appendToElementByNode(lo, litNode);
+				root = appendToElementByNode(root, litNode);
 			}
 			case \label(str name, Symbol sym): {
 				Node refNode = createNewElement("ref");
@@ -176,11 +246,21 @@ Node createLayoutNode(Production prod){
 				Node refTypeNode = createNewElement("type", [charData(getSymbolName(sym))]);
 				refNode = appendToElementByNode(refNode, refNameNode);
 				refNode = appendToElementByNode(refNode, refTypeNode);
-				lo = appendToElementByNode(lo, refNode);
+				root = appendToElementByNode(root, refNode);
 			}
-		}
+			case  \iter-seps(Symbol symbol, list[Symbol] separators):{
+				root = createSymbolLayout(symbol, root);
+			}
+			case \iter-star-seps(Symbol symbol, list[Symbol] separators):{
+				root = createSymbolLayout(symbol, root);
+			}
+			case \sort(str symbolName):{
+				Symbol s = sort(symbolName);
+				Symbol l = label("dummy", s);
+				root = createSymbolLayout(l, root);
+			}
 	}
-	return lo;
+	return root;
 }
 
 str addToLayout(str init, str toAdd){

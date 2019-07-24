@@ -4,8 +4,8 @@ package XML2MPS.NodeCreator;
 
 import java.util.HashMap;
 import java.util.ArrayList;
-import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -19,6 +19,7 @@ public class LexicalResolver {
     {
       put("String", "[a-z]*[a-z]$");
       put("Natural", "[0-9]+");
+      put("PrimitiveString", "Error");
     }
   };
 
@@ -30,14 +31,16 @@ public class LexicalResolver {
   };
 
 
-  public static void addLexical(String name, String argName, String argType, SModel struct) {
-    SNode lexicalInterface = NodeCreatorClass.createInterfaceConcept(name);
-    struct.addRootNode(lexicalInterface);
-    if (primitives.contains(argType)) {
+  public static SNode addLexical(String name, String argName, String argType, SModel struct, SNode lexicalInterface, SModel editorModel) {
+    if (arrayListContains(argType, primitives)) {
       SNode prop = primitivePropertyFactory(argName, argType);
       SNode lexicalNode = LexicalNodeFactory(argName, prop);
       NodeCreatorClass.linkInterfaceToConcept(lexicalNode, lexicalInterface);
       struct.addRootNode(lexicalNode);
+      SNode editor = EditorFactory.createLexicalEditor(lexicalNode, prop);
+      editorModel.addRootNode(editor);
+
+      return lexicalNode;
 
 
     } else {
@@ -47,8 +50,21 @@ public class LexicalResolver {
       SNode lexicalNode = LexicalNodeFactory(argName, prop);
       NodeCreatorClass.linkInterfaceToConcept(lexicalNode, lexicalInterface);
       struct.addRootNode(lexicalNode);
+      SNode editor = EditorFactory.createLexicalEditor(lexicalNode, prop);
+      editorModel.addRootNode(editor);
+
+      return lexicalNode;
     }
 
+  }
+
+  private static boolean arrayListContains(String query, ArrayList<String> list) {
+    for (String s : list) {
+      if (s.equals(query)) {
+        return true;
+      }
+    }
+    return false;
   }
 
   public static SNode constraintDataTypeFactory(String typeAsString) {
@@ -63,9 +79,9 @@ public class LexicalResolver {
   public static SNode primitivePropertyFactory(String name, String primitiveType) {
     SNode property = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086bL, "jetbrains.mps.lang.structure.structure.PropertyDeclaration"));
     SPropertyOperations.assign(property, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
-    if (name.equals("PrimitiveString")) {
+    if (primitiveType.equals("PrimitiveString")) {
       SLinkOperations.setPointer(property, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086bL, 0xfc26f42fe5L, "dataType"), new SNodePointer("r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)", "1082983041843"));
-    } else if (name.equals("PrimitiveBool")) {
+    } else if (primitiveType.equals("PrimitiveBool")) {
       SLinkOperations.setPointer(property, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086bL, 0xfc26f42fe5L, "dataType"), new SNodePointer("r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)", "1082983657063"));
     } else {
       SLinkOperations.setPointer(property, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086bL, 0xfc26f42fe5L, "dataType"), new SNodePointer("r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)", "1082983657062"));

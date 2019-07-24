@@ -1,105 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <lexical>
-    <name>Ids</name>
-    <arg>
+    <name>Id</name>
+  </lexical>
+  <lexical>
+    <name>WhitespaceAndComment</name>
+  </lexical>
+  <lexical>
+    <name>WhitespaceAndComment</name>
+  </lexical>
+  <lexical>
+    <name>WhitespaceAndComment</name>
+  </lexical>
+  <lexical>
+    <name>Natural</name>
+  </lexical>
+  <nonterminal>
+    <name>Program</name>
+    <production>
+      <name>program</name>
+      <arg>
+        <name>decls</name>
+        <type>Declarations</type>
+        <card>1</card>
+      </arg>
+      <arg>
+        <name>body</name>
+        <type>Statement</type>
+        <card>*</card>
+      </arg>
+      <layout>
+        <lit>begin</lit>
+        <ref>
+          <name>decls</name>
+          <type>Declarations</type>
+        </ref>
+        <ref>
+          <name>body</name>
+          <type>Statement</type>
+        </ref>
+        <lit>end</lit>
+      </layout>
+    </production>
+  </nonterminal>
+  <nonterminal>
+    <name>Declarations</name>
+    <production>
+      <name>Declarations</name>
+      <arg>
+        <name>decls</name>
+        <type>Declaration</type>
+        <card>*</card>
+      </arg>
+      <layout>
+        <lit>declare</lit>
+        <ref>
+          <name>decls</name>
+          <type>Declaration</type>
+        </ref>
+        <lit>;</lit>
+      </layout>
+    </production>
+  </nonterminal>
+  <lexical>
+    <name>String</name>
+  </lexical>
+  <nonterminal>
+    <name>Expression</name>
+    <production>
+      <name>not</name>
+      <layout>
+        <lit>not</lit>
+      </layout>
+    </production>
+    <production>
+      <name>strCon</name>
+      <arg>
+        <name>string</name>
+        <type>String</type>
+        <card>1</card>
+      </arg>
+      <layout>
+        <ref>
+          <name>string</name>
+          <type>String</type>
+        </ref>
+      </layout>
+    </production>
+    <production>
       <name>id</name>
-      <type>String</type>
-    </arg>
-  </lexical>
-  <lexical>
-    <name>Whitespace</name>
-  </lexical>
-  <nonterminal>
-    <name>Trans</name>
-    <production>
-      <name>transition</name>
       <arg>
-        <name>on</name>
-        <type>Ids</type>
-        <card>1</card>
-      </arg>
-      <arg>
-        <name>to</name>
-        <type>Ids</type>
+        <name>name</name>
+        <type>Id</type>
         <card>1</card>
       </arg>
       <layout>
-        <lit>on</lit>
         <ref>
-          <name>on</name>
-          <type>Ids</type>
+          <name>name</name>
+          <type>Id</type>
         </ref>
-        <lit>to</lit>
+      </layout>
+    </production>
+    <production>
+      <name>natCon</name>
+      <arg>
+        <name>natcon</name>
+        <type>Natural</type>
+        <card>1</card>
+      </arg>
+      <layout>
         <ref>
-          <name>to</name>
-          <type>Ids</type>
+          <name>natcon</name>
+          <type>Natural</type>
+        </ref>
+      </layout>
+    </production>
+    <production>
+      <name>Expression</name>
+      <arg>
+        <name>e</name>
+        <type>Expression</type>
+        <card>1</card>
+      </arg>
+      <layout>
+        <lit>(</lit>
+        <ref>
+          <name>e</name>
+          <type>Expression</type>
+        </ref>
+        <lit>)</lit>
+      </layout>
+    </production>
+  </nonterminal>
+  <nonterminal>
+    <name>Type</name>
+    <production>
+      <name>natural</name>
+      <layout>
+        <lit>natural</lit>
+      </layout>
+    </production>
+    <production>
+      <name>string</name>
+      <layout>
+        <lit>string</lit>
+      </layout>
+    </production>
+  </nonterminal>
+  <nonterminal>
+    <name>Declaration</name>
+    <production>
+      <name>decl</name>
+      <arg>
+        <name>id</name>
+        <type>Id</type>
+        <card>1</card>
+      </arg>
+      <arg>
+        <name>tp</name>
+        <type>Type</type>
+        <card>1</card>
+      </arg>
+      <layout>
+        <ref>
+          <name>id</name>
+          <type>Id</type>
+        </ref>
+        <lit>:</lit>
+        <ref>
+          <name>tp</name>
+          <type>Type</type>
         </ref>
       </layout>
     </production>
   </nonterminal>
   <nonterminal>
-    <name>Machines</name>
+    <name>Statement</name>
     <production>
-      <name>machine</name>
+      <name>forStat</name>
+      <layout>
+        <lit>for</lit>
+        <lit>;</lit>
+        <lit>;</lit>
+        <lit>do</lit>
+        <lit>od</lit>
+      </layout>
+    </production>
+    <production>
+      <name>ifElseStat</name>
       <arg>
-        <name>id</name>
-        <type>Ids</type>
+        <name>cond</name>
+        <type>Expression</type>
         <card>1</card>
       </arg>
       <arg>
-        <name>states</name>
-        <type>States</type>
+        <name>thenPart</name>
+        <type>Statement</type>
+        <card>*</card>
+      </arg>
+      <arg>
+        <name>elsePart</name>
+        <type>Statement</type>
         <card>*</card>
       </arg>
       <layout>
-        <lit>machine</lit>
+        <lit>if</lit>
         <ref>
-          <name>id</name>
-          <type>Ids</type>
+          <name>cond</name>
+          <type>Expression</type>
         </ref>
+        <lit>then</lit>
         <ref>
-          <name>states</name>
-          <type>States</type>
+          <name>thenPart</name>
+          <type>Statement</type>
+        </ref>
+        <lit>else</lit>
+        <ref>
+          <name>elsePart</name>
+          <type>Statement</type>
+        </ref>
+        <lit>fi</lit>
+      </layout>
+    </production>
+    <production>
+      <name>asgStat</name>
+      <arg>
+        <name>var</name>
+        <type>Id</type>
+        <card>1</card>
+      </arg>
+      <arg>
+        <name>val</name>
+        <type>Expression</type>
+        <card>1</card>
+      </arg>
+      <layout>
+        <ref>
+          <name>var</name>
+          <type>Id</type>
+        </ref>
+        <lit>:=</lit>
+        <ref>
+          <name>val</name>
+          <type>Expression</type>
         </ref>
       </layout>
     </production>
-  </nonterminal>
-  <lexical>
-    <name>WhitespaceOrComment</name>
-  </lexical>
-  <lexical>
-    <name>WhitespaceOrComment</name>
-  </lexical>
-  <lexical>
-    <name>Comment</name>
-  </lexical>
-  <nonterminal>
-    <name>States</name>
     <production>
-      <name>state</name>
+      <name>whileStat</name>
       <arg>
-        <name>id</name>
-        <type>Ids</type>
+        <name>cond</name>
+        <type>Expression</type>
         <card>1</card>
       </arg>
       <arg>
-        <name>transitions</name>
-        <type>Trans</type>
+        <name>body</name>
+        <type>Statement</type>
         <card>*</card>
       </arg>
       <layout>
-        <lit>state</lit>
+        <lit>while</lit>
         <ref>
-          <name>id</name>
-          <type>Ids</type>
+          <name>cond</name>
+          <type>Expression</type>
         </ref>
-        <lit>{</lit>
+        <lit>do</lit>
         <ref>
-          <name>transitions</name>
-          <type>Trans</type>
+          <name>body</name>
+          <type>Statement</type>
         </ref>
-        <lit>}</lit>
+        <lit>od</lit>
       </layout>
     </production>
   </nonterminal>

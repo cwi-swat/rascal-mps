@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="XML2MPS.Importer.NameResolver" />
   <dependency className="XML2MPS.Importer.XMLImporter">
     <classNode dependClassName="JavaXMLImporter.Importer" />
     <classNode dependClassName="JavaXMLImporter.Layout.LayoutElement" />

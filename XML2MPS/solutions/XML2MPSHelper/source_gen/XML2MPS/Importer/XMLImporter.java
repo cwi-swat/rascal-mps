@@ -30,12 +30,14 @@ public class XMLImporter {
   private ArrayList<Pair<SNode, ProductionArgument>> linkQueue;
   private ArrayList<SNode> interfaceNodeList;
   private ArrayList<SNode> conceptNodeList;
+  private ArrayList<String> keywords;
   private Frame frame;
 
   public XMLImporter(Frame f) {
     this.interfaceNodeList = new ArrayList();
     this.conceptNodeList = new ArrayList();
     this.linkQueue = new ArrayList();
+    this.keywords = new ArrayList();
     this.frame = f;
   }
 
@@ -46,6 +48,11 @@ public class XMLImporter {
       System.out.println("Empty dom");
     }
     try {
+
+      this.keywords = javaImporter.getAllKeywords(dom);
+      for (String kw : this.keywords) {
+        display(kw);
+      }
 
 
       // Add lexicals first 
@@ -65,10 +72,10 @@ public class XMLImporter {
           NodeCreatorClass.linkInterfaceToConcept(productionConcept, nonTerminalInterface);
           struct.addRootNode(productionConcept);
           conceptNodeList.add(productionConcept);
-          for (ProductionArgument arg : ListSequence.fromList(p.getArgList())) {
-            String name = arg.getName();
-            String type = arg.getType();
-            String cardinality = arg.getCardinality().toMPSCardinality();
+          for (ProductionArgument a : ListSequence.fromList(p.getArgList())) {
+            String name = a.getName();
+            String type = a.getType();
+            String cardinality = a.getCardinality().toMPSCardinality();
 
             // First check if an interface or concept with this name exists 
             // If so, we can link right now 
@@ -79,7 +86,7 @@ public class XMLImporter {
               NodeCreatorClass.addConceptChild(productionConcept, this.getConceptNodeByName(type), name, cardinality);
             } else {
               // Child does not yet exits, add to queue to link later 
-              linkQueue.add(new Pair(productionConcept, arg));
+              linkQueue.add(new Pair(productionConcept, a));
             }
 
           }
@@ -115,11 +122,21 @@ public class XMLImporter {
     for (LayoutElement e : ListSequence.fromList(l)) {
       if (e.getClass() == LiteralLayoutElement.class) {
         LiteralLayoutElement le = ((LiteralLayoutElement) e);
-        SNode cell = EditorFactory.createLiteralCell(le.getName());
-        EditorFactory.addCellToConceptEditor(editor, cell);
+        if (this.keywords.contains(le.getName())) {
+          SNode cell = EditorFactory.createColouredLiteralCell(le.getName());
+          EditorFactory.addCellToConceptEditor(editor, cell);
+
+        } else {
+          SNode cell = EditorFactory.createLiteralCell(le.getName());
+          EditorFactory.addCellToConceptEditor(editor, cell);
+
+        }
       } else if (e.getClass() == ReferenceLayoutElement.class) {
         ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
         SNode link = getLinkdeclarationByName(re.getName(), node);
+        if (link == null) {
+          display("null link: " + re.getName());
+        }
         String card = link.getProperty(MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98054bb04L, "sourceCardinality"));
         if (card.equals("1") || card.equals("0..1")) {
           SNode refCell = EditorFactory.createRefNodeCell(link);
@@ -149,18 +166,18 @@ public class XMLImporter {
     struct.addRootNode(lexicalInterface);
     this.interfaceNodeList.add(lexicalInterface);
 
-    SNode lexicalType = LexicalResolver.constraintDataTypeFactory(argType);
-    struct.addRootNode(lexicalType);
 
-    SNode prop = LexicalResolver.constrainedPropertyFactory(argName, lexicalType);
 
-    SNode lexicalNode = LexicalResolver.LexicalNodeFactory(argName, prop);
-    NodeCreatorClass.linkInterfaceToConcept(lexicalNode, lexicalInterface);
-    SNode editor = EditorFactory.createLexicalEditor(lexicalNode, prop);
-    editorModel.addRootNode(editor);
+
+    SNode lexicalNode = LexicalResolver.addLexical(name, argName, argType, struct, lexicalInterface, editorModel);
+
     struct.addRootNode(lexicalNode);
     this.conceptNodeList.add(lexicalNode);
 
+  }
+
+  private boolean modelContainsNodeByName(String name) {
+    return interfaceListContainsNodeByName(name) || conceptListContainsNodeByName(name);
   }
 
 

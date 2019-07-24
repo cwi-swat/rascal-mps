@@ -109,6 +109,36 @@ public class Importer {
 
     }
 
+    public ArrayList<String> getAllKeywords(Document dom) throws EmptyDomException{
+        if(dom == null){
+            throw new EmptyDomException();
+        }
+        ArrayList<String> ntList = new ArrayList<>();
+        dom.getDocumentElement().normalize();
+        System.out.println(dom.getDocumentElement().getNodeName());
+        NodeList nl = dom.getDocumentElement().getElementsByTagName("keywords");
+        for(int i = 0; i < nl.getLength(); i++){
+            Element e = (Element)nl.item(i);
+            //String keyword = e.getElementsByTagName("keyword").item(0).getTextContent();
+            NodeList words = e.getElementsByTagName("keyword");
+            for (int j = 0; j < words.getLength(); j++) {
+                String keyword = words.item(j).getTextContent();
+                ntList.add(keyword);
+            }
+        }
+        return ntList;
+
+    }
+
+    private boolean nameIsTaken(String name, ArrayList<NonTerminal> ntList){
+        for(NonTerminal nt: ntList){
+            if(nt.getName().equals(name)){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public ArrayList<Lexical> getAllLexicals(Document dom){
         if (dom == null) {
             return null;
@@ -141,21 +171,13 @@ public class Importer {
 
 
     public static void main(String[] args) {
-        Importer im = new Importer("XML\\out8.xml");
+        Importer im = new Importer("XML\\PicoKeywords.xml");
         Document d = im.loadXMLDOM();
         //ArrayList<Lexical> l = im.getAllLexicals(d);
         try{
-            ArrayList<NonTerminal> nt = im.getAllNonTerminals(d);
-            for (NonTerminal n:nt) {
-                for (Production p : n.getProductions()) {
-                    for (LayoutElement e: p.getLayoutElements()) {
-                        if(e.getClass()==LiteralLayoutElement.class){
-                            System.out.println(((LiteralLayoutElement)e).getName());
-                        }else if(e.getClass()==ReferenceLayoutElement.class){
-                            System.out.println(((ReferenceLayoutElement)e).getName() + " " + ((ReferenceLayoutElement)e).getType());
-                        }
-                    }
-                }
+          ArrayList<String> keywords = im.getAllKeywords(d);
+            for (String s : keywords) {
+                System.out.println(s);
             }
         }catch (EmptyDomException e){
             System.out.println(e);
