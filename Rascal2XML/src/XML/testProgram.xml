@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <rootElement>
+    <prog>
+      <decls>
+        <Declaration />
+        <decl>
+          <lex_id>
+            <NoNameFound />
+            <NoNameFound />
+          </lex_id>
+          <naturalType />
+        </decl>
+        <decl>
+          <lex_id>
+            <NoNameFound />
+            <NoNameFound />
+          </lex_id>
+          <stringType />
+        </decl>
+      </decls>
+      <Statement />
+    </prog>
+  </rootElement>
+</root>

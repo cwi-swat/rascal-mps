@@ -40,6 +40,7 @@ syntax TypeDec =
   |  semicolon: ";" 
   ;
   
+  
 syntax InterfaceDec 
   = AnnoDecHead "{" AnnoElemDec* "}"
   | InterfaceDecHead "{" InterfaceMemberDec* "}" 

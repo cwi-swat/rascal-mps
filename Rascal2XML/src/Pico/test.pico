@@ -1,0 +1,12 @@
+begin
+ declare 
+ 	ab: natural, 
+ 	b: string
+ ; 
+ 
+ if a != b then
+ 
+ else
+ 
+ fi
+ end

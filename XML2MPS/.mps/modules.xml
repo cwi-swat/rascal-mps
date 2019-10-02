@@ -7,6 +7,31 @@
       <modulePath path="$PROJECT_DIR$/languages/NewLanguagePicoPico/sandbox/NewLanguagePicoPico.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico12/Pico12.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico12/sandbox/Pico12.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico16/Pico16.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico16/sandbox/Pico16.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico17/Pico17.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico17/sandbox/Pico17.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico19/Pico19.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico19/sandbox/Pico19.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico21/Pico21.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico21/sandbox/Pico21.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico22/Pico22.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Pico22/sandbox/Pico22.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoFlatten1/PicoFlatten1.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoFlatten1/sandbox/PicoFlatten1.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndent/PicoIndent.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndent/sandbox/PicoIndent.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndentLayout/PicoIndentLayout.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndentLayout/sandbox/PicoIndentLayout.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndentLayoutWithStyle/PicoIndentLayoutWithStyle.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndentLayoutWithStyle/sandbox/PicoIndentLayoutWithStyle.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndentMore/PicoIndentMore.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoIndentMore/sandbox/PicoIndentMore.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/Rascal2Sample.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/sandbox/Rascal2Sample.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/StateMachineSample.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/runtime/StateMachineSample.runtime.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="TestSolution" />
       <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/plugin/plugin.msd" folder="" />

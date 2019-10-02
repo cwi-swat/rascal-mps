@@ -1,0 +1,53 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{graphicx}
+\usepackage{fontspec}
+% Title Page
+\title{\vspace{-2.0cm} Master project description \\ Projectional editing support for textual languages}
+\author{Jur Bartels \\ Department of Computer Science and Mathematics\\ Technische Universiteit Eindhoven}
+
+
+\begin{document}
+\maketitle
+
+\section*{Context}
+Domain-specific languages, DSLs for short, are languages designed and implemented for a specific domain and/or task. This allows language designers to focus on the concrete challenges of said domain, without having to worry about the consequences of design choices in more general use in other domains. Language workbenches exist to facilitate the creation of DSLs, often combining language design/specification, editor creation and code generation or interpretation. In this project we will concern ourselves with two language workbenches: Rascal and Jetbrain MPS. 
+
+\section*{Rascal}
+Rascal is a textual language workbench and meta-programming language for creating DSLs with full IDE integration. In Rascal, languages are defined using grammars, both for the concrete and abstract syntax. These grammars, combined with a parser are used to generate an Abstract Syntax Tree (AST) from the source code of the defined language, which in turn can be used as input for code generation. Rascal also supports the creation of language editors with syntax highlighting and the definitions of type systems.
+
+\section*{MPS}
+MPS is a projectional language workbench. Instead of defining grammars which are combined with a parser to generate an AST from a given source, MPS defines languages by constructing AST directly. Thus to edit the language, the language engineer edits the AST by altering nodes, defining rules and constraints. Using the AST, MPS can create editors for the language within MPS itself in which programmers can use the language. It also provides code generation facilities for several target languages.
+
+\section*{Project goal}
+The goal of this project is to research and create an interface between a textual (Rascal) and projectional (MPS) language workbenches. This means that we would be able to define a language textually, through a grammar, and then use said language within a projectional editor. An important component of the constructed projectional editor is the usability. The objective is to save language engineers time
+
+\section*{Approach}
+To be able to create an interface between both workbenches, we must first understand the differences and similarities in the languages definitions, i.e the artefacts created by the workbenches. Such artefacts for Rascal include the concrete syntax, abstract syntax, type checker, parser and interpreter. The artefacts of MPS are less known. If possible, we would want to define a possible mapping between language workbench artefacts, which may require extending one representation with additional information. Once such a mapping has been at least partially defined, we need to implement an actual interface. The implementation details, such as the location (inside one of the workbenches or independent) of this interface are to be determined later in the project, depending on the requirements posed by the mapping and the ease of implementation.\\\\
+The interface will then be shown as proof of concept using a small configuration DSL of Océ.
+
+\section*{Relevant literature}
+Some relevant literature on language design and workbenches:
+\begin{itemize}
+	\item Lämmel, Ralf. Software Languages. Springer, Cham, 2018.
+	\item A. Sutii, Modularity and reuse of domain-specific languages : an exploration with MetaMod Eindhoven University of Technology, 2017
+	\item Voelter, Markus, and Konstantin Solomatov. "Language modularization and composition with projectional language workbenches illustrated with MPS." Software Language Engineering, SLE 16.3 (2010).
+	\item Voelter, Markus, and Vaclav Pech. "Language modularity with the MPS language workbench." 2012 34th International Conference on Software Engineering (ICSE). IEEE, 2012.
+	\item Klint, Paul, Tijs Van Der Storm, and Jurgen Vinju. "EASY Meta-programming with Rascal." International Summer School on Generative and Transformational Techniques in Software Engineering. Springer, Berlin, Heidelberg, 2009.
+	\item Reps, T.W., Teitelbaum, T.: The Synthesizer Generator – A System for Constructing
+	Language-Based Editors. Texts and Monographs in Computer Science. Springer (1989)
+	https://www.springer.com/gp/book/9781461396253
+	\item Völter,M.,Siegmund,J.,Berger,T.,Kolb,B.:Towards user-friendly projectional editors. In:
+	Proc. SLE, LNCS, vol. 8706, pp. 41–61. Springer (2014)
+	https://link.springer.com/chapter/10.1007%2F978-3-319-11245-9_3
+	
+\end{itemize}
+
+\section*{Other resources}
+\begin{itemize}
+	\item Kogi, a project by Mauricio Verano Merino for deriving block-based environments from context-free grammars in Rascal.
+	\item JastAdd, a meta-compilation system supporting attribute grammars.
+
+\end{itemize}
+
+\end{document}          

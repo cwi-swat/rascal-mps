@@ -175,9 +175,14 @@ public class Importer {
         Document d = im.loadXMLDOM();
         //ArrayList<Lexical> l = im.getAllLexicals(d);
         try{
-          ArrayList<String> keywords = im.getAllKeywords(d);
-            for (String s : keywords) {
-                System.out.println(s);
+            ArrayList<NonTerminal> nt = im.getAllNonTerminals(d);
+            NonTerminal statement = nt.get(5);
+            Production ifthenelse = statement.getProductions().get(0);
+            System.out.println(ifthenelse);
+
+            ArrayList<LayoutElement> layout = ifthenelse.getLayoutElements();
+            for (LayoutElement l:layout) {
+                System.out.println(l);
             }
         }catch (EmptyDomException e){
             System.out.println(e);

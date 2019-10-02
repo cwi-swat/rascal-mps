@@ -1,0 +1,7 @@
+Rascal2MPS
+	- Source grammar language agnostic through intermediary XML
+	- Default editor indentation (WIP)
+	- Default keyword highlighting
+	- Custom Rascal grammar parser 
+	- Two step process
+	-  

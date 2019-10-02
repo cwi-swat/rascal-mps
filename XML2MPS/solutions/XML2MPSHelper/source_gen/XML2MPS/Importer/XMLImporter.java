@@ -23,6 +23,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
 import XML2MPS.NodeCreator.LexicalResolver;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import javax.swing.JOptionPane;
 
 public class XMLImporter {
@@ -50,9 +52,6 @@ public class XMLImporter {
     try {
 
       this.keywords = javaImporter.getAllKeywords(dom);
-      for (String kw : this.keywords) {
-        display(kw);
-      }
 
 
       // Add lexicals first 
@@ -105,10 +104,12 @@ public class XMLImporter {
           if (node == null) {
             break;
           }
-          SNode editor = createProductionEditor(node, p);
+          SNode editor = createBetterProductionEditor(node, p);
           editorModel.addRootNode(editor);
         }
       }
+
+      findAndFlatten(struct);
 
 
     } catch (Importer.EmptyDomException e) {
@@ -143,7 +144,7 @@ public class XMLImporter {
           EditorFactory.addCellToConceptEditor(editor, refCell);
 
         } else if (card.equals("0..n") || card.equals("1..n")) {
-          SNode refCell = EditorFactory.createRefNodeCellList(link);
+          SNode refCell = EditorFactory.createRefNodeCellListVertical(link);
           EditorFactory.addCellToConceptEditor(editor, refCell);
 
         }
@@ -151,6 +152,68 @@ public class XMLImporter {
     }
     return editor;
   }
+
+  private SNode createBetterProductionEditor(SNode node, Production prod) {
+    ArrayList<LayoutElement> l = prod.getLayoutElements();
+    SNode editor = EditorFactory.createDefaultEditor(node);
+    for (int i = 0; i < l.size(); i++) {
+      LayoutElement e = l.get(i);
+      if (e.getClass() == LiteralLayoutElement.class) {
+        LiteralLayoutElement le = ((LiteralLayoutElement) e);
+        if (this.keywords.contains(le.getName())) {
+
+          if (l.size() == 3 && i > 0 && i < l.size() - 1 && l.get(i - 1).getClass() == ReferenceLayoutElement.class && l.get(i + 1).getClass() == ReferenceLayoutElement.class) {
+            SNode cell = EditorFactory.createColouredLiteralCell(le.getName());
+            EditorFactory.addCellToConceptEditor(editor, cell);
+
+          } else {
+            SNode cell = EditorFactory.createNewlineColouredLiteralCell(le.getName());
+            EditorFactory.addCellToConceptEditor(editor, cell);
+          }
+        } else {
+          if (i > 1 && l.get(i - 2).getClass() == LiteralLayoutElement.class && l.get(i - 1).getClass() == ReferenceLayoutElement.class) {
+            SNode cell = EditorFactory.createNewlineLiteralCell(le.getName());
+            EditorFactory.addCellToConceptEditor(editor, cell);
+
+          } else {
+            SNode cell = EditorFactory.createLiteralCell(le.getName());
+            EditorFactory.addCellToConceptEditor(editor, cell);
+          }
+
+        }
+      } else if (e.getClass() == ReferenceLayoutElement.class) {
+        ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
+        SNode link = getLinkdeclarationByName(re.getName(), node);
+        if (link == null) {
+          display("null link: " + re.getName());
+        }
+        String card = link.getProperty(MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98054bb04L, "sourceCardinality"));
+        if (card.equals("1") || card.equals("0..1")) {
+          if (l.get(0).getClass() == ReferenceLayoutElement.class) {
+            SNode refCell = EditorFactory.createRefNodeCell(link);
+            EditorFactory.addCellToConceptEditor(editor, refCell);
+
+          } else {
+            if (i < l.size() - 1 && l.get(i + 1).getClass() == LiteralLayoutElement.class) {
+              SNode refCell = EditorFactory.createIndentedRefNodeCellWithLinebreak(link);
+              EditorFactory.addCellToConceptEditor(editor, refCell);
+
+            } else {
+              SNode refCell = EditorFactory.createIndentedRefNodeCell(link);
+              EditorFactory.addCellToConceptEditor(editor, refCell);
+            }
+          }
+        } else if (card.equals("0..n") || card.equals("1..n")) {
+          SNode refCell = EditorFactory.createRefNodeCellListVertical(link);
+          EditorFactory.addCellToConceptEditor(editor, refCell);
+
+        }
+      }
+
+    }
+    return editor;
+  }
+
 
   private SNode getLinkdeclarationByName(String name, SNode node) {
     for (SNode link : AbstractConceptDeclaration__BehaviorDescriptor.getLinkDeclarations_idhEwILKK.invoke(node)) {
@@ -232,6 +295,41 @@ public class XMLImporter {
         NodeCreatorClass.addConceptChild(e.o1, getConceptNodeByName(childSymbol), childRole, cardinality);
       }
 
+    }
+  }
+
+  private void findAndFlatten(SModel struct) {
+    for (final SNode i : this.interfaceNodeList) {
+      int counter = 0;
+      SNode current = null;
+      for (SNode c : this.conceptNodeList) {
+        if (ListSequence.fromList(SLinkOperations.getChildren(c, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements"))).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x110356fc618L, 0x110356fe029L, "intfc")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals(SPropertyOperations.getString(i, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          }
+        })) {
+          counter++;
+          current = c;
+        }
+      }
+      if (counter == 1) {
+        replaceInterfaceWithConcept(i, current, struct);
+      }
+    }
+  }
+
+  private void replaceInterfaceWithConcept(SNode query, SNode cd, SModel struct) {
+    ArrayList<SNode> nodelist = new ArrayList();
+    for (SNode c : this.conceptNodeList) {
+      for (SNode link : AbstractConceptDeclaration__BehaviorDescriptor.getLinkDeclarations_idhEwILKK.invoke(c)) {
+        if (SPropertyOperations.getString(SLinkOperations.getTarget(link, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98055fef0L, "target")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals(SPropertyOperations.getString(query, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")))) {
+          // If an interface child with the query name is found, replace with direct concept 
+          // Also deletes redundant interface 
+          SLinkOperations.setTarget(link, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98055fef0L, "target"), cd);
+          ListSequence.fromList(SLinkOperations.getChildren(cd, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements"))).removeElementAt(0);
+          struct.removeRootNode(query);
+        }
+      }
     }
   }
 

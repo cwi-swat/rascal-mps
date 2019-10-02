@@ -2,9 +2,9 @@ module Grammars::Pico2
 
 import lexlib::Lexical;
 
-lexical LexId  = lex_id: PrimitiveString;
-lexical I_Natural = natural: PrimitiveString;
-lexical I_String = string: PrimitiveString;
+lexical LexId  = lex_id: ([a-z][a-z0-9]* !>> [a-z0-9]) \ PicoKeywords;
+lexical I_Natural = natural: Natural;
+lexical I_String = string: String;
 
 keyword PicoKeywords = "begin" | "end" | 
                        "declare" | 
@@ -46,7 +46,7 @@ syntax Expression
    | strCon: I_String string
    | natCon: I_Natural natcon
    | not: "not" Expression
-   | bracket "(" Expression e ")"
+   | braces: "(" Expression e ")"
    | left conc: Expression lhs "||" Expression rhs
    | left and: Expression lhs "and" Expression rhs
    | left or: Expression lhs "or" Expression rhs

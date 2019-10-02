@@ -15,14 +15,14 @@ module Grammars::rascalSyntax2
 
 import lexlib::Lexical;
 
-lexical BooleanLiteral
-	= PrimitiveString ;
+lexical BooleanLiterals
+	= booleanLiteral: String ;
 
 syntax Literal
 	= integer: IntegerLiteral integerLiteral 
 	| regExp: RegExpLiteral regExpLiteral 
 	| \real: RealLiteral realLiteral 
-	| boolean: BooleanLiteral booleanLiteral 
+	| boolean: BooleanLiterals booleanLiteral 
 	| string: StringLiteral stringLiteral 
 	| dateTime: DateTimeLiteral dateTimeLiteral 
 	| location: LocationLiteral locationLiteral

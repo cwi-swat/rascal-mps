@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="XML2MPS.Importer.NameResolver" />
+  <dependency className="XML2MPS.Importer.TermImporter" />
   <dependency className="XML2MPS.Importer.XMLImporter">
     <classNode dependClassName="JavaXMLImporter.Importer" />
     <classNode dependClassName="JavaXMLImporter.Layout.LayoutElement" />
@@ -18,7 +19,9 @@
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="javax.swing.JOptionPane" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

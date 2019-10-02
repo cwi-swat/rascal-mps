@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <container>
+    <prog>
+      <decls>
+        <Declaration />
+        <decl>
+          <lex_id>ab</lex_id>
+          <naturalType />
+        </decl>
+        <decl>
+          <lex_id>b</lex_id>
+          <stringType />
+        </decl>
+      </decls>
+      <Statement />
+      <ifElseStat>
+        <ineq>
+          <id>
+            <lex_id>a</lex_id>
+          </id>
+          <id>
+            <lex_id>b</lex_id>
+          </id>
+        </ineq>
+        <Statement />
+        <Statement />
+      </ifElseStat>
+    </prog>
+  </container>
+</root>
