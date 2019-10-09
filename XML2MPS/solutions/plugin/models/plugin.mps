@@ -1291,7 +1291,7 @@
   </node>
   <node concept="sE7Ow" id="WajCt5SGTJ">
     <property role="TrG5h" value="importTermAction" />
-    <property role="2uzpH1" value="Import Term" />
+    <property role="2uzpH1" value="Import Program" />
     <node concept="2XrIbr" id="WajCt5T53$" role="32lrUH">
       <property role="TrG5h" value="display" />
       <node concept="3cqZAl" id="WajCt5T570" role="3clF45" />

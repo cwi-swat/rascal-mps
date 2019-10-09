@@ -11,7 +11,7 @@ import lang::xml::DOM;
 import lang::xml::IO;
 import Node;
 
-Tree getParseTree(loc l){
+Tree getParseTree(type[&T<:Tree] reifiedTree, loc l){
 	return parse(#Program, readFile(l), allowAmbiguity=true);
 }
 
@@ -40,7 +40,7 @@ void treeWalk(Tree t){
 	writeXMLToFile(filepath,root);
 }
 
-void run(Tree t){
+void parseTree2XML(Tree t, str filename){
 	
 	Node domRoot = createEmptyDocument("root");
 	Node rootElement = createNewElement("container");
@@ -50,7 +50,7 @@ void run(Tree t){
 	// dom = appendToRootElement(dom, createNewElement("rootElement"));
 	//dom = appendToElementByNode(dom, recursiveTreeWalk(t,dom));
 	
-	filename = "testProgram3.xml";
+	filename = filename+".xml";
 	loc filepath = |project://Rascal2XML/src/XML|+filename;
 	writeXMLToFile(filepath,domRoot);
 }

@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/XML2MPS.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage/sandbox/NewLanguage.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguagePicoPico/NewLanguagePicoPico.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguagePicoPico/sandbox/NewLanguagePicoPico.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico12/Pico12.mpl" folder="newLanguageName" />
@@ -31,6 +33,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/sandbox/Rascal2Sample.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/StateMachineSample.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/runtime/StateMachineSample.runtime.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/solutions/NewSolutiontest/NewSolutiontest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="TestSolution" />
       <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" folder="" />

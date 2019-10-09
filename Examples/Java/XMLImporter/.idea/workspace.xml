@@ -6,30 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/XMLImporter_jar/XMLImporter.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/XMLImporter/JavaXMLImporter/Importer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XMLImporter/JavaXMLImporter/Importer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/Java15.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/Java15.rsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/Pico2.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/Pico2.rsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/rascalSyntax2.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/rascalSyntax2.rsc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/languages/NewLanguagePicoPico/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/languages/NewLanguagePicoPico/models/structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/languages/Pico12/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/languages/Pico12/models/structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/Importer.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/EditorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/EditorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/models/plugin.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/models/plugin.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/plugin.msd" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/plugin/plugin.msd" afterDir="false" />
-    </list>
+    <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
