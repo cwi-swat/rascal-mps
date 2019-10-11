@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d052aae-9c23-4535-b33a-997963053d90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/TestSolution/models/test.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/TestSolution/models/test.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/plugin/models/plugin.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/plugin/models/plugin.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/solutions/XMLImporterJAR/classes_gen/" />
     <ignored path="$PROJECT_DIR$/solutions/plugin/classes_gen/" />
@@ -607,6 +606,12 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
               <option name="myItemType" value="" />
@@ -639,14 +644,6 @@
               <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugin" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/plugin/models/plugin.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -654,51 +651,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="XML2MPS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/Importer.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newLanguageName" />
+              <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,6 +682,10 @@
               <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NewSolutiontest" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -754,11 +711,53 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NewSolutiontest" />
+              <option name="myItemId" value="XML2MPS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/Importer.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/plugin/models/plugin.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLanguageName" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>

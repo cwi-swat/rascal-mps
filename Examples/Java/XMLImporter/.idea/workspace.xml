@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="" />
+    <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

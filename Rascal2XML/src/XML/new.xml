@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <nonterminal>
+    <name>Program</name>
+    <production>
+      <name>prog</name>
+      <arg>
+        <name>decls</name>
+        <type>Declarations</type>
+        <card>1</card>
+      </arg>
+      <arg>
+        <name>body</name>
+        <type>Statement</type>
+        <card>*</card>
+      </arg>
+    </production>
+  </nonterminal>
+</root>
