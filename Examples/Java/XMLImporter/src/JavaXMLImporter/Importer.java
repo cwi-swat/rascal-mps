@@ -163,6 +163,12 @@ public class Importer {
 
     }
 
+    public String getLanguageRoot(Document dom){
+        dom.getDocumentElement().normalize();
+        NodeList nl = dom.getElementsByTagName("startSymbol");
+        return nl.item(0).getTextContent();
+    }
+
     public class EmptyDomException extends Exception{
         public EmptyDomException(){
             super("Cannot process empty DOM");
@@ -171,22 +177,11 @@ public class Importer {
 
 
     public static void main(String[] args) {
-        Importer im = new Importer("XML\\PicoKeywords.xml");
+        Importer im = new Importer("XML\\PicoStartSymbol.xml");
         Document d = im.loadXMLDOM();
         //ArrayList<Lexical> l = im.getAllLexicals(d);
-        try{
-            ArrayList<NonTerminal> nt = im.getAllNonTerminals(d);
-            NonTerminal statement = nt.get(5);
-            Production ifthenelse = statement.getProductions().get(0);
-            System.out.println(ifthenelse);
+        System.out.println(im.getLanguageRoot(d));
 
-            ArrayList<LayoutElement> layout = ifthenelse.getLayoutElements();
-            for (LayoutElement l:layout) {
-                System.out.println(l);
-            }
-        }catch (EmptyDomException e){
-            System.out.println(e);
-        }
         //System.out.println(l);
     }
 }

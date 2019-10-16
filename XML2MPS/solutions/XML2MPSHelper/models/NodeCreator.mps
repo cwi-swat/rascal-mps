@@ -47,6 +47,9 @@
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -72,6 +75,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -98,6 +102,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -386,9 +391,7 @@
         </node>
         <node concept="3clFbF" id="1MOPOARjqFE" role="3cqZAp">
           <node concept="37vLTI" id="1MOPOARjsqR" role="3clFbG">
-            <node concept="3clFbT" id="1MOPOARjsy5" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
+            <node concept="3clFbT" id="1MOPOARjsy5" role="37vLTx" />
             <node concept="2OqwBi" id="1MOPOARjqPp" role="37vLTJ">
               <node concept="37vLTw" id="1MOPOARjqFC" role="2Oq$k0">
                 <ref role="3cqZAo" node="1MOPOARhRFe" resolve="n" />
@@ -870,7 +873,40 @@
   </node>
   <node concept="312cEu" id="7WSK5s1SbOS">
     <property role="TrG5h" value="LexicalResolver" />
-    <node concept="2tJIrI" id="7WSK5s1WBuE" role="jymVt" />
+    <node concept="2tJIrI" id="2il5Wehl7Ez" role="jymVt" />
+    <node concept="312cEg" id="2il5WehlpBf" role="jymVt">
+      <property role="TrG5h" value="cdMap" />
+      <node concept="3Tm6S6" id="2il5WehllB8" role="1B3o_S" />
+      <node concept="3uibUv" id="2il5Wehlpbl" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~HashMap" resolve="HashMap" />
+        <node concept="17QB3L" id="2il5Wehlp_g" role="11_B2D" />
+        <node concept="3Tqbb2" id="2il5Wehlp_O" role="11_B2D">
+          <ref role="ehGHo" to="tpce:fKAz7CR" resolve="ConstrainedDataTypeDeclaration" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2il5Wehpezs" role="jymVt" />
+    <node concept="3clFbW" id="2il5WehpjhM" role="jymVt">
+      <node concept="3cqZAl" id="2il5WehpjhN" role="3clF45" />
+      <node concept="3clFbS" id="2il5WehpjhP" role="3clF47">
+        <node concept="3clFbF" id="2il5Wehpk_v" role="3cqZAp">
+          <node concept="37vLTI" id="2il5WehplDr" role="3clFbG">
+            <node concept="2ShNRf" id="2il5Wehpm7S" role="37vLTx">
+              <node concept="HV5vD" id="2il5WehpqcH" role="2ShVmc">
+                <ref role="HV5vE" to="33ny:~HashMap" resolve="HashMap" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2il5WehpkDD" role="37vLTJ">
+              <node concept="Xjq3P" id="2il5Wehpk_u" role="2Oq$k0" />
+              <node concept="2OwXpG" id="2il5WehpkLk" role="2OqNvi">
+                <ref role="2Oxat5" node="2il5WehlpBf" resolve="cdMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2il5WehpiMb" role="1B3o_S" />
+    </node>
     <node concept="Wx3nA" id="7WSK5s1WWgy" role="jymVt">
       <property role="TrG5h" value="regexConstraints" />
       <node concept="3uibUv" id="7WSK5s1WWg_" role="1tU5fm">
@@ -971,283 +1007,348 @@
     </node>
     <node concept="2tJIrI" id="3OmficGEkES" role="jymVt" />
     <node concept="2tJIrI" id="7WSK5s1XBah" role="jymVt" />
-    <node concept="2YIFZL" id="7WSK5s1XCdX" role="jymVt">
+    <node concept="3clFb_" id="2il5WehlaLA" role="jymVt">
       <property role="TrG5h" value="addLexical" />
-      <node concept="3clFbS" id="7WSK5s1XCe0" role="3clF47">
-        <node concept="3clFbJ" id="3OmficGExeU" role="3cqZAp">
-          <node concept="3clFbS" id="3OmficGExeW" role="3clFbx">
-            <node concept="3cpWs8" id="3OmficGE_c_" role="3cqZAp">
-              <node concept="3cpWsn" id="3OmficGE_cC" role="3cpWs9">
+      <node concept="3clFbS" id="2il5WehlaLC" role="3clF47">
+        <node concept="3clFbJ" id="2il5WehlaLD" role="3cqZAp">
+          <node concept="3clFbS" id="2il5WehlaLE" role="3clFbx">
+            <node concept="3cpWs8" id="2il5WehlaLF" role="3cqZAp">
+              <node concept="3cpWsn" id="2il5WehlaLG" role="3cpWs9">
                 <property role="TrG5h" value="prop" />
-                <node concept="3Tqbb2" id="3OmficGE_cz" role="1tU5fm">
+                <node concept="3Tqbb2" id="2il5WehlaLH" role="1tU5fm">
                   <ref role="ehGHo" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
                 </node>
-                <node concept="1rXfSq" id="3OmficGEZS4" role="33vP2m">
+                <node concept="1rXfSq" id="2il5WehlaLI" role="33vP2m">
                   <ref role="37wK5l" node="3OmficGECwc" resolve="primitivePropertyFactory" />
-                  <node concept="37vLTw" id="3OmficGF038" role="37wK5m">
-                    <ref role="3cqZAo" node="7WSK5s1XCKa" resolve="argName" />
+                  <node concept="37vLTw" id="2il5WehlaLJ" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaN7" resolve="argName" />
                   </node>
-                  <node concept="37vLTw" id="3OmficGF08Y" role="37wK5m">
-                    <ref role="3cqZAo" node="7WSK5s1XCOq" resolve="argType" />
+                  <node concept="37vLTw" id="2il5WehlaLK" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaN9" resolve="argType" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="3OmficGF29q" role="3cqZAp">
-              <node concept="3cpWsn" id="3OmficGF29r" role="3cpWs9">
+            <node concept="3cpWs8" id="2il5WehlaLL" role="3cqZAp">
+              <node concept="3cpWsn" id="2il5WehlaLM" role="3cpWs9">
                 <property role="TrG5h" value="lexicalNode" />
-                <node concept="3Tqbb2" id="3OmficGF29s" role="1tU5fm">
+                <node concept="3Tqbb2" id="2il5WehlaLN" role="1tU5fm">
                   <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                 </node>
-                <node concept="1rXfSq" id="3OmficGF29t" role="33vP2m">
+                <node concept="1rXfSq" id="2il5WehlaLO" role="33vP2m">
                   <ref role="37wK5l" node="7WSK5s1Sd5J" resolve="LexicalNodeFactory" />
-                  <node concept="37vLTw" id="3OmficGF29u" role="37wK5m">
-                    <ref role="3cqZAo" node="7WSK5s1XCKa" resolve="argName" />
+                  <node concept="37vLTw" id="2il5WehlaLP" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaN7" resolve="argName" />
                   </node>
-                  <node concept="37vLTw" id="3OmficGF2fk" role="37wK5m">
-                    <ref role="3cqZAo" node="3OmficGE_cC" resolve="prop" />
+                  <node concept="37vLTw" id="2il5WehlaLQ" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaLG" resolve="prop" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7WSK5s1YQCv" role="3cqZAp">
-              <node concept="2YIFZM" id="7WSK5s1YQNC" role="3clFbG">
+            <node concept="3clFbF" id="2il5WehlaLR" role="3cqZAp">
+              <node concept="2YIFZM" id="2il5WehlaLS" role="3clFbG">
                 <ref role="37wK5l" node="5Jh2F9ezcou" resolve="linkInterfaceToConcept" />
                 <ref role="1Pybhc" node="1MOPOARjBko" resolve="NodeCreatorClass" />
-                <node concept="37vLTw" id="7WSK5s1YQSQ" role="37wK5m">
-                  <ref role="3cqZAo" node="3OmficGF29r" resolve="lexicalNode" />
+                <node concept="37vLTw" id="2il5WehlaLT" role="37wK5m">
+                  <ref role="3cqZAo" node="2il5WehlaLM" resolve="lexicalNode" />
                 </node>
-                <node concept="37vLTw" id="efYUoRCQ_j" role="37wK5m">
-                  <ref role="3cqZAo" node="efYUoRCPUc" resolve="lexicalInterface" />
+                <node concept="37vLTw" id="2il5WehlaLU" role="37wK5m">
+                  <ref role="3cqZAo" node="2il5WehlaNd" resolve="lexicalInterface" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7WSK5s1XZK5" role="3cqZAp">
-              <node concept="2OqwBi" id="7WSK5s1XZSu" role="3clFbG">
-                <node concept="37vLTw" id="7WSK5s1XZK3" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7WSK5s1XCT0" resolve="struct" />
+            <node concept="3clFbF" id="2il5WehlaLV" role="3cqZAp">
+              <node concept="2OqwBi" id="2il5WehlaLW" role="3clFbG">
+                <node concept="37vLTw" id="2il5WehlaLX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2il5WehlaNb" resolve="struct" />
                 </node>
-                <node concept="liA8E" id="7WSK5s1Y0fA" role="2OqNvi">
+                <node concept="liA8E" id="2il5WehlaLY" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
-                  <node concept="37vLTw" id="7WSK5s1Y0hF" role="37wK5m">
-                    <ref role="3cqZAo" node="3OmficGF29r" resolve="lexicalNode" />
+                  <node concept="37vLTw" id="2il5WehlaLZ" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaLM" resolve="lexicalNode" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="3OmficGvaH9" role="3cqZAp">
-              <node concept="3cpWsn" id="3OmficGvaHc" role="3cpWs9">
+            <node concept="3cpWs8" id="2il5WehlaM0" role="3cqZAp">
+              <node concept="3cpWsn" id="2il5WehlaM1" role="3cpWs9">
                 <property role="TrG5h" value="editor" />
-                <node concept="3Tqbb2" id="3OmficGvaH8" role="1tU5fm">
+                <node concept="3Tqbb2" id="2il5WehlaM2" role="1tU5fm">
                   <ref role="ehGHo" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
                 </node>
-                <node concept="2YIFZM" id="3OmficGu$hf" role="33vP2m">
+                <node concept="2YIFZM" id="2il5WehlaM3" role="33vP2m">
                   <ref role="1Pybhc" node="5ARYsrZJWJq" resolve="EditorFactory" />
                   <ref role="37wK5l" node="3OmficGgI04" resolve="createLexicalEditor" />
-                  <node concept="37vLTw" id="efYUoRDcCc" role="37wK5m">
-                    <ref role="3cqZAo" node="3OmficGF29r" resolve="lexicalNode" />
+                  <node concept="37vLTw" id="2il5WehlaM4" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaLM" resolve="lexicalNode" />
                   </node>
-                  <node concept="37vLTw" id="3OmficGu_3x" role="37wK5m">
-                    <ref role="3cqZAo" node="3OmficGE_cC" resolve="prop" />
+                  <node concept="37vLTw" id="2il5WehlaM5" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaLG" resolve="prop" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3OmficGw2Ja" role="3cqZAp">
-              <node concept="2OqwBi" id="3OmficGw3BL" role="3clFbG">
-                <node concept="37vLTw" id="3OmficGw2J8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="efYUoRDl83" resolve="editorModel" />
+            <node concept="3clFbF" id="2il5WehlaM6" role="3cqZAp">
+              <node concept="2OqwBi" id="2il5WehlaM7" role="3clFbG">
+                <node concept="37vLTw" id="2il5WehlaM8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2il5WehlaNf" resolve="editorModel" />
                 </node>
-                <node concept="liA8E" id="3OmficGw4kd" role="2OqNvi">
+                <node concept="liA8E" id="2il5WehlaM9" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
-                  <node concept="37vLTw" id="3OmficGw4I2" role="37wK5m">
-                    <ref role="3cqZAo" node="3OmficGvaHc" resolve="editor" />
+                  <node concept="37vLTw" id="2il5WehlaMa" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaM1" resolve="editor" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="efYUoRDlwY" role="3cqZAp" />
-            <node concept="3cpWs6" id="efYUoRCRd2" role="3cqZAp">
-              <node concept="37vLTw" id="efYUoRCRqU" role="3cqZAk">
-                <ref role="3cqZAo" node="3OmficGF29r" resolve="lexicalNode" />
+            <node concept="3clFbH" id="2il5WehlaMb" role="3cqZAp" />
+            <node concept="3cpWs6" id="2il5WehlaMc" role="3cqZAp">
+              <node concept="37vLTw" id="2il5WehlaMd" role="3cqZAk">
+                <ref role="3cqZAo" node="2il5WehlaLM" resolve="lexicalNode" />
               </node>
             </node>
-            <node concept="3clFbH" id="3OmficGF2Dm" role="3cqZAp" />
-            <node concept="3clFbH" id="3OmficGF0cO" role="3cqZAp" />
+            <node concept="3clFbH" id="2il5WehlaMe" role="3cqZAp" />
+            <node concept="3clFbH" id="2il5WehlaMf" role="3cqZAp" />
           </node>
-          <node concept="9aQIb" id="3OmficGE$FE" role="9aQIa">
-            <node concept="3clFbS" id="3OmficGE$FF" role="9aQI4">
-              <node concept="3cpWs8" id="3OmficGE$Qz" role="3cqZAp">
-                <node concept="3cpWsn" id="3OmficGE$Q$" role="3cpWs9">
+          <node concept="9aQIb" id="2il5WehlaMg" role="9aQIa">
+            <node concept="3clFbS" id="2il5WehlaMh" role="9aQI4">
+              <node concept="3cpWs8" id="2il5WehlDFZ" role="3cqZAp">
+                <node concept="3cpWsn" id="2il5WehlDG2" role="3cpWs9">
                   <property role="TrG5h" value="lexicalType" />
-                  <node concept="3Tqbb2" id="3OmficGE$Q_" role="1tU5fm">
+                  <node concept="3Tqbb2" id="2il5WehlDFX" role="1tU5fm">
                     <ref role="ehGHo" to="tpce:fKAz7CR" resolve="ConstrainedDataTypeDeclaration" />
                   </node>
-                  <node concept="1rXfSq" id="3OmficGE$QA" role="33vP2m">
-                    <ref role="37wK5l" node="7WSK5s1XaIs" resolve="constraintDataTypeFactory" />
-                    <node concept="37vLTw" id="3OmficGE$QB" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XCOq" resolve="argType" />
+                  <node concept="10Nm6u" id="2il5WehlF0v" role="33vP2m" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="2il5WehlcL$" role="3cqZAp">
+                <node concept="3clFbS" id="2il5WehlcLA" role="3clFbx">
+                  <node concept="3clFbF" id="2il5WehlHjX" role="3cqZAp">
+                    <node concept="37vLTI" id="2il5WehlIzp" role="3clFbG">
+                      <node concept="2OqwBi" id="2il5WehlJtt" role="37vLTx">
+                        <node concept="37vLTw" id="2il5WehlICU" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2il5WehlpBf" resolve="cdMap" />
+                        </node>
+                        <node concept="liA8E" id="2il5Wehm0G$" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                          <node concept="37vLTw" id="2il5Wehm1jX" role="37wK5m">
+                            <ref role="3cqZAo" node="2il5WehlaN9" resolve="argType" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="2il5WehlHjV" role="37vLTJ">
+                        <ref role="3cqZAo" node="2il5WehlDG2" resolve="lexicalType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="2il5Wehlr_C" role="3clFbw">
+                  <node concept="37vLTw" id="2il5WehlqL$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2il5WehlpBf" resolve="cdMap" />
+                  </node>
+                  <node concept="liA8E" id="2il5WehlsMK" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~HashMap.containsKey(java.lang.Object):boolean" resolve="containsKey" />
+                    <node concept="37vLTw" id="2il5Wehltn5" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaN9" resolve="argType" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="9aQIb" id="2il5Wehl$Vc" role="9aQIa">
+                  <node concept="3clFbS" id="2il5Wehl$Vd" role="9aQI4">
+                    <node concept="3clFbF" id="2il5Wehm2ao" role="3cqZAp">
+                      <node concept="37vLTI" id="2il5Wehm2m4" role="3clFbG">
+                        <node concept="37vLTw" id="2il5Wehm2an" role="37vLTJ">
+                          <ref role="3cqZAo" node="2il5WehlDG2" resolve="lexicalType" />
+                        </node>
+                        <node concept="2YIFZM" id="2il5Wehm325" role="37vLTx">
+                          <ref role="37wK5l" node="7WSK5s1XaIs" resolve="constraintDataTypeFactory" />
+                          <ref role="1Pybhc" node="7WSK5s1SbOS" resolve="LexicalResolver" />
+                          <node concept="37vLTw" id="2il5Wehm3hA" role="37wK5m">
+                            <ref role="3cqZAo" node="2il5WehlaN9" resolve="argType" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="2il5WehoC1q" role="3cqZAp">
+                      <node concept="2OqwBi" id="2il5WehoD2f" role="3clFbG">
+                        <node concept="2OqwBi" id="2il5WehoC6S" role="2Oq$k0">
+                          <node concept="Xjq3P" id="2il5WehoC1o" role="2Oq$k0" />
+                          <node concept="2OwXpG" id="2il5WehoClf" role="2OqNvi">
+                            <ref role="2Oxat5" node="2il5WehlpBf" resolve="cdMap" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="2il5WehpcFL" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                          <node concept="37vLTw" id="2il5WehpdlP" role="37wK5m">
+                            <ref role="3cqZAo" node="2il5WehlaN9" resolve="argType" />
+                          </node>
+                          <node concept="37vLTw" id="2il5Wehpeh5" role="37wK5m">
+                            <ref role="3cqZAo" node="2il5WehlDG2" resolve="lexicalType" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3OmficGE$QC" role="3cqZAp">
-                <node concept="2OqwBi" id="3OmficGE$QD" role="3clFbG">
-                  <node concept="37vLTw" id="3OmficGE$QE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7WSK5s1XCT0" resolve="struct" />
+              <node concept="3clFbF" id="2il5WehlaMn" role="3cqZAp">
+                <node concept="2OqwBi" id="2il5WehlaMo" role="3clFbG">
+                  <node concept="37vLTw" id="2il5WehlaMp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2il5WehlaNb" resolve="struct" />
                   </node>
-                  <node concept="liA8E" id="3OmficGE$QF" role="2OqNvi">
+                  <node concept="liA8E" id="2il5WehlaMq" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
-                    <node concept="37vLTw" id="3OmficGE$QG" role="37wK5m">
-                      <ref role="3cqZAo" node="3OmficGE$Q$" resolve="lexicalType" />
+                    <node concept="37vLTw" id="2il5Wehm3t1" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlDG2" resolve="lexicalType" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="7WSK5s1XYoD" role="3cqZAp">
-                <node concept="3cpWsn" id="7WSK5s1XYoG" role="3cpWs9">
+              <node concept="3cpWs8" id="2il5WehlaMs" role="3cqZAp">
+                <node concept="3cpWsn" id="2il5WehlaMt" role="3cpWs9">
                   <property role="TrG5h" value="prop" />
-                  <node concept="3Tqbb2" id="7WSK5s1XYoB" role="1tU5fm">
+                  <node concept="3Tqbb2" id="2il5WehlaMu" role="1tU5fm">
                     <ref role="ehGHo" to="tpce:f_TJgxF" resolve="PropertyDeclaration" />
                   </node>
-                  <node concept="1rXfSq" id="7WSK5s1XYw6" role="33vP2m">
+                  <node concept="1rXfSq" id="2il5WehlaMv" role="33vP2m">
                     <ref role="37wK5l" node="7WSK5s1Xxr7" resolve="constrainedPropertyFactory" />
-                    <node concept="37vLTw" id="7WSK5s1XYzw" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XCKa" resolve="argName" />
+                    <node concept="37vLTw" id="2il5WehlaMw" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaN7" resolve="argName" />
                     </node>
-                    <node concept="37vLTw" id="7WSK5s1XYGx" role="37wK5m">
-                      <ref role="3cqZAo" node="3OmficGE$Q$" resolve="lexicalType" />
+                    <node concept="37vLTw" id="2il5Wehm3x0" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlDG2" resolve="lexicalType" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="7WSK5s1XYdg" role="3cqZAp">
-                <node concept="3cpWsn" id="7WSK5s1XYdj" role="3cpWs9">
+              <node concept="3cpWs8" id="2il5WehlaMy" role="3cqZAp">
+                <node concept="3cpWsn" id="2il5WehlaMz" role="3cpWs9">
                   <property role="TrG5h" value="lexicalNode" />
-                  <node concept="3Tqbb2" id="7WSK5s1XYde" role="1tU5fm">
+                  <node concept="3Tqbb2" id="2il5WehlaM$" role="1tU5fm">
                     <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
                   </node>
-                  <node concept="1rXfSq" id="7WSK5s1XZ_i" role="33vP2m">
+                  <node concept="1rXfSq" id="2il5WehlaM_" role="33vP2m">
                     <ref role="37wK5l" node="7WSK5s1Sd5J" resolve="LexicalNodeFactory" />
-                    <node concept="37vLTw" id="7WSK5s1XZDl" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XCKa" resolve="argName" />
+                    <node concept="37vLTw" id="2il5WehlaMA" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaN7" resolve="argName" />
                     </node>
-                    <node concept="37vLTw" id="3OmficGF26Z" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XYoG" resolve="prop" />
+                    <node concept="37vLTw" id="2il5WehlaMB" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaMt" resolve="prop" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3OmficGF2Mv" role="3cqZAp">
-                <node concept="2YIFZM" id="3OmficGF2Mw" role="3clFbG">
+              <node concept="3clFbF" id="2il5WehlaMC" role="3cqZAp">
+                <node concept="2YIFZM" id="2il5WehlaMD" role="3clFbG">
                   <ref role="37wK5l" node="5Jh2F9ezcou" resolve="linkInterfaceToConcept" />
                   <ref role="1Pybhc" node="1MOPOARjBko" resolve="NodeCreatorClass" />
-                  <node concept="37vLTw" id="3OmficGF2Mx" role="37wK5m">
-                    <ref role="3cqZAo" node="7WSK5s1XYdj" resolve="lexicalNode" />
+                  <node concept="37vLTw" id="2il5WehlaME" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaMz" resolve="lexicalNode" />
                   </node>
-                  <node concept="37vLTw" id="efYUoRCQI3" role="37wK5m">
-                    <ref role="3cqZAo" node="efYUoRCPUc" resolve="lexicalInterface" />
+                  <node concept="37vLTw" id="2il5WehlaMF" role="37wK5m">
+                    <ref role="3cqZAo" node="2il5WehlaNd" resolve="lexicalInterface" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3OmficGF2Mz" role="3cqZAp">
-                <node concept="2OqwBi" id="3OmficGF2M$" role="3clFbG">
-                  <node concept="37vLTw" id="3OmficGF2M_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7WSK5s1XCT0" resolve="struct" />
+              <node concept="3clFbF" id="2il5WehlaMG" role="3cqZAp">
+                <node concept="2OqwBi" id="2il5WehlaMH" role="3clFbG">
+                  <node concept="37vLTw" id="2il5WehlaMI" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2il5WehlaNb" resolve="struct" />
                   </node>
-                  <node concept="liA8E" id="3OmficGF2MA" role="2OqNvi">
+                  <node concept="liA8E" id="2il5WehlaMJ" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
-                    <node concept="37vLTw" id="3OmficGF2MB" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XYdj" resolve="lexicalNode" />
+                    <node concept="37vLTw" id="2il5WehlaMK" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaMz" resolve="lexicalNode" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="efYUoRDm7f" role="3cqZAp">
-                <node concept="3cpWsn" id="efYUoRDm7g" role="3cpWs9">
+              <node concept="3cpWs8" id="2il5WehlaML" role="3cqZAp">
+                <node concept="3cpWsn" id="2il5WehlaMM" role="3cpWs9">
                   <property role="TrG5h" value="editor" />
-                  <node concept="3Tqbb2" id="efYUoRDm7h" role="1tU5fm">
+                  <node concept="3Tqbb2" id="2il5WehlaMN" role="1tU5fm">
                     <ref role="ehGHo" to="tpc2:fA4kQeF" resolve="ConceptEditorDeclaration" />
                   </node>
-                  <node concept="2YIFZM" id="efYUoRDm7i" role="33vP2m">
+                  <node concept="2YIFZM" id="2il5WehlaMO" role="33vP2m">
                     <ref role="1Pybhc" node="5ARYsrZJWJq" resolve="EditorFactory" />
                     <ref role="37wK5l" node="3OmficGgI04" resolve="createLexicalEditor" />
-                    <node concept="37vLTw" id="efYUoRDm7j" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XYdj" resolve="lexicalNode" />
+                    <node concept="37vLTw" id="2il5WehlaMP" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaMz" resolve="lexicalNode" />
                     </node>
-                    <node concept="37vLTw" id="efYUoRDm7k" role="37wK5m">
-                      <ref role="3cqZAo" node="7WSK5s1XYoG" resolve="prop" />
+                    <node concept="37vLTw" id="2il5WehlaMQ" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaMt" resolve="prop" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="efYUoRDm7l" role="3cqZAp">
-                <node concept="2OqwBi" id="efYUoRDm7m" role="3clFbG">
-                  <node concept="37vLTw" id="efYUoRDm7n" role="2Oq$k0">
-                    <ref role="3cqZAo" node="efYUoRDl83" resolve="editorModel" />
+              <node concept="3clFbF" id="2il5WehlaMR" role="3cqZAp">
+                <node concept="2OqwBi" id="2il5WehlaMS" role="3clFbG">
+                  <node concept="37vLTw" id="2il5WehlaMT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2il5WehlaNf" resolve="editorModel" />
                   </node>
-                  <node concept="liA8E" id="efYUoRDm7o" role="2OqNvi">
+                  <node concept="liA8E" id="2il5WehlaMU" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
-                    <node concept="37vLTw" id="efYUoRDm7p" role="37wK5m">
-                      <ref role="3cqZAo" node="efYUoRDm7g" resolve="editor" />
+                    <node concept="37vLTw" id="2il5WehlaMV" role="37wK5m">
+                      <ref role="3cqZAo" node="2il5WehlaMM" resolve="editor" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="efYUoRDlUB" role="3cqZAp" />
-              <node concept="3cpWs6" id="efYUoRCREo" role="3cqZAp">
-                <node concept="37vLTw" id="efYUoRCRTZ" role="3cqZAk">
-                  <ref role="3cqZAo" node="7WSK5s1XYdj" resolve="lexicalNode" />
+              <node concept="3clFbH" id="2il5WehlaMW" role="3cqZAp" />
+              <node concept="3cpWs6" id="2il5WehlaMX" role="3cqZAp">
+                <node concept="37vLTw" id="2il5WehlaMY" role="3cqZAk">
+                  <ref role="3cqZAo" node="2il5WehlaMz" resolve="lexicalNode" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1rXfSq" id="efYUoRBNEZ" role="3clFbw">
+          <node concept="1rXfSq" id="2il5WehlaMZ" role="3clFbw">
             <ref role="37wK5l" node="efYUoRBIVz" resolve="arrayListContains" />
-            <node concept="37vLTw" id="efYUoRBNPR" role="37wK5m">
-              <ref role="3cqZAo" node="7WSK5s1XCOq" resolve="argType" />
+            <node concept="37vLTw" id="2il5WehlaN0" role="37wK5m">
+              <ref role="3cqZAo" node="2il5WehlaN9" resolve="argType" />
             </node>
-            <node concept="37vLTw" id="efYUoRBNXO" role="37wK5m">
+            <node concept="37vLTw" id="2il5WehlaN1" role="37wK5m">
               <ref role="3cqZAo" node="3OmficGEsWz" resolve="primitives" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7WSK5s1XWUM" role="3cqZAp" />
+        <node concept="3clFbH" id="2il5WehlaN2" role="3cqZAp" />
       </node>
-      <node concept="3Tm1VV" id="7WSK5s1XBHd" role="1B3o_S" />
-      <node concept="3Tqbb2" id="efYUoRCQOD" role="3clF45">
+      <node concept="3Tqbb2" id="2il5WehlaN4" role="3clF45">
         <ref role="ehGHo" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
       </node>
-      <node concept="37vLTG" id="7WSK5s1XCHs" role="3clF46">
+      <node concept="37vLTG" id="2il5WehlaN5" role="3clF46">
         <property role="TrG5h" value="name" />
-        <node concept="17QB3L" id="7WSK5s1XCHr" role="1tU5fm" />
+        <node concept="17QB3L" id="2il5WehlaN6" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="7WSK5s1XCKa" role="3clF46">
+      <node concept="37vLTG" id="2il5WehlaN7" role="3clF46">
         <property role="TrG5h" value="argName" />
-        <node concept="17QB3L" id="7WSK5s1XCLm" role="1tU5fm" />
+        <node concept="17QB3L" id="2il5WehlaN8" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="7WSK5s1XCOq" role="3clF46">
+      <node concept="37vLTG" id="2il5WehlaN9" role="3clF46">
         <property role="TrG5h" value="argType" />
-        <node concept="17QB3L" id="7WSK5s1XCPH" role="1tU5fm" />
+        <node concept="17QB3L" id="2il5WehlaNa" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="7WSK5s1XCT0" role="3clF46">
+      <node concept="37vLTG" id="2il5WehlaNb" role="3clF46">
         <property role="TrG5h" value="struct" />
-        <node concept="3uibUv" id="7WSK5s1XCUy" role="1tU5fm">
+        <node concept="3uibUv" id="2il5WehlaNc" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
-      <node concept="37vLTG" id="efYUoRCPUc" role="3clF46">
+      <node concept="37vLTG" id="2il5WehlaNd" role="3clF46">
         <property role="TrG5h" value="lexicalInterface" />
-        <node concept="3Tqbb2" id="efYUoRCQ3w" role="1tU5fm">
+        <node concept="3Tqbb2" id="2il5WehlaNe" role="1tU5fm">
           <ref role="ehGHo" to="tpce:h0PlHMJ" resolve="InterfaceConceptDeclaration" />
         </node>
       </node>
-      <node concept="37vLTG" id="efYUoRDl83" role="3clF46">
+      <node concept="37vLTG" id="2il5WehlaNf" role="3clF46">
         <property role="TrG5h" value="editorModel" />
-        <node concept="3uibUv" id="efYUoRDli4" role="1tU5fm">
+        <node concept="3uibUv" id="2il5WehlaNg" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
         </node>
       </node>
+      <node concept="3Tm1VV" id="2il5WehlaN3" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="efYUoRBDKS" role="jymVt" />
     <node concept="2YIFZL" id="efYUoRBIVz" role="jymVt">
@@ -1631,9 +1732,7 @@
         </node>
         <node concept="3clFbF" id="7WSK5s24qat" role="3cqZAp">
           <node concept="37vLTI" id="7WSK5s24rZI" role="3clFbG">
-            <node concept="3clFbT" id="7WSK5s24s0X" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
+            <node concept="3clFbT" id="7WSK5s24s0X" role="37vLTx" />
             <node concept="2OqwBi" id="7WSK5s24qt3" role="37vLTJ">
               <node concept="37vLTw" id="7WSK5s24qar" role="2Oq$k0">
                 <ref role="3cqZAo" node="7WSK5s1Sdec" resolve="newLexical" />

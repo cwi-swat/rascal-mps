@@ -19,6 +19,8 @@
       <modulePath path="$PROJECT_DIR$/languages/Pico21/sandbox/Pico21.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico22/Pico22.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico22/sandbox/Pico22.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoDuplicateFix/PicoDuplicateFix.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoDuplicateFix/sandbox/PicoDuplicateFix.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoFlatten1/PicoFlatten1.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoFlatten1/sandbox/PicoFlatten1.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoIndent/PicoIndent.mpl" folder="newLanguageName" />
@@ -29,6 +31,8 @@
       <modulePath path="$PROJECT_DIR$/languages/PicoIndentLayoutWithStyle/sandbox/PicoIndentLayoutWithStyle.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoIndentMore/PicoIndentMore.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoIndentMore/sandbox/PicoIndentMore.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoNotAllRoot/PicoNotAllRoot.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoNotAllRoot/sandbox/PicoNotAllRoot.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/Rascal2Sample.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/sandbox/Rascal2Sample.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/StateMachineSample.mpl" folder="newLanguageName" />

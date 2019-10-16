@@ -2,9 +2,9 @@ module Grammars::Pico2
 
 import lexlib::Lexical;
 
-lexical LexId  = lex_id: ([a-z][a-z0-9]* !>> [a-z0-9]) \ PicoKeywords;
-lexical I_Natural = natural: Natural;
-lexical I_String = string: String;
+lexical LexId  = lex_id: String;
+lexical I_Natural = l_natural: Natural;
+lexical I_String = l_string: String;
 
 keyword PicoKeywords = "begin" | "end" | 
                        "declare" | 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.7)  11 OCT 2019 13:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.7)  11 OCT 2019 13:32
 entering extended mode
 **./Structure.tex
 (Structure.tex
@@ -226,19 +226,15 @@ e 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
-<images/UnlabeledProduction.png, id=28, 473.51906pt x 87.32625pt>
+[5] [6 <./images/StartSyntaxXML.png>]
+<images/UnlabeledProduction.png, id=31, 473.51906pt x 87.32625pt>
 File: images/UnlabeledProduction.png Graphic file (type png)
 <use images/UnlabeledProduction.png>
-Package pdftex.def Info: images/UnlabeledProduction.png  used on input line 132
-. on input line 132.
-Package pdftex.def Info: Requested size: 360.0pt x 66.39261pt on input line 132
+Package pdftex.def Info: images/UnlabeledProduction.png  used on input line 133
+. on input line 133.
+Package pdftex.def Info: Requested size: 360.0pt x 66.39261pt on input line 133
 .
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6 <./images/StartSyntaxXML.png>] [7 <./images/UnlabeledProduction.png>]
+ [7 <./images/UnlabeledProduction.png>]
 (Structure.aux) ) 
 Here is how much of TeX's memory you used:
  1467 strings out of 493312
@@ -252,7 +248,7 @@ Here is how much of TeX's memory you used:
 bx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Structure.pdf (7 pages, 100422 bytes).
+Output written on Structure.pdf (7 pages, 100837 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

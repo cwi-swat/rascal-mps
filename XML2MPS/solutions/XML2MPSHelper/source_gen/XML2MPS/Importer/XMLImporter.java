@@ -7,6 +7,7 @@ import jetbrains.mps.util.Pair;
 import org.jetbrains.mps.openapi.model.SNode;
 import JavaXMLImporter.Nodes.ProductionArgument;
 import java.awt.Frame;
+import XML2MPS.NodeCreator.LexicalResolver;
 import org.jetbrains.mps.openapi.model.SModel;
 import JavaXMLImporter.Importer;
 import org.w3c.dom.Document;
@@ -15,16 +16,15 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import JavaXMLImporter.Nodes.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Nodes.Production;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import JavaXMLImporter.Layout.LayoutElement;
 import XML2MPS.NodeCreator.EditorFactory;
 import JavaXMLImporter.Layout.LiteralLayoutElement;
 import JavaXMLImporter.Layout.ReferenceLayoutElement;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
-import XML2MPS.NodeCreator.LexicalResolver;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import javax.swing.JOptionPane;
 
 public class XMLImporter {
@@ -34,6 +34,7 @@ public class XMLImporter {
   private ArrayList<SNode> conceptNodeList;
   private ArrayList<String> keywords;
   private Frame frame;
+  private LexicalResolver lr;
 
   public XMLImporter(Frame f) {
     this.interfaceNodeList = new ArrayList();
@@ -41,6 +42,7 @@ public class XMLImporter {
     this.linkQueue = new ArrayList();
     this.keywords = new ArrayList();
     this.frame = f;
+    this.lr = new LexicalResolver();
   }
 
   public void importXMLDocument(String path, SModel struct, SModel editorModel) {
@@ -56,6 +58,7 @@ public class XMLImporter {
 
       // Add lexicals first 
       ArrayList<Lexical> lexicalList = javaImporter.getAllLexicals(dom);
+      ArrayList<String> lexicalTypes;
       for (Lexical l : ListSequence.fromList(lexicalList)) {
         this.addLexicalLocal(l.getName(), l.getArgName(), l.getArgType(), struct, editorModel);
 
@@ -106,6 +109,18 @@ public class XMLImporter {
           }
           SNode editor = createBetterProductionEditor(node, p);
           editorModel.addRootNode(editor);
+        }
+      }
+
+      // Set the root interfaces 
+      final String rootName = javaImporter.getLanguageRoot(dom);
+      for (SNode c : this.conceptNodeList) {
+        if (ListSequence.fromList(SLinkOperations.getChildren(c, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements"))).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x110356fc618L, 0x110356fe029L, "intfc")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals(rootName);
+          }
+        })) {
+          SPropertyOperations.set(c, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0xff49c1d648L, "rootable"), true);
         }
       }
 
@@ -232,7 +247,9 @@ public class XMLImporter {
 
 
 
-    SNode lexicalNode = LexicalResolver.addLexical(name, argName, argType, struct, lexicalInterface, editorModel);
+
+    SNode lexicalNode = lr.addLexical(name, argName, argType, struct, lexicalInterface, editorModel);
+
 
     struct.addRootNode(lexicalNode);
     this.conceptNodeList.add(lexicalNode);

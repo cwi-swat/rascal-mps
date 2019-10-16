@@ -7,6 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Docs/Thesis/Part 1 - Structure/Structure.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/Pico2.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/Pico2.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Rascal2MPS.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Rascal2MPS.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,23 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TermXMLImporter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="416">
+              <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,15 +41,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeNode.java">
+        <entry file="file://$PROJECT_DIR$/XML/PicoStartSymbol.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="-8033" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TermXMLImporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
               <folding>
-                <element signature="e#359#360#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,15 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeLeaf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="289">
               <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
-                <element signature="e#125#126#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
                 <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,12 +150,12 @@
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Production.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Nodes/ProductionArgument.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Nodes/NonTerminal.java" />
-        <option value="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Terms/Node.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeInterface.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeLeaf.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Terms/TermXMLImporter.java" />
         <option value="$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" />
       </list>
     </option>
   </component>
@@ -178,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +216,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TermXMLImporter">
+  <component name="RunManager" selected="Application.Importer">
     <configuration name="Importer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaXMLImporter.Importer" />
       <module name="XMLImporter" />
@@ -271,8 +266,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TermXMLImporter" />
         <item itemvalue="Application.Importer" />
+        <item itemvalue="Application.TermXMLImporter" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +288,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2867804" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,6 +387,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeLeaf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XML/testProgram3.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Layout/ReferenceLayoutElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -420,58 +443,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XML/testProgram3.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+    <entry file="file://$PROJECT_DIR$/XML/PicoStartSymbol.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        <state relative-caret-position="-8033" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TermXMLImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="53" lean-forward="true" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeLeaf.java">
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TermXMLImporter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="416">
+          <caret line="164" lean-forward="true" selection-start-line="164" selection-end-line="164" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -7,8 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d052aae-9c23-4535-b33a-997963053d90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Docs/Thesis/Part 1 - Structure/Structure.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/out/artifacts/XMLImporter_jar/XMLImporter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/out/artifacts/XMLImporter_jar/XMLImporter.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/out/production/XMLImporter/JavaXMLImporter/Importer$EmptyDomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/out/production/XMLImporter/JavaXMLImporter/Importer$EmptyDomException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/out/production/XMLImporter/JavaXMLImporter/Importer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/out/production/XMLImporter/JavaXMLImporter/Importer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Examples/Java/XMLImporter/src/JavaXMLImporter/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Examples/Java/XMLImporter/src/JavaXMLImporter/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rascal2XML/src/Grammars/Pico2.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../Rascal2XML/src/Grammars/Pico2.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rascal2XML/src/Rascal2MPS.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../Rascal2XML/src/Rascal2MPS.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/Importer.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/NodeCreator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/models/NodeCreator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/NodeCreator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/LexicalResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/LexicalResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XML2MPSHelper/source_gen/XML2MPS/NodeCreator/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XMLImporter/XMLImporter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../XMLImporter/XMLImporter.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/solutions/XMLImporterJAR/classes_gen/" />
     <ignored path="$PROJECT_DIR$/solutions/plugin/classes_gen/" />
@@ -28,7 +49,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="9922f8e6-933b-43e1-b259-c25eb2ad175e/r:c3e27351-414a-46c6-be75-26361b4d59f1(TempModule9922f8e6-933b-43e1-b259-c25eb2ad175e/TempModel_372150163406)">
+            <model ref="e04c55ab-d9c1-4ad5-9a69-fb42d29cebef/r:6502e834-05a7-401e-96e4-d5b045b75c30(TempModulee04c55ab-d9c1-4ad5-9a69-fb42d29cebef/TempModel_1314240600432955)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -48,11 +69,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="61BqG7SIXlS">
-                <node concept="3balQm" id="61BqG7SIXlT" role="aymYE" />
-                <node concept="2Clz$F" id="61BqG7SIXlU" role="aymYO" />
-                <node concept="2_V_lH" id="61BqG7SIXlV" role="1PhJh3">
-                  <ref role="2_V_lI" node="61BqG7SIXlU" resolve="CommandHolder" />
+              <node concept="aymSD" id="2il5Wehha6$">
+                <node concept="3balQm" id="2il5Wehha6_" role="aymYE" />
+                <node concept="2Clz$F" id="2il5Wehha6A" role="aymYO" />
+                <node concept="2_V_lH" id="2il5Wehha6B" role="1PhJh3">
+                  <ref role="2_V_lI" node="2il5Wehha6A" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -76,101 +97,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="mps://node://plugin/plugin.plugin/importTermAction">
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/id">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="71" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299213" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299213" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/lex_id">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="159" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299161" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299162" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/CNatural">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="247" />
-                    <property name="caretXRelative" value="112" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_caption">
-                      <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331577197004" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236167908" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_trik0f_b0">
-                      <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068976" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://TestSolution/TestSolution.test/prog">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="16" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_z1a7eb_e0">
-                      <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481190" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://Pico21/Pico21.structure/add">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="247" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="255" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name">
-                      <node node_reference="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" />
+                      <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299151" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -179,248 +186,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/lex_id">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a">
-                      <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750093" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750093" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/string">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="127" />
-                    <property name="caretXRelative" value="24" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750100" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/stringType">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a">
-                      <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750159" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750159" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/asgStat">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a">
-                      <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750184" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750184" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/ineq">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a">
-                      <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750154" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750154" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://XML2MPS/XML2MPS.NodeCreator/NodeCreatorClass">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="393">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="191" />
-                    <property name="caretXRelative" value="104" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477922664" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/6616081088522274334" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/7290928734404218845" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477907425" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477921470" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477316918" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477327744" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477921470" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -436,15 +202,15 @@
         <entry file="mps://node://XML2MPS/XML2MPS.NodeCreator/LexicalResolver">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="205">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="15" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="351" />
+                    <property name="caretXRelative" value="24" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/9167288521438838073" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600494" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -488,13 +254,314 @@
                   </collapsedElement>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_fao2ea_a">
-                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/9167288521440265085" />
+                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600486" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285620683890" />
                     </cellIdElement>
                   </collapsedElement>
                 </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600486" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/Expression">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="239" />
+                    <property name="caretXRelative" value="80" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name">
+                      <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793817" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793817" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/Natural">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="247" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/Program">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="215" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="name">
+                      <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793813" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793813" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/natCon">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="71" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793828" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793828" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/l_natural">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="71" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793787" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793787" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://XML2MPS/XML2MPS.Importer/XMLImporter">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="4100">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="183" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_y9czm0_b0">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/256700395100055113" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers>
+                  <errorMarker text="createLexicalNode" propertyCell="false" cellNumber="0">
+                    <parent cellId="Collection_a4wjjz_d0">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521439199272" />
+                    </parent>
+                  </errorMarker>
+                </errorMarkers>
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583627955367" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498170002643" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498168730241" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583638802027" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583626083210" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633888168" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583625574646" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/256700395101453822" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521440933243" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4401772907079856696" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3906096903074862104" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4401772907079523318" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/7290928734403676007" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/7290928734401092741" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521440933243" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </restoreAlways>
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -598,7 +665,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -606,18 +673,16 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="newLanguageName" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemId" value="1e223bd5-3da2-4184-9c0d-e95b3bb2e617(PicoDuplicateFix)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="XML2MPS" />
+              <option name="myItemId" value="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/languages/PicoDuplicateFix/models/structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -641,67 +706,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="XML2MPS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewSolutiontest" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NewSolutiontest" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:88aaa466-1a2a-4384-ad85-9f2aeacaa27c(NewSolutiontest.newtest) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/NewSolutiontest/models/newtest.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,16 +738,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -756,8 +755,66 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="XML2MPS" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/XML2MPSHelper/models/NodeCreator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="newLanguageName" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7b84cb92-39f8-4ff4-8529-f32e32a953ff" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newLanguageName" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="1e223bd5-3da2-4184-9c0d-e95b3bb2e617(PicoDuplicateFix)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="e50deda8-5401-403f-ab15-e720840cfe52" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -767,21 +824,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="23ff984c-5ecb-4a78-9888-b0b7f87fbe60" />
+              <option name="myItemId" value="newLanguageName" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NewSolutiontest" />
+              <option name="myItemId" value="1e223bd5-3da2-4184-9c0d-e95b3bb2e617(PicoDuplicateFix)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:88aaa466-1a2a-4384-ad85-9f2aeacaa27c(NewSolutiontest.newtest) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/solutions/NewSolutiontest/models/newtest.mps]" />
+              <option name="myItemId" value="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure) in IdeaFile[file://C:/Dev/Rascal2MPS/XML2MPS/languages/PicoDuplicateFix/models/structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2636039285620793785" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="FileSystem" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -805,8 +866,8 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9136612" visible="true" weight="0.29637527" />
-      <window_info id="Structure" order="1" sideWeight="0.086338796" side_tool="true" visible="true" weight="0.29637527" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.91256833" visible="true" weight="0.29957357" />
+      <window_info id="Structure" order="1" sideWeight="0.08743169" side_tool="true" visible="true" weight="0.29957357" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -814,7 +875,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Model Checker" order="7" sideWeight="0.49733475" weight="0.32804233" />
+      <window_info anchor="bottom" id="Model Checker" order="7" sideWeight="0.49733475" weight="0.26666668" />
       <window_info anchor="bottom" id="Bookmarks" order="8" />
       <window_info anchor="bottom" id="Migration" order="9" />
       <window_info anchor="bottom" id="Menu Trace" order="10" />
@@ -906,125 +967,6 @@
               </collapsedElement>
             </foldable>
             <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750100" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://XML2MPS/XML2MPS.Importer/XMLImporter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="940">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="159" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498169696441" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="createLexicalNode" propertyCell="false" cellNumber="0">
-                <parent cellId="Collection_a4wjjz_d0">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521439199272" />
-                </parent>
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583627955367" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498170002643" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498168730241" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583638802027" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583626083210" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633888168" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583625574646" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/256700395101453822" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521440933243" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4401772907079856696" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3906096903074862104" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4401772907079523318" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/7290928734403676007" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/7290928734401092741" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498168730241" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
           </memento>
           <inspectorMemento currentlyEditedNode="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750100" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
@@ -1199,37 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="32" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_yn591d_c0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578379629" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331578304607" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://Pico21/Pico21.structure/naturalType">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1294,119 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="32" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_yn591d_c0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578379629" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578723194" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="32" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_yn591d_c0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578379629" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331578387944" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="32" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_yn591d_c0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578379629" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477922664" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://jetbrains.mps.lang.core/jetbrains.mps.lang.core.structure/string">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -1438,21 +1236,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/ineq">
+    <entry file="mps://node://plugin/plugin.plugin/importTermAction">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="112" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a">
-                  <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750154" />
+                <cellInfo cellId="property_caption">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331577197004" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236167908" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068976" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/2636039285619056419" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://TestSolution/TestSolution.test/prog">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable />
@@ -1466,7 +1301,38 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Pico21/Pico21.structure/add">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299184" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" />
         </state>
       </provider>
     </entry>
@@ -1490,7 +1356,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299238" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1522,7 +1388,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299160" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1554,7 +1420,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299169" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1586,7 +1452,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299185" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1598,18 +1464,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://XML2MPS/XML2MPS.NodeCreator/NodeCreatorClass">
+    <entry file="mps://node://PicoFlatten1/PicoFlatten1.structure/ineq">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="393">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="191" />
-                <property name="caretXRelative" value="104" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477922664" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750154" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299171" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:ffc0f552-7741-4444-b210-bd76f21799e6(PicoFlatten1.structure)/4377457498172750154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://XML2MPS/XML2MPS.NodeCreator/NodeCreatorClass">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="3">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="159" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_zedcwq_b0">
+                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477427199" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1650,12 +1548,549 @@
             <restoreAlways>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477921470" />
+                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2068514840477316918" />
                 </cellIdElement>
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299161" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/Expression">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299184" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/9167288521442050109" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/Statement">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="231" />
+                <property name="caretXRelative" value="72" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299238" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600494" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299238" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/String">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299160" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/String">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/String">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299169" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/String">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299169" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/Type">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="191" />
+                <property name="caretXRelative" value="32" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299228" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793817" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/String">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299169" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299169" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/CString">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="255" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299169" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/strCon">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299185" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793813" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/string">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299171" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793828" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/id">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299213" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/lex_id">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="159" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299161" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299162" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoNotAllRoot/PicoNotAllRoot.structure/Natural">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="255" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)/2636039285619299151" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://XML2MPS/XML2MPS.Importer/XMLImporter">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="4100">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_y9czm0_b0">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/256700395100055113" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="createLexicalNode" propertyCell="false" cellNumber="0">
+                <parent cellId="Collection_a4wjjz_d0">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521439199272" />
+                </parent>
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583627955367" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498170002643" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4377457498168730241" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633758105" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583638802027" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583626083210" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583633888168" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3900764583625574646" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/256700395101453822" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521440933243" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4401772907079856696" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/3906096903074862104" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/4401772907079523318" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/7290928734403676007" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/7290928734401092741" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:6f2b37c1-71b2-4c10-af96-d2416ff83592(XML2MPS.Importer)/9167288521440933243" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1669,15 +2104,15 @@
     <entry file="mps://node://XML2MPS/XML2MPS.NodeCreator/LexicalResolver">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="205">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="351" />
+                <property name="caretXRelative" value="24" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
-                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/9167288521438838073" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600494" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1721,13 +2156,24 @@
               </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/9167288521440265085" />
+                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600486" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285620683890" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways />
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:c2bd84ca-70a6-46fd-aad3-a4feeadb089b(XML2MPS.NodeCreator)/2636039285619600486" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1738,769 +2184,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_4adeyx_a0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579344353" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_4adeyx_a0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578723194" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331577241442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_4adeyx_a0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579344353" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331579422721" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_4adeyx_a0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331578723194" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579419909" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579419909" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579419909" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579419909" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579419909" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579419909" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481135" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481135" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481135" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481149" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="55" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481149" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="55" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_lex_id">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481149" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481190" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_z1a7eb_e0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481190" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_z1a7eb_e0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481190" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481190" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://TestSolution/TestSolution.test/prog">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_z1a7eb_e0">
-                  <node node_reference="r:4d9bc48c-3135-4580-8933-2f8b9079be81(TestSolution.test)/6946638331579481190" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Pico21/Pico21.structure/add">
+    <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/Expression">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="80" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793817" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793817" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/Program">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="215" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="name">
+                  <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793813" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793813" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/natCon">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793828" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793828" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/l_natural">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793787" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793787" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PicoDuplicateFix/PicoDuplicateFix.structure/Natural">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
@@ -2509,7 +2323,7 @@
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name">
-                  <node node_reference="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" />
+                  <node node_reference="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -2518,55 +2332,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:902932c6-b23a-4d05-aadb-f413ba1181f3(Pico21.editor)/5424386107272553453" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://plugin/plugin.plugin/importTermAction">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="247" />
-                <property name="caretXRelative" value="112" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_caption">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/6946638331577197004" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236167908" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068976" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)/1083765003236068975" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:f4babcbd-a71d-40fc-b545-3d7e2658a230(PicoDuplicateFix.structure)/2636039285620793785" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />

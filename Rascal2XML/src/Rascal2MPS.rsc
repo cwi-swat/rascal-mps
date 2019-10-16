@@ -86,6 +86,13 @@ void treeToXML(type[&T<:Tree] reifiedTree, str filename){
 	//}
 	//println(prod);
 	//println(typeOf(grammar));
+	
+	if(sort(str s) := reifiedTree.symbol){
+		Node startSymbolNode = createNewElement("startSymbol",[charData(s)]);
+		dom = appendToRootElement(dom, startSymbolNode);
+	}
+	
+	
 	filename = filename + ".xml";
 	loc filepath = |project://Rascal2XML/src/XML|+filename;
 	writeXMLToFile(filepath,dom);
