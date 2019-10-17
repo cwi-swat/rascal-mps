@@ -23,6 +23,8 @@
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="k2gh" ref="83f3da73-c67d-4c00-9709-60ece06179d1/java:JavaXMLImporter.Layout(XMLImporterJAR/)" />
     <import index="cgi2" ref="83f3da73-c67d-4c00-9709-60ece06179d1/java:JavaXMLImporter.Nodes(XMLImporterJAR/)" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="yf86" ref="r:33eabb60-7192-4d12-ba46-11dacf966b3e(jetbrains.mps.lang.structure.migration)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" implicit="true" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" implicit="true" />
@@ -1551,7 +1553,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="3OmficGhGRN" role="3cqZAp" />
             <node concept="3clFbH" id="7WSK5s1Ts3i" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="6kI_gSgOsvk" role="TEbGg">

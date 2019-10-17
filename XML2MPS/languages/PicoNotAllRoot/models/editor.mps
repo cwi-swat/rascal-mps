@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="77xm" ref="r:d92e3e0f-9584-407e-8264-08de2b596d45(PicoNotAllRoot.structure)" implicit="true" />
   </imports>
   <registry>
@@ -28,6 +29,10 @@
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -86,10 +91,14 @@
       <node concept="l2Vlx" id="2il5Wehk1eY" role="2iSdaV" />
       <node concept="3F0ifn" id="2il5Wehk1eZ" role="3EZMnx">
         <property role="3F0ifm" value="declare" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
         <node concept="VechU" id="2il5Wehk1f0" role="3F10Kt">
           <property role="Vb096" value="DARK_BLUE" />
         </node>
         <node concept="ljvvj" id="2il5Wehk1f1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="54D$i9dL8GS" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -102,8 +111,14 @@
         <node concept="lj46D" id="2il5Wehk1f5" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
+        <node concept="VPxyj" id="54D$i9dLkeB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
         <node concept="3F0ifn" id="2il5Wehk1f6" role="2czzBI">
           <property role="3F0ifm" value=" " />
+          <node concept="VPxyj" id="54D$i9dLIfc" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
       </node>
       <node concept="3F0ifn" id="2il5Wehk1f7" role="3EZMnx">
@@ -120,10 +135,14 @@
       <node concept="l2Vlx" id="2il5Wehk1fb" role="2iSdaV" />
       <node concept="3F0ifn" id="2il5Wehk1fc" role="3EZMnx">
         <property role="3F0ifm" value="begin" />
+        <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
         <node concept="VechU" id="2il5Wehk1fd" role="3F10Kt">
           <property role="Vb096" value="DARK_BLUE" />
         </node>
         <node concept="ljvvj" id="2il5Wehk1fe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="54D$i9dL8GJ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -132,8 +151,14 @@
         <ref role="1NtTu8" to="77xm:2il5Wehk1dJ" resolve="decls" />
         <node concept="3F0ifn" id="2il5Wehk1fg" role="2ruayu">
           <property role="3F0ifm" value="&#10;" />
+          <node concept="VPxyj" id="54D$i9dLzZ4" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
         <node concept="lj46D" id="2il5Wehk1fh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="54D$i9dLplZ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -447,6 +472,12 @@
         <ref role="1NtTu8" to="77xm:2il5Wehk1e$" resolve="id" />
         <node concept="3F0ifn" id="2il5Wehk1h2" role="2ruayu">
           <property role="3F0ifm" value="&#10;" />
+          <node concept="VPxyj" id="54D$i9dLD70" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="VPxyj" id="54D$i9dLutp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="2il5Wehk1h3" role="3EZMnx">

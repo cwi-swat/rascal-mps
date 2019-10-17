@@ -63,6 +63,8 @@ public class EditorFactory {
     SNode cell = _quotation_createNode_q2b8f2_a0a0p(node);
     SPropertyOperations.assign(cell, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b401214L, "customizeEmptyCell"), true);
     SLinkOperations.setTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b42e5cbL, "emptyCellModel"), _quotation_createNode_q2b8f2_a0c0p(("\n")));
+    SNode editableStyle = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1143bd61987L, "jetbrains.mps.lang.editor.structure.EditableStyleClassItem"));
+    ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b42e5cbL, "emptyCellModel")), MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x11beb039542L, 0x11beb040d06L, "styleItem"))).addElement(editableStyle);
     return cell;
   }
 
@@ -70,8 +72,11 @@ public class EditorFactory {
     SNode cell = _quotation_createNode_q2b8f2_a0a0r(node);
     SPropertyOperations.assign(cell, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b401214L, "customizeEmptyCell"), true);
     SLinkOperations.setTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b42e5cbL, "emptyCellModel"), _quotation_createNode_q2b8f2_a0c0r(("\n")));
+
     SNode indent = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x120154c4089L, "jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem"));
     ListSequence.fromList(SLinkOperations.getChildren(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x11beb039542L, 0x11beb040d06L, "styleItem"))).addElement(indent);
+
+
     return cell;
   }
 
@@ -79,6 +84,7 @@ public class EditorFactory {
     SNode cell = _quotation_createNode_q2b8f2_a0a0t(node);
     SPropertyOperations.assign(cell, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b401214L, "customizeEmptyCell"), true);
     SLinkOperations.setTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb05cdc7L, 0x3a4d559b42e5cbL, "emptyCellModel"), _quotation_createNode_q2b8f2_a0c0t(("\n")));
+
     SNode indent = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x120154c4089L, "jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem"));
     ListSequence.fromList(SLinkOperations.getChildren(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x11beb039542L, 0x11beb040d06L, "styleItem"))).addElement(indent);
 
@@ -91,6 +97,12 @@ public class EditorFactory {
   public static SNode createRefNodeCellList(SNode node) {
     SNode cell = _quotation_createNode_q2b8f2_a0a0w(node);
     SLinkOperations.setTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1098c8cf48aL, 0x1098c8e38e7L, "emptyCellModel"), _quotation_createNode_q2b8f2_a0b0w((" ")));
+
+    SNode editableStyle = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1143bd61987L, "jetbrains.mps.lang.editor.structure.EditableStyleClassItem"));
+    SPropertyOperations.set(editableStyle, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1143bd1283bL, 0x1143bd161dbL, "flag"), true);
+    ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1098c8cf48aL, 0x1098c8e38e7L, "emptyCellModel")), MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x11beb039542L, 0x11beb040d06L, "styleItem"))).addElement(editableStyle);
+
+
     return cell;
   }
 
@@ -107,6 +119,10 @@ public class EditorFactory {
     ListSequence.fromList(SLinkOperations.getChildren(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x11beb039542L, 0x11beb040d06L, "styleItem"))).addElement(indent);
 
     SLinkOperations.setTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1098c8cf48aL, 0x1098c8e38e7L, "emptyCellModel"), _quotation_createNode_q2b8f2_a0j0ab((" ")));
+    SNode editableStyle = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1143bd61987L, "jetbrains.mps.lang.editor.structure.EditableStyleClassItem"));
+    SPropertyOperations.set(editableStyle, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1143bd1283bL, 0x1143bd161dbL, "flag"), true);
+    ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(cell, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x1098c8cf48aL, 0x1098c8e38e7L, "emptyCellModel")), MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x11beb039542L, 0x11beb040d06L, "styleItem"))).addElement(editableStyle);
+
     return cell;
   }
 

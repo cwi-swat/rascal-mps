@@ -36,6 +36,7 @@
     <import index="dy3e" ref="r:78447698-c7ec-4f88-b402-fa222a87dbe8(Pico21.structure)" />
     <import index="vxxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure.concept(MPS.Core/)" />
     <import index="h4rk" ref="83f3da73-c67d-4c00-9709-60ece06179d1/java:JavaXMLImporter.Terms(XMLImporterJAR/)" />
+    <import index="yf86" ref="r:33eabb60-7192-4d12-ba46-11dacf966b3e(jetbrains.mps.lang.structure.migration)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -87,6 +88,9 @@
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -261,7 +265,7 @@
   <node concept="2DaZZR" id="1MOPOARi1Rz" />
   <node concept="sE7Ow" id="1MOPOARi1RB">
     <property role="TrG5h" value="importXMLAction" />
-    <property role="2uzpH1" value="Import XML" />
+    <property role="2uzpH1" value="Import Rascal Grammar" />
     <node concept="tnohg" id="1MOPOARi1RC" role="tncku">
       <node concept="3clFbS" id="1MOPOARi1RD" role="2VODD2">
         <node concept="3clFbH" id="5ARYsrZLcU9" role="3cqZAp" />
@@ -552,6 +556,33 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="54D$i9dQiBf" role="3cqZAp">
+          <node concept="3cpWsn" id="54D$i9dQiBg" role="3cpWs9">
+            <property role="TrG5h" value="s" />
+            <node concept="3uibUv" id="54D$i9dQiBh" role="1tU5fm">
+              <ref role="3uigEE" to="yf86:5OIo7_R8Tun" resolve="SetSIds" />
+            </node>
+            <node concept="2ShNRf" id="54D$i9dQlxT" role="33vP2m">
+              <node concept="HV5vD" id="54D$i9dQywp" role="2ShVmc">
+                <ref role="HV5vE" to="yf86:5OIo7_R8Tun" resolve="SetSIds" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="54D$i9dQkb5" role="3cqZAp">
+          <node concept="2OqwBi" id="54D$i9dQkxP" role="3clFbG">
+            <node concept="37vLTw" id="54D$i9dQkb3" role="2Oq$k0">
+              <ref role="3cqZAo" node="54D$i9dQiBg" resolve="s" />
+            </node>
+            <node concept="liA8E" id="54D$i9dQlo3" role="2OqNvi">
+              <ref role="37wK5l" to="yf86:5OIo7_R8TQT" resolve="execute" />
+              <node concept="37vLTw" id="54D$i9dQloU" role="37wK5m">
+                <ref role="3cqZAo" node="5ARYsrZLdoQ" resolve="l" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="54D$i9dQ8xF" role="3cqZAp" />
         <node concept="3clFbF" id="o7uzVb6QWX" role="3cqZAp">
           <node concept="2YIFZM" id="o7uzVb6QYc" role="3clFbG">
             <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
@@ -563,7 +594,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="o7uzVb7baM" role="37wK5m">
-              <property role="Xl_RC" value="Done" />
+              <property role="Xl_RC" value="Grammar imported" />
             </node>
           </node>
         </node>
@@ -1491,13 +1522,17 @@
               </node>
               <node concept="9aQIb" id="61BqG7SSwOh" role="9aQIa">
                 <node concept="3clFbS" id="61BqG7SSwOi" role="9aQI4">
-                  <node concept="3clFbF" id="61BqG7SSz5M" role="3cqZAp">
-                    <node concept="2OqwBi" id="61BqG7SSz5G" role="3clFbG">
-                      <node concept="2WthIp" id="61BqG7SSz5J" role="2Oq$k0" />
-                      <node concept="2XshWL" id="61BqG7SSz5L" role="2OqNvi">
-                        <ref role="2WH_rO" node="WajCt5T53$" resolve="display" />
-                        <node concept="Xl_RD" id="61BqG7SSzbu" role="2XxRq1">
-                          <property role="Xl_RC" value="Could not create leaf: leaftype not in map" />
+                  <node concept="1X3_iC" id="54D$i9dS542" role="lGtFl">
+                    <property role="3V$3am" value="statement" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                    <node concept="3clFbF" id="61BqG7SSz5M" role="8Wnug">
+                      <node concept="2OqwBi" id="61BqG7SSz5G" role="3clFbG">
+                        <node concept="2WthIp" id="61BqG7SSz5J" role="2Oq$k0" />
+                        <node concept="2XshWL" id="61BqG7SSz5L" role="2OqNvi">
+                          <ref role="2WH_rO" node="WajCt5T53$" resolve="display" />
+                          <node concept="Xl_RD" id="61BqG7SSzbu" role="2XxRq1">
+                            <property role="Xl_RC" value="Could not create leaf: leaftype not in map" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1767,22 +1802,26 @@
                 </node>
                 <node concept="9aQIb" id="61BqG7SPe4V" role="9aQIa">
                   <node concept="3clFbS" id="61BqG7SPe4W" role="9aQI4">
-                    <node concept="3clFbF" id="61BqG7SPgcc" role="3cqZAp">
-                      <node concept="2OqwBi" id="61BqG7SPgc6" role="3clFbG">
-                        <node concept="2WthIp" id="61BqG7SPgc9" role="2Oq$k0" />
-                        <node concept="2XshWL" id="61BqG7SPgcb" role="2OqNvi">
-                          <ref role="2WH_rO" node="WajCt5T53$" resolve="display" />
-                          <node concept="3cpWs3" id="61BqG7STP3E" role="2XxRq1">
-                            <node concept="2OqwBi" id="61BqG7STPju" role="3uHU7w">
-                              <node concept="37vLTw" id="61BqG7STP6p" role="2Oq$k0">
-                                <ref role="3cqZAo" node="61BqG7SRy1I" resolve="treenode" />
+                    <node concept="1X3_iC" id="54D$i9dS35g" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="61BqG7SPgcc" role="8Wnug">
+                        <node concept="2OqwBi" id="61BqG7SPgc6" role="3clFbG">
+                          <node concept="2WthIp" id="61BqG7SPgc9" role="2Oq$k0" />
+                          <node concept="2XshWL" id="61BqG7SPgcb" role="2OqNvi">
+                            <ref role="2WH_rO" node="WajCt5T53$" resolve="display" />
+                            <node concept="3cpWs3" id="61BqG7STP3E" role="2XxRq1">
+                              <node concept="2OqwBi" id="61BqG7STPju" role="3uHU7w">
+                                <node concept="37vLTw" id="61BqG7STP6p" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="61BqG7SRy1I" resolve="treenode" />
+                                </node>
+                                <node concept="liA8E" id="61BqG7STPw1" role="2OqNvi">
+                                  <ref role="37wK5l" to="h4rk:~TreeNode.getName():java.lang.String" resolve="getName" />
+                                </node>
                               </node>
-                              <node concept="liA8E" id="61BqG7STPw1" role="2OqNvi">
-                                <ref role="37wK5l" to="h4rk:~TreeNode.getName():java.lang.String" resolve="getName" />
+                              <node concept="Xl_RD" id="61BqG7SPghm" role="3uHU7B">
+                                <property role="Xl_RC" value="unknown error: " />
                               </node>
-                            </node>
-                            <node concept="Xl_RD" id="61BqG7SPghm" role="3uHU7B">
-                              <property role="Xl_RC" value="unknown error: " />
                             </node>
                           </node>
                         </node>
@@ -2111,6 +2150,17 @@
               <ref role="37wK5l" to="mhbf:~SModel.addRootNode(org.jetbrains.mps.openapi.model.SNode):void" resolve="addRootNode" />
               <node concept="37vLTw" id="61BqG7SNZly" role="37wK5m">
                 <ref role="3cqZAo" node="61BqG7SNT92" resolve="progModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="54D$i9dS7Uf" role="3cqZAp">
+          <node concept="2OqwBi" id="54D$i9dS8sR" role="3clFbG">
+            <node concept="2WthIp" id="54D$i9dS7Ud" role="2Oq$k0" />
+            <node concept="2XshWL" id="54D$i9dS9pU" role="2OqNvi">
+              <ref role="2WH_rO" node="WajCt5T53$" resolve="display" />
+              <node concept="Xl_RD" id="54D$i9dS9ul" role="2XxRq1">
+                <property role="Xl_RC" value="Program imported" />
               </node>
             </node>
           </node>

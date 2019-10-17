@@ -21,6 +21,10 @@
       <modulePath path="$PROJECT_DIR$/languages/Pico22/sandbox/Pico22.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoDuplicateFix/PicoDuplicateFix.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoDuplicateFix/sandbox/PicoDuplicateFix.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoEditable/PicoEditable.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoEditable/sandbox/PicoEditable.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoEditableTrue/PicoEditableTrue.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoEditableTrue/sandbox/PicoEditableTrue.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoFlatten1/PicoFlatten1.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoFlatten1/sandbox/PicoFlatten1.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoIndent/PicoIndent.mpl" folder="newLanguageName" />
@@ -33,10 +37,13 @@
       <modulePath path="$PROJECT_DIR$/languages/PicoIndentMore/sandbox/PicoIndentMore.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoNotAllRoot/PicoNotAllRoot.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoNotAllRoot/sandbox/PicoNotAllRoot.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoSetIDS/PicoSetIDS.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoSetIDS/sandbox/PicoSetIDS.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/Rascal2Sample.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/sandbox/Rascal2Sample.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/StateMachineSample.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/runtime/StateMachineSample.runtime.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/solutions/BaseLanguageTest/BaseLanguageTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolutiontest/NewSolutiontest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="TestSolution" />
       <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />

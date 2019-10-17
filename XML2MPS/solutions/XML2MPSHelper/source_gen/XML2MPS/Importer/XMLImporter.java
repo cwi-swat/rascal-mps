@@ -126,7 +126,6 @@ public class XMLImporter {
 
       findAndFlatten(struct);
 
-
     } catch (Importer.EmptyDomException e) {
       System.out.println(e.getMessage());
     }
