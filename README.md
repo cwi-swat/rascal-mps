@@ -52,8 +52,8 @@ The MPS project consists of three solutions:
 ### Installation
 
  1. Import the full project into MPS.
- 2. Under XMLImporterJAR -> module properties -> Java, add Rascal2MPS/XMLImporter/XMLImporter.jar as a libarary. 
- 3. Under XMLImporterJAR -> module properties -> common, create a new model root to this same jar. Make sure the jar file is selected as a source (marked blue)
+ 2. Under XMLImporterJAR -> module properties -> Java, add Rascal2MPS/XMLImporter/XMLImporter.jar as a library (select the model roots as java_source_stubs). 
+ 3. Under XMLImporterJAR -> module properties -> common, create a new model root to this same jar. Make sure the jar file is selected as a source (marked blue).
  4. The stub should now be set up, and you should see models under XMLImporterJAR -> stubs. If so, you can build the solution.
  5. Build the XML2MPS module.
  6. Build the plugin module.
