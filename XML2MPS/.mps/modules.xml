@@ -19,6 +19,10 @@
       <modulePath path="$PROJECT_DIR$/languages/Pico21/sandbox/Pico21.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico22/Pico22.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico22/sandbox/Pico22.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoAliases/PicoAliases.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoAliases/sandbox/PicoAliases.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoAliases2/PicoAliases2.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PicoAliases2/sandbox/PicoAliases2.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoDuplicateFix/PicoDuplicateFix.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoDuplicateFix/sandbox/PicoDuplicateFix.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/PicoEditable/PicoEditable.mpl" folder="newLanguageName" />
@@ -45,6 +49,7 @@
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/runtime/StateMachineSample.runtime.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/solutions/BaseLanguageTest/BaseLanguageTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolutiontest/NewSolutiontest.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/TestProgram/TestProgram.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/TestSolution/TestSolution.msd" folder="TestSolution" />
       <modulePath path="$PROJECT_DIR$/solutions/XML2MPSHelper/XML2MPS.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/XMLImporterJAR/XMLImporterJAR.msd" folder="" />
