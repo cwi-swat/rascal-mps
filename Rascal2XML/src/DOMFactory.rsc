@@ -4,6 +4,7 @@ import lang::xml::DOM;
 import lang::xml::IO;
 import Node;
 import IO;
+import Prelude;
 
 Namespace createNamespace(str pre, str uri) = namespace(pre, uri);
 Namespace createNamespace(str pre) = namespace(pre, "dummy");
@@ -37,7 +38,18 @@ Node createNewElement(str name, str namespace) = element(createNamespace(namespa
 Node createNewElement(str name) = element(none(), name, []);
 Node createNewElement(str name, list[Node] l) = element(none(), name, l);
 
+Node mergeIntoLeft(element(Namespace ns, elementName, list[Node] left), element(_,_,list[Node] right)){
+	return element(ns, elementName, left+right);
+}
 
+// returns the first node in the list appended with the child nodes of all other nodes in the list
+Node mergeNodeList(list[Node] toMerge){
+	Node master = toMerge[0];
+	for(i <- [1..(size(toMerge)-1)]){
+		master = mergeIntoLeft(master,toMerge[i]);
+	}
+	return master;
+}
 
 str printXML(Node dom) = xmlPretty(dom);
 str printXML(str mode, Node dom){
@@ -55,4 +67,5 @@ void writeXMLToFile(loc l, str xml){
 void writeXMLToFile(loc l, Node dom){
 	writeFile(l, printXML(dom));
 }
+
 

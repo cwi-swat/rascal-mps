@@ -14,334 +14,303 @@ It assumes:
 
 module Grammars::JS::JSGrammar2
 
+lexical PrimitiveString = "";
+
 start syntax I_Source 
   = source: Statement* stat
   ;
 
 syntax Statement 
-  = varDecl: I_VarDecl 
+  = varDecl: I_VarDecl var
   | empty: ";"
   | block: "{" Statement* stat "}" 
-  | expression: Expression function ";"
+  | s_expression: Expression function ";"
   
   // Block level things
-  | function: Function
+  | s_function: Function f
   | ifThen: "if" "(" Expression cond ")" Statement stat 
   | ifThenElse: "if" "(" Expression cond ")" Statement stat1 "else" Statement stat2
   | doWhile: "do" Statement stat "while" "(" Expression cond ")" ";"
   | whileDo: "while" "(" Expression cond ")" Statement stat
   | forDo: "for" "(" {Expression ","}* e1 ";" {Expression ","}* e2 ";" {Expression ","}* ops ")" Statement stat
-  | forDoDeclarations: "for" "(" "var" {VariableDeclarationNoIn ","}+ ";" {Expression ","}* conds ";" {Expression ","}* ops ")" Statement  
-  | forIn: "for" "(" Expression var "in" Expression obj ")" Statement
-  | forInDeclaration: "for" "(" "var" Id "in" Expression obj ")" Statement
-  | with: "with" "(" Expression scope ")" Statement
+  | forDoDeclarations: "for" "(" "var" {VariableDeclarationNoIn ","}+ ";" {Expression ","}* conds ";" {Expression ","}* ops ")" Statement s 
+  | forIn: "for" "(" Expression var "in" Expression obj ")" Statement s
+  | forInDeclaration: "for" "(" "var" Id "in" Expression obj ")" Statement s
+  | with: "with" "(" Expression scope ")" Statement s
   
   // Non local control flow
   | returnExp: "return"  Expression exp ";"
   | returnNoExp: "return" ";"
   | throwExp: "throw" Expression expression ";"
   | throwNoExp: "throw" ";"
-  | continueLabel: "continue" Id ";"
+  | continueLabel: "continue" Id id ";"
   | continueNoLabel: "continue" ";"
-  | breakLabel: "break" Id ";"
+  | breakLabel: "break" Id id ";"
   | breakNoLabel: "break" ";"
   | debugger: "debugger" ";"
-  | labeled: Id ":" Statement
+  | labeled: Id id ":" Statement s
  
   | switchCase: "switch" "(" Expression cond ")" "{" CaseClause* clauses "}"
-  | tryCatch: "try" Statement "catch" "(" Id ")" Statement
-  | tryFinally: "try" Statement "finally" Statement
-  | tryCatchFinally: "try" Statement "catch" "(" Id ")" Statement "finally" Statement
+  | tryCatch: "try" Statement s "catch" "(" Id id ")" Statement s2
+  | tryFinally: "try" Statement s "finally" Statement s2
+  | tryCatchFinally: "try" Statement s "catch" "(" Id id ")" Statement s2 "finally" Statement s3
   ;
 
 syntax VariableDeclaration 
-  = init: Id id "=" Expression exp
-  | nonInit: Id id
+  = init_VariableDeclaration : Id id "=" Expression exp
+  | nonInit_VariableDeclaration: Id id
   ;
 
 syntax VariableDeclarationNoIn
-  = init: Id id "=" Expression!inn exp
-  | nonInit: Id id
+  = init_VariableDeclarationNoIn: Id id "=" Expression exp
+  | nonInit_VariableDeclarationNoIn: Id id
   ;
 
 
 syntax CaseClause 
-  = caseOf: "case" Expression ":" Statement*
-  | defaultCase: "default" ":" Statement*
+  = caseOf: "case" Expression e ":" Statement* s
+  | defaultCase: "default" ":" Statement* s
   ;
    
 syntax Function
-  = "function" Id name "(" {Id ","}* parameters ")" "{" Statement* body "}"
-  | "function" "(" {Id ","}* parameters ")" "{" Statement* body "}"
+  = f1: "function" Id name "(" {Id ","}* parameters ")" "{" Statement* body "}"
+  | f2: "function" "(" {Id ","}* parameters ")" "{" Statement* body "}"
   ;
 
 // Todo: Check associativity https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 // Todo: Right now you can put any type of Expression on the lhs of a variableAssignment like: 5 = y; We only want to do this for a few cases however
 // Rather than exclude everything other than those cases it would be much easier to whitelist the few that ARE allowed.
 syntax Expression
-  = array: "[" {Expression ","}*  ","? "]"
-  | objectDefinition:"{" {PropertyAssignment ","}* ","? "}"
+  = array: "[" {Expression ","}* e "]"
+  | objectDefinition:"{" {PropertyAssignment ","}* p "}"
   | this: "this"
-  | var: Id 
-  | literal: Literal
-  | bracket \bracket: "(" Expression ")" 
-  | function: Function
-  > property: Expression "." Id 
-  | call: Expression "(" { Expression ","}* ")" 
-  | member: Expression "[" Expression "]" 
-  > new: "new" Expression
-  > postIncr: Expression "++"
-  | postDec: Expression "--"
-  > delete: "delete" Expression
-  | typeof: "typeof" Expression
-  | preIncr: "++" Expression
-  | preDecr: "--" Expression
-  | prefixPlus: "+" !>> [+=] Expression
-  | prefixMin: "-" !>> [\-=] Expression
-  | binNeg: "~" Expression
-  | not: "!" !>> [=] Expression
+  | var: Id id
+  | e_literal: Literal lit
+  | brack: "(" Expression e ")" 
+  | e_function: Function f
+  > e_property: Expression e "." Id id
+  | call: Expression e "(" { Expression ","}* e2 ")" 
+  | member: Expression e "[" Expression e2 "]" 
+  > new: "new" Expression e
+  > postIncr: Expression e "++"
+  | postDec: Expression  e "--"
+  > delete: "delete" Expression e
+  | typeof: "typeof" Expression e
+  | preIncr: "++" Expression e
+  | preDecr: "--" Expression e
+  | prefixPlus: "+"Expression e
+  | prefixMin: "-"Expression e
+  | binNeg: "~" Expression e
+  | not: "!" !>> [=] Expression e
   >
   left (
-      mul: Expression "*" !>> [*=] Expression
-    | div: Expression "/" !>> [/=] Expression
-    | rem: Expression "%" !>> [%=] Expression
+      mul: Expression lhs "*"  Expression rhs
+    | div: Expression lhs "/"  Expression rhs
+    | rem: Expression lhs "%"  Expression rhs
   )
   >
   left (
-      add: Expression "+" !>> [+=]  Expression
-    | sub: Expression "-" !>> [\-=] Expression
+      add: Expression lhs "+"  Expression rhs
+    | sub: Expression lhs "-"  Expression rhs
   )
   > // right???
   left (
-      shl: Expression "\<\<" Expression
-    | shr: Expression "\>\>" !>> [\>] Expression
-    | shrr: Expression "\>\>\>" Expression
+      shl: Expression lhs "\<\<" Expression rhs
+    | shr: Expression lhs "\>\>"  Expression rhs
+    | shrr: Expression lhs "\>\>\>" Expression rhs
   )
   >
   non-assoc (
-      lt: Expression "\<" Expression
-    | leq: Expression "\<=" Expression
-    | gt: Expression "\>" Expression
-    | geq: Expression "\>=" Expression
-    | instanceof: Expression "instanceof" Expression
-    | inn: Expression "in" Expression
+      lt: Expression lhs "\<" Expression rhs
+    | leq: Expression lhs "\<=" Expression rhs
+    | gt: Expression lhs "\>" Expression rhs
+    | geq: Expression lhs "\>=" Expression rhs
+    | instanceof: Expression lhs "instanceof" Expression rhs
+    | inn: Expression lhs "in" Expression rhs
   )
   >
   right (
-      eqq: Expression "===" Expression
-    | neqq: Expression "!==" Expression
-    | eq: Expression "==" !>> [=] Expression 
-    | neq: Expression "!=" !>> [=] Expression
+      eqq: Expression lhs "===" Expression rhs
+    | neqq: Expression lhs "!==" Expression rhs
+    | eq: Expression lhs "==" Expression rhs
+    | neq: Expression lhs "!=" Expression rhs
   )
-  > right binAnd: Expression "&" !>> [&=] Expression
-  > right binXor: Expression "^" !>> [=] Expression
-  > right binOr: Expression "|" !>> [|=] Expression
-  > left and: Expression "&&" Expression
-  > left or: Expression "||" Expression
-  > cond: Expression!cond "?" Expression!cond ":" Expression
+  > right binAnd: Expression lhs "&"  Expression rhs
+  > right binXor: Expression lhs "^"  Expression rhs
+  > right binOr: Expression lhs "|" Expression rhs
+  > left and: Expression lhs "&&" Expression rhs
+  > left or: Expression lhs "||" Expression rhs
+  > cond: Expression cond "?" Expression cond2 ":" Expression e
   > right (
-      assign: Expression "=" !>> ([=][=]?) Expression
-    | assignMul: Expression "*=" Expression
-    | assignDiv: Expression "/=" Expression
-    | assignRem: Expression "%=" Expression
-    | assignAdd: Expression "+=" Expression
-    | assignSub: Expression "-=" Expression
-    | assignShl: Expression "\<\<=" Expression
-    | assignShr: Expression "\>\>=" Expression
-    | assignShrr: Expression "\>\>\>=" Expression
-    | assignBinAnd: Expression "&=" Expression
-    | assignBinXor: Expression "^=" Expression
-    | assignBinOr: Expression "|=" Expression
+      assign: Expression lhs "=" Expression rhs
+    | assignMul: Expression lhs "*=" Expression rhs
+    | assignDiv: Expression lhs "/=" Expression rhs
+    | assignRem: Expression lhs "%=" Expression rhs
+    | assignAdd: Expression lhs "+=" Expression rhs
+    | assignSub: Expression lhs "-=" Expression rhs
+    | assignShl: Expression lhs "\<\<=" Expression rhs
+    | assignShr: Expression lhs "\>\>=" Expression rhs
+    | assignShrr: Expression lhs "\>\>\>=" Expression rhs
+    | assignBinAnd: Expression lhs "&=" Expression rhs
+    | assignBinXor: Expression lhs "^=" Expression rhs
+    | assignBinOr: Expression lhs "|=" Expression rhs
   )
   ;
   
   
 syntax I_VarDecl
-  = "var" {VariableDeclaration ","}+ declarations ";"
-  | "let" {VariableDeclaration ","}+ declarations ";" // es6
+  = var_dec: "var" {VariableDeclaration ","}+ declarations ";"
+  | let_dec: "let" {VariableDeclaration ","}+ declarations ";" // es6
   ;
   
 
 syntax PropertyName
- = Id
- | String
- | Numeric
+ = prop_Id: Id id
+ | prop_String: String s 
+ | prop_Numeric: Numeric n
  ;
 
 syntax PropertyAssignment
-  = property: PropertyName ":" Expression
-  | "get" PropertyName "(" ")" "{" Statement* "}"
-  | "set" PropertyName "(" Id ")" "{" Statement* "}"
+  = property: PropertyName p ":" Expression e
+  | get: "get" PropertyName p "(" ")" "{" Statement* "}"
+  | \set: "set" PropertyName p "(" Id id ")" "{" Statement* s"}"
   ;
 
 
 syntax Literal
- = "null"
- | Boolean
- | Numeric
- | String
- | RegularExpression
+ = l_null: "null"
+ | l_bool: Boolean b
+ | l_num: Numeric n
+ | l_string: String s
+ | l_reg: RegularExpression re
  ;
 
 syntax Boolean
-  = "true"
-  | "false"
+  = \true: "true"
+  | \false: "false"
   ;
 
-syntax Numeric
-  = [a-zA-Z$_0-9] !<< Decimal
-  | [a-zA-Z$_0-9] !<< HexInteger
+lexical Numeric
+  = lit_Numeric: PrimitiveString
   ;
 
 lexical Decimal
-  = DecimalInteger [.] [0-9]* ExponentPart?
-  | [.] [0-9]+ ExponentPart?
-  | DecimalInteger ExponentPart?
+  = lit_Decimal: PrimitiveString
   ;
 
 lexical DecimalInteger
-  = [0]
-  | [1-9][0-9]*
-  !>> [0-9]
+  = lit_DecimalInteger: PrimitiveString
   ;
 
 lexical ExponentPart
-  = [eE] SignedInteger
+  = lit_ExponentPart: PrimitiveString
   ;
 
 lexical SignedInteger
-  = [+\-]? [0-9]+ !>> [0-9]
+  = lit_SignedInteger: PrimitiveString
   ;
 
 lexical HexInteger
-  = [0] [Xx] [0-9a-fA-F]+ !>> [a-zA-Z_]
+  = lit_HexInteger: PrimitiveString
   ;
 
 lexical String
-  = [\"] DoubleStringChar* [\"]
-  | [\'] SingleStringChar* [\']
+  = lit_String: PrimitiveString
   ;
 
 lexical DoubleStringChar
-  = ![\"\\\n]
-  | [\\] EscapeSequence
+  = lit_DoubleStringChar: PrimitiveString
   ;
 
 lexical SingleStringChar
-  = ![\'\\\n]
-  | [\\] EscapeSequence
+  = lit_SingleStringChar: PrimitiveString
   ;
 
 
 
 lexical EscapeSequence
-  = CharacterEscapeSequence
-  | [0] !>> [0-9]
-  | HexEscapeSequence
-  | UnicodeEscapeSequence
+  = lit_EscapeSequence: PrimitiveString
   ;
 
 lexical CharacterEscapeSequence
-  = SingleEscapeCharacter
-  | NonEscapeCharacter
+  = lit_CharacterEscapeSequence: PrimitiveString
   ;
 
 lexical SingleEscapeCharacter
-  = [\'\"\\bfnrtv]
+  = lit_SingleEscapeCharacter: PrimitiveString
   ;
 
 lexical NonEscapeCharacter
   // SourceCharacter but not one of EscapeCharacter or LineTerminator
-  = ![\n\'\"\\bfnrtv0-9xu]
+  = lit_NonEscapeCharacter: PrimitiveString
   ;
 
 lexical EscapeCharacter
-  = SingleEscapeCharacter
-  | [0-9]
-  | [xu]
+  = lit_EscapeCharacter: PrimitiveString
   ;
 
 
   
 lexical HexDigit
-  = [a-fA-F0-9]
+  = lit_HexDigit: PrimitiveString
   ;
 
 lexical HexEscapeSequence
-  = [x] HexDigit HexDigit
+  = lit_HexEscapeSequence: PrimitiveString
   ;
 
 syntax UnicodeEscapeSequence
-  = "u" HexDigit HexDigit HexDigit HexDigit
+  = lit_UnicodeEscapeSequence: PrimitiveString
   ;
 
 lexical RegularExpression
-  = [/] RegularExpressionBody [/] RegularExpressionFlags
+  = lit_RegularExpression: PrimitiveString
   ;
 
 lexical RegularExpressionBody
-  = RegularExpressionFirstChar RegularExpressionChar*
+  = lit_RegularExpressionBody: PrimitiveString
   ;
 
 lexical RegularExpressionFirstChar
-  = ![*/\[\n\\]
-  | RegularExpressionBackslashSequence
-  | RegularExpressionClass
+  = lit_RegularExpressionFirstChar: PrimitiveString
   ;
 
 lexical RegularExpressionChar
-  = ![/\[\n\\]
-  | RegularExpressionBackslashSequence
-  | RegularExpressionClass
+  = lit_RegularExpressionChar: PrimitiveString
   ;
 
 lexical RegularExpressionBackslashSequence
-  = [\\] ![\n]
+  = lit_RegularExpressionBackslashSequence: PrimitiveString
   ;
 
 lexical RegularExpressionClass
-  = [\[] RegularExpressionClassChar* [\]]
+  = lit_RegularExpressionClass: PrimitiveString
   ;
 
 lexical RegularExpressionClassChar
-  = ![\n\]\\]
-  | RegularExpressionBackslashSequence
+  = lit_RegularExpressionClassChar: PrimitiveString
   ;
 
 lexical RegularExpressionFlags
-  = [a-zA-Z]* !>> [a-zA-Z]
+  = lit_RegularExpressionFlags: PrimitiveString
   ;
 
 
 lexical Whitespace
-  = [\t-\n\r\ ]
+  = lit_Whitespace: PrimitiveString
   ;
 
 lexical Comment
-  = @category="Comment" "/*" CommentChar* "*/"
-  | @category="Comment" "//" ![\n]*  $
+  = lit_Comment: PrimitiveString
   ;
 
 lexical CommentChar
-  = ![*]
-  | [*] !>> [/]
+  = lit_CommentChar: PrimitiveString
   ;
-
-
-lexical LAYOUT
-  = Whitespace
-  | Comment
-  ;
-
-layout LAYOUTLIST
-  = LAYOUT*
-  !>> [\t\ \n]
-  !>> "/*"
-  !>> "//" ;
 
 
 lexical Id 
-  = ([a-zA-Z$_0-9] !<< [$_a-zA-Z] [a-zA-Z$_0-9]* !>> [a-zA-Z$_0-9]) \ Reserved
+  = lit_Id: PrimitiveString
   ;
 
 

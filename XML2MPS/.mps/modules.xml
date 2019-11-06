@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/XML2MPS.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/JS/JS.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/JS/sandbox/JS.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage/sandbox/NewLanguage.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguagePicoPico/NewLanguagePicoPico.mpl" folder="newLanguageName" />

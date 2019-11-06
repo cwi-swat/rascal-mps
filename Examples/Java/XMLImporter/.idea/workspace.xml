@@ -7,9 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa31cd9e-b873-4469-9a45-bdeff58ffdc6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XMLImporter/JavaXMLImporter/Importer$EmptyDomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XMLImporter/JavaXMLImporter/Importer$EmptyDomException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/XMLImporter/JavaXMLImporter/Importer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/XMLImporter/JavaXMLImporter/Importer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaXMLImporter/Importer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/DOMFactory.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/DOMFactory.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/JS/JSGrammar2.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Grammars/JS/JSGrammar2.rsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Rascal2XML/src/Rascal2MPS.rsc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Rascal2XML/src/Rascal2MPS.rsc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/languages/PicoEditableTrue/sandbox/models/PicoEditableTrue.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/languages/PicoEditableTrue/sandbox/models/PicoEditableTrue.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/Importer.mps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/models/Importer.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen.caches/XML2MPS/Importer/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/XMLImporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/../../../XML2MPS/solutions/XML2MPSHelper/source_gen/XML2MPS/Importer/trace.info" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,22 +34,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Nodes/Production.java">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Layout/LiteralLayoutElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Layout/LiteralLayoutElement.java">
+        <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="586">
+              <caret line="182" column="54" lean-forward="true" selection-start-line="182" selection-start-column="54" selection-end-line="182" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,8 +228,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,7 +302,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29317698" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29637527" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -301,8 +311,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28277355" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46587217" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43336946" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.23076923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -328,6 +338,12 @@
           <line>40</line>
           <properties />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java</url>
+          <line>185</line>
+          <properties />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -381,18 +397,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+    <entry file="file://$PROJECT_DIR$/XML/PicoStartSymbol.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Nodes/Production.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XML/PicoStartSymbol.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Terms/TermXMLImporter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -453,20 +469,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Nodes/Production.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Layout/LiteralLayoutElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JavaXMLImporter/Importer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="182" column="54" lean-forward="true" selection-start-line="182" selection-start-column="54" selection-end-line="182" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

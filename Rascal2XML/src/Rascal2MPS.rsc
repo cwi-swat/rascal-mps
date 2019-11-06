@@ -12,6 +12,22 @@ import DOMFactory;
 void treeToXML(type[&T<:Tree] reifiedTree, str filename){
  	dom = createEmptyDocument("root");
 	visit(reifiedTree){
+
+		case associativity(sort(str name),_,set[Production] b):{
+			// Non terminal top layer node
+			Node currentNonTerminalNode = createNewElement("nonterminal");
+			
+			// Non terminal name node
+			Node nonTerminalName = createNewElement("name",[charData(name)]);
+			currentNonTerminalNode = appendToElementByNode(currentNonTerminalNode, nonTerminalName);
+			
+			// Handle all productions for this nonterminal
+			currentNonTerminalNode = visitProductionSet(currentNonTerminalNode,b);
+			
+			// Append complete nonterminal node to the document root
+			dom = appendToRootElement(dom, currentNonTerminalNode);
+		} 
+		
 		case choice(sort(str name),set[Production] b) : {
 			
 			// Non terminal top layer node
@@ -46,6 +62,15 @@ void treeToXML(type[&T<:Tree] reifiedTree, str filename){
 					lexArgNode = appendToElementByNode(lexArgNode, lexArgType);
 					currentLexicalNode = appendToElementByNode(currentLexicalNode, lexArgNode);
 				}
+				else if(prod(label(str n1,_), [lex(str n2)],_) := p){
+					println("Lexical: " + n1 + " -\> " + n2);
+					Node lexArgNode = createNewElement("arg");
+					Node lexArgName = createNewElement("name",[charData(n1)]);
+					Node lexArgType = createNewElement("type",[charData(n2)]);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgName);
+					lexArgNode = appendToElementByNode(lexArgNode, lexArgType);
+					currentLexicalNode = appendToElementByNode(currentLexicalNode, lexArgNode);
+				}
 				else if(prod(_,[sort(str n2)],_) := p){
 					
 					// No attribute name, so we must add a dummy value
@@ -70,7 +95,7 @@ void treeToXML(type[&T<:Tree] reifiedTree, str filename){
 				if(prod(_,list[Symbol] kwSymbol,_) := prod){
 					// Should be only one element
 					str kwLiteral = getSymbolName(kwSymbol[0]);
-					println("Keyword: " + kwLiteral);
+					//println("Keyword: " + kwLiteral);
 					Node keywordElement = createNewElement("keyword",[charData(kwLiteral)]);
 					keywordsListNode = appendToElementByNode(keywordsListNode, keywordElement);
 					
@@ -92,10 +117,118 @@ void treeToXML(type[&T<:Tree] reifiedTree, str filename){
 		dom = appendToRootElement(dom, startSymbolNode);
 	}
 	
+	dom = testMerge(dom);
 	
 	filename = filename + ".xml";
 	loc filepath = |project://Rascal2XML/src/XML|+filename;
 	writeXMLToFile(filepath,dom);
+}
+
+Node mergeSameNameNodes(document(element(Namespace ns, elementName, list[Node] children))){
+	for(n <- children){
+		for(n2 <- n.children){
+			println(n2.name);
+		}
+	}
+}
+
+Node testMerge(Node dom){
+	set[str] nameSet = {};
+	visit(dom){
+		case element(_, "nonterminal", list[Node] children) : {
+			for(n <- children){
+				if(n.name == "name"){
+					if(charData(str name) := n.children[0]){
+						nameSet = nameSet + name;
+					}
+				}
+			}
+		}
+	}
+	println(nameSet);
+	for(nt <- nameSet){
+		list[Node] nl = [];
+		visit(dom){
+			case element(Namespace ns, "nonterminal", list[Node] children) : {
+				for(n <- children){
+					if(n.name == "name"){
+						if(charData(str name) := n.children[0]){
+							if(name ==  nt){
+								nl = nl + element(ns, "nonterminal", children);
+							}
+						}
+					}
+				}
+			}
+		}
+		if(size(nl)> 1){
+			println("start merge");
+			println(size(nl));
+			Node merged = mergeNodeList(nl);
+			// Remove duplicate name fields from the merged node
+			
+			
+			noChange = true;
+
+			while(noChange){
+				noChange = false;
+				for(i <- [0..(size(merged.children)-1)]){
+					if(merged.children[i].name == "name"){
+					
+						noChange = true;
+						merged.children = delete(merged.children, i);
+						break;
+						
+					}
+				}
+			}
+			
+			merged.children = push(element(none(),"name",[charData(nt)]),merged.children);
+
+			
+			
+			
+			// delete all occurances of the duplicate elements
+			
+			noChange = true;
+			while(noChange){
+				noChange = false;
+				if(document(element(Namespace ns, elementName, list[Node] children)) := dom){
+					for(i <- [0..(size(children)-1)]){
+						if(children[i].name == "nonterminal"){
+							for(n <- children[i].children){
+								if(charData(str name) := n.children[0]){
+									if(name ==  nt){
+										//println("delete <name>");
+										noChange = true;
+										dom = document(element(ns, elementName, delete(children,i)));
+										break;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			// Add the merged node
+			
+			dom.root.children = dom.root.children + merged;
+			
+		}
+		
+	}
+	return dom;
+}
+
+list[Node] removeElementByName(list[Node] nodes, str toRemove){
+	for(i <- [0..(size(nodes)-1)]){
+		if(nodes[i].name == "name"){
+			if(nodes[i].children[0] == toRemove){
+				return delete(nodes,i);
+			}
+		}
+	}
+	return [dom];
 }
 
 Node visitProductionSet(Node nonTerminal, set[Production] prods){
@@ -115,55 +248,70 @@ Node visitProductionSet(Node nonTerminal, set[Production] prods){
 			println(name + " " + name2);
 		}
 		
-		switch(p){
-			case prod(Symbol def, list[Symbol] symbols, _): {
-				Node currentProductionNode = createNewElement("production");
-				Node name = createNewElement("name", [charData(p.def.name)]);
-				currentProductionNode = appendToElementByNode(currentProductionNode, name);
-				println(symbols);
-				for(s <- symbols){
-					//println(s);
-					switch(s){
-						case label(str name, Symbol symbol): {
-							currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"1");
-							
-						}
-						case \iter-seps(Symbol symbol, list[Symbol] separators):{
-							// No named argument, so give dummy name
-							str name = "dummy";
-							currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"+");
-						}
-						case \iter-star-seps(Symbol symbol, list[Symbol] separators):{
-							// No named argument, so give dummy name
-							str name = "dummy";
-							currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"*");
-						}
-						case sort(str symbolName):{
-							// No named argument, so give dummy name
-							println(symbolName);
-							str name = "dummy";
-							Symbol s = sort(symbolName);
-							println(s);
-							currentProductionNode = makeProductionNode(name, s, currentProductionNode,"1");
-						}
-						case \parameterized-sort(str name, list[Symbol] parameters):{
-							;
+		
+		//if(priority(sort(str def), list[Production] b) := p){
+		//	println("PRIOOIOIOIOIOIIOIUIIIOIIOIOIOIOIOIOIOIOIOIIOI");
+		//	set[Production] prodSet = {};
+		//	for(p2 <- b){
+		//		if(choice(sort(str def2), set[Production] p3):= p2){
+		//			prodSet = prodSet + p3;
+		//		}
+		//		else if(associativity(_,_,set[Production] p3):= p2){
+		//			prodSet = prodSet + p3;
+		//		}
+		//	}
+		//	//println(prodSet);
+		//	nonTerminal = visitProductionSet(nonTerminal, prodSet);
+		//	return nonTerminal;
+		//}
+			switch(p){
+				case prod(Symbol def, list[Symbol] symbols, _): {
+					Node currentProductionNode = createNewElement("production");
+					Node name = createNewElement("name", [charData(p.def.name)]);
+					currentProductionNode = appendToElementByNode(currentProductionNode, name);
+					//println(symbols);
+					for(s <- symbols){
+						//println(s);
+						switch(s){
+							case label(str name, Symbol symbol): {
+								currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"1");
+								
+							}
+							case \iter-seps(Symbol symbol, list[Symbol] separators):{
+								// No named argument, so give dummy name
+								str name = "dummy";
+								currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"+");
+							}
+							case \iter-star-seps(Symbol symbol, list[Symbol] separators):{
+								// No named argument, so give dummy name
+								str name = "dummy";
+								currentProductionNode = makeProductionNode(name, symbol, currentProductionNode,"*");
+							}
+							case sort(str symbolName):{
+								// No named argument, so give dummy name
+								//println(symbolName);
+								str name = "dummy";
+								Symbol s = sort(symbolName);
+								println(s);
+								currentProductionNode = makeProductionNode(name, s, currentProductionNode,"1");
+							}
+							case \parameterized-sort(str name, list[Symbol] parameters):{
+								;
+							}
 						}
 					}
+					Node lo = createLayoutNode(p);
+					currentProductionNode = appendToElementByNode(currentProductionNode, lo);
+					nonTerminal = appendToElementByNode(nonTerminal, currentProductionNode);
+					println(" ");
 				}
-				Node lo = createLayoutNode(p);
-				currentProductionNode = appendToElementByNode(currentProductionNode, lo);
-				nonTerminal = appendToElementByNode(nonTerminal, currentProductionNode);
-				println(" ");
+				case associativity(_,_,set[Production] p): {
+					// Recursively find productions of all alternatives
+					nonTerminal = visitProductionSet(nonTerminal, p);
+				}
 			}
-			case associativity(_,_,set[Production] p): {
-				println("assoc");
-				// Recursively find productions of all alternatives
-				nonTerminal = visitProductionSet(nonTerminal, p);
-			}
-		}
 		
-
+		
 	}
 	return nonTerminal;
 }

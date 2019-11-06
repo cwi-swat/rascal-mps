@@ -2727,12 +2727,12 @@
                             <node concept="Xl_RD" id="3oPfB0u2Kr1" role="3uHU7B">
                               <property role="Xl_RC" value="null link: " />
                             </node>
-                            <node concept="2OqwBi" id="3oPfB0u2Kr2" role="3uHU7w">
-                              <node concept="37vLTw" id="3oPfB0u2Kr3" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3oPfB0u2KqI" resolve="re" />
+                            <node concept="2OqwBi" id="5mWPzbRV0$P" role="3uHU7w">
+                              <node concept="37vLTw" id="5mWPzbRUZ0$" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3oPfB0u1Xj3" resolve="node" />
                               </node>
-                              <node concept="liA8E" id="3oPfB0u2Kr4" role="2OqNvi">
-                                <ref role="37wK5l" to="k2gh:~ReferenceLayoutElement.getName():java.lang.String" resolve="getName" />
+                              <node concept="3TrcHB" id="5mWPzbRV1lt" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
                             </node>
                           </node>

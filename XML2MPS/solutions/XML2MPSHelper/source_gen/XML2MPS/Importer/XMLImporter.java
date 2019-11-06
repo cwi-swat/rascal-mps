@@ -221,7 +221,7 @@ public class XMLImporter {
         ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
         SNode link = getLinkdeclarationByName(re.getName(), node);
         if (link == null) {
-          display("null link: " + re.getName());
+          display("null link: " + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         }
         String card = link.getProperty(MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98054bb04L, "sourceCardinality"));
         if (card.equals("1") || card.equals("0..1")) {

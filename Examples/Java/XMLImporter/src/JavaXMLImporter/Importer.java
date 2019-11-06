@@ -102,6 +102,7 @@ public class Importer {
         for(int i = 0; i < nl.getLength(); i++){
             Element e = (Element)nl.item(i);
             String ntName = e.getElementsByTagName("name").item(0).getTextContent();
+            System.out.println(ntName);
             NonTerminal nt = this.processNonTerminal(ntName,e.getElementsByTagName("production"));
             ntList.add(nt);
         }
@@ -177,10 +178,15 @@ public class Importer {
 
 
     public static void main(String[] args) {
-        Importer im = new Importer("XML\\PicoStartSymbol.xml");
+        Importer im = new Importer("XML\\js.xml");
         Document d = im.loadXMLDOM();
         //ArrayList<Lexical> l = im.getAllLexicals(d);
-        System.out.println(im.getLanguageRoot(d));
+        try {
+            ArrayList<NonTerminal> nt = im.getAllNonTerminals(d);
+            System.out.println(nt);
+        } catch (Exception e){
+
+        }
 
         //System.out.println(l);
     }
