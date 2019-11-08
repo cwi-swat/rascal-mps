@@ -83,7 +83,7 @@ syntax Function
 syntax Expression
   = array: "[" {Expression ","}* e "]"
   | objectDefinition:"{" {PropertyAssignment ","}* p "}"
-  | this: "this"
+  | e_this: "this"
   | var: Id id
   | e_literal: Literal lit
   | brack: "(" Expression e ")" 
@@ -95,7 +95,7 @@ syntax Expression
   > postIncr: Expression e "++"
   | postDec: Expression  e "--"
   > delete: "delete" Expression e
-  | typeof: "typeof" Expression e
+  | e_typeof: "typeof" Expression e
   | preIncr: "++" Expression e
   | preDecr: "--" Expression e
   | prefixPlus: "+"Expression e
@@ -125,7 +125,7 @@ syntax Expression
     | leq: Expression lhs "\<=" Expression rhs
     | gt: Expression lhs "\>" Expression rhs
     | geq: Expression lhs "\>=" Expression rhs
-    | instanceof: Expression lhs "instanceof" Expression rhs
+    | e_instanceof: Expression lhs "instanceof" Expression rhs
     | inn: Expression lhs "in" Expression rhs
   )
   >
@@ -186,8 +186,8 @@ syntax Literal
  ;
 
 syntax Boolean
-  = \true: "true"
-  | \false: "false"
+  = b_true: "true"
+  | b_false: "false"
   ;
 
 lexical Numeric

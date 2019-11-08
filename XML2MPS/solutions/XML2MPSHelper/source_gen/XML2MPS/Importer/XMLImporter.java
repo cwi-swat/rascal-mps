@@ -22,8 +22,8 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import JavaXMLImporter.Layout.LayoutElement;
 import JavaXMLImporter.Layout.LiteralLayoutElement;
-import XML2MPS.NodeCreator.EditorFactory;
 import JavaXMLImporter.Layout.ReferenceLayoutElement;
+import XML2MPS.NodeCreator.EditorFactory;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
 import javax.swing.JOptionPane;
 
@@ -139,6 +139,34 @@ public class XMLImporter {
                   break;
                 }
               }
+            }
+          }
+
+        }
+      }
+
+      // Set short descriptions 
+
+      for (SNode node : this.conceptNodeList) {
+        for (NonTerminal n : nonTerminalList) {
+          for (Production p : n.getProductions()) {
+            if (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).equals(p.getName())) {
+              if (node == null) {
+                break;
+              }
+              String sDesc = "";
+              for (LayoutElement l : p.getLayoutElements()) {
+                if (l.getClass().equals(LiteralLayoutElement.class)) {
+                  LiteralLayoutElement lit = (LiteralLayoutElement) l;
+                  sDesc += " " + lit.getName();
+                }
+                if (l.getClass().equals(ReferenceLayoutElement.class)) {
+                  ReferenceLayoutElement lit = (ReferenceLayoutElement) l;
+                  sDesc += " " + lit.getType();
+                }
+
+              }
+              SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0x403a32c5772bbe20L, "conceptShortDescription"), sDesc);
             }
           }
 
