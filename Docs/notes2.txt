@@ -1,8 +1,0 @@
-Single root
-
-Optional (0..1) cardinality
-
-javascript Rascal grammar
-	- fix 
-	- import 
-	
