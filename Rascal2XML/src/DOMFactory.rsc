@@ -45,7 +45,7 @@ Node mergeIntoLeft(element(Namespace ns, elementName, list[Node] left), element(
 // returns the first node in the list appended with the child nodes of all other nodes in the list
 Node mergeNodeList(list[Node] toMerge){
 	Node master = toMerge[0];
-	for(i <- [1..(size(toMerge)-1)]){
+	for(i <- [1..(size(toMerge))]){
 		master = mergeIntoLeft(master,toMerge[i]);
 	}
 	return master;

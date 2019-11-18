@@ -934,10 +934,10 @@
                   <node concept="1rXfSq" id="7WSK5s1X2Jt" role="3clFbG">
                     <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
                     <node concept="Xl_RD" id="7WSK5s1X3cK" role="37wK5m">
-                      <property role="Xl_RC" value="String" />
+                      <property role="Xl_RC" value="BasicString" />
                     </node>
                     <node concept="Xl_RD" id="7WSK5s1X3Z5" role="37wK5m">
-                      <property role="Xl_RC" value="[a-z]*[a-z]$" />
+                      <property role="Xl_RC" value="[a-z]*[a-z]" />
                     </node>
                   </node>
                 </node>
