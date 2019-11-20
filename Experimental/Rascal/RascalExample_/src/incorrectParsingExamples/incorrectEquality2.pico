@@ -1,0 +1,7 @@
+begin
+	declare
+	a : natural;
+	
+	% missing Expression on the rhs %
+	a := 1 ==
+end

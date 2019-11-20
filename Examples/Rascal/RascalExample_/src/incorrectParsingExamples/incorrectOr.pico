@@ -1,7 +1,0 @@
-begin
-	declare
-		a: natural;
-		% parse error since the or has no RHS expression%
-		a := 1 or ;
-		a := 1
-end

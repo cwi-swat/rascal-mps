@@ -1,7 +1,0 @@
-begin
-	declare
-	a : natural;
-	
-	% rhs is empty %
-	a := 1 == 
-end

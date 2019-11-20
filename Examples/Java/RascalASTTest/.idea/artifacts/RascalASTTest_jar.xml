@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="RascalASTTest:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/RascalASTTest_jar</output-path>
-    <root id="archive" name="RascalASTTest.jar">
-      <element id="module-output" name="RascalASTTest" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../RascalImporter/solutions/external/libs/rascal-0.12.0-SNAPSHOT.jar" path-in-jar="/" />
-    </root>
-  </artifact>
-</component>

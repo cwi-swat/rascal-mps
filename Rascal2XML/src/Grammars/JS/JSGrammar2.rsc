@@ -14,7 +14,7 @@ It assumes:
 
 module Grammars::JS::JSGrammar2
 
-lexical PrimitiveString = "";
+lexical PrimitiveString = [a-zA-Z0-9_]*;
 
 start syntax I_Source 
   = source: Statement* stat
@@ -297,21 +297,37 @@ lexical RegularExpressionFlags
 
 
 lexical Whitespace
-  = lit_Whitespace: PrimitiveString
+  = [\t-\n\r\ ]
   ;
 
 lexical Comment
-  = lit_Comment: PrimitiveString
+  = @category="Comment" "/*" CommentChar* "*/"
+  | @category="Comment" "//" ![\n]*  $
   ;
 
 lexical CommentChar
-  = lit_CommentChar: PrimitiveString
+  = ![*]
+  | [*] !>> [/]
+  ;
+
+
+lexical LAYOUT
+  = Whitespace
+  | Comment
+  ;
+
+layout LAYOUTLIST
+  = LAYOUT*
+  !>> [\t\ \n]
+  !>> "/*"
+  !>> "//" 
   ;
 
 
 lexical Id 
   = lit_Id: PrimitiveString
   ;
+
 
 
 keyword Reserved =

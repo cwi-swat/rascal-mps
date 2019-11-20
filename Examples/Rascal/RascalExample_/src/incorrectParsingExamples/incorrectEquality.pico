@@ -1,7 +1,0 @@
-begin
-	declare
-	a : natural;
-	
-	% missing Expression in the rhs %
-	a := 1 !=
-end

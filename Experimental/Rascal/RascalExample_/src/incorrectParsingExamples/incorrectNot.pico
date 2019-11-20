@@ -1,0 +1,6 @@
+begin
+	declare
+	a : natural;
+	% rhs must be an Expression, not a Statement%
+	a := not if 1 then else fi
+end

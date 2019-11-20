@@ -1,7 +1,0 @@
-begin
-	declare
-	a : natural;
-	
-	% rhs is a Statement, not an Expression %
-	a := 1 == if 1 then fi
-end

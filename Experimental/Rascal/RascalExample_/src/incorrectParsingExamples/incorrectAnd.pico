@@ -1,0 +1,8 @@
+begin
+	declare
+		n: natural;
+		
+		% cannot parse this statement since the RHS expression is missing%
+		n := 1 and ;
+		n := 1;
+end
