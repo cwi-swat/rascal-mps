@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="XML2MPS.Importer.NameResolver" />
-  <dependency className="XML2MPS.Importer.TermImporter" />
-  <dependency className="XML2MPS.Importer.XMLImporter">
+  <dependency className="XML2MPS.Importer.NameResolver" file="NameResolver.java" />
+  <dependency className="XML2MPS.Importer.TermImporter" file="TermImporter.java" />
+  <dependency className="XML2MPS.Importer.XMLImporter" file="XMLImporter.java">
     <classNode dependClassName="JavaXMLImporter.Importer" />
     <classNode dependClassName="JavaXMLImporter.Layout.LayoutElement" />
     <classNode dependClassName="JavaXMLImporter.Layout.LiteralLayoutElement" />

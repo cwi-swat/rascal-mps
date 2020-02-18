@@ -4,9 +4,10 @@ import ParseTree;
 import IO;
 import Grammar;
 import List;
+import Map;
 import lang::xml::DOM;
 import DOMFactory;
-
+import util::ValueUI;
 
 
 void treeToXML(type[&T<:Tree] reifiedTree, str filename){
@@ -153,7 +154,7 @@ Node testMerge(Node dom){
 				for(n <- children){
 					if(n.name == "name"){
 						if(charData(str name) := n.children[0]){
-							if(name ==  nt){
+							if(name ==  nt && !(element(ns, "nonterminal", children) in nl)){
 								nl = nl + element(ns, "nonterminal", children);
 							}
 						}
@@ -164,15 +165,86 @@ Node testMerge(Node dom){
 		if(size(nl)> 1){
 			println("start merge");
 			println(size(nl));
+			//text(nl);
 			Node merged = mergeNodeList(nl);
+			
 			// Remove duplicate name fields from the merged node
+			
+			map[str, int] nMap = ();
+			
+			if(element(Namespace ns, elementName, list[Node] children) := merged){
+					for(i <- [0..(size(children))]){
+						if(children[i].name == "production"){
+							if(charData(str d) := children[i].children[0].children[0]){
+								if(d notin nMap){
+									nMap = nMap + (d : 1);
+								}else {
+									nMap[d] += 1;
+								}
+							}
+						}
+					}
+			}
+			
+			println(nMap);
+			nSet = {x | x <- nMap, nMap[x] > 1}; 
+			println(nSet);
+			
+			
+			noChange = true;
+			while(noChange){
+				noChange = false;
+				if(element(Namespace ns, elementName, list[Node] children) := merged){
+					for(i <- [0..(size(children))]){
+						if(children[i].name == "production"){
+							
+							if(charData(str name) := children[i].children[0].children[0]){
+								if(name in nSet){
+									println("REMOVE DUPLICATE NODE <name>");
+									nSet = {x | x <- nSet, x != name};
+									noChange = true;
+									merged = element(ns, elementName, delete(children,i));
+									break;
+								}
+							}
+
+						}
+					}
+				}
+			}
+			
+			
+			//while(noChange){
+			//	noChange = false;
+			//	for(i <- [0..(size(merged.children))]){
+			//		oc = 0;
+			//		if(merged.children[i].name == "name"){
+			//			if(charData(str name) := merged.children[i].children[0]){
+			//				for(j <- [0..(size(merged.children))]){
+			//					if(merged.children[j].name == "name"){
+			//						if(charData(str name2) := merged.children[j].children[0]){
+			//							if(oc > 0){
+			//								oc += 1;
+			//							} else {
+			//								if(name == name2){
+			//									println("Double <name>");
+			//								}
+			//							
+			//							}
+			//						}
+			//					}	
+			//				}			
+			//			}						
+			//		}
+			//	}
+			//}
 			
 			
 			noChange = true;
 
 			while(noChange){
 				noChange = false;
-				for(i <- [0..(size(merged.children)-1)]){
+				for(i <- [0..(size(merged.children))]){
 					if(merged.children[i].name == "name"){
 					
 						noChange = true;
@@ -194,7 +266,7 @@ Node testMerge(Node dom){
 			while(noChange){
 				noChange = false;
 				if(document(element(Namespace ns, elementName, list[Node] children)) := dom){
-					for(i <- [0..(size(children)-1)]){
+					for(i <- [0..(size(children))]){
 						if(children[i].name == "nonterminal"){
 							for(n <- children[i].children){
 								if(charData(str name) := n.children[0]){
@@ -212,7 +284,7 @@ Node testMerge(Node dom){
 			}
 			// Add the merged node
 			
-			dom.root.children = dom.root.children + merged;
+			dom.root.children = push(merged, dom.root.children);
 			
 		}
 		

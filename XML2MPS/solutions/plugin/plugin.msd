@@ -18,6 +18,7 @@
     <dependency reexport="true">83f3da73-c67d-4c00-9709-60ece06179d1(XMLImporterJAR)</dependency>
     <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
     <dependency reexport="false">8cd8579d-356d-46ac-9e34-c56d282386d3(Pico21)</dependency>
+    <dependency reexport="false">8f6725be-608d-433b-98fd-844f816eb05f(jetbrains.mps.ide.make)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:8cd8579d-356d-46ac-9e34-c56d282386d3:Pico21" version="0" />
@@ -43,12 +44,13 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="8cd8579d-356d-46ac-9e34-c56d282386d3(Pico21)" version="0" />
     <module reference="7b84cb92-39f8-4ff4-8529-f32e32a953ff(XML2MPS)" version="0" />
     <module reference="83f3da73-c67d-4c00-9709-60ece06179d1(XMLImporterJAR)" version="0" />
     <module reference="8923ca79-0d0b-4284-a333-04724b34813c(XMLImporterJava)" version="0" />
     <module reference="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" version="0" />
+    <module reference="8f6725be-608d-433b-98fd-844f816eb05f(jetbrains.mps.ide.make)" version="0" />
     <module reference="25092e07-e655-497c-92fb-558a8e3080ed(jetbrains.mps.ide.ui)" version="0" />
-    <module reference="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />

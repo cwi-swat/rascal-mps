@@ -6,13 +6,14 @@ import lexlib::Lexical;
 import Grammars::Pico2;
 import DOMFactory;
 import Prelude;
+import Set;
 
 import lang::xml::DOM;
 import lang::xml::IO;
 import Node;
 
 Tree getParseTree(type[&T<:Tree] reifiedTree, loc l){
-	return parse(#Program, readFile(l), allowAmbiguity=true);
+	return parse(reifiedTree, l, allowAmbiguity = true);
 }
 
 void treeWalk(Tree t){
@@ -46,7 +47,7 @@ void parseTree2XML(Tree t, str filename){
 	Node rootElement = createNewElement("container");
 	rootElement = recursiveTreeWalk(t, "", rootElement);
 	domRoot = appendToRootElement(domRoot, rootElement);
-	println(domRoot);
+	//println(domRoot);
 	// dom = appendToRootElement(dom, createNewElement("rootElement"));
 	//dom = appendToElementByNode(dom, recursiveTreeWalk(t,dom));
 	
@@ -83,6 +84,9 @@ void recursiveTreeWalk(Tree t, str s){
 		}
 		
 		
+	}
+	if(amb(set[Tree] f) := t){
+		println(f);
 	}
 
 }
@@ -139,6 +143,9 @@ Node recursiveTreeWalk(Tree t, str s, Node dom){
 		}
 		
 		
+	}
+	if(amb(set[Tree] f) := t){
+		dom = recursiveTreeWalk(getFirstFrom(f), s, dom);
 	}
 	return dom;
 }

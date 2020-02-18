@@ -22,7 +22,7 @@ public class LexicalResolver {
   }
   private static HashMap<String, String> regexConstraints = new HashMap<String, String>() {
     {
-      put("String", "[a-z]*[a-z]$");
+      put("BasicString", "[a-z]*[a-z]");
       put("Natural", "[0-9]+");
       put("PrimitiveString", "Error");
     }
