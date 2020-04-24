@@ -10,7 +10,7 @@ import DOMFactory;
 import util::ValueUI;
 
 
-void treeToXML(type[&T<:Tree] reifiedTree, str filename){
+void treeToXML(type[&T<:Tree] reifiedTree, str filename, loc path = |project://Rascal2XML/src/XML|){
  	dom = createEmptyDocument("root");
 	visit(reifiedTree){
 
@@ -120,8 +120,7 @@ void treeToXML(type[&T<:Tree] reifiedTree, str filename){
 	
 	dom = testMerge(dom);
 	
-	filename = filename + ".xml";
-	loc filepath = |project://Rascal2XML/src/XML|+filename;
+	loc filepath = path + (filename + ".xml");
 	writeXMLToFile(filepath,dom);
 }
 
