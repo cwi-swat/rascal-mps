@@ -16,10 +16,10 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import JavaXMLImporter.Nodes.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Nodes.Production;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import JavaXMLImporter.Layout.LayoutElement;
 import JavaXMLImporter.Layout.LiteralLayoutElement;
 import JavaXMLImporter.Layout.ReferenceLayoutElement;
@@ -45,7 +45,7 @@ public class XMLImporter {
     this.lr = new LexicalResolver();
   }
 
-  public void importXMLDocument(String path, SModel struct, SModel editorModel) {
+  public void importXMLDocument(String path, SModel struct, SModel editorModel, OptimizedParameters parameters) {
     Importer javaImporter = new Importer(path);
     Document dom = javaImporter.loadXMLDOM();
     if (dom == null) {
@@ -101,14 +101,23 @@ public class XMLImporter {
 
       // Play area 
 
+
       for (NonTerminal nt : nonTerminalList) {
         for (Production p : nt.getProductions()) {
           SNode node = getConceptNodeByName(p.getName());
+
           if (node == null) {
             break;
           }
-          SNode editor = createBetterProductionEditor(node, p);
-          editorModel.addRootNode(editor);
+          if (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains(parameters.paramnode)) {
+            display("test hello");
+            SNode editor = CreateOptimizedProductionEditor(node, p, parameters.defaultLayout);
+            editorModel.addRootNode(editor);
+          } else {
+            SNode editor = createBetterProductionEditor(node, p);
+            editorModel.addRootNode(editor);
+          }
+
         }
       }
 
@@ -269,6 +278,7 @@ public class XMLImporter {
           }
         } else if (card.equals("0..n") || card.equals("1..n")) {
           SNode refCell = EditorFactory.createRefNodeCellListVertical(link);
+
           EditorFactory.addCellToConceptEditor(editor, refCell);
 
         }
@@ -277,6 +287,28 @@ public class XMLImporter {
     }
     return editor;
   }
+
+  private SNode CreateOptimizedProductionEditor(SNode node, Production prod, String makeDefault) {
+    display("welcome");
+    ArrayList<LayoutElement> l = prod.getLayoutElements();
+    l.get(0).getClass();
+    SNode editor = EditorFactory.createDefaultEditor(node);
+    for (LayoutElement e : ListSequence.fromList(l)) {
+
+    }
+
+    if (makeDefault == "Prefix") {
+      SNode cell1 = EditorFactory.createColouredLiteralCell("+");
+      EditorFactory.addCellToConceptEditor(editor, cell1);
+
+    }
+
+
+
+
+    return editor;
+  }
+
 
 
   private SNode getLinkdeclarationByName(String name, SNode node) {

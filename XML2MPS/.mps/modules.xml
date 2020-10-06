@@ -13,6 +13,8 @@
       <modulePath path="$PROJECT_DIR$/languages/JS_Short_desc/sandbox/JS_Short_desc.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage/NewLanguage.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguage/sandbox/NewLanguage.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage4/NewLanguage4.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/NewLanguage4/sandbox/NewLanguage4.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguagePicoPico/NewLanguagePicoPico.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewLanguagePicoPico/sandbox/NewLanguagePicoPico.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico21/Pico21.mpl" folder="newLanguageName" />
@@ -49,6 +51,46 @@
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/sandbox/Rascal2Sample.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/StateMachineSample.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/runtime/StateMachineSample.runtime.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST10/TEST10.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST10/sandbox/TEST10.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST11/TEST11.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST11/sandbox/TEST11.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST12/TEST12.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST12/sandbox/TEST12.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST13/TEST13.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST13/sandbox/TEST13.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST14/TEST14.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST14/sandbox/TEST14.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST15/TEST15.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST15/sandbox/TEST15.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST16/TEST16.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST16/sandbox/TEST16.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST17/TEST17.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST17/sandbox/TEST17.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST18/TEST18.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST18/sandbox/TEST18.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST19/TEST19.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST19/sandbox/TEST19.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST20/TEST20.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST20/sandbox/TEST20.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST21/TEST21.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST21/sandbox/TEST21.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST22/TEST22.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST22/sandbox/TEST22.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST23/TEST23.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST23/sandbox/TEST23.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST4th/TEST4th.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST4th/sandbox/TEST4th.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST5/TEST5.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST5/sandbox/TEST5.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST6/TEST6.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST6/sandbox/TEST6.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST7/TEST7.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST7/sandbox/TEST7.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST8/TEST8.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST8/sandbox/TEST8.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST9/TEST9.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST9/sandbox/TEST9.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/solutions/BaseLanguageTest/BaseLanguageTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolutiontest/NewSolutiontest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/PicoAlias/PicoAlias.msd" folder="TestSolution" />

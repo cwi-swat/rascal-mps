@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="XML2MPS.Importer.NameResolver" file="NameResolver.java" />
+  <dependency className="XML2MPS.Importer.OptimizedParameters" file="OptimizedParameters.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="XML2MPS.Importer.TermImporter" file="TermImporter.java" />
   <dependency className="XML2MPS.Importer.XMLImporter" file="XMLImporter.java">
     <classNode dependClassName="JavaXMLImporter.Importer" />
@@ -11,6 +15,7 @@
     <classNode dependClassName="JavaXMLImporter.Nodes.NonTerminal" />
     <classNode dependClassName="JavaXMLImporter.Nodes.Production" />
     <classNode dependClassName="JavaXMLImporter.Nodes.ProductionArgument" />
+    <classNode dependClassName="XML2MPS.Importer.OptimizedParameters" />
     <classNode dependClassName="XML2MPS.NodeCreator.EditorFactory" />
     <classNode dependClassName="XML2MPS.NodeCreator.LexicalResolver" />
     <classNode dependClassName="XML2MPS.NodeCreator.NodeCreatorClass" />

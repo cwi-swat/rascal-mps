@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="XMLImporterJAR" uuid="83f3da73-c67d-4c00-9709-60ece06179d1" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
-      <sourceRoot location="models" />
-    </modelRoot>
-    <modelRoot contentPath="/Users/mauricio/Documents/TUe/Teaching/Master Project/code/Rascal2MPS/XMLImporter" type="java_classes">
-      <sourceRoot location="XMLImporter.jar" />
+    <modelRoot contentPath="/Users/nandini/MPSProjects/AI/XMLImporter/XMLImporter.jar!/" type="java_classes">
+      <sourceRoot location="." />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="/Users/mauricio/Documents/TUe/Teaching/Master Project/code/Rascal2MPS/XMLImporter/XMLImporter.jar" />
+    <stubModelEntry path="/Users/nandini/MPSProjects/AI/XMLImporter/XMLImporter.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
