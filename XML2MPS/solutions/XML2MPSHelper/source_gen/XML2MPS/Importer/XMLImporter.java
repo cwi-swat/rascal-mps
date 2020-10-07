@@ -291,15 +291,26 @@ public class XMLImporter {
   private SNode CreateOptimizedProductionEditor(SNode node, Production prod, String makeDefault) {
     display("welcome");
     ArrayList<LayoutElement> l = prod.getLayoutElements();
-    l.get(0).getClass();
-    SNode editor = EditorFactory.createDefaultEditor(node);
-    for (LayoutElement e : ListSequence.fromList(l)) {
 
-    }
+    SNode editor = EditorFactory.createDefaultEditor(node);
 
     if (makeDefault == "Prefix") {
       SNode cell1 = EditorFactory.createColouredLiteralCell("+");
       EditorFactory.addCellToConceptEditor(editor, cell1);
+      for (LayoutElement e : ListSequence.fromList(l)) {
+        display("welcome1");
+
+        if (e.getClass() == ReferenceLayoutElement.class) {
+          display("welcome2");
+
+          ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
+          SNode link = getLinkdeclarationByName(re.getName(), node);
+          SNode refCell = EditorFactory.createRefNodeCell(link);
+          EditorFactory.addCellToConceptEditor(editor, refCell);
+
+        }
+
+      }
 
     }
 

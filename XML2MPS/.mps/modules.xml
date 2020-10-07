@@ -79,6 +79,10 @@
       <modulePath path="$PROJECT_DIR$/languages/TEST22/sandbox/TEST22.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TEST23/TEST23.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TEST23/sandbox/TEST23.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST24/TEST24.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST24/sandbox/TEST24.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST25/TEST25.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TEST25/sandbox/TEST25.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TEST4th/TEST4th.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TEST4th/sandbox/TEST4th.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TEST5/TEST5.mpl" folder="newLanguageName" />
