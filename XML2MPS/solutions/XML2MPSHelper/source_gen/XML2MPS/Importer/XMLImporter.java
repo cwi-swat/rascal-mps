@@ -11,15 +11,16 @@ import XML2MPS.NodeCreator.LexicalResolver;
 import org.jetbrains.mps.openapi.model.SModel;
 import JavaXMLImporter.Importer;
 import org.w3c.dom.Document;
+import java.util.logging.Logger;
 import JavaXMLImporter.Nodes.Lexical;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import JavaXMLImporter.Nodes.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Nodes.Production;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import JavaXMLImporter.Layout.LayoutElement;
 import JavaXMLImporter.Layout.LiteralLayoutElement;
 import JavaXMLImporter.Layout.ReferenceLayoutElement;
@@ -48,11 +49,13 @@ public class XMLImporter {
   public void importXMLDocument(String path, SModel struct, SModel editorModel, OptimizedParameters parameters) {
     Importer javaImporter = new Importer(path);
     Document dom = javaImporter.loadXMLDOM();
+    final Logger logger = Logger.getLogger("MyLog");
+    logger.info("test" + dom);
+
     if (dom == null) {
       System.out.println("Empty dom");
     }
     try {
-
       this.keywords = javaImporter.getAllKeywords(dom);
 
 
@@ -109,14 +112,8 @@ public class XMLImporter {
           if (node == null) {
             break;
           }
-          if (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains(parameters.paramnode)) {
-            display("test hello");
-            SNode editor = CreateOptimizedProductionEditor(node, p, parameters.defaultLayout);
-            editorModel.addRootNode(editor);
-          } else {
-            SNode editor = createBetterProductionEditor(node, p);
-            editorModel.addRootNode(editor);
-          }
+          SNode editor = createBetterProductionEditor(node, p);
+          editorModel.addRootNode(editor);
 
         }
       }

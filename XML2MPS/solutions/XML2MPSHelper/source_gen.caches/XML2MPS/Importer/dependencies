@@ -3,7 +3,6 @@
   <dependency className="XML2MPS.Importer.NameResolver" file="NameResolver.java" />
   <dependency className="XML2MPS.Importer.OptimizedParameters" file="OptimizedParameters.java">
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="XML2MPS.Importer.TermImporter" file="TermImporter.java" />
   <dependency className="XML2MPS.Importer.XMLImporter" file="XMLImporter.java">
@@ -23,6 +22,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.logging.Logger" />
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
