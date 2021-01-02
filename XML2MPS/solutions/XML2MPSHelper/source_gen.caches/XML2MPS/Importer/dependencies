@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="XML2MPS.Importer.LayoutInfo" file="LayoutInfo.java">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
   <dependency className="XML2MPS.Importer.NameResolver" file="NameResolver.java" />
   <dependency className="XML2MPS.Importer.OptimizedParameters" file="OptimizedParameters.java">
     <classNode dependClassName="java.lang.String" />
@@ -14,15 +17,23 @@
     <classNode dependClassName="JavaXMLImporter.Nodes.NonTerminal" />
     <classNode dependClassName="JavaXMLImporter.Nodes.Production" />
     <classNode dependClassName="JavaXMLImporter.Nodes.ProductionArgument" />
+    <classNode dependClassName="XML2MPS.Importer.LayoutInfo" />
     <classNode dependClassName="XML2MPS.Importer.OptimizedParameters" />
     <classNode dependClassName="XML2MPS.NodeCreator.EditorFactory" />
     <classNode dependClassName="XML2MPS.NodeCreator.LexicalResolver" />
     <classNode dependClassName="XML2MPS.NodeCreator.NodeCreatorClass" />
     <classNode dependClassName="java.awt.Frame" />
+    <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.Comparator" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.logging.Logger" />
+    <classNode dependClassName="java.util.regex.Matcher" />
+    <classNode dependClassName="java.util.regex.Pattern" />
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />

@@ -13,6 +13,10 @@
       <modulePath path="$PROJECT_DIR$/languages/JS_Short_desc/sandbox/JS_Short_desc.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Js2Final/Js2Final.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Js2Final/sandbox/Js2Final.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Js3TestCopy/Js3TestCopy.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Js3TestCopy/sandbox/Js3TestCopy.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/JsCopytest2/JsCopytest2.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/JsCopytest2/sandbox/JsCopytest2.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/JsFinal/JsFinal.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/JsFinal/sandbox/JsFinal.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/NewJSGrammar/NewJSGrammar.mpl" folder="newLanguageName" />
@@ -130,15 +134,57 @@
       <modulePath path="$PROJECT_DIR$/languages/Test013/sandbox/Test013.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Test014/Test014.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Test014/sandbox/Test014.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test441/Test441.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test441/sandbox/Test441.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test442/Test442.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test442/sandbox/Test442.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test443/Test443.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test443/sandbox/Test443.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test444/Test444.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test444/sandbox/Test444.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test445/Test445.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test445/sandbox/Test445.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test446/Test446.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test446/sandbox/Test446.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test450T/Test450T.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test450T/sandbox/Test450T.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test551/Test551.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test551/sandbox/Test551.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test552/Test552.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test552/sandbox/Test552.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test553/Test553.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test553/sandbox/Test553.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test555/Test555.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test555/sandbox/Test555.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLayoutInfo/TestForLayoutInfo.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLayoutInfo/sandbox/TestForLayoutInfo.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLayouteditorCreation/TestForLayouteditorCreation.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLayouteditorCreation/sandbox/TestForLayouteditorCreation.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLink/TestForLink.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLink/sandbox/TestForLink.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLink2/TestForLink2.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLink2/sandbox/TestForLink2.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLink3/TestForLink3.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForLink3/sandbox/TestForLink3.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestForPico2/TestForPico2.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForexcelList/TestForexcelList.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestForexcelList/sandbox/TestForexcelList.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestJs551/TestJs551.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TestJs551/sandbox/TestJs551.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestJsGrammar/TestJsGrammar.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestJsGrammar/sandbox/TestJsGrammar.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestLanguageJs1/TestLanguageJs1.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestLanguageJs1/sandbox/TestLanguageJs1.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Testforlink4/Testforlink4.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Testforlink4/sandbox/Testforlink4.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TinyFinal/TinyFinal.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TinyFinal/sandbox/TinyFinal.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TinyGrammarTest/TinyGrammarTest.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TinyGrammarTest/sandbox/TinyGrammarTest.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TinyLanguage/TinyLanguage.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TinyLanguage/sandbox/TinyLanguage.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TinyTest500/TinyTest500.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/TinyTest500/sandbox/TinyTest500.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/solutions/BaseLanguageTest/BaseLanguageTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/NewSolutiontest/NewSolutiontest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/PicoAlias/PicoAlias.msd" folder="TestSolution" />

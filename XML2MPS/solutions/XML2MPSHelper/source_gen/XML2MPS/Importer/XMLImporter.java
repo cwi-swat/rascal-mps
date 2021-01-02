@@ -9,6 +9,7 @@ import JavaXMLImporter.Nodes.ProductionArgument;
 import java.awt.Frame;
 import XML2MPS.NodeCreator.LexicalResolver;
 import org.jetbrains.mps.openapi.model.SModel;
+import java.util.List;
 import JavaXMLImporter.Importer;
 import org.w3c.dom.Document;
 import java.util.logging.Logger;
@@ -17,16 +18,21 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import JavaXMLImporter.Nodes.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Nodes.Production;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.Collections;
+import java.util.Comparator;
+import javax.swing.JOptionPane;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import JavaXMLImporter.Layout.LayoutElement;
 import JavaXMLImporter.Layout.LiteralLayoutElement;
 import JavaXMLImporter.Layout.ReferenceLayoutElement;
 import XML2MPS.NodeCreator.EditorFactory;
+import java.util.Iterator;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
-import javax.swing.JOptionPane;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class XMLImporter {
 
@@ -46,7 +52,7 @@ public class XMLImporter {
     this.lr = new LexicalResolver();
   }
 
-  public void importXMLDocument(String path, SModel struct, SModel editorModel, OptimizedParameters parameters) {
+  public void importXMLDocument(String path, SModel struct, SModel editorModel, List<OptimizedParameters> optimizedParameterList) {
     Importer javaImporter = new Importer(path);
     Document dom = javaImporter.loadXMLDOM();
     final Logger logger = Logger.getLogger("MyLog");
@@ -105,6 +111,11 @@ public class XMLImporter {
       // Play area 
 
 
+      // layout test 
+
+
+
+
       for (NonTerminal nt : nonTerminalList) {
         for (Production p : nt.getProductions()) {
           SNode node = getConceptNodeByName(p.getName());
@@ -112,9 +123,42 @@ public class XMLImporter {
           if (node == null) {
             break;
           }
-          SNode editor = createBetterProductionEditor(node, p);
-          editorModel.addRootNode(editor);
+          boolean OptimizedNodeNotFound = true;
 
+          for (OptimizedParameters item : ListSequence.fromList(optimizedParameterList)) {
+            List<LayoutInfo> layoutInfoList;
+            layoutInfoList = new ArrayList<LayoutInfo>();
+
+            if (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains(item.getParamNode())) {
+              display(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+              getLayoutInfo(item.getDefaultLayout(), layoutInfoList);
+              Collections.sort(layoutInfoList, new Comparator<LayoutInfo>() {
+                @Override
+                public int compare(LayoutInfo p0, LayoutInfo p1) {
+                  return p0.getIndex() - p1.getIndex();
+                }
+              });
+
+              for (LayoutInfo li : ListSequence.fromList(layoutInfoList)) {
+                JOptionPane.showMessageDialog(null, "name " + li.getName());
+                JOptionPane.showMessageDialog(null, "type " + li.getType());
+                JOptionPane.showMessageDialog(null, "index " + li.getIndex());
+              }
+
+              SNode editor = CreateOptimizedProductionEditor(node, p, layoutInfoList);
+              editorModel.addRootNode(editor);
+              OptimizedNodeNotFound = false;
+              break;
+            }
+
+          }
+
+          // test 
+
+          if (OptimizedNodeNotFound == true) {
+            SNode editor = createBetterProductionEditor(node, p);
+            editorModel.addRootNode(editor);
+          }
         }
       }
 
@@ -205,6 +249,7 @@ public class XMLImporter {
       } else if (e.getClass() == ReferenceLayoutElement.class) {
         ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
         SNode link = getLinkdeclarationByName(re.getName(), node);
+        JOptionPane.showMessageDialog(null, link);
         if (link == null) {
           display("null link: " + re.getName());
         }
@@ -254,6 +299,8 @@ public class XMLImporter {
       } else if (e.getClass() == ReferenceLayoutElement.class) {
         ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
         SNode link = getLinkdeclarationByName(re.getName(), node);
+
+
         if (link == null) {
           display("null link: " + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         }
@@ -285,30 +332,41 @@ public class XMLImporter {
     return editor;
   }
 
-  private SNode CreateOptimizedProductionEditor(SNode node, Production prod, String makeDefault) {
-    display("welcome");
+  private SNode CreateOptimizedProductionEditor(SNode node, Production prod, List<LayoutInfo> sortedLayoutInfoList) {
+    display("welcome to editor creation");
+
     ArrayList<LayoutElement> l = prod.getLayoutElements();
+    ArrayList<SNode> rl = new ArrayList();
+    for (LayoutElement e : ListSequence.fromList(l)) {
+      if (e.getClass() == ReferenceLayoutElement.class) {
+        ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
+        SNode link = getLinkdeclarationByName(re.getName(), node);
+        rl.add(link);
+      }
+    }
+
+    {
+      Iterator<SNode> r_it = ListSequence.fromList(rl).iterator();
+      SNode r_var;
+      while (r_it.hasNext()) {
+        r_var = r_it.next();
+        display("value" + r_var);
+      }
+    }
 
     SNode editor = EditorFactory.createDefaultEditor(node);
-
-    if (makeDefault == "Prefix") {
-      SNode cell1 = EditorFactory.createColouredLiteralCell("+");
-      EditorFactory.addCellToConceptEditor(editor, cell1);
-      for (LayoutElement e : ListSequence.fromList(l)) {
-        display("welcome1");
-
-        if (e.getClass() == ReferenceLayoutElement.class) {
-          display("welcome2");
-
-          ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
-          SNode link = getLinkdeclarationByName(re.getName(), node);
-          SNode refCell = EditorFactory.createRefNodeCell(link);
-          EditorFactory.addCellToConceptEditor(editor, refCell);
-
-        }
-
+    int i = 0;
+    for (LayoutInfo item : ListSequence.fromList(sortedLayoutInfoList)) {
+      if (item.getType() == "literal") {
+        display(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "" + item.getType());
+        SNode cell = EditorFactory.createLiteralCell(item.getName());
+        EditorFactory.addCellToConceptEditor(editor, cell);
+      } else if (item.getType() == "reference") {
+        display(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "" + item.getType());
+        SNode refCell = EditorFactory.createIndentedRefNodeCell(rl.get(i));
+        EditorFactory.addCellToConceptEditor(editor, refCell);
+        i++;
       }
-
     }
 
 
@@ -443,5 +501,32 @@ public class XMLImporter {
     // For debug 
     JOptionPane.showMessageDialog(this.frame, s);
   }
+
+  /*package*/ void getLayoutInfo(String preferedLayout, List<LayoutInfo> layoutInfoList) {
+    String str = preferedLayout;
+    Pattern pattern1 = Pattern.compile("\\$(.*?)\\$", Pattern.DOTALL);
+    Matcher matcher = pattern1.matcher(str);
+    while (matcher.find()) {
+      LayoutInfo info = new LayoutInfo();
+      int index1 = str.indexOf(matcher.group(1));
+      info.setIndex(index1);
+      info.setName(matcher.group(1));
+      info.setType("reference");
+      ListSequence.fromList(layoutInfoList).addElement(info);
+    }
+
+    Pattern pattern2 = Pattern.compile("%(.*?)%", Pattern.DOTALL);
+    Matcher matcher2 = pattern2.matcher(str);
+    while (matcher2.find()) {
+      LayoutInfo info = new LayoutInfo();
+
+      int index = str.indexOf(matcher2.group(1));
+      info.setIndex(index);
+      info.setName(matcher2.group(1));
+      info.setType("literal");
+      ListSequence.fromList(layoutInfoList).addElement(info);
+    }
+  }
+
 
 }
