@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:096b7b0a-2ad6-47b2-a067-1456c051f7d4(plugin.plugin)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
+        <child id="1207145201301" name="reference" index="ftvYc" />
+      </concept>
+      <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <child id="1204991552650" name="modifier" index="2f5YQi" />
+        <child id="1207145245948" name="contents" index="ftER_" />
+      </concept>
+      <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
+        <reference id="1203088061055" name="action" index="tCJdB" />
+      </concept>
+      <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
+        <reference id="1204992316090" name="point" index="2f8Tey" />
+        <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="tC5Ba" id="1MOPOARji0p">
+    <property role="TrG5h" value="ImportXMLActionGroup" />
+    <node concept="tT9cl" id="1MOPOARji0r" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:hyf4LYI" resolve="Tools" />
+      <ref role="2f8Tey" to="tprs:hHYwqIT" resolve="customTools" />
+    </node>
+    <node concept="ftmFs" id="1MOPOARji0w" role="ftER_">
+      <node concept="tCFHf" id="1MOPOARji0A" role="ftvYc">
+        <ref role="tCJdB" node="1MOPOARi1RB" resolve=" importXMLAction" />
+      </node>
+      <node concept="tCFHf" id="WajCt5T7XO" role="ftvYc">
+        <ref role="tCJdB" node="WajCt5SGTJ" resolve="importTermAction" />
+      </node>
+      <node concept="tCFHf" id="6FPy_QmVeNr" role="ftvYc">
+        <ref role="tCJdB" node="6FPy_QmVeN6" resolve="LoggerAction" />
+      </node>
+    </node>
+  </node>
+</model>
+
