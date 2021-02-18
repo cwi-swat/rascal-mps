@@ -18,19 +18,18 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import JavaXMLImporter.Nodes.NonTerminal;
 import XML2MPS.NodeCreator.NodeCreatorClass;
 import JavaXMLImporter.Nodes.Production;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Collections;
 import java.util.Comparator;
-import javax.swing.JOptionPane;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import JavaXMLImporter.Layout.LayoutElement;
 import JavaXMLImporter.Layout.LiteralLayoutElement;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import JavaXMLImporter.Layout.LayoutElement;
 import JavaXMLImporter.Layout.ReferenceLayoutElement;
 import XML2MPS.NodeCreator.EditorFactory;
-import java.util.Iterator;
 import jetbrains.mps.lang.structure.behavior.AbstractConceptDeclaration__BehaviorDescriptor;
+import javax.swing.JOptionPane;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -52,7 +51,7 @@ public class XMLImporter {
     this.lr = new LexicalResolver();
   }
 
-  public void importXMLDocument(String path, SModel struct, SModel editorModel, List<OptimizedParameters> optimizedParameterList) {
+  public void importXMLDocument(String path, SModel struct, SModel editorModel, List<OptimizedParameters> optimizedParameterList, String OptimizedLayout) {
     Importer javaImporter = new Importer(path);
     Document dom = javaImporter.loadXMLDOM();
     final Logger logger = Logger.getLogger("MyLog");
@@ -123,42 +122,54 @@ public class XMLImporter {
           if (node == null) {
             break;
           }
-          boolean OptimizedNodeNotFound = true;
 
-          for (OptimizedParameters item : ListSequence.fromList(optimizedParameterList)) {
+          SNode editor = createBetterProductionEditor(node, p);
+          editorModel.addRootNode(editor);
+
+
+          // -------------------------- Optimized parameter list Implementation--------------------// 
+
+
+          // ---------------------------------end  optimized paramter list implementation--------------------// 
+
+          // test 
+          // -------------------------------Implementation for optimized layout for binaryoperations-------------------// 
+
+
+        }
+      }
+
+
+      // new optimized 
+      for (NonTerminal nt : nonTerminalList) {
+        for (Production p : nt.getProductions()) {
+          SNode node1 = getConceptNodeByName(p.getName());
+
+          if (node1 == null) {
+            break;
+          }
+
+          if (OptimizedLayout != null) {
             List<LayoutInfo> layoutInfoList;
             layoutInfoList = new ArrayList<LayoutInfo>();
 
-            if (SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).contains(item.getParamNode())) {
-              display(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-              getLayoutInfo(item.getDefaultLayout(), layoutInfoList);
-              Collections.sort(layoutInfoList, new Comparator<LayoutInfo>() {
-                @Override
-                public int compare(LayoutInfo p0, LayoutInfo p1) {
-                  return p0.getIndex() - p1.getIndex();
-                }
-              });
-
-              for (LayoutInfo li : ListSequence.fromList(layoutInfoList)) {
-                JOptionPane.showMessageDialog(null, "name " + li.getName());
-                JOptionPane.showMessageDialog(null, "type " + li.getType());
-                JOptionPane.showMessageDialog(null, "index " + li.getIndex());
+            getLayoutInfo(OptimizedLayout, layoutInfoList);
+            Collections.sort(layoutInfoList, new Comparator<LayoutInfo>() {
+              @Override
+              public int compare(LayoutInfo p0, LayoutInfo p1) {
+                return p0.getIndex() - p1.getIndex();
               }
+            });
+            ArrayList<SNode> rl = new ArrayList();
+            ArrayList<LiteralLayoutElement> li = new ArrayList();
+            this.GetReferenceAndLiteralInfo(node1, p, rl, li);
 
-              SNode editor = CreateOptimizedProductionEditor(node, p, layoutInfoList);
+            if (rl.size() == 2 && rl.get(0).toString().contains("lhs") && rl.get(1).toString().contains("rhs") && li.size() == 1) {
+              SNode editor = CreateOptimizedEditorsForBinaryOperations(node1, rl, li, layoutInfoList);
               editorModel.addRootNode(editor);
-              OptimizedNodeNotFound = false;
-              break;
             }
-
           }
 
-          // test 
-
-          if (OptimizedNodeNotFound == true) {
-            SNode editor = createBetterProductionEditor(node, p);
-            editorModel.addRootNode(editor);
-          }
         }
       }
 
@@ -249,7 +260,6 @@ public class XMLImporter {
       } else if (e.getClass() == ReferenceLayoutElement.class) {
         ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
         SNode link = getLinkdeclarationByName(re.getName(), node);
-        JOptionPane.showMessageDialog(null, link);
         if (link == null) {
           display("null link: " + re.getName());
         }
@@ -329,6 +339,7 @@ public class XMLImporter {
       }
 
     }
+    display("better node name" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return editor;
   }
 
@@ -345,36 +356,65 @@ public class XMLImporter {
       }
     }
 
-    {
-      Iterator<SNode> r_it = ListSequence.fromList(rl).iterator();
-      SNode r_var;
-      while (r_it.hasNext()) {
-        r_var = r_it.next();
-        display("value" + r_var);
-      }
-    }
 
     SNode editor = EditorFactory.createDefaultEditor(node);
     int i = 0;
     for (LayoutInfo item : ListSequence.fromList(sortedLayoutInfoList)) {
       if (item.getType() == "literal") {
-        display(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "" + item.getType());
         SNode cell = EditorFactory.createLiteralCell(item.getName());
         EditorFactory.addCellToConceptEditor(editor, cell);
       } else if (item.getType() == "reference") {
-        display(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "" + item.getType());
         SNode refCell = EditorFactory.createIndentedRefNodeCell(rl.get(i));
         EditorFactory.addCellToConceptEditor(editor, refCell);
         i++;
       }
     }
 
-
-
-
     return editor;
   }
 
+  private SNode CreateOptimizedEditorsForBinaryOperations(SNode node1, ArrayList<SNode> rl, ArrayList<LiteralLayoutElement> li, List<LayoutInfo> sortedLayoutInfoList) {
+    display("welcome to Binary editor creation");
+
+    SPropertyOperations.assign(node1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(node1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "_1");
+    SNode editor = EditorFactory.createDefaultEditor(node1);
+    int i = 0;
+    for (LayoutInfo item : ListSequence.fromList(sortedLayoutInfoList)) {
+      if (item.getType() == "literal") {
+        if (this.keywords.contains(li.get(0).getName())) {
+          SNode cell = EditorFactory.createColouredLiteralCell(li.get(0).getName());
+          EditorFactory.addCellToConceptEditor(editor, cell);
+        } else {
+          SNode cell = EditorFactory.createLiteralCell(li.get(0).getName());
+          EditorFactory.addCellToConceptEditor(editor, cell);
+        }
+
+      } else if (item.getType() == "reference") {
+        SNode refCell = EditorFactory.createIndentedRefNodeCell(rl.get(i));
+        EditorFactory.addCellToConceptEditor(editor, refCell);
+        i++;
+      }
+    }
+
+    display("binary node name" + SPropertyOperations.getString(node1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    return editor;
+  }
+
+
+  private void GetReferenceAndLiteralInfo(SNode node, Production prod, ArrayList<SNode> rl, ArrayList<LiteralLayoutElement> li) {
+    ArrayList<LayoutElement> l = prod.getLayoutElements();
+    for (LayoutElement e : ListSequence.fromList(l)) {
+      if (e.getClass() == ReferenceLayoutElement.class) {
+        ReferenceLayoutElement re = ((ReferenceLayoutElement) e);
+        SNode link = getLinkdeclarationByName(re.getName(), node);
+        rl.add(link);
+      } else if (e.getClass() == LiteralLayoutElement.class) {
+        LiteralLayoutElement le = ((LiteralLayoutElement) e);
+        li.add(le);
+      }
+    }
+
+  }
 
 
   private SNode getLinkdeclarationByName(String name, SNode node) {
