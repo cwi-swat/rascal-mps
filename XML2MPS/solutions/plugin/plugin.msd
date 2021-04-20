@@ -24,8 +24,11 @@
     <dependency reexport="false">1d891f7b-dc93-42f9-a4bc-b016656b14e2(com.mbeddr.spreadsheat)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:d5703e94-ccbe-4a16-b937-43db5369bc00:Demo" version="0" />
+    <language slang="l:0b4908c5-1fd5-45ce-a809-11a25fd2eedc:Demo001" version="0" />
     <language slang="l:3dd02898-1a78-4d3c-a888-ce8b66a405b5:JS" version="-1" />
     <language slang="l:96da361a-94b6-4681-bc9c-a573b80d3948:JS_Grammar" version="0" />
+    <language slang="l:dd85cdb3-b74f-406e-bcc3-e370d03a37a3:PrefixDemo" version="0" />
     <language slang="l:edb13104-c59c-4c64-9a9f-1fa24616576f:TestLanguageForLogging" version="-1" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />

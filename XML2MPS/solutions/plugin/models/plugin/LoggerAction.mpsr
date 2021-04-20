@@ -153,9 +153,6 @@
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -182,7 +179,6 @@
       <concept id="1071364028384826861" name="jetbrains.mps.baseLanguage.structure.IIncompleteParen" flags="ng" index="1vR6C5">
         <property id="1071364028384826862" name="count" index="1vR6C6" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -204,7 +200,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -317,6 +312,19 @@
               <ref role="1Pybhc" to="dr5r:~Logger" resolve="Logger" />
               <node concept="Xl_RD" id="6zQ9F$9UaVt" role="37wK5m">
                 <property role="Xl_RC" value="MyLog" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7RP4EDzznjW" role="3cqZAp">
+          <node concept="2OqwBi" id="7RP4EDzzo_w" role="3clFbG">
+            <node concept="37vLTw" id="7RP4EDzznXZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="6zQ9F$9UaIY" resolve="logger" />
+            </node>
+            <node concept="liA8E" id="7RP4EDzzpfg" role="2OqNvi">
+              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+              <node concept="Xl_RD" id="7RP4EDzzpiD" role="37wK5m">
+                <property role="Xl_RC" value="Welcome to the logger" />
               </node>
             </node>
           </node>
@@ -1443,73 +1451,89 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5POv0pgWnfb" role="3cqZAp">
-          <node concept="2OqwBi" id="5POv0pgWnW6" role="3clFbG">
-            <node concept="37vLTw" id="5POv0pgWnf9" role="2Oq$k0">
-              <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
-            </node>
-            <node concept="liA8E" id="5POv0pgWoE8" role="2OqNvi">
-              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-              <node concept="3cpWs3" id="5POv0pgWpcC" role="37wK5m">
-                <node concept="37vLTw" id="5POv0pgWpfG" role="3uHU7w">
-                  <ref role="3cqZAo" node="6FPy_QmX90t" resolve="caretPosition" />
-                </node>
-                <node concept="Xl_RD" id="5POv0pgWoGc" role="3uHU7B">
-                  <property role="Xl_RC" value="Cursor position " />
+        <node concept="1X3_iC" id="4lN6e9fTL56" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5POv0pgWnfb" role="8Wnug">
+            <node concept="2OqwBi" id="5POv0pgWnW6" role="3clFbG">
+              <node concept="37vLTw" id="5POv0pgWnf9" role="2Oq$k0">
+                <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
+              </node>
+              <node concept="liA8E" id="5POv0pgWoE8" role="2OqNvi">
+                <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                <node concept="3cpWs3" id="5POv0pgWpcC" role="37wK5m">
+                  <node concept="37vLTw" id="5POv0pgWpfG" role="3uHU7w">
+                    <ref role="3cqZAo" node="6FPy_QmX90t" resolve="caretPosition" />
+                  </node>
+                  <node concept="Xl_RD" id="5POv0pgWoGc" role="3uHU7B">
+                    <property role="Xl_RC" value="Cursor position " />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5POv0pgWql$" role="3cqZAp">
-          <node concept="2OqwBi" id="5POv0pgWr32" role="3clFbG">
-            <node concept="37vLTw" id="5POv0pgWqly" role="2Oq$k0">
-              <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
-            </node>
-            <node concept="liA8E" id="5POv0pgWrVw" role="2OqNvi">
-              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-              <node concept="3cpWs3" id="5POv0pgWsvy" role="37wK5m">
-                <node concept="37vLTw" id="5POv0pgWs$n" role="3uHU7w">
-                  <ref role="3cqZAo" node="6FPy_QmX90x" resolve="positionIndex" />
-                </node>
-                <node concept="Xl_RD" id="5POv0pgWrXG" role="3uHU7B">
-                  <property role="Xl_RC" value="position x " />
+        <node concept="1X3_iC" id="4lN6e9fTLXN" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5POv0pgWql$" role="8Wnug">
+            <node concept="2OqwBi" id="5POv0pgWr32" role="3clFbG">
+              <node concept="37vLTw" id="5POv0pgWqly" role="2Oq$k0">
+                <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
+              </node>
+              <node concept="liA8E" id="5POv0pgWrVw" role="2OqNvi">
+                <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                <node concept="3cpWs3" id="5POv0pgWsvy" role="37wK5m">
+                  <node concept="37vLTw" id="5POv0pgWs$n" role="3uHU7w">
+                    <ref role="3cqZAo" node="6FPy_QmX90x" resolve="positionIndex" />
+                  </node>
+                  <node concept="Xl_RD" id="5POv0pgWrXG" role="3uHU7B">
+                    <property role="Xl_RC" value="position x " />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5POv0pgWtnX" role="3cqZAp">
-          <node concept="2OqwBi" id="5POv0pgWu5Y" role="3clFbG">
-            <node concept="37vLTw" id="5POv0pgWtnV" role="2Oq$k0">
-              <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
-            </node>
-            <node concept="liA8E" id="5POv0pgWv3e" role="2OqNvi">
-              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-              <node concept="3cpWs3" id="5POv0pgWvDZ" role="37wK5m">
-                <node concept="37vLTw" id="5POv0pgWvGP" role="3uHU7w">
-                  <ref role="3cqZAo" node="6FPy_QmX90_" resolve="textbefore" />
-                </node>
-                <node concept="Xl_RD" id="5POv0pgWv5q" role="3uHU7B">
-                  <property role="Xl_RC" value="Text before cursor " />
+        <node concept="1X3_iC" id="4lN6e9fTMOq" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5POv0pgWtnX" role="8Wnug">
+            <node concept="2OqwBi" id="5POv0pgWu5Y" role="3clFbG">
+              <node concept="37vLTw" id="5POv0pgWtnV" role="2Oq$k0">
+                <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
+              </node>
+              <node concept="liA8E" id="5POv0pgWv3e" role="2OqNvi">
+                <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                <node concept="3cpWs3" id="5POv0pgWvDZ" role="37wK5m">
+                  <node concept="37vLTw" id="5POv0pgWvGP" role="3uHU7w">
+                    <ref role="3cqZAo" node="6FPy_QmX90_" resolve="textbefore" />
+                  </node>
+                  <node concept="Xl_RD" id="5POv0pgWv5q" role="3uHU7B">
+                    <property role="Xl_RC" value="Text before cursor " />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5POv0pgWwwY" role="3cqZAp">
-          <node concept="2OqwBi" id="5POv0pgWxgQ" role="3clFbG">
-            <node concept="37vLTw" id="5POv0pgWwwW" role="2Oq$k0">
-              <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
-            </node>
-            <node concept="liA8E" id="5POv0pgWyew" role="2OqNvi">
-              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-              <node concept="3cpWs3" id="5POv0pgWyPh" role="37wK5m">
-                <node concept="37vLTw" id="5POv0pgWySl" role="3uHU7w">
-                  <ref role="3cqZAo" node="6FPy_QmX90D" resolve="textafter" />
-                </node>
-                <node concept="Xl_RD" id="5POv0pgWygG" role="3uHU7B">
-                  <property role="Xl_RC" value="Text after cursor " />
+        <node concept="1X3_iC" id="4lN6e9fTNEW" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5POv0pgWwwY" role="8Wnug">
+            <node concept="2OqwBi" id="5POv0pgWxgQ" role="3clFbG">
+              <node concept="37vLTw" id="5POv0pgWwwW" role="2Oq$k0">
+                <ref role="3cqZAo" node="5POv0pgW7xs" resolve="logger" />
+              </node>
+              <node concept="liA8E" id="5POv0pgWyew" role="2OqNvi">
+                <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                <node concept="3cpWs3" id="5POv0pgWyPh" role="37wK5m">
+                  <node concept="37vLTw" id="5POv0pgWySl" role="3uHU7w">
+                    <ref role="3cqZAo" node="6FPy_QmX90D" resolve="textafter" />
+                  </node>
+                  <node concept="Xl_RD" id="5POv0pgWygG" role="3uHU7B">
+                    <property role="Xl_RC" value="Text after cursor " />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1602,7 +1626,7 @@
                                       <node concept="37vLTw" id="6dZnOJSbnS1" role="2Oq$k0">
                                         <ref role="3cqZAo" node="6dZnOJSaQh5" resolve="lr" />
                                       </node>
-                                      <node concept="liA8E" id="6dZnOJSboOq" role="2OqNvi">
+                                      <node concept="liA8E" id="3kWOsRTiI7g" role="2OqNvi">
                                         <ref role="37wK5l" to="dr5r:~LogRecord.getMillis():long" resolve="getMillis" />
                                       </node>
                                     </node>
@@ -1667,7 +1691,7 @@
                 <node concept="liA8E" id="6zQ9F$9UbZq" role="2OqNvi">
                   <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
                   <node concept="Xl_RD" id="6zQ9F$9Uc1q" role="37wK5m">
-                    <property role="Xl_RC" value="Test for the file hander" />
+                    <property role="Xl_RC" value="Welcome to the file handler" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6zQ9F$9UMxy" role="2Oq$k0">
@@ -1755,795 +1779,865 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbJ" id="28EZ8iCFXIn" role="3cqZAp">
-                              <node concept="3clFbS" id="28EZ8iCFXIp" role="3clFbx">
-                                <node concept="3clFbF" id="28EZ8iCGb$U" role="3cqZAp">
-                                  <node concept="2OqwBi" id="28EZ8iCGbMp" role="3clFbG">
-                                    <node concept="37vLTw" id="28EZ8iCGb$S" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                            <node concept="3KaCP$" id="6FPy_QmXFde" role="3cqZAp">
+                              <node concept="3KbdKl" id="3nfMQrn_Fyv" role="3KbHQx">
+                                <node concept="3cmrfG" id="43AAJf0GaR3" role="3Kbmr1">
+                                  <property role="3cmrfH" value="8" />
+                                </node>
+                                <node concept="3clFbS" id="3nfMQrn_Fyx" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfIN_Oj" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINA0t" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfIN_Oh" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                      </node>
+                                      <node concept="liA8E" id="5kXuwfINA7_" role="2OqNvi">
+                                        <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                        <node concept="Xl_RD" id="5kXuwfINAgK" role="37wK5m">
+                                          <property role="Xl_RC" value="Backspace key pressed" />
+                                        </node>
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="28EZ8iCGbTF" role="2OqNvi">
-                                      <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                      <node concept="Xl_RD" id="28EZ8iCGc3Y" role="37wK5m">
-                                        <property role="Xl_RC" value="ctrl + c pressed" />
+                                  </node>
+                                  <node concept="3zACq4" id="7aSchK6fvFK" role="3cqZAp" />
+                                  <node concept="1X3_iC" id="5kXuwfIN$Rj" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="43AAJf0Gbmu" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="43AAJf0Gbmw" role="9lYJi">
+                                        <property role="Xl_RC" value="Backspace key pressed" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="1Wc70l" id="28EZ8iCG637" role="3clFbw">
-                                <node concept="1eOMI4" id="28EZ8iCG6I6" role="3uHU7w">
-                                  <node concept="3y3z36" id="28EZ8iCG97S" role="1eOMHV">
-                                    <node concept="3cmrfG" id="28EZ8iCG9Mk" role="3uHU7w">
-                                      <property role="3cmrfH" value="0" />
-                                    </node>
-                                    <node concept="10M0yZ" id="28EZ8iCG7$i" role="3uHU7B">
-                                      <ref role="3cqZAo" to="hyam:~InputEvent.CTRL_DOWN_MASK" resolve="CTRL_DOWN_MASK" />
-                                      <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
-                                    </node>
-                                  </node>
+                              <node concept="37vLTw" id="6FPy_QmXFlX" role="3KbGdf">
+                                <ref role="3cqZAo" node="6FPy_QmXDQ1" resolve="n" />
+                              </node>
+                              <node concept="3KbdKl" id="6FPy_QmXGxH" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXGEt" role="3Kbmr1">
+                                  <property role="3cmrfH" value="9" />
                                 </node>
-                                <node concept="1eOMI4" id="28EZ8iCG0Y$" role="3uHU7B">
-                                  <node concept="3clFbC" id="28EZ8iCG3D8" role="1eOMHV">
-                                    <node concept="10M0yZ" id="28EZ8iCG4Vf" role="3uHU7w">
-                                      <ref role="3cqZAo" to="hyam:~KeyEvent.VK_C" resolve="VK_C" />
-                                      <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                                <node concept="3clFbS" id="6FPy_QmXGxJ" role="3Kbo56">
+                                  <node concept="3clFbJ" id="28EZ8iCGhfu" role="3cqZAp">
+                                    <node concept="3clFbS" id="28EZ8iCGhfw" role="3clFbx">
+                                      <node concept="3clFbF" id="5kXuwfINAL1" role="3cqZAp">
+                                        <node concept="2OqwBi" id="5kXuwfINB2x" role="3clFbG">
+                                          <node concept="37vLTw" id="5kXuwfINAKZ" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="5kXuwfINB9N" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="5kXuwfINBj3" role="37wK5m">
+                                              <property role="Xl_RC" value="alt + tab key pressed" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eCq7" role="3cqZAp" />
                                     </node>
-                                    <node concept="2OqwBi" id="28EZ8iCG1Bh" role="3uHU7B">
-                                      <node concept="37vLTw" id="28EZ8iCG16J" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="28EZ8iCGhVK" role="3clFbw">
+                                      <node concept="37vLTw" id="28EZ8iCGhvK" role="2Oq$k0">
                                         <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                       </node>
-                                      <node concept="liA8E" id="28EZ8iCG2OP" role="2OqNvi">
-                                        <ref role="37wK5l" to="hyam:~KeyEvent.getKeyCode():int" resolve="getKeyCode" />
+                                      <node concept="liA8E" id="28EZ8iCGj9i" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isAltDown():boolean" resolve="isAltDown" />
+                                      </node>
+                                    </node>
+                                    <node concept="9aQIb" id="28EZ8iCGjPY" role="9aQIa">
+                                      <node concept="3clFbS" id="28EZ8iCGjPZ" role="9aQI4">
+                                        <node concept="3clFbF" id="28EZ8iCGjT_" role="3cqZAp">
+                                          <node concept="2OqwBi" id="28EZ8iCGjTA" role="3clFbG">
+                                            <node concept="37vLTw" id="28EZ8iCGjTB" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                            </node>
+                                            <node concept="liA8E" id="28EZ8iCGjTC" role="2OqNvi">
+                                              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                              <node concept="Xl_RD" id="28EZ8iCGjTD" role="37wK5m">
+                                                <property role="Xl_RC" value="tab key pressed" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3zACq4" id="7aSchK6eCEj" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5kXuwfIN$RI" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXHpO" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXHpQ" role="9lYJi">
+                                        <property role="Xl_RC" value="Tab key pressed" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3eNFk2" id="28EZ8iCGcoF" role="3eNLev">
-                                <node concept="3clFbS" id="28EZ8iCGcoH" role="3eOfB_">
-                                  <node concept="3clFbF" id="28EZ8iCGdmx" role="3cqZAp">
-                                    <node concept="2OqwBi" id="28EZ8iCGdmz" role="3clFbG">
-                                      <node concept="37vLTw" id="28EZ8iCGdm$" role="2Oq$k0">
+                              <node concept="3KbdKl" id="6FPy_QmXHvp" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXHCm" role="3Kbmr1">
+                                  <property role="3cmrfH" value="10" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXHvr" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINBBp" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINBOS" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINBBn" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                       </node>
-                                      <node concept="liA8E" id="28EZ8iCGdm_" role="2OqNvi">
+                                      <node concept="liA8E" id="5kXuwfINBWa" role="2OqNvi">
                                         <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                        <node concept="Xl_RD" id="28EZ8iCGdmA" role="37wK5m">
-                                          <property role="Xl_RC" value="ctrl + v pressed" />
+                                        <node concept="Xl_RD" id="5kXuwfINC5q" role="37wK5m">
+                                          <property role="Xl_RC" value="enter key pressed" />
                                         </node>
                                       </node>
                                     </node>
                                   </node>
-                                </node>
-                                <node concept="1Wc70l" id="28EZ8iCGcFj" role="3eO9$A">
-                                  <node concept="1eOMI4" id="28EZ8iCGcFk" role="3uHU7w">
-                                    <node concept="3y3z36" id="28EZ8iCGcFl" role="1eOMHV">
-                                      <node concept="3cmrfG" id="28EZ8iCGcFm" role="3uHU7w">
-                                        <property role="3cmrfH" value="0" />
-                                      </node>
-                                      <node concept="10M0yZ" id="28EZ8iCGcFn" role="3uHU7B">
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
-                                        <ref role="3cqZAo" to="hyam:~InputEvent.CTRL_DOWN_MASK" resolve="CTRL_DOWN_MASK" />
+                                  <node concept="1X3_iC" id="5kXuwfIN$Sn" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXInE" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXInG" role="9lYJi">
+                                        <property role="Xl_RC" value="Enter key pressed" />
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="1eOMI4" id="28EZ8iCGcFo" role="3uHU7B">
-                                    <node concept="3clFbC" id="28EZ8iCGcFp" role="1eOMHV">
-                                      <node concept="10M0yZ" id="28EZ8iCGd0m" role="3uHU7w">
-                                        <ref role="3cqZAo" to="hyam:~KeyEvent.VK_V" resolve="VK_V" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
-                                      </node>
-                                      <node concept="2OqwBi" id="28EZ8iCGcFr" role="3uHU7B">
-                                        <node concept="37vLTw" id="28EZ8iCGcFs" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                        </node>
-                                        <node concept="liA8E" id="28EZ8iCGcFt" role="2OqNvi">
-                                          <ref role="37wK5l" to="hyam:~KeyEvent.getKeyCode():int" resolve="getKeyCode" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXWyB" role="3cqZAp" />
                                 </node>
                               </node>
-                              <node concept="3eNFk2" id="28EZ8iCGdry" role="3eNLev">
-                                <node concept="3clFbS" id="28EZ8iCGdrz" role="3eOfB_">
-                                  <node concept="3clFbF" id="28EZ8iCGdr$" role="3cqZAp">
-                                    <node concept="2OqwBi" id="28EZ8iCGdr_" role="3clFbG">
-                                      <node concept="37vLTw" id="28EZ8iCGdrA" role="2Oq$k0">
+                              <node concept="3KbdKl" id="6FPy_QmXKx0" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXKEI" role="3Kbmr1">
+                                  <property role="3cmrfH" value="27" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXKx2" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINFlA" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINFz5" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINFl$" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                       </node>
-                                      <node concept="liA8E" id="28EZ8iCGdrB" role="2OqNvi">
+                                      <node concept="liA8E" id="5kXuwfINFSX" role="2OqNvi">
                                         <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                        <node concept="Xl_RD" id="28EZ8iCGdrC" role="37wK5m">
-                                          <property role="Xl_RC" value="ctrl + z pressed" />
+                                        <node concept="Xl_RD" id="5kXuwfING2d" role="37wK5m">
+                                          <property role="Xl_RC" value="escape key pressed" />
                                         </node>
                                       </node>
                                     </node>
                                   </node>
-                                </node>
-                                <node concept="1Wc70l" id="28EZ8iCGdrD" role="3eO9$A">
-                                  <node concept="1eOMI4" id="28EZ8iCGdrE" role="3uHU7w">
-                                    <node concept="3y3z36" id="28EZ8iCGdrF" role="1eOMHV">
-                                      <node concept="3cmrfG" id="28EZ8iCGdrG" role="3uHU7w">
-                                        <property role="3cmrfH" value="0" />
-                                      </node>
-                                      <node concept="10M0yZ" id="28EZ8iCGdrH" role="3uHU7B">
-                                        <ref role="3cqZAo" to="hyam:~InputEvent.CTRL_DOWN_MASK" resolve="CTRL_DOWN_MASK" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                                  <node concept="1X3_iC" id="5kXuwfINCcP" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXLbu" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXLbw" role="9lYJi">
+                                        <property role="Xl_RC" value="escape key pressed" />
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="1eOMI4" id="28EZ8iCGdrI" role="3uHU7B">
-                                    <node concept="3clFbC" id="28EZ8iCGdrJ" role="1eOMHV">
-                                      <node concept="10M0yZ" id="28EZ8iCGdQ$" role="3uHU7w">
-                                        <ref role="3cqZAo" to="hyam:~KeyEvent.VK_Z" resolve="VK_Z" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
-                                      </node>
-                                      <node concept="2OqwBi" id="28EZ8iCGdrL" role="3uHU7B">
-                                        <node concept="37vLTw" id="28EZ8iCGdrM" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                        </node>
-                                        <node concept="liA8E" id="28EZ8iCGdrN" role="2OqNvi">
-                                          <ref role="37wK5l" to="hyam:~KeyEvent.getKeyCode():int" resolve="getKeyCode" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXXzw" role="3cqZAp" />
                                 </node>
                               </node>
-                              <node concept="3eNFk2" id="28EZ8iCGecU" role="3eNLev">
-                                <node concept="3clFbS" id="28EZ8iCGecV" role="3eOfB_">
-                                  <node concept="3clFbF" id="28EZ8iCGecW" role="3cqZAp">
-                                    <node concept="2OqwBi" id="28EZ8iCGecX" role="3clFbG">
-                                      <node concept="37vLTw" id="28EZ8iCGecY" role="2Oq$k0">
+                              <node concept="3KbdKl" id="6FPy_QmXLgG" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXLqA" role="3Kbmr1">
+                                  <property role="3cmrfH" value="46" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXLgI" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINGuF" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINGGa" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINGuD" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                       </node>
-                                      <node concept="liA8E" id="28EZ8iCGecZ" role="2OqNvi">
+                                      <node concept="liA8E" id="5kXuwfINH22" role="2OqNvi">
                                         <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                        <node concept="Xl_RD" id="28EZ8iCGed0" role="37wK5m">
-                                          <property role="Xl_RC" value="ctrl + x pressed" />
+                                        <node concept="Xl_RD" id="5kXuwfINHba" role="37wK5m">
+                                          <property role="Xl_RC" value="delete key pressed" />
                                         </node>
                                       </node>
                                     </node>
                                   </node>
-                                </node>
-                                <node concept="1Wc70l" id="28EZ8iCGed1" role="3eO9$A">
-                                  <node concept="1eOMI4" id="28EZ8iCGed2" role="3uHU7w">
-                                    <node concept="3y3z36" id="28EZ8iCGed3" role="1eOMHV">
-                                      <node concept="3cmrfG" id="28EZ8iCGed4" role="3uHU7w">
-                                        <property role="3cmrfH" value="0" />
-                                      </node>
-                                      <node concept="10M0yZ" id="28EZ8iCGed5" role="3uHU7B">
-                                        <ref role="3cqZAo" to="hyam:~InputEvent.CTRL_DOWN_MASK" resolve="CTRL_DOWN_MASK" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                                  <node concept="1X3_iC" id="5kXuwfINCdn" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXLGj" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXLGl" role="9lYJi">
+                                        <property role="Xl_RC" value="Delete key pressed" />
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="1eOMI4" id="28EZ8iCGed6" role="3uHU7B">
-                                    <node concept="3clFbC" id="28EZ8iCGed7" role="1eOMHV">
-                                      <node concept="10M0yZ" id="28EZ8iCGeCI" role="3uHU7w">
-                                        <ref role="3cqZAo" to="hyam:~KeyEvent.VK_X" resolve="VK_X" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
-                                      </node>
-                                      <node concept="2OqwBi" id="28EZ8iCGed9" role="3uHU7B">
-                                        <node concept="37vLTw" id="28EZ8iCGeda" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                        </node>
-                                        <node concept="liA8E" id="28EZ8iCGedb" role="2OqNvi">
-                                          <ref role="37wK5l" to="hyam:~KeyEvent.getKeyCode():int" resolve="getKeyCode" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXXNK" role="3cqZAp" />
                                 </node>
                               </node>
-                              <node concept="3eNFk2" id="28EZ8iCGeZ4" role="3eNLev">
-                                <node concept="3clFbS" id="28EZ8iCGeZ5" role="3eOfB_">
-                                  <node concept="3clFbF" id="28EZ8iCGeZ6" role="3cqZAp">
-                                    <node concept="2OqwBi" id="28EZ8iCGeZ7" role="3clFbG">
-                                      <node concept="37vLTw" id="28EZ8iCGeZ8" role="2Oq$k0">
+                              <node concept="3KbdKl" id="6FPy_QmXLKV" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXLV1" role="3Kbmr1">
+                                  <property role="3cmrfH" value="37" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXLKX" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINHwg" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINHGr" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINHwe" role="2Oq$k0">
                                         <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                       </node>
-                                      <node concept="liA8E" id="28EZ8iCGeZ9" role="2OqNvi">
+                                      <node concept="liA8E" id="5kXuwfINI2i" role="2OqNvi">
                                         <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                        <node concept="Xl_RD" id="28EZ8iCGeZa" role="37wK5m">
-                                          <property role="Xl_RC" value="ctrl + s pressed" />
+                                        <node concept="Xl_RD" id="5kXuwfINIb_" role="37wK5m">
+                                          <property role="Xl_RC" value="left arrow key pressed" />
                                         </node>
                                       </node>
                                     </node>
                                   </node>
+                                  <node concept="1X3_iC" id="5kXuwfINCdT" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXMr4" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXMr6" role="9lYJi">
+                                        <property role="Xl_RC" value="Left arrow key pressed" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXY3T" role="3cqZAp" />
                                 </node>
-                                <node concept="1Wc70l" id="28EZ8iCGeZb" role="3eO9$A">
-                                  <node concept="1eOMI4" id="28EZ8iCGeZc" role="3uHU7w">
-                                    <node concept="3y3z36" id="28EZ8iCGeZd" role="1eOMHV">
-                                      <node concept="3cmrfG" id="28EZ8iCGeZe" role="3uHU7w">
-                                        <property role="3cmrfH" value="0" />
+                              </node>
+                              <node concept="3KbdKl" id="6FPy_QmXMv8" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXMDq" role="3Kbmr1">
+                                  <property role="3cmrfH" value="38" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXMva" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINI$r" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINIKA" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINI$p" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                       </node>
-                                      <node concept="10M0yZ" id="28EZ8iCGeZf" role="3uHU7B">
-                                        <ref role="3cqZAo" to="hyam:~InputEvent.CTRL_DOWN_MASK" resolve="CTRL_DOWN_MASK" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                                      <node concept="liA8E" id="5kXuwfINIRU" role="2OqNvi">
+                                        <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                        <node concept="Xl_RD" id="5kXuwfINJ1a" role="37wK5m">
+                                          <property role="Xl_RC" value="up arrow key pressed" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="1eOMI4" id="28EZ8iCGeZg" role="3uHU7B">
-                                    <node concept="3clFbC" id="28EZ8iCGeZh" role="1eOMHV">
-                                      <node concept="10M0yZ" id="28EZ8iCGfsI" role="3uHU7w">
-                                        <ref role="3cqZAo" to="hyam:~KeyEvent.VK_S" resolve="VK_S" />
-                                        <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                                  <node concept="1X3_iC" id="5kXuwfINCek" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXNas" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXNau" role="9lYJi">
+                                        <property role="Xl_RC" value="Up arrow key pressed" />
                                       </node>
-                                      <node concept="2OqwBi" id="28EZ8iCGeZj" role="3uHU7B">
-                                        <node concept="37vLTw" id="28EZ8iCGeZk" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXYk2" role="3cqZAp" />
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="6FPy_QmXNf5" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXNpz" role="3Kbmr1">
+                                  <property role="3cmrfH" value="39" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXNf7" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINJpc" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINJAF" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINJpa" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                      </node>
+                                      <node concept="liA8E" id="5kXuwfINJHB" role="2OqNvi">
+                                        <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                        <node concept="Xl_RD" id="5kXuwfINJR3" role="37wK5m">
+                                          <property role="Xl_RC" value="right arrow key pressed" />
                                         </node>
-                                        <node concept="liA8E" id="28EZ8iCGeZl" role="2OqNvi">
-                                          <ref role="37wK5l" to="hyam:~KeyEvent.getKeyCode():int" resolve="getKeyCode" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5kXuwfINCeQ" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXNTe" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXNTg" role="9lYJi">
+                                        <property role="Xl_RC" value="Right arrow key pressed" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXY$b" role="3cqZAp" />
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="6FPy_QmXNZg" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXO9U" role="3Kbmr1">
+                                  <property role="3cmrfH" value="40" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXNZi" role="3Kbo56">
+                                  <node concept="3clFbF" id="5kXuwfINKfT" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5kXuwfINKto" role="3clFbG">
+                                      <node concept="37vLTw" id="5kXuwfINKfR" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                      </node>
+                                      <node concept="liA8E" id="5kXuwfINKMZ" role="2OqNvi">
+                                        <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                        <node concept="Xl_RD" id="5kXuwfINKWi" role="37wK5m">
+                                          <property role="Xl_RC" value="down arrow key pressed" />
                                         </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5kXuwfINCfo" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXOE0" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXOE2" role="9lYJi">
+                                        <property role="Xl_RC" value="Down arrow key pressed" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3zACq4" id="6FPy_QmXYOk" role="3cqZAp" />
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="6FPy_QmXOJ7" role="3KbHQx">
+                                <node concept="3cmrfG" id="6FPy_QmXOTX" role="3Kbmr1">
+                                  <property role="3cmrfH" value="32" />
+                                </node>
+                                <node concept="3clFbS" id="6FPy_QmXOJ9" role="3Kbo56">
+                                  <node concept="3clFbJ" id="28EZ8iCGkgO" role="3cqZAp">
+                                    <node concept="3clFbS" id="28EZ8iCGkgQ" role="3clFbx">
+                                      <node concept="3clFbF" id="5kXuwfINLku" role="3cqZAp">
+                                        <node concept="2OqwBi" id="5kXuwfINLxW" role="3clFbG">
+                                          <node concept="37vLTw" id="5kXuwfINLks" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="5kXuwfINLRO" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="5kXuwfINM14" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + space key pressed" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eDsW" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="28EZ8iCGkTV" role="3clFbw">
+                                      <node concept="37vLTw" id="28EZ8iCGkpr" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="28EZ8iCGlCG" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
+                                      </node>
+                                    </node>
+                                    <node concept="9aQIb" id="28EZ8iCGm5a" role="9aQIa">
+                                      <node concept="3clFbS" id="28EZ8iCGm5b" role="9aQI4">
+                                        <node concept="3clFbF" id="28EZ8iCGmaD" role="3cqZAp">
+                                          <node concept="2OqwBi" id="28EZ8iCGmaE" role="3clFbG">
+                                            <node concept="37vLTw" id="28EZ8iCGmaF" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                            </node>
+                                            <node concept="liA8E" id="28EZ8iCGmaG" role="2OqNvi">
+                                              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                              <node concept="Xl_RD" id="28EZ8iCGmaH" role="37wK5m">
+                                                <property role="Xl_RC" value="space key pressed" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3zACq4" id="7aSchK6eDH8" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5kXuwfINCfN" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="2xdQw9" id="6FPy_QmXPpK" role="8Wnug">
+                                      <property role="2xdLsb" value="info" />
+                                      <node concept="Xl_RD" id="6FPy_QmXPpM" role="9lYJi">
+                                        <property role="Xl_RC" value="space key pressed" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="9aQIb" id="28EZ8iCGfLL" role="9aQIa">
-                                <node concept="3clFbS" id="28EZ8iCGfLM" role="9aQI4">
-                                  <node concept="3KaCP$" id="6FPy_QmXFde" role="3cqZAp">
-                                    <node concept="3KbdKl" id="3nfMQrn_Fyv" role="3KbHQx">
-                                      <node concept="3cmrfG" id="43AAJf0GaR3" role="3Kbmr1">
-                                        <property role="3cmrfH" value="8" />
+                              <node concept="3KbdKl" id="7aSchK6eExJ" role="3KbHQx">
+                                <node concept="3cmrfG" id="7aSchK6eERJ" role="3Kbmr1">
+                                  <property role="3cmrfH" value="83" />
+                                </node>
+                                <node concept="3clFbS" id="7aSchK6eExL" role="3Kbo56">
+                                  <node concept="3clFbJ" id="7aSchK6eEUd" role="3cqZAp">
+                                    <node concept="3clFbS" id="7aSchK6eEUe" role="3clFbx">
+                                      <node concept="3clFbF" id="7aSchK6eEUf" role="3cqZAp">
+                                        <node concept="2OqwBi" id="7aSchK6eEUg" role="3clFbG">
+                                          <node concept="37vLTw" id="7aSchK6eEUh" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="7aSchK6eEUi" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="7aSchK6eEUj" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + s pressed" />
+                                            </node>
+                                          </node>
+                                        </node>
                                       </node>
-                                      <node concept="3clFbS" id="3nfMQrn_Fyx" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfIN_Oj" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINA0t" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfIN_Oh" role="2Oq$k0">
+                                      <node concept="3zACq4" id="7aSchK6eEUk" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7aSchK6eEUl" role="3clFbw">
+                                      <node concept="37vLTw" id="7aSchK6eEUm" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="7aSchK6eEUn" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
+                                      </node>
+                                    </node>
+                                    <node concept="3eNFk2" id="7aSchK6eFm6" role="3eNLev">
+                                      <node concept="3clFbS" id="7aSchK6eFm7" role="3eOfB_">
+                                        <node concept="3clFbF" id="7aSchK6eGRD" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eGRE" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eGRF" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINA7_" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eGRG" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINAgK" role="37wK5m">
-                                                <property role="Xl_RC" value="Backspace key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eH4m" role="37wK5m">
+                                                <property role="Xl_RC" value="command + s pressed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfIN$Rj" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="43AAJf0Gbmu" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="43AAJf0Gbmw" role="9lYJi">
-                                              <property role="Xl_RC" value="Backspace key pressed" />
-                                            </node>
-                                          </node>
+                                        <node concept="3zACq4" id="7aSchK6eGRI" role="3cqZAp" />
+                                      </node>
+                                      <node concept="2OqwBi" id="7aSchK6eFY4" role="3eO9$A">
+                                        <node concept="37vLTw" id="7aSchK6eFxL" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                        </node>
+                                        <node concept="liA8E" id="7aSchK6eGH9" role="2OqNvi">
+                                          <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="37vLTw" id="6FPy_QmXFlX" role="3KbGdf">
-                                      <ref role="3cqZAo" node="6FPy_QmXDQ1" resolve="n" />
-                                    </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXGxH" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXGEt" role="3Kbmr1">
-                                        <property role="3cmrfH" value="9" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXGxJ" role="3Kbo56">
-                                        <node concept="3clFbJ" id="28EZ8iCGhfu" role="3cqZAp">
-                                          <node concept="3clFbS" id="28EZ8iCGhfw" role="3clFbx">
-                                            <node concept="3clFbF" id="5kXuwfINAL1" role="3cqZAp">
-                                              <node concept="2OqwBi" id="5kXuwfINB2x" role="3clFbG">
-                                                <node concept="37vLTw" id="5kXuwfINAKZ" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
-                                                </node>
-                                                <node concept="liA8E" id="5kXuwfINB9N" role="2OqNvi">
-                                                  <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                                  <node concept="Xl_RD" id="5kXuwfINBj3" role="37wK5m">
-                                                    <property role="Xl_RC" value="alt + tab key pressed" />
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="2OqwBi" id="28EZ8iCGhVK" role="3clFbw">
-                                            <node concept="37vLTw" id="28EZ8iCGhvK" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                            </node>
-                                            <node concept="liA8E" id="28EZ8iCGj9i" role="2OqNvi">
-                                              <ref role="37wK5l" to="hyam:~InputEvent.isAltDown():boolean" resolve="isAltDown" />
-                                            </node>
-                                          </node>
-                                          <node concept="9aQIb" id="28EZ8iCGjPY" role="9aQIa">
-                                            <node concept="3clFbS" id="28EZ8iCGjPZ" role="9aQI4">
-                                              <node concept="3clFbF" id="28EZ8iCGjT_" role="3cqZAp">
-                                                <node concept="2OqwBi" id="28EZ8iCGjTA" role="3clFbG">
-                                                  <node concept="37vLTw" id="28EZ8iCGjTB" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
-                                                  </node>
-                                                  <node concept="liA8E" id="28EZ8iCGjTC" role="2OqNvi">
-                                                    <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                                    <node concept="Xl_RD" id="28EZ8iCGjTD" role="37wK5m">
-                                                      <property role="Xl_RC" value="alt key pressed" />
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
-                                        </node>
-                                        <node concept="1X3_iC" id="5kXuwfIN$RI" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXHpO" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXHpQ" role="9lYJi">
-                                              <property role="Xl_RC" value="Tab key pressed" />
-                                            </node>
-                                          </node>
-                                        </node>
-                                        <node concept="3zACq4" id="6FPy_QmXHSO" role="3cqZAp" />
-                                      </node>
-                                    </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXHvp" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXHCm" role="3Kbmr1">
-                                        <property role="3cmrfH" value="10" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXHvr" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINBBp" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINBOS" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINBBn" role="2Oq$k0">
+                                    <node concept="9aQIb" id="7aSchK6eGJx" role="9aQIa">
+                                      <node concept="3clFbS" id="7aSchK6eGJy" role="9aQI4">
+                                        <node concept="3clFbF" id="7aSchK6eFm8" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eFm9" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eFma" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINBWa" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eFmb" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINC5q" role="37wK5m">
-                                                <property role="Xl_RC" value="enter key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eFmc" role="37wK5m">
+                                                <property role="Xl_RC" value="key s typed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfIN$Sn" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXInE" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXInG" role="9lYJi">
-                                              <property role="Xl_RC" value="Enter key pressed" />
+                                        <node concept="3zACq4" id="7aSchK6eFmd" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="7aSchK6eHcw" role="3KbHQx">
+                                <node concept="3cmrfG" id="7aSchK6eH$u" role="3Kbmr1">
+                                  <property role="3cmrfH" value="86" />
+                                </node>
+                                <node concept="3clFbS" id="7aSchK6eHcy" role="3Kbo56">
+                                  <node concept="3clFbJ" id="7aSchK6eH_F" role="3cqZAp">
+                                    <node concept="3clFbS" id="7aSchK6eH_G" role="3clFbx">
+                                      <node concept="3clFbF" id="7aSchK6eH_H" role="3cqZAp">
+                                        <node concept="2OqwBi" id="7aSchK6eH_I" role="3clFbG">
+                                          <node concept="37vLTw" id="7aSchK6eH_J" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="7aSchK6eH_K" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="7aSchK6eH_L" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + v pressed" />
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXWyB" role="3cqZAp" />
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eH_M" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7aSchK6eH_N" role="3clFbw">
+                                      <node concept="37vLTw" id="7aSchK6eH_O" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="7aSchK6eH_P" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXIrn" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXI$x" role="3Kbmr1">
-                                        <property role="3cmrfH" value="16" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXIrp" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINCxN" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINCHY" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINCxL" role="2Oq$k0">
+                                    <node concept="3eNFk2" id="7aSchK6eH_Q" role="3eNLev">
+                                      <node concept="3clFbS" id="7aSchK6eH_R" role="3eOfB_">
+                                        <node concept="3clFbF" id="7aSchK6eH_S" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eH_T" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eH_U" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINCPg" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eH_V" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINCYw" role="37wK5m">
-                                                <property role="Xl_RC" value="shift key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eH_W" role="37wK5m">
+                                                <property role="Xl_RC" value="command + v pressed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCbm" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXJ4h" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXJ4j" role="9lYJi">
-                                              <property role="Xl_RC" value="shift key pressed" />
-                                            </node>
-                                          </node>
+                                        <node concept="3zACq4" id="7aSchK6eH_X" role="3cqZAp" />
+                                      </node>
+                                      <node concept="2OqwBi" id="7aSchK6eH_Y" role="3eO9$A">
+                                        <node concept="37vLTw" id="7aSchK6eH_Z" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXWMK" role="3cqZAp" />
+                                        <node concept="liA8E" id="7aSchK6eHA0" role="2OqNvi">
+                                          <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
+                                        </node>
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXJ72" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXJgo" role="3Kbmr1">
-                                        <property role="3cmrfH" value="17" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXJ74" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINDjA" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINDx5" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINDj$" role="2Oq$k0">
+                                    <node concept="9aQIb" id="7aSchK6eHA1" role="9aQIa">
+                                      <node concept="3clFbS" id="7aSchK6eHA2" role="9aQI4">
+                                        <node concept="3clFbF" id="7aSchK6eHA3" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eHA4" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eHA5" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINDQX" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eHA6" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINE0d" role="37wK5m">
-                                                <property role="Xl_RC" value="ctrl key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eHA7" role="37wK5m">
+                                                <property role="Xl_RC" value="key v typed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCbS" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXJwN" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXJwP" role="9lYJi">
-                                              <property role="Xl_RC" value="ctrl key pressed" />
+                                        <node concept="3zACq4" id="7aSchK6eHA8" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="7aSchK6eHMe" role="3KbHQx">
+                                <node concept="3cmrfG" id="7aSchK6eIcb" role="3Kbmr1">
+                                  <property role="3cmrfH" value="90" />
+                                </node>
+                                <node concept="3clFbS" id="7aSchK6eHMg" role="3Kbo56">
+                                  <node concept="3clFbJ" id="7aSchK6eIds" role="3cqZAp">
+                                    <node concept="3clFbS" id="7aSchK6eIdt" role="3clFbx">
+                                      <node concept="3clFbF" id="7aSchK6eIdu" role="3cqZAp">
+                                        <node concept="2OqwBi" id="7aSchK6eIdv" role="3clFbG">
+                                          <node concept="37vLTw" id="7aSchK6eIdw" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="7aSchK6eIdx" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="7aSchK6eIdy" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + z pressed" />
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXX3e" role="3cqZAp" />
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eIdz" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7aSchK6eId$" role="3clFbw">
+                                      <node concept="37vLTw" id="7aSchK6eId_" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="7aSchK6eIdA" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXJzV" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXJHt" role="3Kbmr1">
-                                        <property role="3cmrfH" value="18" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXJzX" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINEkz" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINEwI" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINEkx" role="2Oq$k0">
+                                    <node concept="3eNFk2" id="7aSchK6eIdB" role="3eNLev">
+                                      <node concept="3clFbS" id="7aSchK6eIdC" role="3eOfB_">
+                                        <node concept="3clFbF" id="7aSchK6eIdD" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eIdE" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eIdF" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINEQC" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eIdG" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINEZK" role="37wK5m">
-                                                <property role="Xl_RC" value="alt key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eIdH" role="37wK5m">
+                                                <property role="Xl_RC" value="command + z pressed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCcj" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXKtq" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXKts" role="9lYJi">
-                                              <property role="Xl_RC" value="alt key pressed" />
-                                            </node>
-                                          </node>
+                                        <node concept="3zACq4" id="7aSchK6eIdI" role="3cqZAp" />
+                                      </node>
+                                      <node concept="2OqwBi" id="7aSchK6eIdJ" role="3eO9$A">
+                                        <node concept="37vLTw" id="7aSchK6eIdK" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXXjn" role="3cqZAp" />
+                                        <node concept="liA8E" id="7aSchK6eIdL" role="2OqNvi">
+                                          <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
+                                        </node>
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXKx0" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXKEI" role="3Kbmr1">
-                                        <property role="3cmrfH" value="27" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXKx2" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINFlA" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINFz5" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINFl$" role="2Oq$k0">
+                                    <node concept="9aQIb" id="7aSchK6eIdM" role="9aQIa">
+                                      <node concept="3clFbS" id="7aSchK6eIdN" role="9aQI4">
+                                        <node concept="3clFbF" id="7aSchK6eIdO" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eIdP" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eIdQ" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINFSX" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eIdR" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfING2d" role="37wK5m">
-                                                <property role="Xl_RC" value="escape key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eIdS" role="37wK5m">
+                                                <property role="Xl_RC" value="key z typed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3clFbH" id="15fJXnxtjzl" role="3cqZAp" />
-                                        <node concept="1X3_iC" id="5kXuwfINCcP" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXLbu" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXLbw" role="9lYJi">
-                                              <property role="Xl_RC" value="escape key pressed" />
+                                        <node concept="3zACq4" id="7aSchK6eIdT" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="7aSchK6eIpZ" role="3KbHQx">
+                                <node concept="3cmrfG" id="7aSchK6eIPV" role="3Kbmr1">
+                                  <property role="3cmrfH" value="88" />
+                                </node>
+                                <node concept="3clFbS" id="7aSchK6eIq1" role="3Kbo56">
+                                  <node concept="3clFbJ" id="7aSchK6eIRg" role="3cqZAp">
+                                    <node concept="3clFbS" id="7aSchK6eIRh" role="3clFbx">
+                                      <node concept="3clFbF" id="7aSchK6eIRi" role="3cqZAp">
+                                        <node concept="2OqwBi" id="7aSchK6eIRj" role="3clFbG">
+                                          <node concept="37vLTw" id="7aSchK6eIRk" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="7aSchK6eIRl" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="7aSchK6eIRm" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + x pressed" />
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXXzw" role="3cqZAp" />
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eIRn" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7aSchK6eIRo" role="3clFbw">
+                                      <node concept="37vLTw" id="7aSchK6eIRp" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="7aSchK6eIRq" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXLgG" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXLqA" role="3Kbmr1">
-                                        <property role="3cmrfH" value="46" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXLgI" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINGuF" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINGGa" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINGuD" role="2Oq$k0">
+                                    <node concept="3eNFk2" id="7aSchK6eIRr" role="3eNLev">
+                                      <node concept="3clFbS" id="7aSchK6eIRs" role="3eOfB_">
+                                        <node concept="3clFbF" id="7aSchK6eIRt" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eIRu" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eIRv" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINH22" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eIRw" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINHba" role="37wK5m">
-                                                <property role="Xl_RC" value="delete key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eIRx" role="37wK5m">
+                                                <property role="Xl_RC" value="command + x pressed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCdn" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXLGj" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXLGl" role="9lYJi">
-                                              <property role="Xl_RC" value="Delete key pressed" />
-                                            </node>
-                                          </node>
+                                        <node concept="3zACq4" id="7aSchK6eIRy" role="3cqZAp" />
+                                      </node>
+                                      <node concept="2OqwBi" id="7aSchK6eIRz" role="3eO9$A">
+                                        <node concept="37vLTw" id="7aSchK6eIR$" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXXNK" role="3cqZAp" />
+                                        <node concept="liA8E" id="7aSchK6eIR_" role="2OqNvi">
+                                          <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
+                                        </node>
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXLKV" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXLV1" role="3Kbmr1">
-                                        <property role="3cmrfH" value="37" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXLKX" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINHwg" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINHGr" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINHwe" role="2Oq$k0">
+                                    <node concept="9aQIb" id="7aSchK6eIRA" role="9aQIa">
+                                      <node concept="3clFbS" id="7aSchK6eIRB" role="9aQI4">
+                                        <node concept="3clFbF" id="7aSchK6eIRC" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eIRD" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eIRE" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINI2i" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eIRF" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINIb_" role="37wK5m">
-                                                <property role="Xl_RC" value="left arrow key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eIRG" role="37wK5m">
+                                                <property role="Xl_RC" value="key x typed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCdT" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXMr4" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXMr6" role="9lYJi">
-                                              <property role="Xl_RC" value="Left arrow key pressed" />
+                                        <node concept="3zACq4" id="7aSchK6eIRH" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="7aSchK6eJ3N" role="3KbHQx">
+                                <node concept="3cmrfG" id="7aSchK6eJxI" role="3Kbmr1">
+                                  <property role="3cmrfH" value="89" />
+                                </node>
+                                <node concept="3clFbS" id="7aSchK6eJ3P" role="3Kbo56">
+                                  <node concept="3clFbJ" id="7aSchK6eJz7" role="3cqZAp">
+                                    <node concept="3clFbS" id="7aSchK6eJz8" role="3clFbx">
+                                      <node concept="3clFbF" id="7aSchK6eJz9" role="3cqZAp">
+                                        <node concept="2OqwBi" id="7aSchK6eJza" role="3clFbG">
+                                          <node concept="37vLTw" id="7aSchK6eJzb" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="7aSchK6eJzc" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="7aSchK6eJzd" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + y pressed" />
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXY3T" role="3cqZAp" />
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eJze" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7aSchK6eJzf" role="3clFbw">
+                                      <node concept="37vLTw" id="7aSchK6eJzg" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="7aSchK6eJzh" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXMv8" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXMDq" role="3Kbmr1">
-                                        <property role="3cmrfH" value="38" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXMva" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINI$r" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINIKA" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINI$p" role="2Oq$k0">
+                                    <node concept="3eNFk2" id="7aSchK6eJzi" role="3eNLev">
+                                      <node concept="3clFbS" id="7aSchK6eJzj" role="3eOfB_">
+                                        <node concept="3clFbF" id="7aSchK6eJzk" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eJzl" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eJzm" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINIRU" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eJzn" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINJ1a" role="37wK5m">
-                                                <property role="Xl_RC" value="up arrow key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eJzo" role="37wK5m">
+                                                <property role="Xl_RC" value="command + y pressed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCek" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXNas" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXNau" role="9lYJi">
-                                              <property role="Xl_RC" value="Up arrow key pressed" />
-                                            </node>
-                                          </node>
+                                        <node concept="3zACq4" id="7aSchK6eJzp" role="3cqZAp" />
+                                      </node>
+                                      <node concept="2OqwBi" id="7aSchK6eJzq" role="3eO9$A">
+                                        <node concept="37vLTw" id="7aSchK6eJzr" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXYk2" role="3cqZAp" />
+                                        <node concept="liA8E" id="7aSchK6eJzs" role="2OqNvi">
+                                          <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
+                                        </node>
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXNf5" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXNpz" role="3Kbmr1">
-                                        <property role="3cmrfH" value="39" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXNf7" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINJpc" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINJAF" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINJpa" role="2Oq$k0">
+                                    <node concept="9aQIb" id="7aSchK6eJzt" role="9aQIa">
+                                      <node concept="3clFbS" id="7aSchK6eJzu" role="9aQI4">
+                                        <node concept="3clFbF" id="7aSchK6eJzv" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eJzw" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eJzx" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINJHB" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eJzy" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINJR3" role="37wK5m">
-                                                <property role="Xl_RC" value="right arrow key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eJzz" role="37wK5m">
+                                                <property role="Xl_RC" value="key y typed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCeQ" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXNTe" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXNTg" role="9lYJi">
-                                              <property role="Xl_RC" value="Right arrow key pressed" />
+                                        <node concept="3zACq4" id="7aSchK6eJz$" role="3cqZAp" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3KbdKl" id="7aSchK6eJJE" role="3KbHQx">
+                                <node concept="3cmrfG" id="7aSchK6eKf$" role="3Kbmr1">
+                                  <property role="3cmrfH" value="65" />
+                                </node>
+                                <node concept="3clFbS" id="7aSchK6eJJG" role="3Kbo56">
+                                  <node concept="3clFbJ" id="7aSchK6eKh1" role="3cqZAp">
+                                    <node concept="3clFbS" id="7aSchK6eKh2" role="3clFbx">
+                                      <node concept="3clFbF" id="7aSchK6eKh3" role="3cqZAp">
+                                        <node concept="2OqwBi" id="7aSchK6eKh4" role="3clFbG">
+                                          <node concept="37vLTw" id="7aSchK6eKh5" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="7aSchK6eKh6" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="Xl_RD" id="7aSchK6eKh7" role="37wK5m">
+                                              <property role="Xl_RC" value="ctrl + a pressed" />
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3zACq4" id="6FPy_QmXY$b" role="3cqZAp" />
+                                      </node>
+                                      <node concept="3zACq4" id="7aSchK6eKh8" role="3cqZAp" />
+                                    </node>
+                                    <node concept="2OqwBi" id="7aSchK6eKh9" role="3clFbw">
+                                      <node concept="37vLTw" id="7aSchK6eKha" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="7aSchK6eKhb" role="2OqNvi">
+                                        <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
                                       </node>
                                     </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXNZg" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXO9U" role="3Kbmr1">
-                                        <property role="3cmrfH" value="40" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXNZi" role="3Kbo56">
-                                        <node concept="3clFbF" id="5kXuwfINKfT" role="3cqZAp">
-                                          <node concept="2OqwBi" id="5kXuwfINKto" role="3clFbG">
-                                            <node concept="37vLTw" id="5kXuwfINKfR" role="2Oq$k0">
+                                    <node concept="3eNFk2" id="7aSchK6eKhc" role="3eNLev">
+                                      <node concept="3clFbS" id="7aSchK6eKhd" role="3eOfB_">
+                                        <node concept="3clFbF" id="7aSchK6eKhe" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eKhf" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eKhg" role="2Oq$k0">
                                               <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
                                             </node>
-                                            <node concept="liA8E" id="5kXuwfINKMZ" role="2OqNvi">
+                                            <node concept="liA8E" id="7aSchK6eKhh" role="2OqNvi">
                                               <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                              <node concept="Xl_RD" id="5kXuwfINKWi" role="37wK5m">
-                                                <property role="Xl_RC" value="down arrow key pressed" />
+                                              <node concept="Xl_RD" id="7aSchK6eKhi" role="37wK5m">
+                                                <property role="Xl_RC" value="command + a pressed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCfo" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXOE0" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXOE2" role="9lYJi">
-                                              <property role="Xl_RC" value="Down arrow key pressed" />
-                                            </node>
-                                          </node>
-                                        </node>
-                                        <node concept="3zACq4" id="6FPy_QmXYOk" role="3cqZAp" />
+                                        <node concept="3zACq4" id="7aSchK6eKhj" role="3cqZAp" />
                                       </node>
-                                    </node>
-                                    <node concept="3KbdKl" id="6FPy_QmXOJ7" role="3KbHQx">
-                                      <node concept="3cmrfG" id="6FPy_QmXOTX" role="3Kbmr1">
-                                        <property role="3cmrfH" value="32" />
-                                      </node>
-                                      <node concept="3clFbS" id="6FPy_QmXOJ9" role="3Kbo56">
-                                        <node concept="3clFbJ" id="28EZ8iCGkgO" role="3cqZAp">
-                                          <node concept="3clFbS" id="28EZ8iCGkgQ" role="3clFbx">
-                                            <node concept="3clFbF" id="5kXuwfINLku" role="3cqZAp">
-                                              <node concept="2OqwBi" id="5kXuwfINLxW" role="3clFbG">
-                                                <node concept="37vLTw" id="5kXuwfINLks" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
-                                                </node>
-                                                <node concept="liA8E" id="5kXuwfINLRO" role="2OqNvi">
-                                                  <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                                  <node concept="Xl_RD" id="5kXuwfINM14" role="37wK5m">
-                                                    <property role="Xl_RC" value="ctrl + space key pressed" />
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
-                                          <node concept="2OqwBi" id="28EZ8iCGkTV" role="3clFbw">
-                                            <node concept="37vLTw" id="28EZ8iCGkpr" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                            </node>
-                                            <node concept="liA8E" id="28EZ8iCGlCG" role="2OqNvi">
-                                              <ref role="37wK5l" to="hyam:~InputEvent.isControlDown():boolean" resolve="isControlDown" />
-                                            </node>
-                                          </node>
-                                          <node concept="9aQIb" id="28EZ8iCGm5a" role="9aQIa">
-                                            <node concept="3clFbS" id="28EZ8iCGm5b" role="9aQI4">
-                                              <node concept="3clFbF" id="28EZ8iCGmaD" role="3cqZAp">
-                                                <node concept="2OqwBi" id="28EZ8iCGmaE" role="3clFbG">
-                                                  <node concept="37vLTw" id="28EZ8iCGmaF" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
-                                                  </node>
-                                                  <node concept="liA8E" id="28EZ8iCGmaG" role="2OqNvi">
-                                                    <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                                    <node concept="Xl_RD" id="28EZ8iCGmaH" role="37wK5m">
-                                                      <property role="Xl_RC" value="space key pressed" />
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
+                                      <node concept="2OqwBi" id="7aSchK6eKhk" role="3eO9$A">
+                                        <node concept="37vLTw" id="7aSchK6eKhl" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                         </node>
-                                        <node concept="1X3_iC" id="5kXuwfINCfN" role="lGtFl">
-                                          <property role="3V$3am" value="statement" />
-                                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                          <node concept="2xdQw9" id="6FPy_QmXPpK" role="8Wnug">
-                                            <property role="2xdLsb" value="info" />
-                                            <node concept="Xl_RD" id="6FPy_QmXPpM" role="9lYJi">
-                                              <property role="Xl_RC" value="space key pressed" />
-                                            </node>
-                                          </node>
+                                        <node concept="liA8E" id="7aSchK6eKhm" role="2OqNvi">
+                                          <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="3clFbS" id="6FPy_QmXQc2" role="3Kb1Dw">
-                                      <node concept="3clFbJ" id="28EZ8iCGmPR" role="3cqZAp">
-                                        <node concept="3clFbS" id="28EZ8iCGmPT" role="3clFbx">
-                                          <node concept="3clFbF" id="5kXuwfINMwK" role="3cqZAp">
-                                            <node concept="2OqwBi" id="5kXuwfINMIl" role="3clFbG">
-                                              <node concept="37vLTw" id="5kXuwfINMwI" role="2Oq$k0">
-                                                <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
-                                              </node>
-                                              <node concept="liA8E" id="28EZ8iCGpI_" role="2OqNvi">
-                                                <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                                <node concept="3cpWs3" id="28EZ8iCGtey" role="37wK5m">
-                                                  <node concept="Xl_RD" id="28EZ8iCGtOE" role="3uHU7w">
-                                                    <property role="Xl_RC" value="pressed" />
-                                                  </node>
-                                                  <node concept="3cpWs3" id="28EZ8iCGqdd" role="3uHU7B">
-                                                    <node concept="Xl_RD" id="28EZ8iCGpSS" role="3uHU7B">
-                                                      <property role="Xl_RC" value="command " />
-                                                    </node>
-                                                    <node concept="2OqwBi" id="28EZ8iCGr7y" role="3uHU7w">
-                                                      <node concept="37vLTw" id="28EZ8iCGqHb" role="2Oq$k0">
-                                                        <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                                      </node>
-                                                      <node concept="liA8E" id="28EZ8iCGsmJ" role="2OqNvi">
-                                                        <ref role="37wK5l" to="hyam:~KeyEvent.getKeyChar():char" resolve="getKeyChar" />
-                                                      </node>
-                                                    </node>
-                                                  </node>
-                                                </node>
+                                    <node concept="9aQIb" id="7aSchK6eKhn" role="9aQIa">
+                                      <node concept="3clFbS" id="7aSchK6eKho" role="9aQI4">
+                                        <node concept="3clFbF" id="7aSchK6eKhp" role="3cqZAp">
+                                          <node concept="2OqwBi" id="7aSchK6eKhq" role="3clFbG">
+                                            <node concept="37vLTw" id="7aSchK6eKhr" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                            </node>
+                                            <node concept="liA8E" id="7aSchK6eKhs" role="2OqNvi">
+                                              <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                              <node concept="Xl_RD" id="7aSchK6eKht" role="37wK5m">
+                                                <property role="Xl_RC" value="key a typed" />
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="2OqwBi" id="28EZ8iCGnt$" role="3clFbw">
-                                          <node concept="37vLTw" id="28EZ8iCGn3b" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                          </node>
-                                          <node concept="liA8E" id="28EZ8iCGocl" role="2OqNvi">
-                                            <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
-                                          </node>
-                                        </node>
-                                        <node concept="9aQIb" id="28EZ8iCGoLZ" role="9aQIa">
-                                          <node concept="3clFbS" id="28EZ8iCGoM0" role="9aQI4">
-                                            <node concept="3clFbF" id="28EZ8iCGoRs" role="3cqZAp">
-                                              <node concept="2OqwBi" id="28EZ8iCGoRt" role="3clFbG">
-                                                <node concept="37vLTw" id="28EZ8iCGoRu" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
-                                                </node>
-                                                <node concept="liA8E" id="28EZ8iCGoRv" role="2OqNvi">
-                                                  <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
-                                                  <node concept="3cpWs3" id="28EZ8iCGoRw" role="37wK5m">
-                                                    <node concept="Xl_RD" id="28EZ8iCGoRx" role="3uHU7w">
-                                                      <property role="Xl_RC" value=" typed " />
-                                                    </node>
-                                                    <node concept="3cpWs3" id="28EZ8iCGoRy" role="3uHU7B">
-                                                      <node concept="Xl_RD" id="28EZ8iCGoRz" role="3uHU7B">
-                                                        <property role="Xl_RC" value=" key " />
-                                                      </node>
-                                                      <node concept="2OqwBi" id="28EZ8iCGoR$" role="3uHU7w">
-                                                        <node concept="37vLTw" id="28EZ8iCGoR_" role="2Oq$k0">
-                                                          <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
-                                                        </node>
-                                                        <node concept="liA8E" id="28EZ8iCGoRA" role="2OqNvi">
-                                                          <ref role="37wK5l" to="hyam:~KeyEvent.getKeyChar():char" resolve="getKeyChar" />
-                                                        </node>
-                                                      </node>
-                                                    </node>
-                                                  </node>
-                                                </node>
-                                              </node>
-                                            </node>
-                                          </node>
-                                        </node>
+                                        <node concept="3zACq4" id="7aSchK6eKhu" role="3cqZAp" />
                                       </node>
-                                      <node concept="1X3_iC" id="5kXuwfINCgk" role="lGtFl">
-                                        <property role="3V$3am" value="statement" />
-                                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                        <node concept="2xdQw9" id="6FPy_QmXQGo" role="8Wnug">
-                                          <property role="2xdLsb" value="info" />
-                                          <node concept="3cpWs3" id="6FPy_QmXVxq" role="9lYJi">
-                                            <node concept="Xl_RD" id="6FPy_QmXVSP" role="3uHU7w">
-                                              <property role="Xl_RC" value=" typed " />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="6FPy_QmXQc2" role="3Kb1Dw">
+                                <node concept="3clFbJ" id="28EZ8iCGmPR" role="3cqZAp">
+                                  <node concept="3clFbS" id="28EZ8iCGmPT" role="3clFbx">
+                                    <node concept="3clFbF" id="5kXuwfINMwK" role="3cqZAp">
+                                      <node concept="2OqwBi" id="5kXuwfINMIl" role="3clFbG">
+                                        <node concept="37vLTw" id="5kXuwfINMwI" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                        </node>
+                                        <node concept="liA8E" id="28EZ8iCGpI_" role="2OqNvi">
+                                          <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                          <node concept="3cpWs3" id="28EZ8iCGtey" role="37wK5m">
+                                            <node concept="Xl_RD" id="28EZ8iCGtOE" role="3uHU7w">
+                                              <property role="Xl_RC" value="pressed" />
                                             </node>
-                                            <node concept="3cpWs3" id="6FPy_QmXRmn" role="3uHU7B">
-                                              <node concept="Xl_RD" id="6FPy_QmXQGq" role="3uHU7B">
-                                                <property role="Xl_RC" value=" key " />
-                                                <node concept="2DeEQE" id="5kXuwfINMh3" role="lGtFl">
-                                                  <property role="1vR6C6" value="1" />
-                                                </node>
+                                            <node concept="3cpWs3" id="28EZ8iCGqdd" role="3uHU7B">
+                                              <node concept="Xl_RD" id="28EZ8iCGpSS" role="3uHU7B">
+                                                <property role="Xl_RC" value="command " />
                                               </node>
-                                              <node concept="2OqwBi" id="6FPy_QmXS3d" role="3uHU7w">
-                                                <node concept="37vLTw" id="6FPy_QmXRAT" role="2Oq$k0">
+                                              <node concept="2OqwBi" id="28EZ8iCGr7y" role="3uHU7w">
+                                                <node concept="37vLTw" id="28EZ8iCGqHb" role="2Oq$k0">
                                                   <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
                                                 </node>
-                                                <node concept="liA8E" id="6FPy_QmXSMd" role="2OqNvi">
+                                                <node concept="liA8E" id="28EZ8iCGsmJ" role="2OqNvi">
                                                   <ref role="37wK5l" to="hyam:~KeyEvent.getKeyChar():char" resolve="getKeyChar" />
                                                 </node>
                                               </node>
@@ -2553,11 +2647,77 @@
                                       </node>
                                     </node>
                                   </node>
+                                  <node concept="2OqwBi" id="28EZ8iCGnt$" role="3clFbw">
+                                    <node concept="37vLTw" id="28EZ8iCGn3b" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                    </node>
+                                    <node concept="liA8E" id="28EZ8iCGocl" role="2OqNvi">
+                                      <ref role="37wK5l" to="hyam:~InputEvent.isMetaDown():boolean" resolve="isMetaDown" />
+                                    </node>
+                                  </node>
+                                  <node concept="9aQIb" id="28EZ8iCGoLZ" role="9aQIa">
+                                    <node concept="3clFbS" id="28EZ8iCGoM0" role="9aQI4">
+                                      <node concept="3clFbF" id="28EZ8iCGoRs" role="3cqZAp">
+                                        <node concept="2OqwBi" id="28EZ8iCGoRt" role="3clFbG">
+                                          <node concept="37vLTw" id="28EZ8iCGoRu" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7RZmUu$GTMG" resolve="logger" />
+                                          </node>
+                                          <node concept="liA8E" id="28EZ8iCGoRv" role="2OqNvi">
+                                            <ref role="37wK5l" to="dr5r:~Logger.info(java.lang.String):void" resolve="info" />
+                                            <node concept="3cpWs3" id="28EZ8iCGoRw" role="37wK5m">
+                                              <node concept="Xl_RD" id="28EZ8iCGoRx" role="3uHU7w">
+                                                <property role="Xl_RC" value=" typed " />
+                                              </node>
+                                              <node concept="3cpWs3" id="28EZ8iCGoRy" role="3uHU7B">
+                                                <node concept="Xl_RD" id="28EZ8iCGoRz" role="3uHU7B">
+                                                  <property role="Xl_RC" value=" key " />
+                                                </node>
+                                                <node concept="2OqwBi" id="28EZ8iCGoR$" role="3uHU7w">
+                                                  <node concept="37vLTw" id="28EZ8iCGoR_" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                                  </node>
+                                                  <node concept="liA8E" id="28EZ8iCGoRA" role="2OqNvi">
+                                                    <ref role="37wK5l" to="hyam:~KeyEvent.getKeyChar():char" resolve="getKeyChar" />
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="1X3_iC" id="5kXuwfINCgk" role="lGtFl">
+                                  <property role="3V$3am" value="statement" />
+                                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                  <node concept="2xdQw9" id="6FPy_QmXQGo" role="8Wnug">
+                                    <property role="2xdLsb" value="info" />
+                                    <node concept="3cpWs3" id="6FPy_QmXVxq" role="9lYJi">
+                                      <node concept="Xl_RD" id="6FPy_QmXVSP" role="3uHU7w">
+                                        <property role="Xl_RC" value=" typed " />
+                                      </node>
+                                      <node concept="3cpWs3" id="6FPy_QmXRmn" role="3uHU7B">
+                                        <node concept="Xl_RD" id="6FPy_QmXQGq" role="3uHU7B">
+                                          <property role="Xl_RC" value=" key " />
+                                          <node concept="2DeEQE" id="5kXuwfINMh3" role="lGtFl">
+                                            <property role="1vR6C6" value="1" />
+                                          </node>
+                                        </node>
+                                        <node concept="2OqwBi" id="6FPy_QmXS3d" role="3uHU7w">
+                                          <node concept="37vLTw" id="6FPy_QmXRAT" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="6FPy_QmXDwh" resolve="p0" />
+                                          </node>
+                                          <node concept="liA8E" id="6FPy_QmXSMd" role="2OqNvi">
+                                            <ref role="37wK5l" to="hyam:~KeyEvent.getKeyChar():char" resolve="getKeyChar" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="3clFbH" id="5POv0pgVpWc" role="3cqZAp" />
-                            <node concept="3clFbH" id="4Wp__x0djxR" role="3cqZAp" />
                           </node>
                           <node concept="3clFbC" id="4Wp__x0nrUn" role="3clFbw">
                             <node concept="10M0yZ" id="4Wp__x0nrUo" role="3uHU7w">
@@ -2574,7 +2734,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="4Wp__x0dBM7" role="3cqZAp" />
                         <node concept="3cpWs6" id="6FPy_QmXGkv" role="3cqZAp">
                           <node concept="3clFbT" id="6FPy_QmXGtx" role="3cqZAk">
                             <property role="3clFbU" value="false" />

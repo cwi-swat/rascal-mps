@@ -19,16 +19,6 @@
       <concept id="4695274177986113094" name="JS_Grammar.structure.lit_Id" flags="ng" index="2WLtyU">
         <property id="4695274177986113093" name="lit_Id" index="2WLtyT" />
       </concept>
-      <concept id="4695274177986113517" name="JS_Grammar.structure.block" flags="ng" index="2WLt$h">
-        <child id="4695274177986113519" name="stat" index="2WLt$j" />
-      </concept>
-      <concept id="4695274177986113468" name="JS_Grammar.structure.ifThen" flags="ng" index="2WLt_0">
-        <child id="4695274177986113470" name="cond" index="2WLt_2" />
-        <child id="4695274177986113471" name="stat" index="2WLt_3" />
-      </concept>
-      <concept id="4695274177986113465" name="JS_Grammar.structure.s_expression" flags="ng" index="2WLt_5">
-        <child id="4695274177986113467" name="function" index="2WLt_7" />
-      </concept>
       <concept id="4695274177986113449" name="JS_Grammar.structure.init_VariableDeclaration" flags="ng" index="2WLt_l">
         <child id="4695274177986113452" name="exp" index="2WLt_g" />
         <child id="4695274177986113451" name="id" index="2WLt_n" />
@@ -39,102 +29,31 @@
       <concept id="4695274177986113413" name="JS_Grammar.structure.source" flags="ng" index="2WLt_T">
         <child id="4695274177986113602" name="stat" index="2WLsqY" />
       </concept>
-      <concept id="4695274177986113332" name="JS_Grammar.structure.neq" flags="ng" index="2WLtB8">
-        <child id="4695274177986113334" name="lhs" index="2WLtBa" />
-        <child id="4695274177986113335" name="rhs" index="2WLtBb" />
-      </concept>
-      <concept id="4695274177986113288" name="JS_Grammar.structure.add" flags="ng" index="2WLtBO">
-        <child id="4695274177986113290" name="lhs" index="2WLtBQ" />
-        <child id="4695274177986113291" name="rhs" index="2WLtBR" />
-      </concept>
     </language>
   </registry>
   <node concept="2WLt_T" id="7CCU7Zoe4WV">
-    <node concept="2WLsrD" id="28EZ8iCHj$l" role="2WLsqY">
-      <node concept="2WLt_$" id="28EZ8iCHj$p" role="2WLsrF">
-        <node concept="2WLt_l" id="28EZ8iCHj$u" role="2WLsqT">
-          <node concept="2WLtyU" id="28EZ8iCHj$w" role="2WLt_n">
+    <node concept="2WLsrD" id="7aSchK6fq$$" role="2WLsqY">
+      <node concept="2WLt_$" id="3wJARXArQH5" role="2WLsrF">
+        <node concept="2WLt_l" id="3wJARXArQHa" role="2WLsqT">
+          <node concept="2WLtyU" id="3wJARXArQHi" role="2WLt_n">
             <property role="2WLtyT" value="a" />
           </node>
-          <node concept="2WLtx3" id="28EZ8iCHj$A" role="2WLt_g">
-            <node concept="2WLsro" id="28EZ8iCHj$F" role="2WLsqW">
-              <node concept="2WLtxi" id="28EZ8iCHj$H" role="2WLsrq">
-                <property role="2WLtxh" value="7" />
+          <node concept="2WLtx3" id="3wJARXArQHy" role="2WLt_g">
+            <node concept="2WLsro" id="3wJARXArQHB" role="2WLsqW">
+              <node concept="2WLtxi" id="3wJARXArQHD" role="2WLsrq">
+                <property role="2WLtxh" value="5" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="2WLt_l" id="28EZ8iCHj$S" role="2WLsqT">
-          <node concept="2WLtyU" id="28EZ8iCHj$U" role="2WLt_n">
+        <node concept="2WLt_l" id="3wJARXArQHV" role="2WLsqT">
+          <node concept="2WLtyU" id="3wJARXArQHX" role="2WLt_n">
             <property role="2WLtyT" value="b" />
           </node>
-          <node concept="2WLtx3" id="28EZ8iCHj_5" role="2WLt_g">
-            <node concept="2WLsro" id="28EZ8iCHj_a" role="2WLsqW">
-              <node concept="2WLtxi" id="28EZ8iCHj_c" role="2WLsrq">
-                <property role="2WLtxh" value="9" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2WLt_0" id="28EZ8iCHj_u" role="2WLsqY">
-      <node concept="2WLtB8" id="28EZ8iCHj_L" role="2WLt_2">
-        <node concept="2WLtx3" id="28EZ8iCHj_S" role="2WLtBa">
-          <node concept="2WLsro" id="28EZ8iCHj_X" role="2WLsqW">
-            <node concept="2WLtxi" id="28EZ8iCHj_Z" role="2WLsrq">
-              <property role="2WLtxh" value="a" />
-            </node>
-          </node>
-        </node>
-        <node concept="2WLtx3" id="28EZ8iCHjA3" role="2WLtBb">
-          <node concept="2WLsro" id="28EZ8iCHjA8" role="2WLsqW">
-            <node concept="2WLtxi" id="28EZ8iCHjAa" role="2WLsrq">
-              <property role="2WLtxh" value="b" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2WLt$h" id="28EZ8iCHjAe" role="2WLt_3">
-        <node concept="2WLt_5" id="28EZ8iCHjAh" role="2WLt$j">
-          <node concept="2WLtBO" id="28EZ8iCHjAl" role="2WLt_7">
-            <node concept="2WLtx3" id="28EZ8iCHjAs" role="2WLtBQ">
-              <node concept="2WLsro" id="28EZ8iCHjAx" role="2WLsqW">
-                <node concept="2WLtxi" id="28EZ8iCHjAz" role="2WLsrq">
-                  <property role="2WLtxh" value="a" />
-                </node>
-              </node>
-            </node>
-            <node concept="2WLtx3" id="28EZ8iCHjAB" role="2WLtBR">
-              <node concept="2WLsro" id="28EZ8iCHjAG" role="2WLsqW">
-                <node concept="2WLtxi" id="28EZ8iCHjAI" role="2WLsrq">
-                  <property role="2WLtxh" value="b" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2WLt_5" id="28EZ8iCHjAW" role="2WLt$j">
-          <node concept="2WLtx3" id="28EZ8iCHjB9" role="2WLt_7">
-            <node concept="2WLsro" id="28EZ8iCHjBe" role="2WLsqW">
-              <node concept="2WLtxi" id="28EZ8iCHjBg" role="2WLsrq">
-                <property role="2WLtxh" value="ba+" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2WLsrD" id="7aSchK6d8_k" role="2WLsqY">
-      <node concept="2WLt_$" id="7aSchK6d8_U" role="2WLsrF">
-        <node concept="2WLt_l" id="7aSchK6d8_Z" role="2WLsqT">
-          <node concept="2WLtyU" id="7aSchK6d8A7" role="2WLt_n">
-            <property role="2WLtyT" value="g" />
-          </node>
-          <node concept="2WLtx3" id="7aSchK6d8Aa" role="2WLt_g">
-            <node concept="2WLsro" id="7aSchK6d8Af" role="2WLsqW">
-              <node concept="2WLtxi" id="7aSchK6d8Ah" role="2WLsrq">
-                <property role="2WLtxh" value="6" />
+          <node concept="2WLtx3" id="3wJARXArQI8" role="2WLt_g">
+            <node concept="2WLsro" id="3wJARXArQId" role="2WLsqW">
+              <node concept="2WLtxi" id="3wJARXArQIf" role="2WLsrq">
+                <property role="2WLtxh" value="7" />
               </node>
             </node>
           </node>

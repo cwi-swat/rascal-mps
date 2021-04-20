@@ -47,6 +47,14 @@
       <modulePath path="$PROJECT_DIR$/languages/DemoMultipleEditors/sandbox/DemoMultipleEditors.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/DemoMultipleEditors1/DemoMultipleEditors1.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/DemoMultipleEditors1/sandbox/DemoMultipleEditors1.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FINALDemo/FINALDemo.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FINALDemo/sandbox/FINALDemo.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FinalDemo1/FinalDemo1.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FinalDemo1/sandbox/FinalDemo1.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FinalDemo100/FinalDemo100.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FinalDemo100/sandbox/FinalDemo100.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FinalDemo2/FinalDemo2.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/FinalDemo2/sandbox/FinalDemo2.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/JS/JS.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/JS/sandbox/JS.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/JS_Grammar/JS_Grammar.mpl" folder="newLanguageName" />
@@ -101,6 +109,8 @@
       <modulePath path="$PROJECT_DIR$/languages/PicoTest3/sandbox/PicoTest3.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico_12_11/Pico_12_11.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Pico_12_11/sandbox/Pico_12_11.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PrefixDemo/PrefixDemo.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/PrefixDemo/sandbox/PrefixDemo.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/Rascal2Sample.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Rascal2Sample/sandbox/Rascal2Sample.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/StateMachineSample/StateMachineSample.mpl" folder="newLanguageName" />
@@ -147,6 +157,10 @@
       <modulePath path="$PROJECT_DIR$/languages/Test553/sandbox/Test553.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Test555/Test555.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/Test555/sandbox/Test555.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test600/Test600.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test600/sandbox/Test600.sandbox.msd" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test601/Test601.mpl" folder="newLanguageName" />
+      <modulePath path="$PROJECT_DIR$/languages/Test601/sandbox/Test601.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestForLayoutInfo/TestForLayoutInfo.mpl" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestForLayoutInfo/sandbox/TestForLayoutInfo.sandbox.msd" folder="newLanguageName" />
       <modulePath path="$PROJECT_DIR$/languages/TestForLayouteditorCreation/TestForLayouteditorCreation.mpl" folder="newLanguageName" />

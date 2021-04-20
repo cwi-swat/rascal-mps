@@ -106,7 +106,7 @@ public class XMLImporter {
 
       // Execute the queue with remaining to-be-created links 
       executeQueue();
-
+      // ----------------------------------------------------------/ 
       // Play area 
 
 
@@ -115,37 +115,14 @@ public class XMLImporter {
 
 
 
-      for (NonTerminal nt : nonTerminalList) {
-        for (Production p : nt.getProductions()) {
-          SNode node = getConceptNodeByName(p.getName());
-
-          if (node == null) {
-            break;
-          }
-
-          SNode editor = createBetterProductionEditor(node, p);
-          editorModel.addRootNode(editor);
-
-
-          // -------------------------- Optimized parameter list Implementation--------------------// 
-
-
-          // ---------------------------------end  optimized paramter list implementation--------------------// 
-
-          // test 
-          // -------------------------------Implementation for optimized layout for binaryoperations-------------------// 
-
-
-        }
-      }
 
 
       // new optimized 
       for (NonTerminal nt : nonTerminalList) {
         for (Production p : nt.getProductions()) {
-          SNode node1 = getConceptNodeByName(p.getName());
+          SNode node = getConceptNodeByName(p.getName());
 
-          if (node1 == null) {
+          if (node == null) {
             break;
           }
 
@@ -162,10 +139,14 @@ public class XMLImporter {
             });
             ArrayList<SNode> rl = new ArrayList();
             ArrayList<LiteralLayoutElement> li = new ArrayList();
-            this.GetReferenceAndLiteralInfo(node1, p, rl, li);
+            this.GetReferenceAndLiteralInfo(node, p, rl, li);
 
             if (rl.size() == 2 && rl.get(0).toString().contains("lhs") && rl.get(1).toString().contains("rhs") && li.size() == 1) {
-              SNode editor = CreateOptimizedEditorsForBinaryOperations(node1, rl, li, layoutInfoList);
+              SNode editor = CreateOptimizedEditorsForBinaryOperations(node, rl, li, layoutInfoList);
+
+              editorModel.addRootNode(editor);
+            } else {
+              SNode editor = createBetterProductionEditor(node, p);
               editorModel.addRootNode(editor);
             }
           }
@@ -339,7 +320,6 @@ public class XMLImporter {
       }
 
     }
-    display("better node name" + SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return editor;
   }
 
@@ -374,9 +354,7 @@ public class XMLImporter {
   }
 
   private SNode CreateOptimizedEditorsForBinaryOperations(SNode node1, ArrayList<SNode> rl, ArrayList<LiteralLayoutElement> li, List<LayoutInfo> sortedLayoutInfoList) {
-    display("welcome to Binary editor creation");
 
-    SPropertyOperations.assign(node1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(node1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "_1");
     SNode editor = EditorFactory.createDefaultEditor(node1);
     int i = 0;
     for (LayoutInfo item : ListSequence.fromList(sortedLayoutInfoList)) {
@@ -396,7 +374,6 @@ public class XMLImporter {
       }
     }
 
-    display("binary node name" + SPropertyOperations.getString(node1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return editor;
   }
 

@@ -10,6 +10,9 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="3dd02898-1a78-4d3c-a888-ce8b66a405b5" name="JS" version="-1" />
     <use id="96da361a-94b6-4681-bc9c-a573b80d3948" name="JS_Grammar" version="0" />
+    <use id="d5703e94-ccbe-4a16-b937-43db5369bc00" name="Demo" version="0" />
+    <use id="dd85cdb3-b74f-406e-bcc3-e370d03a37a3" name="PrefixDemo" version="0" />
+    <use id="0b4908c5-1fd5-45ce-a809-11a25fd2eedc" name="Demo001" version="0" />
   </languages>
   <imports>
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
